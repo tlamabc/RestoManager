@@ -1397,6 +1397,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3637,6 +3638,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_register
+layout activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3716,6 +3718,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu_bottom_navigation
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

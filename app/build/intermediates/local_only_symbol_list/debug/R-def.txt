@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color ic_launcher_background
 color white
 drawable add
 drawable bg_edt
@@ -33,8 +34,10 @@ id viewpager
 layout activity_login
 layout activity_main
 layout activity_register
+layout activity_splash
 menu menu_bottom_navigation
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string app_name
 style Base.Theme.RestoManager
