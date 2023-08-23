@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "371151189396",
+    "project_id": "resto-manager-f2ead",
+    "storage_bucket": "resto-manager-f2ead.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371151189396:android:092cb150bda9242d510b81",
+        "android_client_info": {
+          "package_name": "com.droidfreshsquad.poly2023"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371151189396-9419cgkouaohaia1h7rubgk8r1p89j0u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.droidfreshsquad.poly2023",
+            "certificate_hash": "21c2ed1e186dfdae315ae340ffc5234fbce33a3d"
+          }
+        },
+        {
+          "client_id": "371151189396-nq10pn7vokd3m29n38vs7hnjuq4m909i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdqPl0eZTz8_8TmKxeZc1zhAJGytSo9KU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371151189396-nq10pn7vokd3m29n38vs7hnjuq4m909i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
