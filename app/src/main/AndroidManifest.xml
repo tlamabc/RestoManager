@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RestoManager"
+        android:theme="@style/MyAppTheme"
         tools:targetApi="31">
         <activity
             android:name=".SplashActivity"
@@ -23,11 +23,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Login"
+            android:name=".LoginActivity"
             android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".SignupActivity"
             android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
