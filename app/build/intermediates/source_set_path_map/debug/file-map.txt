@@ -26,11 +26,11 @@ com.droidfreshsquad.poly2023.app-play-services-base-17.1.0-24 C:\Users\dangt\.gr
 com.droidfreshsquad.poly2023.app-play-services-basement-17.1.0-25 C:\Users\dangt\.gradle\caches\transforms-3\f1e25671ccb7b807978fdceaa88e66df\transformed\play-services-basement-17.1.0\res
 com.droidfreshsquad.poly2023.app-emoji2-1.2.0-26 C:\Users\dangt\.gradle\caches\transforms-3\f9e06570067107be96cd54dff22e4d3a\transformed\emoji2-1.2.0\res
 com.droidfreshsquad.poly2023.app-lifecycle-process-2.4.1-27 C:\Users\dangt\.gradle\caches\transforms-3\fa1e1f0f3d90a40770ec90a3a59b9cf8\transformed\lifecycle-process-2.4.1\res
-com.droidfreshsquad.poly2023.app-google-services-28 D:\RestoManager\app\build\generated\res\google-services\debug
-com.droidfreshsquad.poly2023.app-pngs-29 D:\RestoManager\app\build\generated\res\pngs\debug
-com.droidfreshsquad.poly2023.app-resValues-30 D:\RestoManager\app\build\generated\res\resValues\debug
-com.droidfreshsquad.poly2023.app-packageDebugResources-31 D:\RestoManager\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.droidfreshsquad.poly2023.app-packageDebugResources-32 D:\RestoManager\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.droidfreshsquad.poly2023.app-merged_res-33 D:\RestoManager\app\build\intermediates\merged_res\debug
-com.droidfreshsquad.poly2023.app-debug-34 D:\RestoManager\app\src\debug\res
-com.droidfreshsquad.poly2023.app-main-35 D:\RestoManager\app\src\main\res
+com.droidfreshsquad.poly2023.app-google-services-28 D:\DroidFresh Squad\app\build\generated\res\google-services\debug
+com.droidfreshsquad.poly2023.app-pngs-29 D:\DroidFresh Squad\app\build\generated\res\pngs\debug
+com.droidfreshsquad.poly2023.app-resValues-30 D:\DroidFresh Squad\app\build\generated\res\resValues\debug
+com.droidfreshsquad.poly2023.app-packageDebugResources-31 D:\DroidFresh Squad\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.droidfreshsquad.poly2023.app-packageDebugResources-32 D:\DroidFresh Squad\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.droidfreshsquad.poly2023.app-merged_res-33 D:\DroidFresh Squad\app\build\intermediates\merged_res\debug
+com.droidfreshsquad.poly2023.app-debug-34 D:\DroidFresh Squad\app\src\debug\res
+com.droidfreshsquad.poly2023.app-main-35 D:\DroidFresh Squad\app\src\main\res

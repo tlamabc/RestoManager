@@ -3267,11 +3267,9 @@ id easeInOut
 id easeOut
 id east
 id edge
-id edit1
 id edit_query
 id elastic
 id email
-id email_edt
 id embed
 id end
 id endToStart
@@ -3338,11 +3336,9 @@ id light
 id line1
 id line3
 id linear
-id linearLayout
 id listMode
 id list_item
 id login
-id login_btn
 id m3_side_sheet
 id marquee
 id masked
@@ -3452,8 +3448,6 @@ id pressed
 id progressBar
 id progress_circular
 id progress_horizontal
-id pwd_edt
-id pwd_forgot_btn
 id radio
 id ratio
 id rectangles
@@ -3514,7 +3508,6 @@ id showTitle
 id sign_in_button
 id sign_out
 id sign_up_button
-id signup_btn
 id sin
 id skipCollapsed
 id skipped
@@ -3755,8 +3748,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout dialog_change_user_credential
-layout login_signup
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

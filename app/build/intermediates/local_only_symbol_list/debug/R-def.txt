@@ -46,12 +46,8 @@ id changePass
 id change_email_button
 id change_password_button
 id chat
-id edit1
 id email
-id email_edt
-id linearLayout
 id login
-id login_btn
 id menu_favorite
 id menu_home
 id menu_setting
@@ -60,8 +56,6 @@ id new_email
 id old_email
 id password
 id progressBar
-id pwd_edt
-id pwd_forgot_btn
 id remove
 id remove_user_button
 id send
@@ -69,15 +63,12 @@ id sending_pass_reset_button
 id sign_in_button
 id sign_out
 id sign_up_button
-id signup_btn
 id toolbar
 layout activity_login
 layout activity_main
 layout activity_reset_password
 layout activity_signup
 layout activity_splash
-layout dialog_change_user_credential
-layout login_signup
 menu menu_bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round

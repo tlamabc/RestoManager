@@ -4,7 +4,7 @@
             "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-31:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\RestoManager\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "D:\\DroidFresh Squad\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

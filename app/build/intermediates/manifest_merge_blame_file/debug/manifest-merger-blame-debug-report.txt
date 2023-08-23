@@ -27,71 +27,71 @@
 18-->[androidx.core:core:1.9.0] C:\Users\dangt\.gradle\caches\transforms-3\58b07198376f67aef2aac074a201ccd5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->D:\RestoManager\app\src\main\AndroidManifest.xml:5:5-39:19
+20-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:5:5-39:19
 21        android:allowBackup="true"
-21-->D:\RestoManager\app\src\main\AndroidManifest.xml:6:9-35
+21-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:6:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.9.0] C:\Users\dangt\.gradle\caches\transforms-3\58b07198376f67aef2aac074a201ccd5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->D:\RestoManager\app\src\main\AndroidManifest.xml:7:9-65
+23-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:7:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->D:\RestoManager\app\src\main\AndroidManifest.xml:8:9-54
+26-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:8:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->D:\RestoManager\app\src\main\AndroidManifest.xml:9:9-43
+27-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:9:9-43
 28        android:label="@string/app_name"
-28-->D:\RestoManager\app\src\main\AndroidManifest.xml:10:9-41
+28-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:10:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->D:\RestoManager\app\src\main\AndroidManifest.xml:11:9-54
+29-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:11:9-54
 30        android:supportsRtl="true"
-30-->D:\RestoManager\app\src\main\AndroidManifest.xml:12:9-35
+30-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:12:9-35
 31        android:testOnly="true"
 32        android:theme="@style/MyAppTheme" >
-32-->D:\RestoManager\app\src\main\AndroidManifest.xml:13:9-42
+32-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:13:9-42
 33        <activity
-33-->D:\RestoManager\app\src\main\AndroidManifest.xml:15:9-24:20
+33-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:15:9-24:20
 34            android:name="com.droidfreshsquad.poly2023.SplashActivity"
-34-->D:\RestoManager\app\src\main\AndroidManifest.xml:16:13-43
+34-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:16:13-43
 35            android:exported="true"
-35-->D:\RestoManager\app\src\main\AndroidManifest.xml:18:13-36
+35-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:18:13-36
 36            android:windowSoftInputMode="adjustResize" >
-36-->D:\RestoManager\app\src\main\AndroidManifest.xml:17:13-55
+36-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:17:13-55
 37            <intent-filter>
-37-->D:\RestoManager\app\src\main\AndroidManifest.xml:19:13-23:29
+37-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:19:13-23:29
 38                <action android:name="android.intent.action.MAIN" />
-38-->D:\RestoManager\app\src\main\AndroidManifest.xml:20:17-69
-38-->D:\RestoManager\app\src\main\AndroidManifest.xml:20:25-66
+38-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:20:17-69
+38-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:20:25-66
 39
 40                <category android:name="android.intent.category.LAUNCHER" />
-40-->D:\RestoManager\app\src\main\AndroidManifest.xml:22:17-77
-40-->D:\RestoManager\app\src\main\AndroidManifest.xml:22:27-74
+40-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:22:17-77
+40-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:22:27-74
 41            </intent-filter>
 42        </activity>
 43        <activity
-43-->D:\RestoManager\app\src\main\AndroidManifest.xml:25:9-28:40
+43-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:25:9-28:40
 44            android:name="com.droidfreshsquad.poly2023.LoginActivity"
-44-->D:\RestoManager\app\src\main\AndroidManifest.xml:26:13-42
+44-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:26:13-42
 45            android:exported="false"
-45-->D:\RestoManager\app\src\main\AndroidManifest.xml:28:13-37
+45-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:28:13-37
 46            android:windowSoftInputMode="adjustResize" />
-46-->D:\RestoManager\app\src\main\AndroidManifest.xml:27:13-55
+46-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:27:13-55
 47        <activity
-47-->D:\RestoManager\app\src\main\AndroidManifest.xml:29:9-32:40
+47-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:29:9-32:40
 48            android:name="com.droidfreshsquad.poly2023.SignupActivity"
-48-->D:\RestoManager\app\src\main\AndroidManifest.xml:30:13-43
+48-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:30:13-43
 49            android:exported="false"
-49-->D:\RestoManager\app\src\main\AndroidManifest.xml:32:13-37
+49-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:32:13-37
 50            android:windowSoftInputMode="adjustResize" />
-50-->D:\RestoManager\app\src\main\AndroidManifest.xml:31:13-55
+50-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:31:13-55
 51        <activity
-51-->D:\RestoManager\app\src\main\AndroidManifest.xml:33:9-38:20
+51-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:33:9-38:20
 52            android:name="com.droidfreshsquad.poly2023.MainActivity"
-52-->D:\RestoManager\app\src\main\AndroidManifest.xml:34:13-41
+52-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:34:13-41
 53            android:exported="false"
-53-->D:\RestoManager\app\src\main\AndroidManifest.xml:36:13-37
+53-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:36:13-37
 54            android:windowSoftInputMode="adjustResize" >
-54-->D:\RestoManager\app\src\main\AndroidManifest.xml:35:13-55
+54-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:35:13-55
 55        </activity>
 56        <activity
 56-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\dangt\.gradle\caches\transforms-3\424c7d3abf5692b4f5d818d32f9e061a\transformed\firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
