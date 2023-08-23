@@ -1396,7 +1396,6 @@ int color foreground_material_dark 0x7f05005a
 int color foreground_material_light 0x7f05005b
 int color highlighted_text_material_dark 0x7f05005c
 int color highlighted_text_material_light 0x7f05005d
-int color ic_launcher_background 0x7f0502e6
 int color m3_appbar_overlay_color 0x7f05005e
 int color m3_assist_chip_icon_tint_color 0x7f05005f
 int color m3_assist_chip_stroke_color 0x7f050060
@@ -3717,7 +3716,6 @@ int layout select_dialog_singlechoice_material 0x7f0b006b
 int layout support_simple_spinner_dropdown_item 0x7f0b006c
 int menu menu_bottom_navigation 0x7f0d0000
 int mipmap ic_launcher 0x7f0e0000
-int mipmap ic_launcher_foreground 0x7f0e0002
 int mipmap ic_launcher_round 0x7f0e0001
 int plurals mtrl_badge_content_description 0x7f0f0000
 int string abc_action_bar_home_description 0x7f100000
