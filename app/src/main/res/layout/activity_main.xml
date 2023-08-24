@@ -37,7 +37,7 @@
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:singleLine="true" />
+            android:singleLine="true"/>
 
         <EditText
             android:id="@+id/new_email"
@@ -46,7 +46,7 @@
             android:hint="@string/hint_new_email"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:singleLine="true" />
+            android:singleLine="true"/>
 
         <EditText
             android:id="@+id/password"
@@ -58,7 +58,7 @@
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:singleLine="true" />
+            android:singleLine="true"/>
 
         <EditText
             android:id="@+id/newPassword"
@@ -70,7 +70,7 @@
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:singleLine="true" />
+            android:singleLine="true"/>
 
         <Button
             android:id="@+id/changeEmail"
@@ -81,7 +81,7 @@
             android:backgroundTint="@color/background"
             android:text="@string/btn_change"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/changePass"
@@ -129,7 +129,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/change_email"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimaryDark"/>
 
         <Button
             android:textColor="@color/white"
@@ -139,7 +140,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/change_password"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimaryDark"/>
 
         <Button
             android:textColor="@color/white"
@@ -149,7 +151,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/send_password_reset_email"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimaryDark"/>
 
         <Button
             android:textColor="@color/white"
@@ -159,7 +162,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/remove_user"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimaryDark"/>
 
         <Button
             android:id="@+id/sign_out"

@@ -64,6 +64,10 @@
         "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-35:\\drawable\\home.png"
     },
     {
+        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-33:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-35:\\layout\\activity_signup.xml"
+    },
+    {
         "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-33:\\drawable_setting.png.flat",
         "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-35:\\drawable\\setting.png"
     },

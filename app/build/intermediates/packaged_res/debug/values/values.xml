@@ -40,7 +40,7 @@ Firebase now!</string>
     <string name="change_email">Change Email</string>
     <string name="change_password">Change Password</string>
     <string name="default_web_client_id" translatable="false">371151189396-nq10pn7vokd3m29n38vs7hnjuq4m909i.apps.googleusercontent.com</string>
-    <string name="email">Email</string>
+    <string name="email">--Email--</string>
     <string name="forgot_password_msg">We just need your registered Email Id
 to sent you password reset instructions.</string>
     <string name="gcm_defaultSenderId" translatable="false">371151189396</string>
@@ -49,16 +49,16 @@ to sent you password reset instructions.</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDdqPl0eZTz8_8TmKxeZc1zhAJGytSo9KU</string>
     <string name="google_storage_bucket" translatable="false">resto-manager-f2ead.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hint_email">Email</string>
+    <string name="hint_email">--Email--</string>
     <string name="hint_name">Fullname</string>
     <string name="hint_new_email">New Email</string>
-    <string name="hint_password">Password</string>
+    <string name="hint_password">--Password--</string>
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="minimum_password">Password too short, enter minimum 6
 characters!</string>
     <string name="new_pass">New Password</string>
     <string name="project_id" translatable="false">resto-manager-f2ead</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_password">--Password--</string>
     <string name="remove_user">Remove user</string>
     <string name="send_password_reset_email">Send Password reset
 email</string>

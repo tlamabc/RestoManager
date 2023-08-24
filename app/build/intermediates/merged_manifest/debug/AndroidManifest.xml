@@ -54,6 +54,10 @@
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity
+            android:name="com.droidfreshsquad.poly2023.ResetPasswordActivity"
+            android:label="Reset Password" >
+        </activity>
+        <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
             android:exported="true"
