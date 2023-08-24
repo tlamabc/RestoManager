@@ -34,12 +34,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-
-
-
-
-
         /////////////////////////////////////////////////////////////////////////////
 
 //        ImageView gifImageView = findViewById(R.id.imageView_done);
@@ -50,7 +44,6 @@ public class LoginActivity extends AppCompatActivity {
 //        // Sử dụng Glide để tải và hiển thị file GIF vào ImageView
 //        Glide.with(this).asGif().load(gifUrl).into(gifImageView);
 
-
 ////////////////////////////////////////////////////////////////////////////////////////
 //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
@@ -60,9 +53,6 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         }*/
 // set the view now
-
-
-
         setContentView(R.layout.activity_login);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
@@ -82,8 +72,8 @@ public class LoginActivity extends AppCompatActivity {
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,
-                        ResetPasswordActivity.class));
+                startActivity(new Intent(LoginActivity.this,ResetPasswordActivity.class));
+
             }
         });
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -103,12 +93,12 @@ public class LoginActivity extends AppCompatActivity {
 //authenticate user
 
                 auth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(LoginActivity.this, new
-                                OnCompleteListener<AuthResult>() {
-                                    @Override
+                .addOnCompleteListener(LoginActivity.this, new
+                  OnCompleteListener<AuthResult>() {
+                    @Override
 
-                                    public void onComplete(@NonNull Task<AuthResult> task) {
-                                        progressBar.setVisibility(View.GONE);
+                 public void onComplete(@NonNull Task<AuthResult> task) {
+                   progressBar.setVisibility(View.GONE);
                                         if (!task.isSuccessful()) {
 // there was an error
                                             if (password.length() < 6) {
