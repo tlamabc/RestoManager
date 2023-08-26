@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/place_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/logo"
+        />
+    <!-- drawable/place_image.xml -->
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="459dp"
+        android:height="1020dp"
+        android:viewportWidth="459"
+        android:viewportHeight="1020"
+        >
+        <group>
+            <clip-path
+                android:pathData="M0 0H459V1020H0V0Z"
+                />
+        </group>
+    </vector>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
