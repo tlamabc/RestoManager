@@ -19,11 +19,11 @@
         android:padding="@dimen/activity_horizontal_margin">
 
         <ImageView
-            android:layout_width="@dimen/logo_w_h"
-            android:layout_height="@dimen/logo_w_h"
+            android:layout_width="453dp"
+            android:layout_height="228dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo_login" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -63,7 +63,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:backgroundTint="#0a6df0"
+            android:backgroundTint="#FF3131"
             android:text="@string/btn_login"
             android:textColor="@color/white" />
 
@@ -72,7 +72,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:backgroundTint="#0a6df0"
+            android:backgroundTint="#FF3131"
             android:text="@string/btn_forgot_password"
             android:textAllCaps="false"
             android:textColor="@color/white" />

@@ -48,6 +48,10 @@
         "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-35:\\mipmap-anydpi\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-33:\\layout_testfigma.xml.flat",
+        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-35:\\layout\\testfigma.xml"
+    },
+    {
         "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-33:\\mipmap-anydpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-35:\\mipmap-anydpi\\ic_launcher.xml"
     },
@@ -58,6 +62,10 @@
     {
         "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-33:\\drawable_chat.png.flat",
         "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-35:\\drawable\\chat.png"
+    },
+    {
+        "merged": "com.droidfreshsquad.poly2023.app-merged_res-33:/drawable_logo.png.flat",
+        "source": "com.droidfreshsquad.poly2023.app-main-35:/drawable/logo.png"
     },
     {
         "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-33:\\drawable_home.png.flat",
@@ -138,9 +146,5 @@
     {
         "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-33:\\drawable_pencil.png.flat",
         "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-35:\\drawable\\pencil.png"
-    },
-    {
-        "merged": "com.droidfreshsquad.poly2023.app-merged_res-33:/layout_activity_signup.xml.flat",
-        "source": "com.droidfreshsquad.poly2023.app-main-35:/layout/activity_signup.xml"
     }
 ]

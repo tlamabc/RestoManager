@@ -3442,6 +3442,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id place_image
 id position
 id postLayout
 id pressed
@@ -3809,6 +3810,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout testfigma
 menu menu_bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round

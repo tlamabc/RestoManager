@@ -3441,6 +3441,7 @@ int id pathRelative 0x7f080167
 int id peekHeight 0x7f080168
 int id percent 0x7f080169
 int id pin 0x7f08016a
+int id place_image 0x7f080214
 int id position 0x7f08016b
 int id postLayout 0x7f08016c
 int id pressed 0x7f08016d
@@ -3808,6 +3809,7 @@ int layout select_dialog_item_material 0x7f0b006c
 int layout select_dialog_multichoice_material 0x7f0b006d
 int layout select_dialog_singlechoice_material 0x7f0b006e
 int layout support_simple_spinner_dropdown_item 0x7f0b006f
+int layout testfigma 0x7f0b0070
 int menu menu_bottom_navigation 0x7f0d0000
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001

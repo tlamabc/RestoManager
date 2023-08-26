@@ -55,6 +55,7 @@ id newPassword
 id new_email
 id old_email
 id password
+id place_image
 id progressBar
 id remove
 id remove_user_button
@@ -69,6 +70,7 @@ layout activity_main
 layout activity_reset_password
 layout activity_signup
 layout activity_splash
+layout testfigma
 menu menu_bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round
