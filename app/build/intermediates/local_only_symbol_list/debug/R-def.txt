@@ -33,6 +33,7 @@ drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
+drawable logo_login
 drawable pencil
 drawable setting
 drawable trash
