@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.loginapp);
         /////////////////////////////////////////////////////////////////////////////
 
 //        ImageView gifImageView = findViewById(R.id.imageView_done);
@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         }*/
 // set the view now
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.loginapp);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -73,8 +73,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,
-                        SignupActivity.class));
+                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
             }
         });
         btnReset.setOnClickListener(new View.OnClickListener() {

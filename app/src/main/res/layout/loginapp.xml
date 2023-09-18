@@ -41,11 +41,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="480dp"
-
-                android:card="28dp"
                 android:orientation="vertical"
-
                 android:padding="10dp">
+<!--                android:card="28dp"-->
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -78,10 +76,11 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/done_icon"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"/>
 
                 <View
                     android:layout_width="wrap_content"
@@ -91,39 +90,64 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="0.7"
-                    android:text="Email Address"
-                    android:textStyle="bold" />
+                    android:text="Password"
+                    android:textStyle="bold"/>
 
                 <EditText
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/remove_icon"
-                    android:inputType="textPassword" />
-
+                    android:inputType="textPassword"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <CheckBox
+                    <ProgressBar
+                        android:id="@+id/progressBar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:alpha="0.7"
-                        android:text="Remeber me" />
+                        android:alpha="0.7" />
 
-                    <TextView
+                    <Button
+                        android:id="@+id/btn_reset_password"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/progressBar"
                         android:layout_centerVertical="true"
                         android:text="I forgot my password" />
                 </RelativeLayout>
+
+
+                <!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <CheckBox-->
+<!--                        android:id="@+id/progressBar"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:alpha="0.7"-->
+<!--                        android:text="Remeber me"/>-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/btn_reset_password"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:text="I forgot my password" />-->
+<!--                </RelativeLayout>-->
 
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="10dp" />
 
-                <com.google.android.material.button.MaterialButton
+<!--                <com.google.android.material.button.MaterialButton-->
+                <Button
+                    android:id="@+id/btn_login"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
@@ -139,8 +163,9 @@
                     android:alpha="0.7"
                     android:text="Do you already have an account?" />
 
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:layout_width="match_parent"
+                    android:id="@+id/btn_signup"
                     android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
@@ -150,7 +175,6 @@
 
 
             </LinearLayout>
-
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </RelativeLayout>

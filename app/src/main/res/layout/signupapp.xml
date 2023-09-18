@@ -10,9 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,12 +38,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="480dp"
-
-                android:card="28dp"
                 android:orientation="vertical"
-
                 android:padding="10dp">
 
+<!--                android:card="28dp"-->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -62,7 +58,6 @@
                     android:layout_gravity="center"
                     android:paddingStart="10dp"
                     android:text="Login to your account"
-
                     android:textColor="#090909" />
 
                 <View
@@ -77,10 +72,11 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/done_icon"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"/>
 
                 <View
                     android:layout_width="wrap_content"
@@ -94,11 +90,11 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/remove_icon"
-                    android:inputType="textPassword"
-                    />
+                    android:inputType="textPassword"/>
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="10dp" />
@@ -110,22 +106,24 @@
                     android:textStyle="bold" />
 
                 <EditText
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/remove_icon"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <CheckBox
+                        android:id="@+id/progressBar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:alpha="0.7"
                         android:textColor="#403F3F"
-                        android:text="I agree to your privacy policy and terms condition" />
+                        android:text="I agree to your privacy policy and terms condition"/>
 
 
                 </RelativeLayout>
@@ -134,16 +132,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="10dp" />
 
-                <com.google.android.material.button.MaterialButton
+                <Button
+                    android:id="@+id/sign_up_button"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/stylebutton"
                     android:text="Sign up"
-                    app:cornerRadius="32dp" />
+                    app:cornerRadius="32dp"/>
 
                 <TextView
+                    android:id="@+id/sign_in_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

@@ -26,6 +26,7 @@ drawable add
 drawable bg_edt
 drawable chat
 drawable delete
+drawable done_icon
 drawable edit_text_bg
 drawable eye
 drawable heart
@@ -35,7 +36,9 @@ drawable ic_launcher_foreground
 drawable logo
 drawable logo_login
 drawable pencil
+drawable remove_icon
 drawable setting
+drawable stylebutton
 drawable trash
 drawable user
 id btn_back
@@ -66,11 +69,11 @@ id sign_in_button
 id sign_out
 id sign_up_button
 id toolbar
-layout activity_login
 layout activity_main
 layout activity_reset_password
-layout activity_signup
 layout activity_splash
+layout loginapp
+layout signupapp
 layout testfigma
 menu menu_bottom_navigation
 mipmap ic_launcher
