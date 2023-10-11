@@ -1,8 +1,8 @@
-#Wed Oct 11 23:44:28 ICT 2023
-base.0=C\:\\Users\\ADMIN\\AndroidStudioProjects\\USER APPDATN\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\ADMIN\\AndroidStudioProjects\\USER APPDATN\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\ADMIN\\AndroidStudioProjects\\USER APPDATN\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\Users\\ADMIN\\AndroidStudioProjects\\USER APPDATN\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Thu Oct 12 00:21:57 ICT 2023
+base.0=C\:\\Users\\TUF GAMING\\StudioProjects\\RestoManager\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\TUF GAMING\\StudioProjects\\RestoManager\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\TUF GAMING\\StudioProjects\\RestoManager\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\TUF GAMING\\StudioProjects\\RestoManager\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

@@ -41,6 +41,8 @@ anim m3_side_sheet_slide_out
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim slide_in_right
+anim slide_out_right
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3192,6 +3194,7 @@ id btn_back
 id btn_login
 id btn_reset_password
 id btn_signup
+id btndatve
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3273,6 +3276,10 @@ id easeOut
 id east
 id edge
 id edit_query
+id edtdiemden
+id edtdiemdi
+id edtsohanhkhach
+id edtthoigian
 id elastic
 id email
 id embed
@@ -3582,6 +3589,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbardatdon
 id top
 id topPanel
 id touch_outside
@@ -3593,6 +3601,10 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvdiemden
+id tvdiemdi
+id tvsohanhkhach
+id tvthoigian
 id unchecked
 id uniform
 id unlabeled
@@ -3731,6 +3743,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_booking
 layout activity_main
 layout activity_reset_password
 layout activity_splash

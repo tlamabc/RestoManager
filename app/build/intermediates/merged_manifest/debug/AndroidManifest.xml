@@ -29,7 +29,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/MyAppTheme" >
+        android:theme="@style/MyAppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.droidfreshsquad.poly2023.BookingActivity"
+            android:exported="true" />
         <activity
             android:name="com.droidfreshsquad.poly2023.Dat_Ve"
             android:exported="false" />
@@ -54,12 +58,10 @@
         <activity
             android:name="com.droidfreshsquad.poly2023.MainActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" >
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ResetPasswordActivity"
-            android:label="Reset Password" >
-        </activity>
+            android:label="Reset Password" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
