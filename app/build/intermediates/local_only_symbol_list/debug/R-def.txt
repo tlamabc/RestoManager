@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+anim slide_in_right
+anim slide_out_right
 color background
 color bg_login
 color bg_main
@@ -45,11 +47,16 @@ id btn_back
 id btn_login
 id btn_reset_password
 id btn_signup
+id btndatve
 id changeEmail
 id changePass
 id change_email_button
 id change_password_button
 id chat
+id edtdiemden
+id edtdiemdi
+id edtsohanhkhach
+id edtthoigian
 id email
 id login
 id menu_favorite
@@ -69,6 +76,12 @@ id sign_in_button
 id sign_out
 id sign_up_button
 id toolbar
+id toolbardatdon
+id tvdiemden
+id tvdiemdi
+id tvsohanhkhach
+id tvthoigian
+layout activity_booking
 layout activity_main
 layout activity_reset_password
 layout activity_splash
