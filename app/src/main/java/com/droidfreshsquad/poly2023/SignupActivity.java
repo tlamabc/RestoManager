@@ -3,6 +3,8 @@ package com.droidfreshsquad.poly2023;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -24,6 +26,7 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth auth;
 
 
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

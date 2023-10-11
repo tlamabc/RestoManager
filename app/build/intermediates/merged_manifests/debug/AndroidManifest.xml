@@ -31,6 +31,9 @@
         android:testOnly="true"
         android:theme="@style/MyAppTheme" >
         <activity
+            android:name="com.droidfreshsquad.poly2023.Dat_Ve"
+            android:exported="false" />
+        <activity
             android:name="com.droidfreshsquad.poly2023.SplashActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" >

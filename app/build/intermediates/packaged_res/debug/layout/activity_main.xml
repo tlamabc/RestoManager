@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Bai1.MainActivity">
+    tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -153,6 +153,17 @@
             android:text="@string/send_password_reset_email"
             android:textStyle="bold"
             android:backgroundTint="@color/colorPrimaryDark"/>
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/datve"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="đặt vé"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
 
         <Button
             android:textColor="@color/white"

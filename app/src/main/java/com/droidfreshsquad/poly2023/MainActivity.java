@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser, changeEmail, changePassword, sendEmail, remove, signOut;
+    private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser, changeEmail, changePassword, sendEmail, remove, signOut, datve;
     private EditText oldEmail, newEmail, password, newPassword;
     private ProgressBar progressBar;
     private FirebaseAuth.AuthStateListener authListener;
@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         newEmail = (EditText) findViewById(R.id.new_email);
         password = (EditText) findViewById(R.id.password);
         newPassword = (EditText) findViewById(R.id.newPassword);
+        datve =(Button) findViewById(R.id.datve);
         oldEmail.setVisibility(View.GONE);
         newEmail.setVisibility(View.GONE);
         password.setVisibility(View.GONE);
@@ -92,6 +93,15 @@ public class MainActivity extends AppCompatActivity {
                 remove.setVisibility(View.GONE);
             }
         });
+
+        /////////////////demo dat ve
+        datve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Dat_Ve.class));
+            }});
+        //---------------------------
+
         changeEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -277,4 +287,5 @@ public class MainActivity extends AppCompatActivity {
             auth.removeAuthStateListener(authListener);
         }
     }
+
 }

@@ -50,6 +50,7 @@ id changePass
 id change_email_button
 id change_password_button
 id chat
+id datve
 id email
 id login
 id menu_favorite
@@ -72,6 +73,7 @@ id toolbar
 layout activity_main
 layout activity_reset_password
 layout activity_splash
+layout dat_ve
 layout loginapp
 layout signupapp
 layout testfigma
