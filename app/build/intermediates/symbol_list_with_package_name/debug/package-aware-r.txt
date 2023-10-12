@@ -2948,9 +2948,6 @@ drawable add
 drawable avd_hide_password
 drawable avd_show_password
 drawable bg_edt
-drawable bgr1
-drawable border_buttom
-drawable bovienlogo
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2959,12 +2956,6 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable cat1
-drawable cat1_background
-drawable cat2
-drawable cat3
-drawable cat4
-drawable cat_background
 drawable chat
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -2993,8 +2984,6 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable done_icon
 drawable edit_text_bg
-drawable explore1_background
-drawable explore2
 drawable eye
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -3014,12 +3003,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
-drawable iconvitri
 drawable logo
 drawable logo_login
-drawable logochim
 drawable logoeasyfly
-drawable logomanchinh
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3041,7 +3027,6 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
-drawable modanbgr
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3206,13 +3191,6 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
-id btnMinusEmBe
-id btnMinusLon
-id btnMinusTreEm
-id btnPlusEmBe
-id btnPlusLon
-id btnPlusTreEm
-id btnSoKhach
 id btn_back
 id btn_login
 id btn_reset_password
@@ -3224,8 +3202,6 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
-id categoryName
-id categoryPic
 id center
 id centerCrop
 id centerInside
@@ -3305,6 +3281,7 @@ id edge
 id edit_query
 id edtdiemden
 id edtdiemdi
+id edtsohanhkhach
 id edtthoigian
 id elastic
 id email
@@ -3316,9 +3293,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id exploreName
-id exploreName1
-id explorePic
 id fade
 id fill
 id fill_horizontal
@@ -3358,8 +3332,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView2
-id imgLogo
 id immediateStop
 id included
 id indeterminate
@@ -3379,13 +3351,10 @@ id light
 id line1
 id line3
 id linear
-id linearLayout
-id linearLayout1
 id listMode
 id list_item
 id login
 id m3_side_sheet
-id mainLayout
 id marquee
 id masked
 id match_constraint
@@ -3460,7 +3429,6 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id newPassword
 id new_email
-id ngayve01
 id noScroll
 id noState
 id none
@@ -3499,8 +3467,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recyclerview1
-id recyclerview2
 id remove
 id remove_user_button
 id reverseSawtooth
@@ -3519,7 +3485,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -3591,7 +3556,6 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
-id swKhuhoi
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3613,9 +3577,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
-id textView2
-id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3631,6 +3592,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbardatdon
 id top
 id topPanel
 id touch_outside
@@ -3642,14 +3604,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvNgayVe
-id tvNumberEmBe
-id tvNumberLon
-id tvNumberTreEm
 id tvdiemden
 id tvdiemdi
 id tvsohanhkhach
-id txtthoigian
 id unchecked
 id uniform
 id unlabeled
@@ -3792,7 +3749,6 @@ layout abc_tooltip
 layout activity_booking
 layout activity_main
 layout activity_reset_password
-layout activity_screen_main
 layout activity_splash
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3813,7 +3769,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout dialog_so_nguoi
 layout loginapp
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3879,11 +3834,8 @@ layout select_dialog_singlechoice_material
 layout signupapp
 layout support_simple_spinner_dropdown_item
 layout testfigma
-layout viewhodel_category
-layout viewhodel_explore
 menu menu_bottom_navigation
 mipmap ic_launcher
-mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
