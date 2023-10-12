@@ -13,8 +13,8 @@
             android:id="@+id/toolbardatdon"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#ff01"
-            app:title="Đặt đơn">
+            android:background="#00BCD4"
+            app:title="Đặt vé">
         </androidx.appcompat.widget.Toolbar>
         <LinearLayout
             android:orientation="vertical"
@@ -51,7 +51,7 @@
                 android:id="@+id/edtthoigian"
                 android:text="Ngày/tháng/năm"
                 android:textStyle="bold"
-                android:background="@color/colorAccent"
+                android:background="@color/background"
                 android:gravity="center_vertical"
                 android:layout_width="match_parent"
                 android:layout_height="200px"/>

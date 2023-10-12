@@ -25,7 +25,7 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
-                android:src="@drawable/logo_login" />
+                android:src="@drawable/logo" />
 
 
         </LinearLayout>
@@ -51,7 +51,7 @@
                     android:layout_gravity="center"
                     android:paddingLeft="10dp"
                     android:text="Welcome"
-                    android:textColor="#D9042B"
+                    android:textColor="#00BCD4"
                     android:textSize="32sp"
                     android:textStyle="normal" />
 

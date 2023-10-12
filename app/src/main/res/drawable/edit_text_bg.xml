@@ -4,5 +4,5 @@
     <corners android:radius="90dp" /> <!-- Đặt bán kính cong = 0 để bỏ cong góc -->
     <stroke
         android:width="5dp"
-        android:color="#FF3131" />
+        android:color="#00BCD4" />
 </shape>
