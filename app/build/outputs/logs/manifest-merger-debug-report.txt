@@ -138,20 +138,20 @@ ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\Androi
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:19:13-49
-activity#com.droidfreshsquad.poly2023.SplashActivity
+activity#com.droidfreshsquad.poly2023.MainActivity
 ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:21:9-23:39
 	android:exported
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:22:13-43
-activity#com.droidfreshsquad.poly2023.MainActivity
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:22:13-41
+activity#com.droidfreshsquad.poly2023.SplashActivity
 ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:24:9-33:20
 	android:windowSoftInputMode
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:27:13-55
 	android:exported
 		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:25:13-41
+		ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:25:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN

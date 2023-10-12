@@ -59,14 +59,14 @@
 36-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:20:13-37
 37        <activity
 37-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:21:9-23:39
-38            android:name="com.droidfreshsquad.poly2023.SplashActivity"
-38-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:22:13-43
+38            android:name="com.droidfreshsquad.poly2023.MainActivity"
+38-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:22:13-41
 39            android:exported="true" />
 39-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:23:13-36
 40        <activity
 40-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:24:9-33:20
-41            android:name="com.droidfreshsquad.poly2023.MainActivity"
-41-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:25:13-41
+41            android:name="com.droidfreshsquad.poly2023.SplashActivity"
+41-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:25:13-43
 42            android:exported="true"
 42-->C:\Users\ADMIN\AndroidStudioProjects\USER APPDATN\app\src\main\AndroidManifest.xml:26:13-36
 43            android:windowSoftInputMode="adjustResize" >

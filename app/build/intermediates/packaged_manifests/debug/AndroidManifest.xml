@@ -35,10 +35,10 @@
             android:name="com.droidfreshsquad.poly2023.datve.Ngay_thang_nam"
             android:exported="false" />
         <activity
-            android:name="com.droidfreshsquad.poly2023.SplashActivity"
+            android:name="com.droidfreshsquad.poly2023.MainActivity"
             android:exported="true" />
         <activity
-            android:name="com.droidfreshsquad.poly2023.MainActivity"
+            android:name="com.droidfreshsquad.poly2023.SplashActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" >
             <intent-filter>
