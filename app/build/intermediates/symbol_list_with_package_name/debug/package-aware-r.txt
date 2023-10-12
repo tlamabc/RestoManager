@@ -3195,6 +3195,7 @@ id btn_login
 id btn_reset_password
 id btn_signup
 id btndatve
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3240,6 +3241,7 @@ id custom
 id customPanel
 id cut
 id dark
+id datePicker
 id date_picker_actions
 id datve
 id decelerate
@@ -3604,13 +3606,13 @@ id triangle
 id tvdiemden
 id tvdiemdi
 id tvsohanhkhach
-id tvthoigian
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
 id vertical_only
+id viewFlipper
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3818,6 +3820,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout ngay_thang_nam
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

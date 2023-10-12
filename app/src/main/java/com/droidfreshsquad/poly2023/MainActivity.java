@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.datve.BookingActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         datve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Dat_Ve.class));
+                startActivity(new Intent(MainActivity.this, BookingActivity.class));
             }});
         //---------------------------
 
