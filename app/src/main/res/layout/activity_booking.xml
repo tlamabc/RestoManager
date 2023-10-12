@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingActivity">
+    tools:context=".datve.BookingActivity">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -32,8 +32,7 @@
                 android:textSize="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:text="Name" />
+                android:inputType="text"/>
             <TextView
                 android:textSize="20dp"
                 android:id="@+id/tvdiemden"
@@ -46,22 +45,16 @@
                 android:id="@+id/edtdiemden"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:text="Name" />
+                android:inputType="text"/>
             <TextView
                 android:textSize="20dp"
-                android:id="@+id/tvthoigian"
+                android:id="@+id/edtthoigian"
                 android:text="Ngày/tháng/năm"
                 android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:textSize="20dp"
-                android:id="@+id/edtthoigian"
+                android:background="@color/colorAccent"
+                android:gravity="center_vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:text="Name" />
+                android:layout_height="200px"/>
             <TextView
                 android:textSize="20dp"
                 android:id="@+id/tvsohanhkhach"
@@ -74,8 +67,7 @@
                 android:id="@+id/edtsohanhkhach"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:text="Name" />
+                android:inputType="text"/>
             <Button
                 android:id="@+id/btndatve"
                 android:text="Đặt vé"
@@ -85,9 +77,9 @@
                 android:layout_height="wrap_content"/>
 
             <ViewFlipper
+                android:id="@+id/viewFlipper"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
             </ViewFlipper>
         </LinearLayout>
 
