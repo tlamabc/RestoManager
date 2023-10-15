@@ -1,11 +1,11 @@
 package com.droidfreshsquad.poly2023.datve;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.droidfreshsquad.poly2023.R;
 
@@ -13,11 +13,12 @@ public class Ngay_thang_nam extends AppCompatActivity {
 
     private DatePicker datePicker;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle(null);
         setContentView(R.layout.ngay_thang_nam);
-
         datePicker = findViewById(R.id.datePicker);
         // Tạo sự kiện cho button
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
@@ -40,4 +41,4 @@ public class Ngay_thang_nam extends AppCompatActivity {
             }
         });
     }
-    }
+}
