@@ -4,7 +4,7 @@
             "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-31:/values-b+sr+Latn/values-b+sr+Latn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\d476715df036646142b5c2874a942f2b\\transformed\\appcompat-1.6.1\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\d476715df036646142b5c2874a942f2b\\transformed\\appcompat-1.6.1\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\f1e25671ccb7b807978fdceaa88e66df\\transformed\\play-services-basement-17.1.0\\res\\values-b+sr+Latn\\values.xml",
+                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\f1e25671ccb7b807978fdceaa88e66df\\transformed\\play-services-basement-17.1.0\\res\\values-b+sr+Latn\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,24 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\58b07198376f67aef2aac074a201ccd5\\transformed\\core-1.9.0\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\f0349691b31a9c18f36c50f62be31614\\transformed\\play-services-base-17.1.0\\res\\values-b+sr+Latn\\values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "252,356,544,668,776,989,1114,1252,1379,1587,1692,1883,2008,2216,2384,2478,2569",
+                        "endColumns": "103,187,123,107,212,124,137,126,207,104,190,124,207,167,93,90,104",
+                        "endOffsets": "355,543,667,775,988,1113,1251,1378,1586,1691,1882,2007,2215,2383,2477,2568,2673"
                     },
                     "to": {
-                        "startLines": "115",
-                        "startColumns": "4",
-                        "startOffsets": "10805",
-                        "endColumns": "100",
-                        "endOffsets": "10901"
+                        "startLines": "42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,59",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3848,3956,4144,4272,4384,4597,4726,4868,5188,5396,5505,5696,5825,6033,6205,6303,6398",
+                        "endColumns": "107,187,127,111,212,128,141,130,207,108,190,128,207,171,97,94,108",
+                        "endOffsets": "3951,4139,4267,4379,4592,4721,4863,4994,5391,5500,5691,5820,6028,6200,6298,6393,6502"
                     }
                 },
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\3f0bee673dd301dd5fa353fb2a75ddd0\\transformed\\material-1.9.0\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\3f0bee673dd301dd5fa353fb2a75ddd0\\transformed\\material-1.9.0\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -74,20 +74,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\f0349691b31a9c18f36c50f62be31614\\transformed\\play-services-base-17.1.0\\res\\values-b+sr+Latn\\values.xml",
+                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\58b07198376f67aef2aac074a201ccd5\\transformed\\core-1.9.0\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "252,356,544,668,776,989,1114,1252,1379,1587,1692,1883,2008,2216,2384,2478,2569",
-                        "endColumns": "103,187,123,107,212,124,137,126,207,104,190,124,207,167,93,90,104",
-                        "endOffsets": "355,543,667,775,988,1113,1251,1378,1586,1691,1882,2007,2215,2383,2477,2568,2673"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,59",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3848,3956,4144,4272,4384,4597,4726,4868,5188,5396,5505,5696,5825,6033,6205,6303,6398",
-                        "endColumns": "107,187,127,111,212,128,141,130,207,108,190,128,207,171,97,94,108",
-                        "endOffsets": "3951,4139,4267,4379,4592,4721,4863,4994,5391,5500,5691,5820,6028,6200,6298,6393,6502"
+                        "startLines": "115",
+                        "startColumns": "4",
+                        "startOffsets": "10805",
+                        "endColumns": "100",
+                        "endOffsets": "10901"
                     }
                 }
             ]

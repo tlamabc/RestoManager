@@ -43,6 +43,7 @@ drawable explore1_background
 drawable explore2
 drawable eye
 drawable heart
+drawable hh
 drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
