@@ -4,7 +4,24 @@
             "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-31:/values-pa/values-pa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\58b07198376f67aef2aac074a201ccd5\\transformed\\core-1.9.0\\res\\values-pa\\values-pa.xml",
+                    "source": "C:\\Users\\TUF GAMING\\.gradle\\caches\\transforms-3\\f1e25671ccb7b807978fdceaa88e66df\\transformed\\play-services-basement-17.1.0\\res\\values-pa\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "209",
+                        "endOffsets": "456"
+                    },
+                    "to": {
+                        "startLines": "49",
+                        "startColumns": "4",
+                        "startOffsets": "4873",
+                        "endColumns": "209",
+                        "endOffsets": "5078"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\TUF GAMING\\.gradle\\caches\\transforms-3\\58b07198376f67aef2aac074a201ccd5\\transformed\\core-1.9.0\\res\\values-pa\\values-pa.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\d476715df036646142b5c2874a942f2b\\transformed\\appcompat-1.6.1\\res\\values-pa\\values-pa.xml",
+                    "source": "C:\\Users\\TUF GAMING\\.gradle\\caches\\transforms-3\\d476715df036646142b5c2874a942f2b\\transformed\\appcompat-1.6.1\\res\\values-pa\\values-pa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\3f0bee673dd301dd5fa353fb2a75ddd0\\transformed\\material-1.9.0\\res\\values-pa\\values-pa.xml",
+                    "source": "C:\\Users\\TUF GAMING\\.gradle\\caches\\transforms-3\\3f0bee673dd301dd5fa353fb2a75ddd0\\transformed\\material-1.9.0\\res\\values-pa\\values-pa.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +74,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\f0349691b31a9c18f36c50f62be31614\\transformed\\play-services-base-17.1.0\\res\\values-pa\\values.xml",
+                    "source": "C:\\Users\\TUF GAMING\\.gradle\\caches\\transforms-3\\f0349691b31a9c18f36c50f62be31614\\transformed\\play-services-base-17.1.0\\res\\values-pa\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -71,23 +88,6 @@
                         "startOffsets": "3703,3812,4017,4149,4260,4466,4597,4740,5083,5304,5415,5619,5753,5965,6156,6252,6348",
                         "endColumns": "108,204,131,110,205,130,142,132,220,110,203,133,211,190,95,95,110",
                         "endOffsets": "3807,4012,4144,4255,4461,4592,4735,4868,5299,5410,5614,5748,5960,6151,6247,6343,6454"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\TRANVIETVUONG\\.gradle\\caches\\transforms-3\\f1e25671ccb7b807978fdceaa88e66df\\transformed\\play-services-basement-17.1.0\\res\\values-pa\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "209",
-                        "endOffsets": "456"
-                    },
-                    "to": {
-                        "startLines": "49",
-                        "startColumns": "4",
-                        "startOffsets": "4873",
-                        "endColumns": "209",
-                        "endOffsets": "5078"
                     }
                 }
             ]
