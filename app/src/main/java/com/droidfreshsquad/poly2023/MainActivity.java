@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -261,6 +263,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     //sign out method
     public void signOut() {

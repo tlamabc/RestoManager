@@ -32,6 +32,15 @@
         android:theme="@style/MyAppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.droidfreshsquad.poly2023.ScreenMainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.droidfreshsquad.poly2023.datve.Ngay_thang_nam"
             android:exported="false" />
         <activity
@@ -39,13 +48,8 @@
             android:exported="true" />
         <activity
             android:name="com.droidfreshsquad.poly2023.SplashActivity"
-            android:exported="true"
+            android:exported="false"
             android:windowSoftInputMode="adjustResize" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.droidfreshsquad.poly2023.LoginActivity"
