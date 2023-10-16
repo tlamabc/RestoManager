@@ -2948,6 +2948,7 @@ drawable add
 drawable avd_hide_password
 drawable avd_show_password
 drawable bg_edt
+drawable border_buttom
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3191,6 +3192,13 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnMinusEmBe
+id btnMinusLon
+id btnMinusTreEm
+id btnPlusEmBe
+id btnPlusLon
+id btnPlusTreEm
+id btnSoKhach
 id btn_back
 id btn_login
 id btn_reset_password
@@ -3281,7 +3289,6 @@ id edge
 id edit_query
 id edtdiemden
 id edtdiemdi
-id edtsohanhkhach
 id edtthoigian
 id elastic
 id email
@@ -3429,6 +3436,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id newPassword
 id new_email
+id ngayve01
 id noScroll
 id noState
 id none
@@ -3556,6 +3564,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id swKhuhoi
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3592,7 +3601,6 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
-id toolbardatdon
 id top
 id topPanel
 id touch_outside
@@ -3604,9 +3612,14 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvNgayVe
+id tvNumberEmBe
+id tvNumberLon
+id tvNumberTreEm
 id tvdiemden
 id tvdiemdi
 id tvsohanhkhach
+id txtthoigian
 id unchecked
 id uniform
 id unlabeled
@@ -3769,6 +3782,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_so_nguoi
 layout loginapp
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
