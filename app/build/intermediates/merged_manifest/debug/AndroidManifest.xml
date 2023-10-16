@@ -57,7 +57,7 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.droidfreshsquad.poly2023.SignupActivity"
-            android:exported="false"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.BookingActivity"

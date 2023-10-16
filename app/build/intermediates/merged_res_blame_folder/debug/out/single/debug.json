@@ -104,12 +104,20 @@
         "source": "com.droidfreshsquad.poly2023.app-main-35:/drawable/ic_launcher_foreground.xml"
     },
     {
+        "merged": "com.droidfreshsquad.poly2023.app-merged_res-33:/layout_dialog_so_nguoi.xml.flat",
+        "source": "com.droidfreshsquad.poly2023.app-main-35:/layout/dialog_so_nguoi.xml"
+    },
+    {
         "merged": "com.droidfreshsquad.poly2023.app-merged_res-33:/drawable_pencil.png.flat",
         "source": "com.droidfreshsquad.poly2023.app-main-35:/drawable/pencil.png"
     },
     {
         "merged": "com.droidfreshsquad.poly2023.app-merged_res-33:/drawable_add.png.flat",
         "source": "com.droidfreshsquad.poly2023.app-main-35:/drawable/add.png"
+    },
+    {
+        "merged": "com.droidfreshsquad.poly2023.app-merged_res-33:/drawable_border_buttom.xml.flat",
+        "source": "com.droidfreshsquad.poly2023.app-main-35:/drawable/border_buttom.xml"
     },
     {
         "merged": "com.droidfreshsquad.poly2023.app-merged_res-33:/drawable_cat1.png.flat",

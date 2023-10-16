@@ -4,88 +4,159 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     tools:context=".datve.BookingActivity">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbardatdon"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#ff01"
-            app:title="Đặt đơn">
-        </androidx.appcompat.widget.Toolbar>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Mua Vé Máy Bay"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tvdiemdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Điểm đi"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/edtdiemdi"
-                android:textSize="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"/>
+                android:inputType="text"
+                android:textSize="20dp" />
+
             <TextView
-                android:textSize="20dp"
                 android:id="@+id/tvdiemden"
-                android:text="Điểm đến"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <EditText
+                android:layout_height="wrap_content"
+                android:text="Điểm đến"
                 android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
                 android:id="@+id/edtdiemden"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"/>
-            <TextView
-                android:textSize="20dp"
-                android:id="@+id/edtthoigian"
-                android:text="Ngày/tháng/năm"
-                android:textStyle="bold"
-                android:background="@color/colorAccent"
-                android:gravity="center_vertical"
-                android:layout_width="match_parent"
-                android:layout_height="200px"/>
-            <TextView
-                android:textSize="20dp"
-                android:id="@+id/tvsohanhkhach"
-                android:text="Số hành khách"
-                android:textStyle="bold"
+                android:inputType="text"
+                android:textSize="20dp" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:textSize="20dp"
-                android:id="@+id/edtsohanhkhach"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"/>
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtthoigian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày Đi"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/edtthoigian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="dd/MM/yyyy"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Khứ Hồi"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <Switch
+                        android:id="@+id/swKhuhoi"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/ngayve01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày Về"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvNgayVe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:hint="dd/MM/yyyy"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số hành khách"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvsohanhkhach"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textSize="20dp"
+                android:hint="1 người lớn"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+
             <Button
                 android:id="@+id/btndatve"
-                android:text="Đặt vé"
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Tìm chuyến bay"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <ViewFlipper
                 android:id="@+id/viewFlipper"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </ViewFlipper>
+                android:layout_height="match_parent"></ViewFlipper>
         </LinearLayout>
-
-
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
