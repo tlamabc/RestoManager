@@ -1,18 +1,18 @@
-#Mon Oct 16 18:10:22 ICT 2023
+#Thu Oct 19 09:25:14 ICT 2023
 base.0=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.4=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.5=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.6=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.3=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.4=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.5=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.6=C\:\\Users\\DMX\\AndroidStudioProjects\\DUANTOTNGHIEP\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex
-path.3=8/classes.dex
-path.4=classes2.dex
-path.5=12/classes.dex
-path.6=14/classes.dex
+path.3=12/classes.dex
+path.4=14/classes.dex
+path.5=8/classes.dex
+path.6=classes2.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
