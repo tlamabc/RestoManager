@@ -16,10 +16,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".datve.DanhSachBay"
+            android:exported="false" />
+        <activity
             android:name=".ScreenMainActivity"
-            android:exported="true"
-
-            >   </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".datve.Ngay_thang_nam"
             android:exported="false" />

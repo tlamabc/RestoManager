@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.CompoundButton;
 
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.ResetPasswordActivity;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.text.SimpleDateFormat;
@@ -26,7 +27,7 @@ public class BookingActivity extends AppCompatActivity {
     private Switch swKhuhoi;
     BottomSheetDialog dialog;
     private TextView tvNumberLon, tvNumberTreEm, tvNumberEmBe;
-    private Button btnPlusLon, btnPlusTreEm, btnPlusEmBe, btnMinusLon, btnMinusTreEm, btnMinusEmBe, btnSoKhach;
+    private Button btnPlusLon, btnPlusTreEm, btnPlusEmBe, btnMinusLon, btnMinusTreEm, btnMinusEmBe, btnSoKhach,btndatve;
     private int numberLon = 1, numberTreEm = 0, numberEmBe = 0;
     private boolean isDatePickerVisible = false;
 
@@ -41,8 +42,15 @@ public class BookingActivity extends AppCompatActivity {
         ngayve01 = (TextView) findViewById(R.id.ngayve01);
         edtthoigian = (TextView) findViewById(R.id.edtthoigian);
         tvsohanhkhach = (TextView) findViewById(R.id.tvsohanhkhach);
+        btndatve =(Button) findViewById(R.id.btndatve);
 
-
+//Bấm Tìm kiếm chuyển sang màng hình Danh Sách chuyến bay
+        btndatve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BookingActivity.this, DanhSachBay.class));
+            }
+        });
 // Tạo bottom sheet dialog chọn số lượng người
         dialog = new BottomSheetDialog(this);
         // Tạo giao diện cho bottom sheet dialog

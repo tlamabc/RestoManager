@@ -29,14 +29,14 @@ public class Ngay_thang_nam extends AppCompatActivity {
                 int month = datePicker.getMonth();
                 int dayOfMonth = datePicker.getDayOfMonth();
 
-                // Tạo intent để trả về màn hình A
+                // Tạo intent để trả về màn hình booking
                 Intent intent = new Intent();
                 intent.putExtra("date", dayOfMonth + "/" + (month + 1) + "/" + year);
 
                 // Đặt kết quả cho intent
                 setResult(RESULT_OK, intent);
 
-                // Kết thúc màn hình B
+                // Kết thúc màn hình ngay thang nam
                 finish();
             }
         });
