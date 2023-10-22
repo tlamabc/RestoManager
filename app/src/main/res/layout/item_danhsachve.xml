@@ -51,10 +51,12 @@
         android:background="@drawable/border_radius_15dp"/>
 
     <TextView
+        android:id="@+id/tvmuave"
         android:layout_width="60dp"
         android:layout_height="match_parent"
         android:text="Mua"
-        android:gravity="center"    android:layout_marginLeft="1dp"
-        android:background="@drawable/border_radius_top_tren_duoi"
+        android:gravity="center"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/stylebutton"
         android:textStyle="bold"/>
 </LinearLayout>

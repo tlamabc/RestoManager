@@ -1,34 +1,30 @@
 package com.droidfreshsquad.poly2023.datve;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.CompoundButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.droidfreshsquad.poly2023.R;
-import com.droidfreshsquad.poly2023.ResetPasswordActivity;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 public class BookingActivity extends AppCompatActivity {
     private TextView edtthoigian, tvNgayVe, ngayve01, tvsohanhkhach;
     private Switch swKhuhoi;
     BottomSheetDialog dialog;
     private TextView tvNumberLon, tvNumberTreEm, tvNumberEmBe;
-    private Button btnPlusLon, btnPlusTreEm, btnPlusEmBe, btnMinusLon, btnMinusTreEm, btnMinusEmBe, btnSoKhach,btndatve;
-    private int numberLon = 1, numberTreEm = 0, numberEmBe = 0;
+    private Button btnPlusLon, btnPlusTreEm, btnPlusEmBe, btnMinusLon, btnMinusTreEm, btnMinusEmBe, btnSoKhach, btndatve;
+    private int numberLon = 1, numberTreEm = 0, numberEmBe = 0, tongNumber = numberEmBe + numberLon + numberTreEm;
     private boolean isDatePickerVisible = false;
 
     @SuppressLint("MissingInflatedId")
@@ -42,13 +38,13 @@ public class BookingActivity extends AppCompatActivity {
         ngayve01 = (TextView) findViewById(R.id.ngayve01);
         edtthoigian = (TextView) findViewById(R.id.edtthoigian);
         tvsohanhkhach = (TextView) findViewById(R.id.tvsohanhkhach);
-        btndatve =(Button) findViewById(R.id.btndatve);
+        btndatve = (Button) findViewById(R.id.btndatve);
 
 //Bấm Tìm kiếm chuyển sang màng hình Danh Sách chuyến bay
         btndatve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BookingActivity.this, DanhSachBay.class));
+                LayNumBer();
             }
         });
 // Tạo bottom sheet dialog chọn số lượng người
@@ -56,10 +52,11 @@ public class BookingActivity extends AppCompatActivity {
         // Tạo giao diện cho bottom sheet dialog
         View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_so_nguoi, null);
         dialog.setContentView(viewDialog);
+        // Hiển thị bottom sheet dialog
         tvsohanhkhach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.show(); // Hiển thị bottom sheet dialog
+                dialog.show();
             }
         });
         // id người lớn
@@ -141,7 +138,7 @@ public class BookingActivity extends AppCompatActivity {
             }
         });
 
-        //Thêm sự kiện cho bottom sheet dialog
+        //Thêm sự kiện  khi dialog đóng sẽ hiển thị ra view
         dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
             @Override
             public void onDismiss(DialogInterface dialog) {
@@ -158,7 +155,6 @@ public class BookingActivity extends AppCompatActivity {
                 tvsohanhkhach.setText(numbersText.toString());//in ra textView
             }
         });
-
 
 //bấm vào textview chuyển sang màng hình chọn ngày
         edtthoigian.setOnClickListener(new View.OnClickListener() {
@@ -188,14 +184,15 @@ public class BookingActivity extends AppCompatActivity {
         //------//
     }
 
-    //lấy ngày tháng năm hiển thị ra textview
+//lấy ngày tháng năm hiển thị ra textview
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && resultCode == RESULT_OK) {
             // Lấy ngày tháng năm đã chọn
             String date = data.getStringExtra("date");
-            edtthoigian.setText(date);
+            String dayOfWeek = data.getStringExtra("dayOfWeek");
+            edtthoigian.setText(dayOfWeek + ", " + date);
 
             // Cộng thêm 5 ngày vào ngày tháng năm đã chọn
             Calendar calendar = Calendar.getInstance();
@@ -203,15 +200,55 @@ public class BookingActivity extends AppCompatActivity {
                     Integer.parseInt(date.split("/")[1]) - 1,
                     Integer.parseInt(date.split("/")[0]));
             calendar.add(Calendar.DATE, 5);
-
             // Lấy ngày tháng năm cộng thêm 5 ngày
             int newYear = calendar.get(Calendar.YEAR);
             int newMonth = calendar.get(Calendar.MONTH);
             int newDay = calendar.get(Calendar.DAY_OF_MONTH);
-
-            // Hiển thị ngày tháng năm cộng thêm 5 ngày lên textview `tvNgayDi`
-            tvNgayVe.setText(newDay + "/" + (newMonth + 1) + "/" + newYear);
-
+            // Lấy thứ trong tuần cho ngày sau khi cộng thêm 5 ngày
+            String dayOfWeekAfter5Days = getDayOfWeek(calendar);
+            tvNgayVe.setText(dayOfWeekAfter5Days + ", " + newDay + "/" + (newMonth + 1) + "/" + newYear);
         }
+    }
+    // Lấy thứ trong tuần cho ngày sau khi cộng thêm 5 ngày
+    private String getDayOfWeek(Calendar calendar) {
+        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+        String dayName;
+        switch (dayOfWeek) {
+            case Calendar.SUNDAY:
+                dayName = "Chủ Nhật";
+                break;
+            case Calendar.MONDAY:
+                dayName = "Thứ Hai";
+                break;
+            case Calendar.TUESDAY:
+                dayName = "Thứ Ba";
+                break;
+            case Calendar.WEDNESDAY:
+                dayName = "Thứ Tư";
+                break;
+            case Calendar.THURSDAY:
+                dayName = "Thứ Năm";
+                break;
+            case Calendar.FRIDAY:
+                dayName = "Thứ Sáu";
+                break;
+            case Calendar.SATURDAY:
+                dayName = "Thứ Bảy";
+                break;
+            default:
+                dayName = "Không xác định";
+                break;
+        }
+        return dayName;
+    }
+
+//lấy number và chuyển sang màng hình DanhSachBay
+    public void LayNumBer() {
+        Intent intent = new Intent(BookingActivity.this, DanhSachBay.class);
+        intent.putExtra("numberLon", numberLon);
+        intent.putExtra("numberTreEm", numberTreEm);
+        intent.putExtra("numberEmBe", numberEmBe);
+        intent.putExtra("tongNumber", tongNumber);
+        startActivityForResult(intent, 1);
     }
 }
