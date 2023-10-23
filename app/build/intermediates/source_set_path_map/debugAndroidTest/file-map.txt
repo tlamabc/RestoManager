@@ -1,0 +1,6 @@
+com.droidfreshsquad.poly2023.test.app-core-1.5.0-0 C:\Users\dangt\.gradle\caches\transforms-3\a7b9b874bea15622665ec6ad115e943d\transformed\core-1.5.0\res
+com.droidfreshsquad.poly2023.test.app-annotation-experimental-1.3.0-1 C:\Users\dangt\.gradle\caches\transforms-3\c9e5227391e030ba735d85ac50e17d58\transformed\annotation-experimental-1.3.0\res
+com.droidfreshsquad.poly2023.test.app-androidTest-2 D:\DroidFresh Squad\app\build\generated\res\resValues\androidTest\debug
+com.droidfreshsquad.poly2023.test.app-mergeDebugAndroidTestResources-3 D:\DroidFresh Squad\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.droidfreshsquad.poly2023.test.app-mergeDebugAndroidTestResources-4 D:\DroidFresh Squad\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.droidfreshsquad.poly2023.test.app-merged_res-5 D:\DroidFresh Squad\app\build\intermediates\merged_res\debugAndroidTest
