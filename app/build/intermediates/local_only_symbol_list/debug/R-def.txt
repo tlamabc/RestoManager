@@ -46,7 +46,6 @@ drawable explore1_background
 drawable explore2
 drawable eye
 drawable heart
-drawable hh
 drawable home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -91,6 +90,7 @@ id change_email_button
 id change_password_button
 id chat
 id datePicker
+id dateTextView
 id datve
 id edtdiemden
 id edtdiemdi
@@ -104,13 +104,14 @@ id imageView2
 id imgLogo
 id linearLayout
 id linearLayout1
+id listViewDanhSachBay
 id login
-id lvchuyenbay
 id mainLayout
 id menu_favorite
 id menu_home
 id menu_setting
 id name
+id nameTextView
 id nameView
 id newPassword
 id new_email
@@ -121,12 +122,14 @@ id password
 id phone
 id phoneView
 id place_image
+id priceTextView
 id progressBar
 id progressBar1
 id recyclerview1
 id recyclerview2
 id remove
 id remove_user_button
+id scheduledTextView
 id scrollView2
 id send
 id sending_pass_reset_button
@@ -153,7 +156,6 @@ layout activity_booking
 layout activity_main
 layout activity_reset_password
 layout activity_screen_main
-layout activity_splash
 layout danh_sach_bay
 layout dialog_so_nguoi
 layout dialog_thongtinkhach
@@ -163,6 +165,7 @@ layout ngay_thang_nam
 layout signupapp
 layout testfigma
 layout thong_tin_thanh_toan
+layout ticket_item
 layout viewhodel_category
 layout viewhodel_explore
 menu menu_bottom_navigation
@@ -186,6 +189,7 @@ string change_email
 string change_password
 string default_web_client_id
 string email
+string firebase_database_url
 string forgot_password_msg
 string gcm_defaultSenderId
 string google_api_key

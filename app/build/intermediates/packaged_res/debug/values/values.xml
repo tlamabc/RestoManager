@@ -39,8 +39,9 @@ Firebase now!</string>
     <string name="btn_sign_out">Sign Out</string>
     <string name="change_email">Change Email</string>
     <string name="change_password">Change Password</string>
-    <string name="default_web_client_id" translatable="false">371151189396-nq10pn7vokd3m29n38vs7hnjuq4m909i.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">371151189396-nd8m2tvmn2l65iep4jk74vhkav0cuboi.apps.googleusercontent.com</string>
     <string name="email">--Email--</string>
+    <string name="firebase_database_url" translatable="false">https://resto-manager-f2ead-default-rtdb.asia-southeast1.firebasedatabase.app</string>
     <string name="forgot_password_msg">We just need your registered Email Id
 to sent you password reset instructions.</string>
     <string name="gcm_defaultSenderId" translatable="false">371151189396</string>

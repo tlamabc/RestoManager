@@ -46,4 +46,10 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     //glide
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+    //database
+    implementation ("com.google.firebase:firebase-database:20.0.0")
+
+
+    implementation(platform("com.google.firebase:firebase-bom:32.4.0"))
+
 }

@@ -1,45 +1,56 @@
 package com.droidfreshsquad.poly2023.datve;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
-
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import android.widget.ListView;
+import java.util.ArrayList;
 import com.droidfreshsquad.poly2023.R;
-
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 public class DanhSachBay extends AppCompatActivity {
-    TextView tvmuave;
+    ListView listViewDanhSachBay;
+    DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_danhsachve);//bỏ thử item sau có dữ liệu thì bỏ danhsachbay.xml (cho item hiển thị lên listview danhssachbay.xml)
-        tvmuave = (TextView) findViewById(R.id.tvmuave);
+        setContentView(R.layout.danh_sach_bay);
 
-        tvmuave.setOnClickListener(new View.OnClickListener() {
+        listViewDanhSachBay = findViewById(R.id.listViewDanhSachBay);
+
+        // Kết nối đến Firebase Realtime Database
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        // Lắng nghe dữ liệu từ Firebase Realtime Database
+        mDatabase.child("list_ticket").addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                layNumbe();
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    ArrayList<Ticket> tickets = new ArrayList<>();
+
+                    for (DataSnapshot ticketSnapshot : dataSnapshot.getChildren()) {
+                        Ticket ticket = ticketSnapshot.getValue(Ticket.class);
+                        if (ticket != null) {
+                            tickets.add(ticket);
+                        }
+                    }
+
+                    // Tạo một CustomAdapter để hiển thị danh sách vé máy bay
+                    TicketAdapter adapter = new TicketAdapter(DanhSachBay.this, tickets);
+                    listViewDanhSachBay.setAdapter(adapter);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                // Xử lý lỗi nếu có
             }
         });
-    }
-
-
-    //lấy number sang màng hình ThongTinThanhToan
-    private void layNumbe() {
-        Intent intent = getIntent();
-        int numberLon = intent.getIntExtra("numberLon", 0);
-        int numberTreEm = intent.getIntExtra("numberTreEm", 0);
-        int numberEmBe = intent.getIntExtra("numberEmBe", 0);
-        int tongNumber = intent.getIntExtra("tongNumber", 0);
-
-        Intent intent1 = new Intent(DanhSachBay.this, ThongTinThanhToan.class);
-        intent1.putExtra("numberLon", numberLon);
-        intent1.putExtra("numberTreEm", numberTreEm);
-        intent1.putExtra("numberEmBe", numberEmBe);
-        intent1.putExtra("tongNumber", tongNumber);
-        startActivityForResult(intent1, 2);
     }
 }

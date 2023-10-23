@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">371151189396-nq10pn7vokd3m29n38vs7hnjuq4m909i.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">371151189396-nd8m2tvmn2l65iep4jk74vhkav0cuboi.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://resto-manager-f2ead-default-rtdb.asia-southeast1.firebasedatabase.app</string>
     <string name="gcm_defaultSenderId" translatable="false">371151189396</string>
     <string name="google_api_key" translatable="false">AIzaSyDdqPl0eZTz8_8TmKxeZc1zhAJGytSo9KU</string>
     <string name="google_app_id" translatable="false">1:371151189396:android:092cb150bda9242d510b81</string>
