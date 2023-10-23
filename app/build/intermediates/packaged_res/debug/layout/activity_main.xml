@@ -75,6 +75,17 @@
             tools:ignore="InvalidImeActionId" />
 
         <Button
+            android:id="@+id/datve"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF0000"
+            android:text="đặt vé"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
             android:id="@+id/changeEmail"
             style="?android:textAppearanceSmall"
             android:layout_width="wrap_content"
@@ -155,20 +166,11 @@
             android:text="@string/send_password_reset_email"
             android:textStyle="bold"
             android:backgroundTint="@color/background"/>
-        <Button
-            android:textColor="@color/white"
-            android:id="@+id/datve"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="đặt vé"
-            android:textStyle="bold"
-            android:backgroundTint="@color/background"/>
+
 
 
         <Button
-            android:textColor="@color/white"
+            android:textColor="#FF0000"
             android:id="@+id/remove_user_button"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
@@ -186,7 +188,7 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/background"
             android:text="@string/btn_sign_out"
-            android:textColor="@color/background"
+            android:textColor="#000000"
             android:textStyle="bold" />
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
