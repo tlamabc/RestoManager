@@ -32,9 +32,14 @@
         android:theme="@style/MyAppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.droidfreshsquad.poly2023.datve.ThongTinThanhToan"
+            android:exported="false" />
+        <activity
+            android:name="com.droidfreshsquad.poly2023.datve.DanhSachBay"
+            android:exported="false" />
+        <activity
             android:name="com.droidfreshsquad.poly2023.ScreenMainActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.Ngay_thang_nam"
             android:exported="false" />
