@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.loginapp);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
         btnSignup = (Button) findViewById(R.id.btn_signup);
         btnLogin = (Button) findViewById(R.id.btn_login);
         btnReset = (Button) findViewById(R.id.btn_reset_password);
@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Enter password !", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                progressBar.setVisibility(View.VISIBLE);
+
 //authenticate user
 
                 auth.signInWithEmailAndPassword(email, password)
@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
 
                  public void onComplete(@NonNull Task<AuthResult> task) {
-                   progressBar.setVisibility(View.GONE);
+
                                         if (!task.isSuccessful()) {
 // there was an error
                                             if (password.length() < 6) {

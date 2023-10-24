@@ -60,6 +60,7 @@ drawable pencil
 drawable remove_icon
 drawable setting
 drawable stylebutton
+drawable styleforgot
 drawable trash
 drawable user
 drawable vien_gach_dut

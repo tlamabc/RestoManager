@@ -91,13 +91,18 @@
                     android:text="Password"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/password"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/remove_icon"
-                    android:hint="Nhập mật khẩu"
-                    android:inputType="textPassword" />
+                    app:passwordToggleEnabled="true">
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/remove_icon"
+                        android:hint="Nhập mật khẩu"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="10dp" />
@@ -108,14 +113,19 @@
                     android:text="Confirm Password"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/password"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/remove_icon"
-                    android:hint="Nhập lại mật khẩu "
-                    android:inputType="textPassword"
-                    tools:ignore="DuplicateIds" />
+                    app:passwordToggleEnabled="true">
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/remove_icon"
+                        android:hint="Nhập lại mật khẩu "
+                        android:inputType="textPassword"
+                        tools:ignore="DuplicateIds" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"

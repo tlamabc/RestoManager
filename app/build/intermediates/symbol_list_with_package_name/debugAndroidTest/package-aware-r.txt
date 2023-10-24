@@ -1,3 +1,0 @@
-com.droidfreshsquad.poly2023.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
