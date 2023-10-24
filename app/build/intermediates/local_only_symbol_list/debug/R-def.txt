@@ -141,6 +141,7 @@ id swKhuhoi
 id textView
 id textView2
 id textView3
+id textView4
 id toolbar
 id tvNgayVe
 id tvNumberEmBe

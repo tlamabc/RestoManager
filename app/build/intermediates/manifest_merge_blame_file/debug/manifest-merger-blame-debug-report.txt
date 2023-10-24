@@ -9,8 +9,8 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:5:5-67
-11-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:26:5-79
 12-->[com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:26:22-76
@@ -27,101 +27,101 @@
 18-->[androidx.core:core:1.9.0] C:\Users\dangt\.gradle\caches\transforms-3\58b07198376f67aef2aac074a201ccd5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:7:5-55:19
+20-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:7:5-55:19
 21        android:allowBackup="true"
-21-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:8:9-35
+21-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:8:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.9.0] C:\Users\dangt\.gradle\caches\transforms-3\58b07198376f67aef2aac074a201ccd5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:9:9-65
+23-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:9:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:10:9-54
+26-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:10:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:11:9-43
+27-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:11:9-43
 28        android:label="Easy Fly"
-28-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:12:9-33
+28-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:12:9-33
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:13:9-54
+29-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:13:9-54
 30        android:supportsRtl="true"
-30-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:14:9-35
+30-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:14:9-35
 31        android:testOnly="true"
 32        android:theme="@style/MyAppTheme"
-32-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:15:9-42
+32-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:15:9-42
 33        android:usesCleartextTraffic="true" >
-33-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:16:9-44
+33-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:16:9-44
 34        <activity
-34-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:18:9-20:40
+34-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:18:9-20:40
 35            android:name="com.droidfreshsquad.poly2023.datve.ThongTinThanhToan"
-35-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:19:13-52
+35-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:19:13-52
 36            android:exported="false" />
-36-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:20:13-37
+36-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:20:13-37
 37        <activity
-37-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:21:9-23:40
+37-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:21:9-23:40
 38            android:name="com.droidfreshsquad.poly2023.datve.DanhSachBay"
-38-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:22:13-46
+38-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:22:13-46
 39            android:exported="false" />
-39-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:23:13-37
+39-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:23:13-37
 40        <activity
-40-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:24:9-26:39
+40-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:24:9-26:39
 41            android:name="com.droidfreshsquad.poly2023.ScreenMainActivity"
-41-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:25:13-47
+41-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:25:13-47
 42            android:exported="true" />
-42-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:26:13-36
+42-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:26:13-36
 43        <activity
-43-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:27:9-29:40
+43-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:27:9-29:40
 44            android:name="com.droidfreshsquad.poly2023.datve.Ngay_thang_nam"
-44-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:28:13-49
+44-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:28:13-49
 45            android:exported="false" />
-45-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:29:13-37
+45-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:29:13-37
 46        <activity
-46-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:30:9-32:39
+46-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:30:9-32:39
 47            android:name="com.droidfreshsquad.poly2023.MainActivity"
-47-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:31:13-41
+47-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:31:13-41
 48            android:exported="true" />
-48-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:32:13-36
+48-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:32:13-36
 49        <activity
-49-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:33:9-42:20
+49-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:33:9-42:20
 50            android:name="com.droidfreshsquad.poly2023.LoginActivity"
-50-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:34:13-42
+50-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:34:13-42
 51            android:exported="true"
-51-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:35:13-36
+51-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:35:13-36
 52            android:windowSoftInputMode="adjustResize" >
-52-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:36:13-55
+52-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:36:13-55
 53            <intent-filter>
-53-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:37:13-41:29
+53-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:37:13-41:29
 54                <action android:name="android.intent.action.MAIN" />
-54-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:38:17-69
-54-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:38:25-66
+54-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:38:17-69
+54-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:38:25-66
 55
 56                <category android:name="android.intent.category.LAUNCHER" />
-56-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:40:17-77
-56-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:40:27-74
+56-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:40:17-77
+56-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:40:27-74
 57            </intent-filter>
 58        </activity>
 59        <activity
-59-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:44:9-47:58
+59-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:44:9-47:58
 60            android:name="com.droidfreshsquad.poly2023.SignupActivity"
-60-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:45:13-43
+60-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:45:13-43
 61            android:exported="true"
-61-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:46:13-36
+61-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:46:13-36
 62            android:windowSoftInputMode="adjustResize" />
-62-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:47:13-55
+62-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:47:13-55
 63        <activity
-63-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:48:9-51:58
+63-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:48:9-51:58
 64            android:name="com.droidfreshsquad.poly2023.datve.BookingActivity"
-64-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:49:13-50
+64-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:49:13-50
 65            android:exported="false"
-65-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:50:13-37
+65-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:50:13-37
 66            android:windowSoftInputMode="adjustResize" />
-66-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:51:13-55
+66-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:51:13-55
 67        <activity
-67-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:52:9-54:46
+67-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:52:9-54:46
 68            android:name="com.droidfreshsquad.poly2023.ResetPasswordActivity"
-68-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:53:13-50
+68-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:53:13-50
 69            android:label="Reset Password" />
-69-->D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:54:13-43
+69-->C:\Users\dangt\Desktop\VCS\app\src\main\AndroidManifest.xml:54:13-43
 70        <activity
 70-->[com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:29:9-46:20
 71            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
