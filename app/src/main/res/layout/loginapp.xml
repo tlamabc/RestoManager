@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
     android:orientation="vertical"
-
     android:padding="10dp">
+
 
 
     <RelativeLayout
@@ -37,7 +37,6 @@
             app:cardCornerRadius="28dp"
             android:layout_marginBottom="-20dp"
             >
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="480dp"
@@ -92,13 +91,19 @@
                     android:alpha="0.7"
                     android:text="Password"
                     android:textStyle="bold"/>
-
-                <EditText
-                    android:id="@+id/password"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/remove_icon"
-                    android:inputType="textPassword"/>
+                    app:passwordToggleEnabled="true">
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/remove_icon"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
 
 
                 <RelativeLayout
@@ -118,7 +123,9 @@
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/progressBar"
                         android:layout_centerVertical="true"
-                        android:text="I forgot my password" />
+                        android:text="I forgot my password"
+                        android:textColor="#ff0000"
+                        />
                 </RelativeLayout>
 
 
