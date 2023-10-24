@@ -74,16 +74,7 @@
             android:singleLine="true"
             tools:ignore="InvalidImeActionId" />
 
-        <Button
-            android:id="@+id/datve"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="match_parent"
-            android:layout_height="153dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#FF0000"
-            android:text="đặt vé"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+
 
         <Button
             android:id="@+id/changeEmail"

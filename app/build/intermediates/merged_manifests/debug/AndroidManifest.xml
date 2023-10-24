@@ -32,6 +32,9 @@
         android:theme="@style/MyAppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.droidfreshsquad.poly2023.Fragment.FragmentMain"
+            android:exported="false" />
+        <activity
             android:name="com.droidfreshsquad.poly2023.datve.ThongTinThanhToan"
             android:exported="false" />
         <activity

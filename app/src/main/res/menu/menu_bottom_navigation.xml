@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:id="@+id/menu_home" android:title="Menu" android:icon="@drawable/home"/>
-    <item android:id="@+id/menu_favorite" android:title="Add Product" android:icon="@drawable/add"/>
-    <item android:id="@+id/chat" android:title="Chat" android:icon="@drawable/chat"/>
-    <item android:id="@+id/menu_setting" android:title="Setting" android:icon="@drawable/user"/>
+<item android:id="@+id/menu_trangchu" android:title="Trang chủ" android:icon="@drawable/home"/>
+    <item android:id="@+id/menu_datve" android:title="Đặt vé" android:icon="@drawable/add"/>
+    <item android:id="@+id/menu_lienhe" android:title="Liện hệ" android:icon="@drawable/chat"/>
+    <item android:id="@+id/menu_hoso" android:title="Hồ sơ" android:icon="@drawable/user"/>
 
 
 

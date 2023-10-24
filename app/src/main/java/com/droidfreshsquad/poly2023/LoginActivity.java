@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
+import com.droidfreshsquad.poly2023.Fragment.FragmentMain;
 import com.droidfreshsquad.poly2023.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -110,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
                                             }
                                         } else {
                                             Intent intent = new
-                                                    Intent(LoginActivity.this, MainActivity.class);
+                                                    Intent(LoginActivity.this, FragmentMain.class);
                                             startActivity(intent);
 
                                             finish();

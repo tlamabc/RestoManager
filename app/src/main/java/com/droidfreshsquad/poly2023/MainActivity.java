@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         newEmail = (EditText) findViewById(R.id.new_email);
         password = (EditText) findViewById(R.id.password);
         newPassword = (EditText) findViewById(R.id.newPassword);
-        datve =(Button) findViewById(R.id.datve);
+//        datve =(Button) findViewById(R.id.datve);
         oldEmail.setVisibility(View.GONE);
         newEmail.setVisibility(View.GONE);
         password.setVisibility(View.GONE);
@@ -96,13 +96,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /////////////////demo dat ve
-        datve.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BookingActivity.class));
-            }});
-        //---------------------------
+
 
         changeEmail.setOnClickListener(new View.OnClickListener() {
             @Override

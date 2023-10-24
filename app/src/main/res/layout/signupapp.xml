@@ -16,12 +16,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
             android:orientation="vertical"
             android:padding="20dp">
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="171dp"
+                android:layout_height="155dp"
                 android:layout_gravity="center"
                 android:src="@drawable/logo" />
 
@@ -38,11 +40,11 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="480dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="10dp">
 
-<!--                android:card="28dp"-->
+                <!--                android:card="28dp"-->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -95,6 +97,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:passwordToggleEnabled="true">
+
                     <EditText
                         android:id="@+id/password"
                         android:layout_width="match_parent"
@@ -103,9 +106,11 @@
                         android:hint="Nhập mật khẩu"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="10dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -117,6 +122,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:passwordToggleEnabled="true">
+
                     <EditText
                         android:id="@+id/password"
                         android:layout_width="match_parent"
@@ -137,8 +143,8 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:alpha="0.7"
-                        android:textColor="#403F3F"
-                        android:text="I agree to your privacy policy and terms condition"/>
+                        android:text="I agree to your privacy policy and terms condition"
+                        android:textColor="#403F3F" />
 
 
                 </RelativeLayout>
@@ -157,7 +163,7 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/stylebutton"
                     android:text="REGISTER"
-                    app:cornerRadius="32dp"/>
+                    app:cornerRadius="32dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -165,6 +171,7 @@
                     android:layout_gravity="center"
                     android:alpha="0.7"
                     android:text="Do you already have an account?" />
+
                 <Button
                     android:id="@+id/sign_in_button"
                     android:layout_width="match_parent"
@@ -173,7 +180,7 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/stylebutton"
                     android:text="BACK TO LOGIN"
-                    app:cornerRadius="32dp"/>
+                    app:cornerRadius="32dp" />
 
             </LinearLayout>
 
