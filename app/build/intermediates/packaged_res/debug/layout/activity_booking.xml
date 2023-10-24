@@ -154,7 +154,7 @@
                 android:background="@drawable/stylebutton"
                 android:text="Danh sách vé máy bay có sẵn"
                 app:cornerRadius="32dp" />
-        
+
 
 
             <ViewFlipper
