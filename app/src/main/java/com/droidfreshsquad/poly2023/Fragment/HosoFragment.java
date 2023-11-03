@@ -12,47 +12,56 @@ import android.view.ViewGroup;
 import com.droidfreshsquad.poly2023.LoginActivity;
 import com.droidfreshsquad.poly2023.R;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.Toast;
+import android.widget.TextView;
+
 import com.droidfreshsquad.poly2023.MainActivity;
-import com.droidfreshsquad.poly2023.SignupActivity;
-import com.droidfreshsquad.poly2023.datve.BookingActivity;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.google.firebase.BuildConfig;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
+public class HosoFragment extends Fragment {
+    private ConstraintLayout ctlcaidat, sign_out_button;
+    private FirebaseAuth auth;
+    private TextView versionTextView;
 
-    public class HosoFragment extends Fragment {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_hoso, container, false);
 
-        ConstraintLayout ctlcaidat;
+// chức năng đăng xuất
+        auth = FirebaseAuth.getInstance();  // Khởi tạo Firebase Authentication
+        ConstraintLayout signOutButton = view.findViewById(R.id.sign_out_button);
+        signOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                auth.signOut();
+                // Chuyển người dùng trở lại màn hình đăng nhập
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+                getActivity().finish();
+            }
+        });
 
+//mật khẩu và bảo mật
+        ConstraintLayout ctlcaidat = view.findViewById(R.id.ctlcaidat);
+        ctlcaidat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-            View view = inflater.inflate(R.layout.fragment_hoso, container, false);
-
-            ConstraintLayout ctlcaidat = view.findViewById(R.id.ctlcaidat);
-            ctlcaidat.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    // Xử lý sự kiện chuyển trang ở đây
-                    // Ở đây, tôi sẽ mở BookingActivity
-                    Intent intent = new Intent(getActivity(), MainActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            return view;
-        }
+// Lấy phiên bản từ BuildConfig và hiển thị nó trên TextView
+        String versionName = BuildConfig.VERSION_NAME;
+        versionTextView = view.findViewById(R.id.versionTextView);
+        versionTextView.setText("Phiên bản: " + versionName);
+        return view;
+    }
 }
+
+
+
+
+
+
