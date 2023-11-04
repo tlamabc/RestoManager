@@ -68,11 +68,12 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/aa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
@@ -100,12 +101,11 @@
                     app:layout_constraintVertical_bias="0.483" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/ctlcaidat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
@@ -149,7 +149,7 @@
                 android:id="@+id/bb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
@@ -182,7 +182,7 @@
                 android:id="@+id/cc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
@@ -224,7 +224,7 @@
                 android:id="@+id/zz"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
@@ -253,10 +253,10 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/cccc"
+                android:id="@+id/danhgia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
@@ -288,7 +288,7 @@
                 android:id="@+id/sign_out_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
@@ -321,7 +321,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="hii"
                 android:textSize="17dp" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

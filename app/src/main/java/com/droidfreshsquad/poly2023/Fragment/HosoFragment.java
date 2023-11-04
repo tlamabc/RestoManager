@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.droidfreshsquad.poly2023.HoSo.Danh_Gia;
 import com.droidfreshsquad.poly2023.LoginActivity;
 import com.droidfreshsquad.poly2023.R;
 
@@ -20,17 +21,17 @@ import com.google.firebase.BuildConfig;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HosoFragment extends Fragment {
-    private ConstraintLayout ctlcaidat, sign_out_button;
+    private ConstraintLayout ctlcaidat, sign_out_button,danhgia;
     private FirebaseAuth auth;
     private TextView versionTextView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_hoso, container, false);
-
 // chức năng đăng xuất
         auth = FirebaseAuth.getInstance();  // Khởi tạo Firebase Authentication
         ConstraintLayout signOutButton = view.findViewById(R.id.sign_out_button);
+        ConstraintLayout danhgia = view.findViewById(R.id.danhgia);
         signOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +52,15 @@ public class HosoFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
+// nut đánh giá
+        danhgia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Danh_Gia dialog = new Danh_Gia(HosoFragment.this);
+                dialog.handleDialogEvents();
+                dialog.show();
+            }
+        });
 // Lấy phiên bản từ BuildConfig và hiển thị nó trên TextView
         String versionName = BuildConfig.VERSION_NAME;
         versionTextView = view.findViewById(R.id.versionTextView);

@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".HoSo.Danh_gia"
+            android:exported="false" />
+        <activity
             android:name=".Fragment.FragmentMain"
             android:exported="false" />
         <activity
