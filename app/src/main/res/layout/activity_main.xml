@@ -7,19 +7,11 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <android.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:elevation="0dp">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#00bcd4"
-            app:layout_scrollFlags="scroll|enterAlways" />
-    </com.google.android.material.appbar.AppBarLayout>
-
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF00BCD4" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,24 +21,36 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/ko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:visibility="invisible" />
 
         <EditText
             android:id="@+id/old_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_email"
+            android:hint="Nhập email của bạn"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:singleLine="true"/>
+            android:singleLine="true" />
 
         <EditText
             android:id="@+id/new_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_new_email"
+            android:hint="Nhập email mới"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:singleLine="true"/>
+
+            android:singleLine="true" />
 
         <EditText
             android:id="@+id/password"
@@ -66,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
-            android:hint="@string/new_pass"
+            android:hint="Nhập mật khẩu mới"
             android:imeActionId="@+id/login"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
@@ -74,7 +78,12 @@
             android:singleLine="true"
             tools:ignore="InvalidImeActionId" />
 
-
+        <Button
+            android:id="@+id/btnko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/changeEmail"
@@ -83,9 +92,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/background"
-            android:text="@string/btn_change"
+            android:text="Thay đổi"
             android:textColor="@android:color/white"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/changePass"
@@ -94,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/background"
-            android:text="@string/btn_change"
+            android:text="Thay đổi"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
@@ -105,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/background"
-            android:text="@string/btn_send"
+            android:text="giử"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
@@ -118,58 +127,65 @@
         <Button
             android:id="@+id/remove"
             style="@style/TextAppearance.AppCompat.Small"
-            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/background"
-            android:text="@string/btn_remove"/>
+            android:text="@string/btn_remove"
+            android:textColor="@color/white" />
 
         <Button
-            android:textColor="@color/white"
             android:id="@+id/change_email_button"
-            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/change_email"
-            android:textStyle="bold"
-            android:backgroundTint="@color/background"/>
+            android:backgroundTint="@color/background"
+            android:text="Đổi email cá nhân"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
-            android:textColor="@color/white"
             android:id="@+id/change_password_button"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/change_password"
-            android:textStyle="bold"
-            android:backgroundTint="@color/background"/>
+            android:backgroundTint="@color/background"
+            android:text="đổi mật Khẩu"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <Button
-            android:textColor="@color/white"
             android:id="@+id/sending_pass_reset_button"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/send_password_reset_email"
-            android:textStyle="bold"
-            android:backgroundTint="@color/background"/>
-
-
+            android:backgroundTint="@color/background"
+            android:text="giử email khôi phục mật khẩu"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/thoat"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="thoát"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
-            android:textColor="#FF0000"
             android:id="@+id/remove_user_button"
             style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/remove_user"
-            android:textStyle="bold"
-            android:backgroundTint="@color/bg_login"/>
+            android:backgroundTint="#FFFFFF"
+            android:text="xóa tài khoản"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/sign_out"
@@ -177,6 +193,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:visibility="gone"
             android:backgroundTint="@color/background"
             android:text="@string/btn_sign_out"
             android:textColor="#000000"
