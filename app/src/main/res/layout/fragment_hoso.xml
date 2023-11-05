@@ -21,9 +21,22 @@
                 android:background="@drawable/style_user"
                 android:orientation="vertical">
 
-                <TextView
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/aad"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+                    <ImageView
+                        android:id="@+id/jjjjfj"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/chuong"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
@@ -33,8 +46,8 @@
 
                     <ImageView
                         android:id="@+id/imageView"
-                        android:layout_width="162dp"
-                        android:layout_height="165dp"
+                        android:layout_width="142dp"
+                        android:layout_height="145dp"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/logochim" />
                 </androidx.cardview.widget.CardView>
@@ -46,7 +59,7 @@
                     android:layout_gravity="center"
                     android:text="USER"
                     android:textColor="#FFFFFF"
-                    android:textSize="32sp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -93,7 +106,7 @@
                     android:paddingLeft="10dp"
                     android:text="Thông tin cá nhân"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView1"
@@ -125,7 +138,7 @@
                     android:paddingLeft="10dp"
                     android:text="Mật khẩu và bảo mật"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
@@ -169,7 +182,7 @@
                     android:paddingLeft="10dp"
                     android:text="Báo cáo sự cố"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -202,7 +215,7 @@
                     android:paddingLeft="10dp"
                     android:text="Hỗ trợ thanh Toán"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -244,9 +257,8 @@
                     android:paddingLeft="10dp"
                     android:text="Điều Khoản"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView5"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.483" />
@@ -276,7 +288,7 @@
                     android:paddingLeft="10dp"
                     android:text="Đánh Giá"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView6"
@@ -308,7 +320,7 @@
                     android:paddingLeft="10dp"
                     android:text="Đăng xuất"
                     android:textColor="#FF0000"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView7"
