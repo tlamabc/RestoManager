@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00BCD4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐIỀU KHOẢN SỬ DỤNG ỨNG DỤNG EASY FLY\n"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Điều khoản sử dụng"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.1. Sử dụng hợp pháp: Bạn cam kết sử dụng ứng dụng Easy Fly chỉ cho mục đích hợp pháp và không vi phạm bất kỳ quy định pháp luật nào. Bạn chịu trách nhiệm về việc sử dụng ứng dụng của chúng tôi."
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.2. Thông tin cá nhân: Khi sử dụng ứng dụng, bạn cần cung cấp thông tin cá nhân chính xác và đảm bảo rằng thông tin này luôn được cập nhật khi có sự thay đổi. Chúng tôi bảo mật thông tin cá nhân của bạn theo Chính sách bảo mật của chúng tôi."
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Quyền sở hữu và bản quyền"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.1. Bản quyền ứng dụng: Ứng dụng Easy Fly và tất cả nội dung, thiết kế, mã nguồn, và tài liệu khác liên quan đều thuộc quyền sở hữu của công ty MobilePoly và các đối tác của chúng tôi. Bạn không được sao chép, sửa đổi hoặc phân phối bất kỳ phần nào của ứng dụng mà không có sự cho phép bằng văn bản từ chúng tôi."
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.2. Sử dụng hình ảnh và dữ liệu: Bạn đồng ý rằng chúng tôi có quyền sử dụng hình ảnh và dữ liệu mà bạn tải lên hoặc chia sẻ thông qua ứng dụng Easy Fly để phục vụ cho mục đích của ứng dụng và quảng cáo."
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Thay đổi và chấm dứt"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.1. Thay đổi điều khoản: Chúng tôi có quyền thay đổi điều khoản sử dụng này bất cứ lúc nào. Bạn nên kiểm tra thường xuyên để cập nhật với các thay đổi mới. Việc tiếp tục sử dụng ứng dụng sau khi các thay đổi này được đăng tải đồng nghĩa với việc bạn đồng ý với các thay đổi đó."
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.2. Chấm dứt sử dụng: Chúng tôi có quyền chấm dứt hoặc tạm ngừng cung cấp dịch vụ của ứng dụng Easy Fly cho bất kỳ lí do gì mà chúng tôi xem là thích hợp, mà không cần báo trước."
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Liên hệ"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nếu bạn có bất kỳ câu hỏi hoặc ý kiến đóng góp, vui lòng liên hệ với chúng tôi qua địa chỉ email: support@easyfly.com."
+                android:textColor="#666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
