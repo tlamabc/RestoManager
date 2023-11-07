@@ -2,15 +2,14 @@ package com.droidfreshsquad.poly2023.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 
+import androidx.fragment.app.Fragment;
 import com.droidfreshsquad.poly2023.R;
 import com.droidfreshsquad.poly2023.datve.BookingActivity;
 
@@ -21,7 +20,6 @@ public class HomeFragment extends Fragment {
 
     private String mParam1;
     private String mParam2;
-    private LinearLayout lnlSearch;
 
     public HomeFragment() { }
 
@@ -35,24 +33,18 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_screen_main, container, false);
+
+        WebView webView = view.findViewById(R.id.webview);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("https://www.tomorrow.io/weather/vi/VN/DN/Da_Nang/130195/");
 
         LinearLayout lnlSearch = view.findViewById(R.id.lnlSearch);
         lnlSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Xử lý sự kiện chuyển trang ở đây
-                // Ở đây, tôi sẽ mở BookingActivity
                 Intent intent = new Intent(getActivity(), BookingActivity.class);
                 startActivity(intent);
             }

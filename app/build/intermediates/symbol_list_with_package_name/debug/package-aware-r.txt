@@ -290,6 +290,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -2973,7 +2977,9 @@ drawable cat2
 drawable cat3
 drawable cat4
 drawable cat_background
+drawable cham_thang
 drawable chat
+drawable chuong
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3000,11 +3006,13 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable done_icon
+drawable duong_vien_gach_duoi
 drawable edit_text
 drawable edit_text_bg
 drawable explore1_background
 drawable explore2
 drawable eye
+drawable giu
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable heart
@@ -3023,10 +3031,16 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable icons8_avatar
+drawable icons8_card
+drawable icons8_error
+drawable icons8_like
+drawable icons8_logout
+drawable icons8_password
+drawable icons8_purchase
 drawable iconvitri
 drawable line_icon
 drawable logo
-drawable logo_login
 drawable logochim
 drawable logoeasyfly
 drawable logomanchinh
@@ -3104,11 +3118,19 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pencil
 drawable remove_icon
+drawable sao0
+drawable sao1
+drawable sao2
+drawable sao3
+drawable sao4
+drawable sao5
 drawable setting
 drawable setting_icon
+drawable style_user
 drawable stylebutton
 drawable styleforgot
 drawable test_level_drawable
+drawable thoat
 drawable timkiem_icon
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3116,6 +3138,8 @@ drawable trash
 drawable user
 drawable user_icon
 drawable vien_gach_dut
+drawable xao
+drawable xo
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3136,6 +3160,8 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id aa
+id aad
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3212,6 +3238,15 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id avatarView
+id baocao
+id baocao1
+id baocao2
+id baocao3
+id baocao4
+id baocao5
+id baocao6
+id baocao7
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3240,14 +3275,17 @@ id btn_login
 id btn_reset_password
 id btn_signup
 id btndatve
+id btnko
 id button
 id buttonPanel
+id button_send
 id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
 id categoryName
 id categoryPic
+id cc
 id center
 id centerCrop
 id centerInside
@@ -3287,6 +3325,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id danhgia
 id dark
 id datePicker
 id dateTextView
@@ -3303,6 +3342,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id dieukhoan
 id dimensions
 id direct
 id disableHome
@@ -3325,7 +3365,7 @@ id easeOut
 id east
 id edge
 id edit_query
-id edtdiemden
+id edit_text_message
 id edtdiemdi
 id edtthoigian
 id elastic
@@ -3362,6 +3402,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id giu
 id glide_custom_view_target_tag
 id gone
 id graph
@@ -3382,11 +3423,30 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
+id image1
+id image11
+id image2
+id image22
+id image3
+id image33
+id image4
+id image44
+id image5
+id image55
+id imageView1
 id imageView2
 id imageView3
+id imageView3_1
+id imageView3_2
+id imageView3_3
+id imageView3_4
+id imageView3_5
+id imageView3_6
+id imageView3_7
 id imageView4
 id imageView5
+id imageView6
+id imageView7
 id immediateStop
 id included
 id indeterminate
@@ -3395,8 +3455,10 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id jjjjfj
 id jumpToEnd
 id jumpToStart
+id ko
 id labeled
 id layout
 id left
@@ -3444,6 +3506,7 @@ id menu_hoso
 id menu_lienhe
 id menu_trangchu
 id message
+id messaged
 id middle
 id mini
 id month_grid
@@ -3536,7 +3599,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recyclerview2
 id remove
 id remove_user_button
 id reverseSawtooth
@@ -3546,6 +3608,12 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id sao0
+id sao1
+id sao2
+id sao3
+id sao4
+id sao5
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3558,6 +3626,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollView2
 id scrollable
+id searchButton
 id search_badge
 id search_bar
 id search_bar_text_view
@@ -3595,6 +3664,7 @@ id showHome
 id showTitle
 id sign_in_button
 id sign_out
+id sign_out_button
 id sign_up_button
 id sin
 id skipCollapsed
@@ -3663,9 +3733,11 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id thoat
 id time
 id title
 id titleDividerNoCustom
+id titleTextView
 id title_template
 id toggle
 id toolbar
@@ -3684,16 +3756,19 @@ id tvNgayVe
 id tvNumberEmBe
 id tvNumberLon
 id tvNumberTreEm
-id tvdiemden
+id tv_content
+id tv_sender
 id tvdiemdi
 id tvmuave
 id tvsohanhkhach
+id tvtien
 id txtthoigian
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
+id versionTextView
 id vertical_only
 id viewFlipper
 id viewSokhach
@@ -3705,6 +3780,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id webview
 id west
 id wide
 id withText
@@ -3834,6 +3910,7 @@ layout activity_fragment_main
 layout activity_main
 layout activity_reset_password
 layout activity_screen_main
+layout bao_cao
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3853,14 +3930,17 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_danh_gia
 layout dialog_so_nguoi
 layout dialog_thongtinkhach
+layout dieu_khoan_ung_dung
 layout fragment_datve
 layout fragment_home
 layout fragment_hoso
 layout fragment_lien_he
 layout hanhly_activity
 layout item_danhsachve
+layout item_message
 layout loginapp
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -5291,6 +5371,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

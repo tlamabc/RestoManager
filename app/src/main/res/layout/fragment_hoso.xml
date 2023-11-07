@@ -17,7 +17,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="300dp"
                 android:background="@drawable/style_user"
                 android:orientation="vertical">
 
@@ -25,9 +25,10 @@
                     android:id="@+id/aad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingVertical="10dp"
                     android:orientation="horizontal"
+                    android:paddingVertical="10dp"
                     android:paddingRight="20dp">
+
                     <ImageView
                         android:id="@+id/jjjjfj"
                         android:layout_width="30dp"
@@ -44,13 +45,30 @@
                     android:layout_gravity="center"
                     app:cardCornerRadius="1000dp">
 
-                    <ImageView
-                        android:id="@+id/imageView"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatarView"
                         android:layout_width="142dp"
                         android:layout_height="145dp"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/logochim" />
                 </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Have a good day !!!"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -59,7 +77,7 @@
                     android:layout_gravity="center"
                     android:text="USER"
                     android:textColor="#FFFFFF"
-                    android:textSize="28sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView

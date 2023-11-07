@@ -8,22 +8,31 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
-
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.droidfreshsquad.poly2023.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.Calendar;
 
 public class BookingActivity extends AppCompatActivity {
+    private String airlines;
+    private String scheduled;
+    private String date;
+    private String nameTicket;
+    private String price;
     private TextView edtthoigian, tvNgayVe, ngayve01, tvsohanhkhach;
     private Switch swKhuhoi;
     BottomSheetDialog dialog;
-    private TextView tvNumberLon, tvNumberTreEm, tvNumberEmBe;
-    private Button btnPlusLon, btnPlusTreEm, btnPlusEmBe, btnMinusLon, btnMinusTreEm, btnMinusEmBe, btnSoKhach, btndatve;
+    private TextView tvNumberLon, tvNumberTreEm, tvNumberEmBe,  tvTien;
+    private Button btnPlusLon, btnPlusTreEm, btnPlusEmBe, btnMinusLon, btnMinusTreEm, btnMinusEmBe, btnSoKhach, btndatve, searchButton ;
     private int numberLon = 1, numberTreEm = 0, numberEmBe = 0, tongNumber = numberEmBe + numberLon + numberTreEm;
     private boolean isDatePickerVisible = false;
 
@@ -38,7 +47,55 @@ public class BookingActivity extends AppCompatActivity {
         ngayve01 = (TextView) findViewById(R.id.ngayve01);
         edtthoigian = (TextView) findViewById(R.id.edtthoigian);
         tvsohanhkhach = (TextView) findViewById(R.id.tvsohanhkhach);
+        tvTien = (TextView) findViewById(R.id.tvtien);
         btndatve = (Button) findViewById(R.id.btndatve);
+
+
+        // Thêm edittext và button vào giao diện người dùng
+        EditText edtTimKiem = findViewById(R.id.edtdiemdi);
+        Button btnTimKiem = findViewById(R.id.searchButton);
+
+// Xử lý sự kiện nhấn nút tìm kiếm
+        btnTimKiem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Lấy giá trị tìm kiếm từ edittext
+                String keyword = edtTimKiem.getText().toString();
+
+                // Tạo tham chiếu đến cơ sở dữ liệu Firebase
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+                // Truy vấn dữ liệu chuyến bay dựa trên giá trị tìm kiếm
+                DatabaseReference reference = database.getReference("list_ticket");
+                reference.orderByChild("name_ticket").equalTo(keyword).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        // Xóa dữ liệu hiện tại trên màn hình
+                        tvNgayVe.setText("");
+                        tvTien.setText("");
+
+                        // Duyệt qua các kết quả tìm kiếm
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            // Lấy thông tin chuyến bay từ kết quả tìm kiếm
+                            String airlines = snapshot.child("Airlines").getValue(String.class);
+                            String scheduled = snapshot.child("Scheduled").getValue(String.class);
+                            String date = snapshot.child("date").getValue(String.class);
+                            String nameTicket = snapshot.child("name_ticket").getValue(String.class);
+                            String price = snapshot.child("price").getValue(String.class);
+
+                            // Hiển thị thông tin chuyến bay trên màn hình
+                            tvNgayVe.setText(date);
+                            tvTien.setText(nameTicket + " - " + price + "vnd");
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError error) {
+                        // Xử lý lỗi
+                    }
+                });
+            }
+        });
 
 //Bấm Tìm kiếm chuyển sang màng hình Danh Sách chuyến bay
         btndatve.setOnClickListener(new View.OnClickListener() {
@@ -251,4 +308,6 @@ public class BookingActivity extends AppCompatActivity {
         intent.putExtra("tongNumber", tongNumber);
         startActivityForResult(intent, 1);
     }
+
+
 }

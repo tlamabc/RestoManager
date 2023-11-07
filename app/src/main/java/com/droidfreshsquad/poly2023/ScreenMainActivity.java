@@ -41,7 +41,7 @@ public class ScreenMainActivity extends AppCompatActivity {
 
     private void RecyclerViewExplore() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-        recyclerViewExploreList = findViewById(R.id.recyclerview2);
+
         recyclerViewExploreList.setLayoutManager(linearLayoutManager);
 
         ArrayList<ExploreDomain> explore = new ArrayList<>();

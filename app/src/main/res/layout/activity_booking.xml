@@ -32,7 +32,7 @@
                 android:id="@+id/tvdiemdi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Điểm đi"
+                android:text="Điểm đi và điểm đến"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -43,20 +43,20 @@
                 android:inputType="text"
                 android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/tvdiemden"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Điểm đến"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/tvdiemden"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Điểm đến"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
 
-            <EditText
-                android:id="@+id/edtdiemden"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:textSize="20dp" />
+<!--            <EditText-->
+<!--                android:id="@+id/edtdiemden"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="text"-->
+<!--                android:textSize="20dp" />-->
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -144,7 +144,37 @@
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical"
                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số tiền"
+                android:textSize="28dp"
+                android:textColor="#FF0000"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/tvtien"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textSize="20dp"
+                android:hint="0 vnd"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                />
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/stylebutton"
+                android:text="Tìm kiếm chuyến bay"
+                app:cornerRadius="32dp" />
+
+            <ViewFlipper
+                android:layout_width="16dp"
+                android:layout_height="35dp"></ViewFlipper>
             <Button
                 android:id="@+id/btndatve"
                 android:layout_width="match_parent"

@@ -117,15 +117,7 @@
                         android:textSize="20dp" />
                 </LinearLayout>
             </LinearLayout>
-            <Button
 
-                android:id="@+id/btndatve"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/stylebutton"
-                android:text="Danh sách vé máy bay có sẵn"
-                app:cornerRadius="32dp" />
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -148,15 +140,16 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerview2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="162dp"
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="568dp"
                     android:paddingTop="10dp"
                     tools:layout_conversion_absoluteHeight="118dp"
                     tools:layout_conversion_absoluteWidth="372dp"
                     tools:layout_editor_absoluteX="20dp"
                     tools:layout_editor_absoluteY="280dp" />
+
 
             </LinearLayout>
 

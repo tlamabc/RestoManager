@@ -75,7 +75,7 @@ public class SignupActivity extends AppCompatActivity {
 
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 Toast.makeText(SignupActivity.this,
-                                        "createUserWithEmail:onComplete:" + task.isSuccessful(),
+                                        "Đã tạo tài khoản thành công, vui lòng nhập lại tài khoản và mật khẩu để đăng nhập" ,
                                         Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
                                 if (!task.isSuccessful()) {
@@ -84,7 +84,7 @@ public class SignupActivity extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                     startActivity(new
-                                            Intent(SignupActivity.this, MainActivity.class));
+                                            Intent(SignupActivity.this, LoginActivity.class));
                                     finish();
                                 }
                             }
