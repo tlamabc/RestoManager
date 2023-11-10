@@ -3,15 +3,20 @@ package com.droidfreshsquad.poly2023;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentProviderResult;
 import android.content.Intent;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -29,7 +34,10 @@ public class LoginActivity extends AppCompatActivity {
     private EditText inputEmail, inputPassword;
     private FirebaseAuth auth;
     private ProgressBar progressBar;
-    private Button btnSignup, btnLogin, btnReset;
+    private Button btnSignup, btnLogin;
+    private TextView btnReset;
+    private Switch check_save;
+    private String thongtinluu = "tk_mk login";
 
 
 
@@ -62,13 +70,17 @@ public class LoginActivity extends AppCompatActivity {
 
         btnSignup = (Button) findViewById(R.id.btn_signup);
         btnLogin = (Button) findViewById(R.id.btn_login);
-        btnReset = (Button) findViewById(R.id.btn_reset_password);
+        btnReset = (TextView) findViewById(R.id.btn_reset_password);
+        check_save=(Switch) findViewById(R.id.check_save);
 //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
+
+
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+
             }
         });
         btnReset.setOnClickListener(new View.OnClickListener() {
@@ -91,12 +103,27 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Enter password !", Toast.LENGTH_SHORT).show();
                     return;
                 }
+                //lưu thông tin người dùng
+                SharedPreferences sharedPreferences = getSharedPreferences(thongtinluu,MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+//lưu theo dạng phân rã
+                editor.putString("email",inputEmail.getText().toString());
+                editor.putString("password",inputPassword.getText().toString());
+                editor.putBoolean("Save",check_save.isChecked());
+                editor.commit();
+
+
+
+
+
+
 
 //authenticate user
 
                 auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(LoginActivity.this, new
                   OnCompleteListener<AuthResult>() {
+
                     @Override
 
                  public void onComplete(@NonNull Task<AuthResult> task) {
@@ -120,6 +147,24 @@ public class LoginActivity extends AppCompatActivity {
                                     }
                                 });
             }
+
         });
     }
+
+    protected void onResume() {
+        super.onResume();
+        //hiển thị thông tin đã được lưu
+        SharedPreferences sharedPreferences = getSharedPreferences(thongtinluu, MODE_PRIVATE);
+        String email = sharedPreferences.getString("email", "");
+        String password = sharedPreferences.getString("password", ""); // Sửa "passworld" thành "password"
+        boolean save = sharedPreferences.getBoolean("Save", false); // Đổi "save" thành "Save"
+        if (save) { // Nếu save == true
+            inputEmail.setText(email);
+            inputPassword.setText(password);
+
+        }
+
+
+    }
+
 }

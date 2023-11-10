@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Tham quan du lịch Sài Gòn"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Địa điểm du lịch Sài Gòn nổi tiếng hấp dẫn, vui chơi cả ngày
+Nguồn bài viết "
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/imgsaigon2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/imgsaigon4" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/imgsaigon3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#000000"
+                    android:text="Đi đâu chơi giữa Sài Thành xa hoa, nhộn nhịp? Có lẽ là thắc mắc của không ít người khi có ý định du lịch Sài Gòn. Đừng lo, thành phố này có thể đáp ứng cho bạn cả về nhu cầu tham quan lẫn các trò chơi giải trí. Lần lượt khám phá ngay sau đây"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Du lịch Sài Gòn đi đâu chơi | Tổng hợp Những địa điểm du lịch Sài Gòn đáng đi nhất"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="1. Dinh Độc Lập"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/imgsaigon5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nhà thờ Đức Bà là một trong những địa điểm du lịch Sài Gòn quận 1, được xem như biểu tượng đặc trưng của thành phố. Tọa lạc ở vị trí trung tâm lý tưởng, thánh đường này nổi bật bởi kiểu kiến trúc châu Âu kết hợp cả phong cách Gothic và Roman với những bức tường gạch màu đỏ hồng, ô kính màu rực rỡ và đôi chuông lớn nhất Việt Nam. Nhà thờ không chỉ là thánh đường sinh hoạt của giáo phận Sài Gòn mà còn là niềm tự hào của người dân thành phố. Ngoài ra, quanh khuôn viên nhà thờ là cả thiên đường ẩm thực với các món bánh trái, đồ chiên, gỏi,… thơm ngon cho bạn tha hồ thưởng thức."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="- Địa chỉ: 135 Nam Kỳ Khởi Nghĩa, Quận1\n- Giờ mở cửa: 7h30 – 11h00 và từ 13h00 – 16h00\n- Giá vé: 30k/người
+"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2. Nhà thờ Đức Bà"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/imgsaigon6png" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Còn có biệt danh “nàng tiên xanh”,Bán đảo Sơn trà rộng đến 3.439 héc-ta -  sở hữu khí hậu quanh năm mát mẻ và hệ sinh thái động thực vật đa dạng bậc nhất Đà Nẵng. Vi vu Bán Đảo Sơn Trà mà chưa thu hoạch được “bộ ảnh nghìn likes” thì có gì đó… hơi sai. Thiên nhiên nơi đây nổi tiếng hoang sơ mà thơ mộng, từ Đỉnh Bàn Cờ, Bãi Đá Đen, Mũi Nghê, Bãi Tiên Sa, Bãi Bụt cho đến Cây Đa Ngàn Năm Tuổi, chỉ cần #teamKlook chuyên tâm tác nghiệp “chụp choẹt” thì ắt hẳn sẽ có được thành quả xuất sắc ngoài mong đợi.
+Chùa Linh Ứng trên Bãi Bụt, Bán Đảo Sơn Trà cũng là địa điểm du lịch Đà Nẵng rất đáng cân nhắc. Đây là công trình mới với quy mô lớn nhất trong loạt Chùa Linh Ứng trứ danh Đà Thành. Bạn có thể mục sở thị tượng Bồ Tát Quán Thế Âm cao 67 mét - được UNESCO công nhận là tượng Quán Thế Âm cao nhất Đông Nam Á. Từ Chùa Linh Ứng Bãi Bụt, #teamKlook sẽ không khỏi ố á khi chiêm ngưỡng thành phố Đà Nẵng nhộn nhịp song hành bên bãi biển Mỹ Khê lấp lánh nắng vàng. "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="- Địa chỉ: Số 1 Công xã Paris, phường Bến Nghé, quận 1 \n- Giờ mở cửa: 8h30 – 10h00, 14h30 – 15h30 (Thứ 2 – Thứ 6)\n- Giá vé: Miễn phí
+"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="3. Chợ Bến Thành"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/imgsaigon7" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Là cái tên đặc trưng nổi tiếng Sài Gòn, chợ Bến Thành nằm ngay trung tâm thành phố, cả 4 ngõ đều giáp với những con đường lớn. Chợ vừa là nơi giao thương, trao đổi, mua bán hàng hóa vừa là điểm du lịch thu hút nhiều du khách, nhất là khách du lịch nước ngoài. Đây là địa điểm thu hút nhiều khách du lịch trong và ngoài nước. Tới đây bạn sẽ tìm thấy rất nhiều mặt hàng có thể mua về làm quà cho gia đình, bạn bè và thưởng thức các món ăn Việt Nam truyền thống như bánh canh, bánh bèo, bánh chiên xù,… Về đêm chợ nhộn nhịp hẳn lên với những gian hàng quần áo, đồ lưu niệm, quán ăn tấp nập người qua kẻ lại. Nhưng một lưu ý nhỏ nếu có ý định mua sắm bạn nên mặc cả để được giá hời nhất."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_marginBottom="10dp"
+                        android:text="- Địa chỉ: Nằm giữa các đường Phan Châu Trinh, Phan Bội Châu, Lê Thánh Tôn, quảng trường Quách Thị Trang, P.Bến Thành – quận 1 \n- Giờ mở cửa: 7h00 – 19h00 \n- Giá vé: Miễn phí
+
+"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

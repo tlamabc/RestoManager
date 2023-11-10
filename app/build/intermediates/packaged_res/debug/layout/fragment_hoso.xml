@@ -18,6 +18,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
+
                 android:background="@drawable/style_user"
                 android:orientation="vertical">
 
@@ -53,22 +54,17 @@
                         app:srcCompat="@drawable/logochim" />
                 </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="12dp"
-                    android:layout_gravity="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="23sp"
-                    android:textStyle="bold" />
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Have a good day !!!"
+                    android:fontFamily="@font/lato_black"
                     android:textColor="#FFFFFF"
                     android:textSize="23sp"
-                    android:textStyle="bold" />
+                     />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -78,7 +74,7 @@
                     android:text="USER"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/lato_regular" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -97,7 +93,7 @@
                 android:text="Tài Khoản"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/lato_black" />
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -124,6 +120,7 @@
                     android:paddingLeft="10dp"
                     android:text="Thông tin cá nhân"
                     android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
@@ -156,6 +153,7 @@
                     android:paddingLeft="10dp"
                     android:text="Mật khẩu và bảo mật"
                     android:textColor="#000000"
+                    android:fontFamily="@font/lato_regular"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
@@ -174,7 +172,7 @@
                 android:text="Trợ giúp"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/lato_black" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/baocao"
@@ -201,6 +199,7 @@
                     android:text="Báo cáo sự cố"
                     android:textColor="#000000"
                     android:textSize="18sp"
+                    android:fontFamily="@font/lato_regular"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -232,6 +231,7 @@
                     android:layout_gravity="center"
                     android:paddingLeft="10dp"
                     android:text="Hỗ trợ thanh Toán"
+                    android:fontFamily="@font/lato_regular"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -249,7 +249,7 @@
                 android:text="Khác"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/lato_black" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/dieukhoan"
@@ -274,6 +274,7 @@
                     android:layout_gravity="center"
                     android:paddingLeft="10dp"
                     android:text="Điều Khoản"
+                    android:fontFamily="@font/lato_regular"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -305,6 +306,7 @@
                     android:layout_gravity="center"
                     android:paddingLeft="10dp"
                     android:text="Đánh Giá"
+                    android:fontFamily="@font/lato_regular"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -337,6 +339,7 @@
                     android:layout_gravity="center"
                     android:paddingLeft="10dp"
                     android:text="Đăng xuất"
+                    android:fontFamily="@font/lato_regular"
                     android:textColor="#FF0000"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"

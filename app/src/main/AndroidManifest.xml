@@ -71,6 +71,16 @@
         <activity
             android:name=".ResetPasswordActivity"
             android:label="Reset Password" />
+        <activity
+            android:name=".ScreenExplore.ScreenSaigon"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenExplore.ScreenHanoi"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenExplore.ScreenDanang"
+            android:exported="false" />
+
     </application>
 
 </manifest>

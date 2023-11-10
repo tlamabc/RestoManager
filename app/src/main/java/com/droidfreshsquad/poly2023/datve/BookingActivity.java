@@ -1,6 +1,7 @@
 package com.droidfreshsquad.poly2023.datve;
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,18 +10,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.droidfreshsquad.poly2023.datve.SaveNumber.Number;
+import com.droidfreshsquad.poly2023.datve.SaveNumber.NumberData;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.droidfreshsquad.poly2023.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+
 
 public class BookingActivity extends AppCompatActivity {
     private String airlines;
@@ -28,11 +41,15 @@ public class BookingActivity extends AppCompatActivity {
     private String date;
     private String nameTicket;
     private String price;
+    private DatabaseReference mDatabase;
     private TextView edtthoigian, tvNgayVe, ngayve01, tvsohanhkhach;
-    private Switch swKhuhoi;
-    BottomSheetDialog dialog;
-    private TextView tvNumberLon, tvNumberTreEm, tvNumberEmBe,  tvTien;
-    private Button btnPlusLon, btnPlusTreEm, btnPlusEmBe, btnMinusLon, btnMinusTreEm, btnMinusEmBe, btnSoKhach, btndatve, searchButton ;
+
+    private BottomSheetDialog dialog;
+    private EditText edtdiemdi,edtdiemden;
+    private LinearLayout searchButton;
+    private Spinner spinnerDiemDen,spinnerDiemDi;
+    private TextView tvNumberLon, tvNumberTreEm, tvNumberEmBe, tvTien;
+    private Button btnPlusLon, btnPlusTreEm, btnPlusEmBe, btnMinusLon, btnMinusTreEm, btnMinusEmBe, btnSoKhach, btndatve;
     private int numberLon = 1, numberTreEm = 0, numberEmBe = 0, tongNumber = numberEmBe + numberLon + numberTreEm;
     private boolean isDatePickerVisible = false;
 
@@ -41,69 +58,131 @@ public class BookingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
+        //thanh tiêu đề
+        android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setActionBar(toolbar);
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View customView = inflater.inflate(R.layout.tieu_de, toolbar, false);
+        ImageButton backButton = customView.findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        TextView title = customView.findViewById(R.id.toolbar_title);
+        title.setText("Tìm chuyến bay");
+        toolbar.addView(customView);
+        //thanh tiêu đề
 
-        swKhuhoi = (Switch) findViewById(R.id.swKhuhoi);
-        tvNgayVe = (TextView) findViewById(R.id.tvNgayVe);
-        ngayve01 = (TextView) findViewById(R.id.ngayve01);
         edtthoigian = (TextView) findViewById(R.id.edtthoigian);
         tvsohanhkhach = (TextView) findViewById(R.id.tvsohanhkhach);
         tvTien = (TextView) findViewById(R.id.tvtien);
-        btndatve = (Button) findViewById(R.id.btndatve);
 
+        LinearLayout btndatve = findViewById(R.id.btndatve);
+        LinearLayout btnTimKiem = findViewById(R.id.searchButton);
+        Spinner spinnerDiemDen = findViewById(R.id.spinnerDiemDen);
+        Spinner spinnerDiemDi = findViewById(R.id.spinnerDiemDi);
 
-        // Thêm edittext và button vào giao diện người dùng
-        EditText edtTimKiem = findViewById(R.id.edtdiemdi);
-        Button btnTimKiem = findViewById(R.id.searchButton);
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("list_ticket");
 
 // Xử lý sự kiện nhấn nút tìm kiếm
         btnTimKiem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Lấy giá trị tìm kiếm từ edittext
-                String keyword = edtTimKiem.getText().toString();
+                String diemDen = spinnerDiemDen.getSelectedItem().toString().trim();
+                String diemDi = spinnerDiemDi.getSelectedItem().toString().trim();
+                String thoigian = edtthoigian.getText().toString().trim();
 
-                // Tạo tham chiếu đến cơ sở dữ liệu Firebase
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                if (!diemDi.isEmpty() && !diemDen.isEmpty()) {
+                    mDatabase.orderByChild("DiemDi").equalTo(diemDi)
+                            .addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    if (dataSnapshot.exists()) {
+                                        ArrayList<Ticket> filteredTickets = new ArrayList<>();
+                                        for (DataSnapshot ticketSnapshot : dataSnapshot.getChildren()) {
+                                            Ticket ticket = ticketSnapshot.getValue(Ticket.class);
+                                            if (ticket != null) {
+                                                if (diemDen.equals(ticket.getDiemDen()) && diemDi.equals(ticket.getDiemDi())) {
+                                                    if (thoigian.isEmpty() || ticket.getDate() == null) {
+                                                        filteredTickets.add(ticket);
+                                                    } else if (ticket.getDate().equals(thoigian)) {
+                                                        filteredTickets.add(ticket);
+                                                    }
+                                                }
+                                            }
+                                        }
 
-                // Truy vấn dữ liệu chuyến bay dựa trên giá trị tìm kiếm
-                DatabaseReference reference = database.getReference("list_ticket");
-                reference.orderByChild("name_ticket").equalTo(keyword).addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        // Xóa dữ liệu hiện tại trên màn hình
-                        tvNgayVe.setText("");
-                        tvTien.setText("");
+                                        if (!filteredTickets.isEmpty()) {
+                                            Intent intent = new Intent(BookingActivity.this, DanhSachBay.class);
+                                            intent.putParcelableArrayListExtra("filteredTickets", filteredTickets);
+                                            Number numberObject = new Number(numberLon, numberTreEm, numberEmBe);
+                                            NumberData.getInstance().setNumberObject(numberObject);
+                                            startActivity(intent);
+                                        } else {
+                                            Toast.makeText(BookingActivity.this, "Không tìm thấy vé phù hợp", Toast.LENGTH_SHORT).show();
+                                        }
+                                    } else {
+                                        Toast.makeText(BookingActivity.this, "Không có dữ liệu vé máy bay", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
 
-                        // Duyệt qua các kết quả tìm kiếm
-                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                            // Lấy thông tin chuyến bay từ kết quả tìm kiếm
-                            String airlines = snapshot.child("Airlines").getValue(String.class);
-                            String scheduled = snapshot.child("Scheduled").getValue(String.class);
-                            String date = snapshot.child("date").getValue(String.class);
-                            String nameTicket = snapshot.child("name_ticket").getValue(String.class);
-                            String price = snapshot.child("price").getValue(String.class);
-
-                            // Hiển thị thông tin chuyến bay trên màn hình
-                            tvNgayVe.setText(date);
-                            tvTien.setText(nameTicket + " - " + price + "vnd");
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError error) {
-                        // Xử lý lỗi
-                    }
-                });
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+                                    // Xử lý lỗi nếu có
+                                }
+                            });
+                } else {
+                    Toast.makeText(BookingActivity.this, "Nhập thông tin để tìm kiếm", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
 
 //Bấm Tìm kiếm chuyển sang màng hình Danh Sách chuyến bay
         btndatve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LayNumBer();
+                mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            ArrayList<Ticket> allTickets = new ArrayList<>();
+                            for (DataSnapshot ticketSnapshot : dataSnapshot.getChildren()) {
+                                Ticket ticket = ticketSnapshot.getValue(Ticket.class);
+                                if (ticket != null) {
+                                    allTickets.add(ticket);
+                                }
+                            }
+                            // Kiểm tra xem có vé nào trong danh sách không
+                            if (!allTickets.isEmpty()) {
+                                // Hiển thị danh sách vé tất cả
+                                Intent intent = new Intent(BookingActivity.this, DanhSachBay.class);
+                                intent.putParcelableArrayListExtra("allTickets", allTickets);
+                                Number numberObject = new  Number(numberLon,numberTreEm,numberEmBe );
+                                NumberData.getInstance().setNumberObject(numberObject);
+                                startActivity(intent);
+                            } else {
+                                // Hiển thị thông báo nếu không có vé nào
+                                Toast.makeText(BookingActivity.this, "Không có vé máy bay nào", Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            // Hiển thị thông báo nếu không có dữ liệu
+                            Toast.makeText(BookingActivity.this, "Không có dữ liệu vé máy bay", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                        // Xử lý lỗi nếu có
+                    }
+                });
             }
         });
+
 // Tạo bottom sheet dialog chọn số lượng người
         dialog = new BottomSheetDialog(this);
         // Tạo giao diện cho bottom sheet dialog
@@ -130,7 +209,6 @@ public class BookingActivity extends AppCompatActivity {
         btnMinusEmBe = (Button) viewDialog.findViewById(R.id.btnMinusEmBe);
         //id button xác nhận
         btnSoKhach = (Button) viewDialog.findViewById(R.id.btnSoKhach);
-
 
         //tăng biến người lớn
         btnPlusLon.setOnClickListener(new View.OnClickListener() {
@@ -201,7 +279,7 @@ public class BookingActivity extends AppCompatActivity {
             public void onDismiss(DialogInterface dialog) {
                 StringBuilder numbersText = new StringBuilder();
                 if (numberLon > 0) {
-                    numbersText.append(numberLon).append(" người lớn").append("\n");
+                    numbersText.append(" ").append(numberLon).append(" người lớn").append("\n");
                 }
                 if (numberTreEm > 0) {
                     numbersText.append(", ").append(numberTreEm).append(" trẻ em").append("\n");
@@ -222,92 +300,70 @@ public class BookingActivity extends AppCompatActivity {
             }
         });
 
-//click swich hiển thị ngày khứ hồi
-        swKhuhoi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                if (isChecked) {
-                    // Switch is on
-                    tvNgayVe.setVisibility(View.VISIBLE);
-                    ngayve01.setVisibility(View.VISIBLE);
-                } else {
-                    // Switch is off
-                    tvNgayVe.setVisibility(View.GONE);
-                    ngayve01.setVisibility(View.GONE);
-                }
-            }
-        });
-        //------//
     }
 
-//lấy ngày tháng năm hiển thị ra textview
+    //lấy ngày tháng năm hiển thị ra textview
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && resultCode == RESULT_OK) {
             // Lấy ngày tháng năm đã chọn
             String date = data.getStringExtra("date");
-            String dayOfWeek = data.getStringExtra("dayOfWeek");
-            edtthoigian.setText(dayOfWeek + ", " + date);
+            //  String dayOfWeek = data.getStringExtra("dayOfWeek");
+            edtthoigian.setText(date);
 
-            // Cộng thêm 5 ngày vào ngày tháng năm đã chọn
-            Calendar calendar = Calendar.getInstance();
-            calendar.set(Integer.parseInt(date.split("/")[2]),
-                    Integer.parseInt(date.split("/")[1]) - 1,
-                    Integer.parseInt(date.split("/")[0]));
-            calendar.add(Calendar.DATE, 5);
-            // Lấy ngày tháng năm cộng thêm 5 ngày
-            int newYear = calendar.get(Calendar.YEAR);
-            int newMonth = calendar.get(Calendar.MONTH);
-            int newDay = calendar.get(Calendar.DAY_OF_MONTH);
-            // Lấy thứ trong tuần cho ngày sau khi cộng thêm 5 ngày
-            String dayOfWeekAfter5Days = getDayOfWeek(calendar);
-            tvNgayVe.setText(dayOfWeekAfter5Days + ", " + newDay + "/" + (newMonth + 1) + "/" + newYear);
+//            // Cộng thêm 5 ngày vào ngày tháng năm đã chọn
+//            Calendar calendar = Calendar.getInstance();
+//            calendar.set(Integer.parseInt(date.split("/")[2]),
+//                    Integer.parseInt(date.split("/")[1]) - 1,
+//                    Integer.parseInt(date.split("/")[0]));
+//            calendar.add(Calendar.DATE, 5);
+//            // Lấy ngày tháng năm cộng thêm 5 ngày
+//            int newYear = calendar.get(Calendar.YEAR);
+//            int newMonth = calendar.get(Calendar.MONTH);
+//            int newDay = calendar.get(Calendar.DAY_OF_MONTH);
+//            // Lấy thứ trong tuần cho ngày sau khi cộng thêm 5 ngày
+//            String dayOfWeekAfter5Days = getDayOfWeek(calendar);
+//            tvNgayVe.setText(dayOfWeekAfter5Days + ", " + newDay + "/" + (newMonth + 1) + "/" + newYear);
         }
     }
+
+
     // Lấy thứ trong tuần cho ngày sau khi cộng thêm 5 ngày
-    private String getDayOfWeek(Calendar calendar) {
-        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-        String dayName;
-        switch (dayOfWeek) {
-            case Calendar.SUNDAY:
-                dayName = "Chủ Nhật";
-                break;
-            case Calendar.MONDAY:
-                dayName = "Thứ Hai";
-                break;
-            case Calendar.TUESDAY:
-                dayName = "Thứ Ba";
-                break;
-            case Calendar.WEDNESDAY:
-                dayName = "Thứ Tư";
-                break;
-            case Calendar.THURSDAY:
-                dayName = "Thứ Năm";
-                break;
-            case Calendar.FRIDAY:
-                dayName = "Thứ Sáu";
-                break;
-            case Calendar.SATURDAY:
-                dayName = "Thứ Bảy";
-                break;
-            default:
-                dayName = "Không xác định";
-                break;
-        }
-        return dayName;
-    }
-
-//lấy number và chuyển sang màng hình DanhSachBay
-    public void LayNumBer() {
-        Intent intent = new Intent(BookingActivity.this, DanhSachBay.class);
-        intent.putExtra("numberLon", numberLon);
-        intent.putExtra("numberTreEm", numberTreEm);
-        intent.putExtra("numberEmBe", numberEmBe);
-        intent.putExtra("tongNumber", tongNumber);
-        startActivityForResult(intent, 1);
-    }
+//    private String getDayOfWeek(Calendar calendar) {
+//        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+//        String dayName;
+//        switch (dayOfWeek) {
+//            case Calendar.SUNDAY:
+//                dayName = "Chủ Nhật";
+//                break;
+//            case Calendar.MONDAY:
+//                dayName = "Thứ Hai";
+//                break;
+//            case Calendar.TUESDAY:
+//                dayName = "Thứ Ba";
+//                break;
+//            case Calendar.WEDNESDAY:
+//                dayName = "Thứ Tư";
+//                break;
+//            case Calendar.THURSDAY:
+//                dayName = "Thứ Năm";
+//                break;
+//            case Calendar.FRIDAY:
+//                dayName = "Thứ Sáu";
+//                break;
+//            case Calendar.SATURDAY:
+//                dayName = "Thứ Bảy";
+//                break;
+//            default:
+//                dayName = "Không xác định";
+//                break;
+//        }
+//        return dayName;
+//    }
 
 
+    //lấy number và chuyển sang màng hình DanhSachBay
 }
+
+

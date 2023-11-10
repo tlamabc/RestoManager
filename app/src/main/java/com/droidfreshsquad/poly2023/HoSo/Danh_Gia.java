@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.droidfreshsquad.poly2023.Fragment.HomeFragment;
 import com.droidfreshsquad.poly2023.Fragment.HosoFragment;
 import com.droidfreshsquad.poly2023.R;
 
@@ -14,6 +15,11 @@ public class Danh_Gia {
     private Dialog dialog;
 
     public Danh_Gia(HosoFragment context) {
+        dialog = new Dialog(context.requireContext());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_danh_gia);
+    }
+    public Danh_Gia(HomeFragment context) {
         dialog = new Dialog(context.requireContext());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.dialog_danh_gia);

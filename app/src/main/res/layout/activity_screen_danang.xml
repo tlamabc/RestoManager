@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Tham quan du lịch Đà Nẵng"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tham Quan Địa Điểm Du Lịch Đà Nẵng Nổi Tiếng"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/slideshow12" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/slideshow13" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/slideshow14" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Là “thành phố đáng sống nhất Việt Nam”, Đà Nẵng chào đón lượng du khách nội địa và quốc tế “khổng lồ” ghé thăm hàng năm. Các địa điểm tham quan, “toạ độ sống ảo” cũng vì thế mà mọc lên như nấm - chẳng những đa dạng chủ đề mà còn cung cấp dịch vụ chỉn chu, giá thành hợp lý. Vậy, làm thế nào để trải nghiệm hết các địa điểm du lịch Đà Nẵng mang đậm linh hồn bản địa mà vẫn tiết kiệm chi phí và sử dụng thời gian theo cách tối ưu nhất?"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Còn bây giờ các địa điểm du lịch Đà Nẵng nổi tiếng nhé!"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="1. Bà Nà Hills - Địa Điểm Du Lịch Đà Nẵng Được Yêu Thích"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/imgbanahill" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nằm ở độ cao 1.487 mét so với mực nước biển, khu du lịch Bà Nà Hills mở ra “khung trời Châu Âu giữa lòng phố thị”. Nơi đây là điểm đến yêu thích của các tín đồ Instagram, khi quy tụ hàng loạt toạ độ sống ảo đẹp lung linh. Kể “sương sương” thôi thì đã có Cầu Vàng, công trình từng được Tạp chí Time bình chọn là 1 trong 100 điểm đến hàng đầu thế giới, Làng Pháp, Vườn Hoa Le Jardin D’Amour, Bảo Tàng Tượng Sáp và Hầm Rượu Debay. Không thể không nhắc khoảnh khắc “chill cực” khi được lướt giữa mây màn trên tuyến cáp treo dài nhất thế giới, hướng tầm mắt về khung cảnh hùng vỹ của núi Chúa. " />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2. Bán Đảo Sơn Trà"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/imgdanang2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Còn có biệt danh “nàng tiên xanh”,Bán đảo Sơn trà rộng đến 3.439 héc-ta -  sở hữu khí hậu quanh năm mát mẻ và hệ sinh thái động thực vật đa dạng bậc nhất Đà Nẵng. Vi vu Bán Đảo Sơn Trà mà chưa thu hoạch được “bộ ảnh nghìn likes” thì có gì đó… hơi sai. Thiên nhiên nơi đây nổi tiếng hoang sơ mà thơ mộng, từ Đỉnh Bàn Cờ, Bãi Đá Đen, Mũi Nghê, Bãi Tiên Sa, Bãi Bụt cho đến Cây Đa Ngàn Năm Tuổi, chỉ cần #teamKlook chuyên tâm tác nghiệp “chụp choẹt” thì ắt hẳn sẽ có được thành quả xuất sắc ngoài mong đợi.
+Chùa Linh Ứng trên Bãi Bụt, Bán Đảo Sơn Trà cũng là địa điểm du lịch Đà Nẵng rất đáng cân nhắc. Đây là công trình mới với quy mô lớn nhất trong loạt Chùa Linh Ứng trứ danh Đà Thành. Bạn có thể mục sở thị tượng Bồ Tát Quán Thế Âm cao 67 mét - được UNESCO công nhận là tượng Quán Thế Âm cao nhất Đông Nam Á. Từ Chùa Linh Ứng Bãi Bụt, #teamKlook sẽ không khỏi ố á khi chiêm ngưỡng thành phố Đà Nẵng nhộn nhịp song hành bên bãi biển Mỹ Khê lấp lánh nắng vàng. "/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="3. Công Viên Suối Khoáng Nóng Núi Thần Tài"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/imgdanang3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bạn cho rằng phải đến tận nước Nhật xa xôi thì mới được tận hưởng Osen - a.k.a trải nghiệm tắm suối khoáng nóng xịn sò? Nhầm hơi bị to rồi đấy. Trải rộng hơn 60 héc-ta giữa đồng núi trập trùng và rừng nguyên sinh trù phú, Công Viên Suối Khoáng Nóng Núi Thần Tài chính là “nhà chung” của loạt hồ nước châm cứu, hang động chữa lành, hệ thống suối thiên nhiên bao gồm cả suối nước nóng dồi dào khoáng chất. #teamKlook nhỏ tuổi chắc chắn sẽ mê mệt rạp chiếu phim 9D, 12D cùng công viên nước muôn màu muôn vẻ tại đây.Chẳng còn nghi ngờ gì nữa, Công viên suối khoáng nóng núi tần tài đích thị là địa điểm du lịch Đà Nẵng trên cả tuyệt vời dành cho người đi du lịch cùng bạn bè, gia đình. Đặt vé trên Klook để nhận liền tay ưu đãi độc quyền.
+
+"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

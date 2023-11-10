@@ -1,24 +1,27 @@
 package com.droidfreshsquad.poly2023.datve;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.datve.SaveNumber.Number;
+import com.droidfreshsquad.poly2023.datve.SaveNumber.NumberData;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class ThongTinThanhToan extends AppCompatActivity {
-    EditText ngaysinh,phone,email,name;
-    TextView ErrorPhone,ErrorNgay,ErrorMail,ErrorName,nameView,emailView,phoneView,viewSokhach;
+    EditText ngaysinh, phone, email, name;
+    TextView ErrorPhone, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach, TongSoNguoi;
     BottomSheetDialog dialog;
     LinearLayout LnThongtin;
 
@@ -27,6 +30,24 @@ public class ThongTinThanhToan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thong_tin_thanh_toan);
+        //thanh tiêu đề
+        android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setActionBar(toolbar);
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View customView = inflater.inflate(R.layout.tieu_de, toolbar, false);
+        ImageButton backButton = customView.findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        TextView title = customView.findViewById(R.id.toolbar_title);
+        title.setText("Tìm chuyến bay");
+        toolbar.addView(customView);
+        //thanh tiêu đề
 
         viewSokhach = (TextView) findViewById(R.id.viewSokhach);
         emailView = (TextView) findViewById(R.id.emailView);
@@ -34,14 +55,19 @@ public class ThongTinThanhToan extends AppCompatActivity {
         nameView = (TextView) findViewById(R.id.nameView);
         LnThongtin = (LinearLayout) findViewById(R.id.LnThongtin);
 //lấy Các giá trị Number số lượng khách
-        Intent intent = getIntent();
-        int numberLon = intent.getIntExtra("numberLon", 0);
-        int numberTreEm = intent.getIntExtra("numberTreEm", 0);
-        int numberEmBe = intent.getIntExtra("numberEmBe", 0);
-        int tongNumber = intent.getIntExtra("tongNumber", 0);
+        Number numberObject = NumberData.getInstance().getNumberObject();// lấy ở SaveNumber
+        int numberLon = 0;
+        int numberTreEm = 0;
+        int numberEmBe = 0;
+        if (numberObject != null) {
+            numberLon = numberObject.getNumberLon();
+            numberTreEm = numberObject.getNumberTreEm();
+            numberEmBe = numberObject.getNumberEmBe();
+        }
+
         StringBuilder numbersText = new StringBuilder();
         if (numberLon > 0) {
-            numbersText.append(numberLon).append(" người lớn");
+            numbersText.append("  ").append(numberLon).append(" người lớn");
         }
         if (numberTreEm > 0) {
             numbersText.append(", ").append(numberTreEm).append(" trẻ em");
@@ -50,6 +76,10 @@ public class ThongTinThanhToan extends AppCompatActivity {
             numbersText.append(", ").append(numberEmBe).append(" em bé");
         }
         viewSokhach.setText(numbersText.toString());//in ra textView
+
+        int TongSoNguoi = (numberTreEm + numberEmBe + numberLon);
+        TextView TongSoNguoiTextView = findViewById(R.id.TongSoNguoi);// in ra Tổng số người
+        TongSoNguoiTextView.setText("X" + TongSoNguoi);
 
 // Tạo giao diện cho bottom sheet dialog
         dialog = new BottomSheetDialog(this);
@@ -76,9 +106,11 @@ public class ThongTinThanhToan extends AppCompatActivity {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
+
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
             }
+
             @Override
             public void afterTextChanged(Editable s) {
                 if (!isValidName(s.toString())) {
@@ -97,9 +129,11 @@ public class ThongTinThanhToan extends AppCompatActivity {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
+
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
             }
+
             @Override
             public void afterTextChanged(Editable s) {
                 if (!isValidDateDDMMYYYY(s.toString())) {
@@ -114,9 +148,11 @@ public class ThongTinThanhToan extends AppCompatActivity {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
+
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
             }
+
             @Override
             public void afterTextChanged(Editable s) {
                 if (!isValidEmail(s.toString())) {
@@ -133,9 +169,11 @@ public class ThongTinThanhToan extends AppCompatActivity {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
+
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
             }
+
             @Override
             public void afterTextChanged(Editable s) {
                 if (!isValidPhoneNumber(s.toString())) {
@@ -148,7 +186,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
             }
         });
     }
-//kiểm tra định dạng ngày tháng
+
+    //kiểm tra định dạng ngày tháng
     private boolean isValidDateDDMMYYYY(String input) {
         if (input == null || input.length() != 10) {
             return false;
@@ -166,18 +205,21 @@ public class ThongTinThanhToan extends AppCompatActivity {
             return false;
         }
     }
-//kiểm tra định dạng số điện thoại
+
+    //kiểm tra định dạng số điện thoại
     private boolean isValidPhoneNumber(String phoneNumber) {
         String regex = "^[0-9]{10}$"; // Kiểm tra xem số điện thoại có 10 chữ số không
         return phoneNumber.matches(regex);
     }
-// Hàm kiểm tra định dạng email
+
+    // Hàm kiểm tra định dạng email
     private boolean isValidEmail(String email) {
         // Sử dụng một biểu thức chính quy (regular expression) để kiểm tra định dạng email
         String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+com";
         return email.matches(emailPattern);
     }
-// Hàm kiểm tra định dạng Họ và Tên
+
+    // Hàm kiểm tra định dạng Họ và Tên
     private boolean isValidName(String name) {
         if (name == null || name.isEmpty()) {
             return false;

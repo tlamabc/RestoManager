@@ -3,13 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".datve.DanhSachBay">
 
+    <android.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#27A2E0" />
+
     <ListView
+        android:scrollbars="none"
+        android:layout_margin="10dp"
         android:id="@+id/listViewDanhSachBay"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"/>
+        android:layout_height="match_parent"/>
 </LinearLayout>

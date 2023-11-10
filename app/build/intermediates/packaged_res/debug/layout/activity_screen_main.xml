@@ -10,9 +10,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+
         android:layout_marginBottom="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,44 +25,49 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="@drawable/bgr1"
+                android:background="@drawable/style_screenmain"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:orientation="horizontal">
+
+
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_margin="5dp"
+                        android:layout_marginRight="20dp"
                         app:cardCornerRadius="50dp">
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:src="@drawable/logo"/>
                     </androidx.cardview.widget.CardView>
-<!--                    <ImageView-->
-<!--                        android:id="@+id/imgLogo"-->
-<!--                        android:src="@drawable/logomanchinh"-->
-<!--                        -->
-<!--                        android:layout_width="50dp"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        app:layout_constraintEnd_toEndOf="parent"-->
-<!--                        app:layout_constraintStart_toStartOf="parent"-->
-<!--                        app:layout_constraintTop_toTopOf="parent" />-->
-
                     <TextView
-                        android:id="@+id/textView2"
+
                         android:layout_width="wrap_content"
-                        android:layout_height="43dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
+
                         android:paddingLeft="10dp"
                         android:text="EasyFly"
                         android:textColor="#000000"
+                        android:layout_weight="1"
                         android:textSize="30dp"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/lato_black" />
+                    <ImageView
+                        android:id="@+id/danhgia"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_star"/>
+
+
 
 
                 </LinearLayout>
@@ -78,16 +81,18 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Hello"
+                        android:text="Chào bạn"
                         android:textColor="#000000"
                         android:textSize="45dp"
+                        android:fontFamily="@font/lato_bold"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Where are you going?"
+                        android:text="Bạn muốn đi đâu?"
                         android:textColor="#000000"
+                        android:fontFamily="@font/lato_regular"
                         android:textSize="25dp"
                         android:textStyle="normal" />
                 </LinearLayout>
@@ -111,9 +116,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-
+                        android:fontFamily="@font/lato_regular"
                         android:layout_marginLeft="10dp"
-                        android:hint="Search"
+                        android:hint="Tìm kiếm"
                         android:textSize="20dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -130,7 +135,9 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Explore Destination"
+                android:paddingLeft="10dp"
+                android:text="Khám phá thêm"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -140,17 +147,19 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <WebView
-                    android:id="@+id/webview"
-                    android:layout_width="match_parent"
-                    android:layout_height="568dp"
-                    android:paddingTop="10dp"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     tools:layout_conversion_absoluteHeight="118dp"
                     tools:layout_conversion_absoluteWidth="372dp"
                     tools:layout_editor_absoluteX="20dp"
                     tools:layout_editor_absoluteY="280dp" />
 
-
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
             </LinearLayout>
 
 

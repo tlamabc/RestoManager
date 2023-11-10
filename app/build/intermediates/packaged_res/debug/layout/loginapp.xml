@@ -20,12 +20,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp">
-
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/logo" />
+                app:cardCornerRadius="90dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
@@ -39,10 +44,10 @@
             >
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="480dp"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="10dp">
-<!--                android:card="28dp"-->
+                <!--                android:card="28dp"-->
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -73,12 +78,19 @@
                     android:text="Email Address"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/email"
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/done_icon"
-                    android:inputType="textEmailAddress" />
+                    app:passwordToggleEnabled="false">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/done_icon"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <View
                     android:layout_width="wrap_content"
@@ -94,12 +106,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:passwordToggleEnabled="true">
+
                     <EditText
                         android:id="@+id/password"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
                         android:drawableEnd="@drawable/remove_icon"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -107,48 +120,76 @@
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
 
-                    android:layout_gravity="right">
+                    >
 
 
-                    <Button
-                        android:id="@+id/btn_reset_password"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:background="@drawable/styleforgot"
-                        android:text="I forgot my password"
-                        android:textColor="#ff0000" />
+
+
                 </RelativeLayout>
 
 
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Switch
+                        android:id="@+id/check_save"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:outlineSpotShadowColor="#00BCD4"
+                        android:gravity="center">
+                    </Switch>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="Save password"/>
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/btn_reset_password"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+
+                        android:text="Forgot my password"
+                        android:textColor="#ff0000" />
+                </LinearLayout>
+
+
+
                 <!--                <RelativeLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content">-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
 
-<!--                    <CheckBox-->
-<!--                        android:id="@+id/progressBar"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_centerVertical="true"-->
-<!--                        android:alpha="0.7"-->
-<!--                        android:text="Remeber me"/>-->
+                <!--                    <CheckBox-->
+                <!--                        android:id="@+id/progressBar"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_centerVertical="true"-->
+                <!--                        android:alpha="0.7"-->
+                <!--                        android:text="Remeber me"/>-->
 
-<!--                    <Button-->
-<!--                        android:id="@+id/btn_reset_password"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_alignParentEnd="true"-->
-<!--                        android:layout_centerVertical="true"-->
-<!--                        android:text="I forgot my password" />-->
-<!--                </RelativeLayout>-->
+                <!--                    <Button-->
+                <!--                        android:id="@+id/btn_reset_password"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_alignParentEnd="true"-->
+                <!--                        android:layout_centerVertical="true"-->
+                <!--                        android:text="I forgot my password" />-->
+                <!--                </RelativeLayout>-->
 
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="10dp" />
 
-<!--                <com.google.android.material.button.MaterialButton-->
+                <!--                <com.google.android.material.button.MaterialButton-->
                 <Button
                     android:id="@+id/btn_login"
                     android:layout_width="match_parent"

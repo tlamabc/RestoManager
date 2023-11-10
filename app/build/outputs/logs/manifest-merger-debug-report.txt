@@ -1,9 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:2:1-76:12
-INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:2:1-76:12
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:2:1-86:12
+MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:17:1-32:12
 MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\dangt\.gradle\caches\transforms-3\407e5ae1171d0b03d9ebf9b8e961d4f7\transformed\glide-4.16.0\AndroidManifest.xml:2:1-9:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\dangt\.gradle\caches\transforms-3\48bfcb9591eeccb288bcb4030a049841\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0] C:\Users\dangt\.gradle\caches\transforms-3\cd62adc5bcdb81bf18438453c39b246e\transformed\lifecycle-viewmodel-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
@@ -19,8 +24,6 @@ MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\User
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\dangt\.gradle\caches\transforms-3\b9f047825de92b03af6b07e3bbdaea48\transformed\recaptcha-18.1.2\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\dangt\.gradle\caches\transforms-3\8d941a7928c689f676496bde569a34b9\transformed\integrity-1.1.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\6b37d9f1ea0f61b6ee0ad2563aa03121\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:17:1-37:12
 MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\dangt\.gradle\caches\transforms-3\a87f330b9136254b9a056206f079fae5\transformed\firebase-installations-17.2.0\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\dangt\.gradle\caches\transforms-3\d14cd06e2aaceb40ff7d896086b0d4f9\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:2:1-18:12
@@ -29,9 +32,6 @@ MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\dang
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\dangt\.gradle\caches\transforms-3\04b2a97d260a7745b76dcda1bac4de46\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\dangt\.gradle\caches\transforms-3\0f500782e1d693aff5a91c12ca831fc1\transformed\play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\dangt\.gradle\caches\transforms-3\146503275e517d3e4cf2c0131d8d18d1\transformed\firebase-installations-interop-17.1.1\AndroidManifest.xml:15:1-19:12
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:17:1-46:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] C:\Users\dangt\.gradle\caches\transforms-3\cc911b075fa32273f5612fa457a3c6f7\transformed\ads-adservices-java-1.0.0-beta05\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\dangt\.gradle\caches\transforms-3\8fba3800db769bad9d4da7e151f5b026\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.activity:activity:1.6.0] C:\Users\dangt\.gradle\caches\transforms-3\513d67dfde05b476dbdd0c260b5a4698\transformed\activity-1.6.0\AndroidManifest.xml:17:1-22:12
@@ -83,17 +83,21 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\dangt\.
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\dangt\.gradle\caches\transforms-3\1bad01d92de0bb569650a6473fc6bb19\transformed\grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\dangt\.gradle\caches\transforms-3\84f357355a174545d22925b6a26ecaea\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.9.0] C:\Users\dangt\.gradle\caches\transforms-3\aee9ac73731d3c5a9974590088f4a287\transformed\firebase-firestore-24.9.0\AndroidManifest.xml:11:5-67
@@ -106,21 +110,27 @@ MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Use
 MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\dangt\.gradle\caches\transforms-3\a87f330b9136254b9a056206f079fae5\transformed\firebase-installations-17.2.0\AndroidManifest.xml:8:5-67
 MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\dangt\.gradle\caches\transforms-3\a87f330b9136254b9a056206f079fae5\transformed\firebase-installations-17.2.0\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:6:5-80
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:6:22-77
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:6:22-77
 application
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:8:5-74:19
-INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:8:5-74:19
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:8:5-84:19
+INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:8:5-84:19
+MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:29:5-30:19
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\dangt\.gradle\caches\transforms-3\48bfcb9591eeccb288bcb4030a049841\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\dangt\.gradle\caches\transforms-3\48bfcb9591eeccb288bcb4030a049841\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\dangt\.gradle\caches\transforms-3\3f0bee673dd301dd5fa353fb2a75ddd0\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
@@ -137,10 +147,6 @@ MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\dangt\.gradle\cac
 MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\dangt\.gradle\caches\transforms-3\8d941a7928c689f676496bde569a34b9\transformed\integrity-1.1.0\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\6b37d9f1ea0f61b6ee0ad2563aa03121\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\6b37d9f1ea0f61b6ee0ad2563aa03121\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\dangt\.gradle\caches\transforms-3\a87f330b9136254b9a056206f079fae5\transformed\firebase-installations-17.2.0\AndroidManifest.xml:11:5-22:19
@@ -153,12 +159,6 @@ MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\dang
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\dangt\.gradle\caches\transforms-3\d0384b2b4f2be6f27f0fcfc7094b81ce\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\dangt\.gradle\caches\transforms-3\0f500782e1d693aff5a91c12ca831fc1\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\dangt\.gradle\caches\transforms-3\0f500782e1d693aff5a91c12ca831fc1\transformed\play-services-base-18.1.0\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:28:5-44:19
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:28:5-44:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:29:5-30:19
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:29:5-30:19
 MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\dangt\.gradle\caches\transforms-3\8fba3800db769bad9d4da7e151f5b026\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\dangt\.gradle\caches\transforms-3\8fba3800db769bad9d4da7e151f5b026\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\dangt\.gradle\caches\transforms-3\ca166dca6fc7d239e361bd898e6b5896\transformed\play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
@@ -184,139 +184,167 @@ MERGED from [androidx.core:core:1.9.0] C:\Users\dangt\.gradle\caches\transforms-
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\dangt\.gradle\caches\transforms-3\2056cecfc44fbdb381a414f869175a69\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\dangt\.gradle\caches\transforms-3\2056cecfc44fbdb381a414f869175a69\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\dangt\.gradle\caches\transforms-3\58b07198376f67aef2aac074a201ccd5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:13:9-33
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:13:9-33
 	android:fullBackupContent
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:11:9-54
 	android:roundIcon
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:14:9-54
 	tools:targetApi
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:18:9-29
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:16:9-42
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:16:9-42
 	android:dataExtractionRules
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:10:9-65
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:10:9-65
 	android:usesCleartextTraffic
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:17:9-44
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:17:9-44
 activity#com.droidfreshsquad.poly2023.Message
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:19:9-21:39
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:19:9-21:39
 	android:label
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:21:13-36
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:20:13-36
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:20:13-36
 activity#com.droidfreshsquad.poly2023.HoSo.BaoCao
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:22:9-24:40
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:24:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:23:13-40
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:23:13-40
 activity#com.droidfreshsquad.poly2023.HoSo.DieuKhoan
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:25:9-27:40
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:26:13-43
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:26:13-43
 activity#com.droidfreshsquad.poly2023.HoSo.Danh_Gia
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:28:9-30:40
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:29:13-42
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:29:13-42
 activity#com.droidfreshsquad.poly2023.Fragment.Message
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:31:9-32:40
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:31:9-32:40
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:32:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:31:19-51
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:31:19-51
 activity#com.droidfreshsquad.poly2023.Fragment.FragmentMain
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:35:9-37:40
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:36:13-50
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:36:13-50
 activity#com.droidfreshsquad.poly2023.datve.ThongTinThanhToan
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:38:9-40:40
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:39:13-52
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:39:13-52
 activity#com.droidfreshsquad.poly2023.datve.DanhSachBay
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:41:9-43:40
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:43:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:42:13-46
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:42:13-46
 activity#com.droidfreshsquad.poly2023.ScreenMainActivity
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:44:9-46:39
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:44:9-46:39
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:46:13-36
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:46:13-36
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:45:13-47
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:45:13-47
 activity#com.droidfreshsquad.poly2023.datve.Ngay_thang_nam
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:47:9-49:40
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:49:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:48:13-49
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:48:13-49
 activity#com.droidfreshsquad.poly2023.MainActivity
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:50:9-52:39
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:50:9-52:39
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:52:13-36
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:52:13-36
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:51:13-41
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:51:13-41
 activity#com.droidfreshsquad.poly2023.LoginActivity
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:53:9-62:20
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:53:9-62:20
 	android:windowSoftInputMode
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:56:13-55
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:56:13-55
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:55:13-36
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:54:13-42
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:54:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:57:13-61:29
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:57:13-61:29
 action#android.intent.action.MAIN
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:58:17-69
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:58:17-69
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:58:25-66
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:58:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:60:17-77
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:60:17-77
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:60:27-74
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:60:27-74
 activity#com.droidfreshsquad.poly2023.SignupActivity
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:63:9-66:58
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:63:9-66:58
 	android:windowSoftInputMode
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:66:13-55
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:66:13-55
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:65:13-36
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:65:13-36
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:64:13-43
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:64:13-43
 activity#com.droidfreshsquad.poly2023.datve.BookingActivity
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:67:9-70:58
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:67:9-70:58
 	android:windowSoftInputMode
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:70:13-55
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:70:13-55
 	android:exported
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:69:13-37
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:69:13-37
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:68:13-50
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:68:13-50
 activity#com.droidfreshsquad.poly2023.ResetPasswordActivity
-ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:71:9-73:46
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:71:9-73:46
 	android:label
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:73:13-43
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:73:13-43
 	android:name
-		ADDED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml:72:13-50
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:72:13-50
+activity#com.droidfreshsquad.poly2023.ScreenExplore.ScreenSaigon
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:74:9-76:40
+	android:exported
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:76:13-37
+	android:name
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:75:13-55
+activity#com.droidfreshsquad.poly2023.ScreenExplore.ScreenHanoi
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:77:9-79:40
+	android:exported
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:79:13-37
+	android:name
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:78:13-54
+activity#com.droidfreshsquad.poly2023.ScreenExplore.ScreenDanang
+ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:80:9-82:40
+	android:exported
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:82:13-37
+	android:name
+		ADDED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml:81:13-55
 uses-sdk
-INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml
-INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\dangt\.gradle\caches\transforms-3\407e5ae1171d0b03d9ebf9b8e961d4f7\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\dangt\.gradle\caches\transforms-3\407e5ae1171d0b03d9ebf9b8e961d4f7\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\dangt\.gradle\caches\transforms-3\48bfcb9591eeccb288bcb4030a049841\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
@@ -347,10 +375,6 @@ MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\dangt\.gradle\cac
 MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\dangt\.gradle\caches\transforms-3\8d941a7928c689f676496bde569a34b9\transformed\integrity-1.1.0\AndroidManifest.xml:4:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\6b37d9f1ea0f61b6ee0ad2563aa03121\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\6b37d9f1ea0f61b6ee0ad2563aa03121\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:20.0.0] C:\Users\dangt\.gradle\caches\transforms-3\021cf1455d3619cd677b4db3c331b3e4\transformed\firebase-core-20.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\599ec86140e31397912690001b94f534\transformed\firebase-analytics-21.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\dangt\.gradle\caches\transforms-3\a87f330b9136254b9a056206f079fae5\transformed\firebase-installations-17.2.0\AndroidManifest.xml:5:5-44
@@ -367,12 +391,6 @@ MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\dangt\.g
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\dangt\.gradle\caches\transforms-3\0f500782e1d693aff5a91c12ca831fc1\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
 MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\dangt\.gradle\caches\transforms-3\146503275e517d3e4cf2c0131d8d18d1\transformed\firebase-installations-interop-17.1.1\AndroidManifest.xml:17:5-44
 MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\dangt\.gradle\caches\transforms-3\146503275e517d3e4cf2c0131d8d18d1\transformed\firebase-installations-interop-17.1.1\AndroidManifest.xml:17:5-44
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\5bde060adbaf5a8d87639f274d6920f8\transformed\play-services-measurement-sdk-21.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] C:\Users\dangt\.gradle\caches\transforms-3\cc911b075fa32273f5612fa457a3c6f7\transformed\ads-adservices-java-1.0.0-beta05\AndroidManifest.xml:5:5-44
 MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] C:\Users\dangt\.gradle\caches\transforms-3\cc911b075fa32273f5612fa457a3c6f7\transformed\ads-adservices-java-1.0.0-beta05\AndroidManifest.xml:5:5-44
 MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\dangt\.gradle\caches\transforms-3\8fba3800db769bad9d4da7e151f5b026\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:20:5-44
@@ -476,11 +494,15 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\dan
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\DroidFresh Squad\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\dangt\Desktop\BaiDATN\BaiDATN\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:26:5-79
+ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.9.0] C:\Users\dangt\.gradle\caches\transforms-3\aee9ac73731d3c5a9974590088f4a287\transformed\firebase-firestore-24.9.0\AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.9.0] C:\Users\dangt\.gradle\caches\transforms-3\aee9ac73731d3c5a9974590088f4a287\transformed\firebase-firestore-24.9.0\AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\dangt\.gradle\caches\transforms-3\f8e6f11f96c750bb1407635dd0fa6585\transformed\firebase-database-20.3.0\AndroidManifest.xml:22:5-79
@@ -491,16 +513,64 @@ MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Use
 MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\dangt\.gradle\caches\transforms-3\a87f330b9136254b9a056206f079fae5\transformed\firebase-installations-17.2.0\AndroidManifest.xml:7:5-79
 MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\dangt\.gradle\caches\transforms-3\a87f330b9136254b9a056206f079fae5\transformed\firebase-installations-17.2.0\AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:24:5-79
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\dangt\.gradle\caches\transforms-3\1bad01d92de0bb569650a6473fc6bb19\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\dangt\.gradle\caches\transforms-3\1bad01d92de0bb569650a6473fc6bb19\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:24:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:25:22-65
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:40:13-87
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\dangt\.gradle\caches\transforms-3\d19a497212e5e43e32d72a670475592e\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\dangt\.gradle\caches\transforms-3\d19a497212e5e43e32d72a670475592e\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:27:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:22.2.0] C:\Users\dangt\.gradle\caches\transforms-3\5fc4d89cb9e95a090a88f06c14e081be\transformed\firebase-auth-22.2.0\AndroidManifest.xml:29:9-46:20
 	android:excludeFromRecents
@@ -601,26 +671,6 @@ ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\dangt\.gradle
 		ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\dangt\.gradle\caches\transforms-3\f8e6f11f96c750bb1407635dd0fa6585\transformed\firebase-database-20.3.0\AndroidManifest.xml:34:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\dangt\.gradle\caches\transforms-3\f8e6f11f96c750bb1407635dd0fa6585\transformed\firebase-database-20.3.0\AndroidManifest.xml:33:17-109
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:25:5-68
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:24:22-65
-uses-permission#com.google.android.gms.permission.AD_ID
-ADDED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:27:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:27:5-79
-MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\dangt\.gradle\caches\transforms-3\d19a497212e5e43e32d72a670475592e\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\dangt\.gradle\caches\transforms-3\d19a497212e5e43e32d72a670475592e\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\85efb0a57285ea00cf0cdc146886a420\transformed\play-services-measurement-sdk-api-21.4.0\AndroidManifest.xml:26:5-79
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:25:22-76
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
 ADDED from [com.google.android.gms:play-services-measurement-api:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\619f611a8680999de1affa4a5ad8a77c\transformed\play-services-measurement-api-21.4.0\AndroidManifest.xml:31:13-33:85
 	android:value
@@ -671,38 +721,6 @@ ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\dangt\.gr
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\dangt\.gradle\caches\transforms-3\0f500782e1d693aff5a91c12ca831fc1\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\dangt\.gradle\caches\transforms-3\0f500782e1d693aff5a91c12ca831fc1\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:26:5-110
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:26:5-110
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\617b323e314010350409ec350bbe8b99\transformed\play-services-measurement-impl-21.4.0\AndroidManifest.xml:26:5-110
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:26:22-107
-receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:29:9-33:20
-	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:31:13-35
-	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:32:13-37
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:30:13-85
-service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:35:9-38:40
-	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:37:13-35
-	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:38:13-37
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:36:13-84
-service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:39:9-43:72
-	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:41:13-35
-	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:42:13-37
-	android:permission
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:43:13-69
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:21.4.0] C:\Users\dangt\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:40:13-87
 uses-library#android.ext.adservices
 ADDED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\dangt\.gradle\caches\transforms-3\8fba3800db769bad9d4da7e151f5b026\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
 	android:required

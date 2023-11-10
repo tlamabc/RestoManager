@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+    implementation ("com.google.android.gms:play-services-measurement-impl:15.0.4")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation ("androidx.lifecycle:lifecycle-viewmodel:2.5.0")

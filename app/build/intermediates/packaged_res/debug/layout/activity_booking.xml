@@ -1,196 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+    android:background="@drawable/chuyenbay"
+    android:orientation="vertical"
     tools:context=".datve.BookingActivity">
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_edt"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:gravity="center"
-            android:text="Mua Vé Máy Bay"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Từ"
+            android:textSize="16dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_buttom"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvdiemdi"
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Điểm đi và điểm đến"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/icons8_catcach" />
 
-            <EditText
-                android:id="@+id/edtdiemdi"
+            <Spinner
+                android:id="@+id/spinnerDiemDi"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:textSize="20dp" />
+                android:layout_height="50dp"
+                android:entries="@array/diem_den_data" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvdiemden"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Điểm đến"-->
-<!--                android:textSize="20dp"-->
-<!--                android:textStyle="bold" />-->
+        </LinearLayout>
 
-<!--            <EditText-->
-<!--                android:id="@+id/edtdiemden"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:inputType="text"-->
-<!--                android:textSize="20dp" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Dến"
+            android:textSize="16dp" />
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_buttom"
+            android:orientation="horizontal">
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/icons8_hacanh" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/txtthoigian"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ngày Đi"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/edtthoigian"
-                        android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center_vertical"
-                        android:hint="dd/MM/yyyy"
-                        android:textSize="20dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="160dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Khứ Hồi"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-
-                    <Switch
-                        android:id="@+id/swKhuhoi"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center" />
-                </LinearLayout>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/ngayve01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ngày Về"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:visibility="gone"/>
-
-            <TextView
-                android:id="@+id/tvNgayVe"
+            <Spinner
+                android:id="@+id/spinnerDiemDen"
                 android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/diem_di_data" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Ngày đi"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_buttom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/icons8_lich" />
+
+            <TextView
+                android:id="@+id/edtthoigian"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical"
-                android:visibility="gone"
-                android:hint="dd/MM/yyyy"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Số hành khách"
-                android:textSize="20dp"
+                android:hint="	dd mmm yyyy"
+                android:textSize="18dp"
                 android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Hành khách"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_buttom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/icons8_nguoi" />
 
             <TextView
                 android:id="@+id/tvsohanhkhach"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:inputType="text"
-                android:textSize="20dp"
-                android:hint="1 người lớn"
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical"
-                />
+                android:inputType="text"
+                android:text="1 người lớn"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--        <Button-->
+        <!--            android:id="@+id/searchButton"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            android:background="@drawable/stylebutton2"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:text="Tìm kiếm"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="16dp"-->
+        <!--            android:textColor="#FFFFFF"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:drawablePadding="8dp" />-->
+        <LinearLayout
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/stylebutton2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/icons8_search" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Số tiền"
-                android:textSize="28dp"
-                android:textColor="#FF0000"
+                android:text="Tìm kiếm"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
                 android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btndatve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/stylebutton2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
-                android:id="@+id/tvtien"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:inputType="text"
-                android:textSize="20dp"
-                android:hint="0 vnd"
-                android:layout_marginLeft="10dp"
-                android:gravity="center_vertical"
-                />
-            <Button
-                android:id="@+id/searchButton"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/stylebutton"
-                android:text="Tìm kiếm chuyến bay"
-                app:cornerRadius="32dp" />
-
-            <ViewFlipper
-                android:layout_width="16dp"
-                android:layout_height="35dp"></ViewFlipper>
-            <Button
-                android:id="@+id/btndatve"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/stylebutton"
-                android:text="Danh sách vé máy bay có sẵn"
-                app:cornerRadius="32dp" />
-
-
-
-            <ViewFlipper
-                android:id="@+id/viewFlipper"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></ViewFlipper>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danh sách vé có sẫn"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvtien"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:inputType="text"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

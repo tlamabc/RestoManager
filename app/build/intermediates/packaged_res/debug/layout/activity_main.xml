@@ -94,10 +94,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/background"
+            android:background="@drawable/stylebutton"
+            android:textColor="@android:color/black"
             android:text="Thay đổi"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
+
+            android:fontFamily="@font/lato_regular" />
 
         <Button
             android:textSize="18dp"
@@ -106,10 +107,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/background"
+            android:background="@drawable/stylebutton"
             android:text="Thay đổi"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/lato_regular" />
 
         <Button
             android:textSize="18dp"
@@ -118,10 +119,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/background"
-            android:text="giử"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:background="@drawable/stylebutton"
+            android:text="Gửi"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/lato_regular" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -136,67 +137,113 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/background"
+            android:background="@drawable/stylebutton"
             android:text="@string/btn_remove"
-            android:textColor="@color/white" />
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@android:color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cornerRadius="32dp" />
 
         <Button
             android:id="@+id/change_email_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/background"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/stylebutton"
             android:text="Đổi email cá nhân"
-            android:textSize="18dp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            app:cornerRadius="32dp" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cornerRadius="32dp" />
 
         <Button
             android:id="@+id/change_password_button"
-            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/stylebutton"
+            android:text="đổi mật Khẩu"
+            app:cornerRadius="32dp" />
+
+
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/background"
-            android:text="đổi mật Khẩu"
-            android:textSize="18dp"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cornerRadius="32dp" />
 
         <Button
             android:id="@+id/sending_pass_reset_button"
-            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/background"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/stylebutton"
             android:text="giử email khôi phục mật khẩu"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-        <Button
-            android:id="@+id/thoat"
-            style="@style/TextAppearance.AppCompat.Small"
+            app:cornerRadius="32dp" />
+
+
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#FFFFFF"
-            android:text="thoát"
-            android:textSize="18dp"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cornerRadius="32dp" />
 
         <Button
-            android:textSize="18dp"
-            android:id="@+id/remove_user_button"
-            style="@style/TextAppearance.AppCompat.Small"
+            android:id="@+id/thoat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/stylebutton"
+
+
+            android:textColor="#000000"
+            android:text="Thoát"
+            app:cornerRadius="32dp"
+            android:textStyle="bold"/>
+
+
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#FFFFFF"
-            android:text="xóa tài khoản"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cornerRadius="32dp" />
+
+        <Button
+            android:id="@+id/remove_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/stylebutton"
+
             android:textColor="#FF0000"
-            android:textStyle="bold" />
+            android:text="xóa tài khoản"
+            app:cornerRadius="32dp"
+            android:textStyle="bold"/>
+
 
         <Button
             android:id="@+id/sign_out"
@@ -205,7 +252,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:visibility="gone"
-            android:backgroundTint="@color/background"
             android:text="@string/btn_sign_out"
             android:textColor="#000000"
             android:textStyle="bold" />

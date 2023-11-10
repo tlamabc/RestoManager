@@ -1,11 +1,15 @@
 package com.droidfreshsquad.poly2023.datve;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.droidfreshsquad.poly2023.R;
 
@@ -41,20 +45,51 @@ public class TicketAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.ticket_item, parent, false);
         }
 
-        TextView nameTextView = convertView.findViewById(R.id.nameTextView);
+        LinearLayout tvmuave = convertView.findViewById(R.id.tvmuave);
+        LinearLayout maGiamGia = convertView.findViewById(R.id.maGiamGia);
+
         TextView scheduledTextView = convertView.findViewById(R.id.scheduledTextView);
+        TextView scheduledTextView2 = convertView.findViewById(R.id.scheduledTextView2); // TextView for scheduled2
         TextView dateTextView = convertView.findViewById(R.id.dateTextView);
+        TextView dateTextView2 = convertView.findViewById(R.id.dateTextView2);
         TextView priceTextView = convertView.findViewById(R.id.priceTextView);
+        TextView Airlines = convertView.findViewById(R.id.Airlines);
+        TextView sanbayden = convertView.findViewById(R.id.sanbayden);
+        TextView sanbaydi = convertView.findViewById(R.id.sanbaydi);
 
         Ticket ticket = (Ticket) getItem(position);
 
         if (ticket != null) {
-            nameTextView.setText(ticket.getName_ticket());
-            scheduledTextView.setText("Scheduled: " + ticket.getScheduled());
-            dateTextView.setText("Date: " + ticket.getDate());
-            priceTextView.setText("Price: " + ticket.getPrice());
-        }
+            scheduledTextView.setText(ticket.getScheduled());
+            scheduledTextView2.setText(ticket.getScheduled2()); // Set scheduled2 to the new TextView
+            dateTextView.setText(ticket.getDate());
+            dateTextView2.setText(ticket.getDate());
+            priceTextView.setText(ticket.getPrice());
+            Airlines.setText(ticket.getAirlines());
+            sanbayden.setText(ticket.getSanbayden());
+            sanbaydi.setText(ticket.getSanbaydi());
 
+            tvmuave.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    layNumbe();
+                }
+            });
+
+            maGiamGia.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(context, "Bạn không có mã giảm giá nào", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+        }
         return convertView;
     }
+
+    private void layNumbe() {
+        Intent intent1 = new Intent(context, ThongTinThanhToan.class);
+        context.startActivity(intent1);
+    }
+
 }
