@@ -3278,6 +3278,7 @@ int id btnko 0x7f080086
 int id button 0x7f080087
 int id buttonPanel 0x7f080088
 int id button_send 0x7f080089
+int id button_send_2 0x7f08028f
 int id cache_measures 0x7f08008a
 int id callMeasure 0x7f08008b
 int id cancel_button 0x7f08008c
@@ -3364,7 +3365,6 @@ int id easeOut 0x7f0800dc
 int id east 0x7f0800dd
 int id edge 0x7f0800de
 int id edit_query 0x7f0800df
-int id edit_text_message 0x7f0800e0
 int id edtdiemdi 0x7f0800e1
 int id edtthoigian 0x7f0800e2
 int id elastic 0x7f0800e3
@@ -3504,8 +3504,8 @@ int id menu_datve 0x7f080169
 int id menu_hoso 0x7f08016a
 int id menu_lienhe 0x7f08016b
 int id menu_trangchu 0x7f08016c
+int id mess 0x7f08028d
 int id message 0x7f08016d
-int id messaged 0x7f08016e
 int id middle 0x7f08016f
 int id mini 0x7f080170
 int id month_grid 0x7f080171
@@ -3755,8 +3755,6 @@ int id tvNgayVe 0x7f080264
 int id tvNumberEmBe 0x7f080265
 int id tvNumberLon 0x7f080266
 int id tvNumberTreEm 0x7f080267
-int id tv_content 0x7f080268
-int id tv_sender 0x7f080269
 int id tvdiemdi 0x7f08026a
 int id tvmuave 0x7f08026b
 int id tvsohanhkhach 0x7f08026c
@@ -3939,7 +3937,6 @@ int layout fragment_hoso 0x7f0b003b
 int layout fragment_lien_he 0x7f0b003c
 int layout hanhly_activity 0x7f0b003d
 int layout item_danhsachve 0x7f0b003e
-int layout item_message 0x7f0b003f
 int layout loginapp 0x7f0b0040
 int layout m3_alert_dialog 0x7f0b0041
 int layout m3_alert_dialog_actions 0x7f0b0042
@@ -3999,6 +3996,7 @@ int layout notification_template_custom_big 0x7f0b0077
 int layout notification_template_icon_group 0x7f0b0078
 int layout notification_template_part_chronometer 0x7f0b0079
 int layout notification_template_part_time 0x7f0b007a
+int layout open_mess 0x7f0b0085
 int layout select_dialog_item_material 0x7f0b007b
 int layout select_dialog_multichoice_material 0x7f0b007c
 int layout select_dialog_singlechoice_material 0x7f0b007d

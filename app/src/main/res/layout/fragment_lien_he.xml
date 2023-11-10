@@ -2,23 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#0080FF">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/messaged"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
-
-    <EditText
-        android:id="@+id/edit_text_message"
-        android:layout_width="397dp"
-        android:layout_height="218dp"
-        android:hint="Nhập tin nhắn..." />
-
+        android:layout_height="388dp" />
     <Button
         android:id="@+id/button_send"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gửi" />
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:text="Chat on Messenger " />
+
+    <Button
+        android:id="@+id/button_send_2"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:text="Chat on App " />
 
 </LinearLayout>

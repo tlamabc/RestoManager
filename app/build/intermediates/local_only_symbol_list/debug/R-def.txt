@@ -127,6 +127,7 @@ id btndatve
 id btnko
 id button
 id button_send
+id button_send_2
 id categoryName
 id categoryPic
 id cc
@@ -139,7 +140,6 @@ id danhgia
 id datePicker
 id dateTextView
 id dieukhoan
-id edit_text_message
 id edtdiemdi
 id edtthoigian
 id email
@@ -184,7 +184,7 @@ id menu_datve
 id menu_hoso
 id menu_lienhe
 id menu_trangchu
-id messaged
+id mess
 id name
 id nameTextView
 id nameView
@@ -229,8 +229,6 @@ id tvNgayVe
 id tvNumberEmBe
 id tvNumberLon
 id tvNumberTreEm
-id tv_content
-id tv_sender
 id tvdiemdi
 id tvmuave
 id tvsohanhkhach
@@ -257,9 +255,9 @@ layout fragment_hoso
 layout fragment_lien_he
 layout hanhly_activity
 layout item_danhsachve
-layout item_message
 layout loginapp
 layout ngay_thang_nam
+layout open_mess
 layout signupapp
 layout testfigma
 layout thong_tin_thanh_toan

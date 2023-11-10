@@ -3279,6 +3279,7 @@ id btnko
 id button
 id buttonPanel
 id button_send
+id button_send_2
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3365,7 +3366,6 @@ id easeOut
 id east
 id edge
 id edit_query
-id edit_text_message
 id edtdiemdi
 id edtthoigian
 id elastic
@@ -3505,8 +3505,8 @@ id menu_datve
 id menu_hoso
 id menu_lienhe
 id menu_trangchu
+id mess
 id message
-id messaged
 id middle
 id mini
 id month_grid
@@ -3756,8 +3756,6 @@ id tvNgayVe
 id tvNumberEmBe
 id tvNumberLon
 id tvNumberTreEm
-id tv_content
-id tv_sender
 id tvdiemdi
 id tvmuave
 id tvsohanhkhach
@@ -3940,7 +3938,6 @@ layout fragment_hoso
 layout fragment_lien_he
 layout hanhly_activity
 layout item_danhsachve
-layout item_message
 layout loginapp
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4000,6 +3997,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout open_mess
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

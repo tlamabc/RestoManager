@@ -1,81 +1,41 @@
 package com.droidfreshsquad.poly2023.Fragment;
 
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.Button;
-import androidx.lifecycle.ViewModelProvider;
-import com.droidfreshsquad.poly2023.Fragment.MessageAdapter;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelStore;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.droidfreshsquad.poly2023.Message;
 import com.droidfreshsquad.poly2023.R;
+import androidx.fragment.app.Fragment;
 
 public class LienHeFragment extends Fragment {
 
-    private ChatViewModel chatViewModel;
-    private DatabaseReference databaseReference;
-
-    private MessageAdapter adapter;
-    private EditText editTextMessage;
-    private Button buttonSend;
+    private Button openmess;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_lien_he, container, false);
 
-        // Khởi tạo ViewModelStore
-        ViewModelStore viewModelStore = new ViewModelStore();
+        openmess = view.findViewById(R.id.button_send);
 
-        // Khởi tạo ChatViewModel
-        MyType myType = new MyType(); // Tạo một đối tượng MyType hoặc cung cấp giá trị cần thiết
-        ChatViewModelFactory factory = new ChatViewModelFactory(myType);
-
-        chatViewModel = new ViewModelProvider(this, factory).get(ChatViewModel.class);
-
-        editTextMessage = view.findViewById(R.id.edit_text_message);
-        buttonSend = view.findViewById(R.id.button_send);
-        RecyclerView recyclerView = view.findViewById(R.id.messaged);
-
-        // Khởi tạo adapter
-       // adapter = new MessageAdapter(getContext(), chatViewModel.getMessages());
-
-        // Đặt Adapter cho RecyclerView
-//        recyclerView.getAdapter() = adapter;
-
-        buttonSend.setOnClickListener(new View.OnClickListener() {
+        openmess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String message = editTextMessage.getText().toString();
+                // Tạo một Intent mới
+                Intent intent = new Intent(getActivity(), Message.class);
 
-                if (chatViewModel != null) {
-                    chatViewModel.sendMessage(message);
-                } else {
-                    // Handle the case where chatViewModel is not properly initialized
-                    // Log an error or display a toast message
-                }
-                editTextMessage.setText("");
+                startActivity(intent);
+
+
+                // Khởi chạy Activity
+                startActivity(intent);
             }
         });
 
         return view;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        // Khởi tạo databaseReference
-        databaseReference = FirebaseDatabase.getInstance().getReference("messages");
     }
 }
