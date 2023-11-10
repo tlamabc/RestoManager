@@ -3299,6 +3299,7 @@ id changeEmail
 id changePass
 id change_email_button
 id change_password_button
+id check_save
 id checkbox
 id checked
 id chronometer

@@ -1,478 +1,478 @@
 [
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_fragment_hoso.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\fragment_hoso.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_testfigma.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\testfigma.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_explore2.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\explore2.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao5.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao5.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_remove_icon.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\remove_icon.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_fragment_datve.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\fragment_datve.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_add.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\add.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_xo.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\xo.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_duong_vien_gach_duoi.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\duong_vien_gach_duoi.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_trash.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\trash.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_logout.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_logout.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_danh_sach_bay.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\danh_sach_bay.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_delete.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\delete.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_dialog_thongtinkhach.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\dialog_thongtinkhach.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_user.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\user.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_user.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\user.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_testfigma.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\testfigma.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_iconvitri.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\iconvitri.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_heart.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\heart.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\logo.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_boder_seach.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\boder_seach.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_add.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\add.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_delete.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\delete.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_logoeasyfly.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\logoeasyfly.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_logout.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_logout.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_open_mess.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\open_mess.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao4.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao4.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_bao_cao.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\bao_cao.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_done_icon.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\done_icon.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_booking.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_booking.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_eye.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\eye.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_style_user.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\style_user.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_logomanchinh.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\logomanchinh.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_dialog_thongtinkhach.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\dialog_thongtinkhach.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_timkiem_icon.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\timkiem_icon.xml"
+        "merged": "com.droidfreshsquad.poly2023.app-merged_res-38:/layout_loginapp.xml.flat",
+        "source": "com.droidfreshsquad.poly2023.app-main-40:/layout/loginapp.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bgr_bottomappbar.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bgr_bottomappbar.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao3.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao3.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao4.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao4.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bovienlogo.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bovienlogo.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat1.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat1.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_error.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_error.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_thoat.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\thoat.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bgr1.jpg.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bgr1.jpg"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_boder_seach.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\boder_seach.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_timkiem_icon.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\timkiem_icon.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_error.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_error.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\anim\\slide_in_right.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_arrow_icon.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\arrow_icon.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_viewhodel_category.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\viewhodel_category.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_fragment_datve.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\fragment_datve.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_logomanchinh.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\logomanchinh.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_booking.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_booking.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_open_mess.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\open_mess.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bg_edt.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bg_edt.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_like.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_like.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_item_danhsachve.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\item_danhsachve.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_explore1_background.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\explore1_background.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_chuong.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\chuong.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_logoeasyfly.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\logoeasyfly.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_edit_text_bg.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\edit_text_bg.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_style_user.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\style_user.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_ngay_thang_nam.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\ngay_thang_nam.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat_background.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_danh_sach_bay.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\danh_sach_bay.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bgr1.jpg.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bgr1.jpg"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_fragment_lien_he.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\fragment_lien_he.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_ticket_item.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\ticket_item.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_xao.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\xao.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_back_icon.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\back_icon.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao2.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao2.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_ticket_item.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\ticket_item.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_purchase.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_purchase.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_back_icon.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\back_icon.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\anim_slide_out_right.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\anim\\slide_out_right.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_chuong.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\chuong.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_user_icon.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\user_icon.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_user_icon.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\user_icon.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_password.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_password.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_dialog_so_nguoi.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\dialog_so_nguoi.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_border_radius_15dp.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\border_radius_15dp.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bgr_hanhkhach.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bgr_hanhkhach.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_signupapp.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\signupapp.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bgr_line.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bgr_line.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_dialog_so_nguoi.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\dialog_so_nguoi.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_chat.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\chat.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_border_radius_15dp.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\border_radius_15dp.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao1.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao1.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_border_buttom.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\border_buttom.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_pencil.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\pencil.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_screen_main.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_screen_main.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_viewhodel_explore.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\viewhodel_explore.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\anim_slide_in_right.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\anim\\slide_in_right.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_modanbgr.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\modanbgr.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_thong_tin_thanh_toan.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\thong_tin_thanh_toan.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao1.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao1.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_styleforgot.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\styleforgot.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bgr_hanhkhach.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bgr_hanhkhach.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cham_thang.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cham_thang.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_edit_text.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\edit_text.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_loginapp.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\loginapp.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_eye.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\eye.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat3.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat3.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_edit_text_bg.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\edit_text_bg.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_bao_cao.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\bao_cao.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_like.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_like.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_dialog_danh_gia.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\dialog_danh_gia.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat_background.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat_background.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_signupapp.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\signupapp.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_hanhly_activity.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\hanhly_activity.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao0.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao0.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_avatar.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_avatar.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_thong_tin_thanh_toan.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\thong_tin_thanh_toan.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_trash.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\trash.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_explore1_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\explore1_background.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_fragment_lien_he.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\fragment_lien_he.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_hanhly_activity.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\hanhly_activity.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_home.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\home.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_setting_icon.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\setting_icon.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_card.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_card.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_fragment_main.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_fragment_main.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bovienlogo.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bovienlogo.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_screen_main.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_screen_main.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_border_radius_top_tren_duoi.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\border_radius_top_tren_duoi.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bgr_line.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bgr_line.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_viewhodel_explore.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\viewhodel_explore.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat2.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat2.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_reset_password.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_reset_password.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_vien_gach_dut.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\vien_gach_dut.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat4.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat4.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat1_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat1_background.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_dialog_danh_gia.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\dialog_danh_gia.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_modanbgr.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\modanbgr.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_explore2.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\explore2.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_setting.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\setting.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_home.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\home.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_border_buttom.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\border_buttom.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_stylebutton.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\stylebutton.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_arrow_icon.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\arrow_icon.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_password.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_password.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bgr_bottomappbar.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bgr_bottomappbar.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_remove_icon.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\remove_icon.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_stylebutton.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\stylebutton.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_loginapp.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\loginapp.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_xo.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\xo.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_giu.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\giu.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_chat.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\chat.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_item_danhsachve.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\item_danhsachve.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_duong_vien_gach_duoi.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\duong_vien_gach_duoi.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat1_background.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat1_background.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao3.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao3.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_border_radius_top_tren_duoi.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\border_radius_top_tren_duoi.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_pencil.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\pencil.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat3.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat3.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_fragment_hoso.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\fragment_hoso.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_logochim.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\logochim.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_fragment_main.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_fragment_main.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao2.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao2.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_vien_gach_dut.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\vien_gach_dut.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_done_icon.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\done_icon.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\menu_menu_bottom_navigation.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\menu\\menu_bottom_navigation.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_viewhodel_category.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\viewhodel_category.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\anim\\slide_out_right.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_ngay_thang_nam.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\ngay_thang_nam.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat2.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat2.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat4.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat4.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_line_icon.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\line_icon.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_activity_reset_password.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\activity_reset_password.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\menu_menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\menu\\menu_bottom_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_dieu_khoan_ung_dung.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\dieu_khoan_ung_dung.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_avatar.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_avatar.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_card.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_card.png"
     },
     {
-        "merged": "com.droidfreshsquad.poly2023.app-merged_res-38:/layout_fragment_lien_he.xml.flat",
-        "source": "com.droidfreshsquad.poly2023.app-main-40:/layout/fragment_lien_he.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\layout_dieu_khoan_ung_dung.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\layout\\dieu_khoan_ung_dung.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_setting.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\setting.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_iconvitri.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\iconvitri.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_setting_icon.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\setting_icon.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_giu.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\giu.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao0.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao0.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_edit_text.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\edit_text.xml"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_heart.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\heart.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_styleforgot.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\styleforgot.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_logochim.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\logochim.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cham_thang.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cham_thang.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_line_icon.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\line_icon.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_xao.png.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\xao.png"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_cat1.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\cat1.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_sao5.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\sao5.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_bg_edt.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\bg_edt.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_icons8_purchase.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\icons8_purchase.png"
     },
     {
-        "merged": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\drawable_thoat.xml.flat",
-        "source": "C:\\Users\\dangt\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\drawable\\thoat.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-merged_res-38:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.0\\com.droidfreshsquad.poly2023.app-main-40:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     }
 ]
