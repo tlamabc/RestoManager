@@ -25,7 +25,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="@drawable/style_screenmain"
+                android:background="@drawable/background"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -53,12 +53,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-
                         android:paddingLeft="10dp"
                         android:text="EasyFly"
-                        android:textColor="#000000"
+                        android:textColor="#FFFFFF"
                         android:layout_weight="1"
-                        android:textSize="30dp"
+                        android:textSize="40dp"
                         android:fontFamily="@font/lato_black" />
                     <ImageView
                         android:id="@+id/danhgia"
@@ -80,21 +79,21 @@
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Chào bạn"
-                        android:textColor="#000000"
-                        android:textSize="45dp"
-                        android:fontFamily="@font/lato_bold"
+                        android:layout_height="95dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Đặt vé dễ dàng, giá cả hợp lý."
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Bạn muốn đi đâu?"
-                        android:textColor="#000000"
-                        android:fontFamily="@font/lato_regular"
-                        android:textSize="25dp"
-                        android:textStyle="normal" />
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:fontFamily="@font/lato_bold"-->
+<!--                        android:text="Bạn muốn đi đâu?"-->
+<!--                        android:textColor="#FFFFFF"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textStyle="normal" />-->
                 </LinearLayout>
 
                 <LinearLayout

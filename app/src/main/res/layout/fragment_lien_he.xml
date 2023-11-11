@@ -25,7 +25,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="@color/design_default_color_primary_dark"
+                android:background="@drawable/chuyenbay"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -107,7 +107,7 @@
 
                     </LinearLayout>
                     <LinearLayout
-
+                        android:id="@+id/lnl_zalo"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:padding="10dp"

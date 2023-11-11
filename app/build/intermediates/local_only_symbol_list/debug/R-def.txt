@@ -30,6 +30,7 @@ drawable add
 drawable arrow_icon
 drawable back_icon
 drawable backarrow
+drawable background
 drawable baseline_star_24
 drawable bg_edt
 drawable bgr1
@@ -226,7 +227,6 @@ id image4
 id image44
 id image5
 id image55
-id imageView1
 id imageView2
 id imageView3
 id imageView3_1
@@ -248,6 +248,7 @@ id linearLayout1
 id listViewDanhSachBay
 id lnlSearch
 id lnl_send
+id lnl_zalo
 id login
 id maGiamGia
 id mainLayout
@@ -269,6 +270,7 @@ id place_image
 id priceTextView
 id progressBar
 id progressBar1
+id recyclerViewProducts
 id recyclerview2
 id remove
 id remove_user_button

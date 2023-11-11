@@ -2956,6 +2956,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back_icon
 drawable backarrow
+drawable background
 drawable baseline_star_24
 drawable bg_edt
 drawable bgr1
@@ -3500,7 +3501,6 @@ id image4
 id image44
 id image5
 id image55
-id imageView1
 id imageView2
 id imageView3
 id imageView3_1
@@ -3543,6 +3543,7 @@ id listViewDanhSachBay
 id list_item
 id lnlSearch
 id lnl_send
+id lnl_zalo
 id login
 id m3_side_sheet
 id maGiamGia
@@ -3668,6 +3669,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerViewProducts
 id recyclerview2
 id remove
 id remove_user_button

@@ -16,9 +16,15 @@
         android:theme="@style/MyAppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Zalo"
+            android:label="Zalo"
+            android:exported="false"/>
         <activity
             android:name=".Message"
-            android:label="Message" />
+            android:label="Message"
+            android:exported="false"/>
         <activity
             android:name=".HoSo.BaoCao"
             android:exported="false" />
@@ -27,8 +33,6 @@
             android:exported="false" />
         <activity
             android:name=".HoSo.Danh_Gia"
-            android:exported="false" />
-        <activity android:name=".Fragment.Message"
             android:exported="false" />
 
 

@@ -36,7 +36,12 @@
         android:theme="@style/MyAppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.droidfreshsquad.poly2023.Zalo"
+            android:exported="false"
+            android:label="Zalo" />
+        <activity
             android:name="com.droidfreshsquad.poly2023.Message"
+            android:exported="false"
             android:label="Message" />
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.BaoCao"
@@ -46,9 +51,6 @@
             android:exported="false" />
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.Danh_Gia"
-            android:exported="false" />
-        <activity
-            android:name="com.droidfreshsquad.poly2023.Fragment.Message"
             android:exported="false" />
         <activity
             android:name="com.droidfreshsquad.poly2023.Fragment.FragmentMain"

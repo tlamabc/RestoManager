@@ -18,12 +18,14 @@ import androidx.fragment.app.Fragment;
 public class LienHeFragment extends Fragment {
 
     private LinearLayout lnl_Msg;
-
+    private LinearLayout lnl_Msg1;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_lien_he, container, false);
 
         lnl_Msg = view.findViewById(R.id.lnl_send);
+        lnl_Msg1 = view.findViewById(R.id.lnl_zalo);
+
 
         lnl_Msg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +40,7 @@ public class LienHeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        lnl_Msg.setOnClickListener(new View.OnClickListener() {
+        lnl_Msg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Tạo một Intent mới

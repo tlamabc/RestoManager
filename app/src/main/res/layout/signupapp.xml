@@ -51,7 +51,7 @@
                     android:layout_gravity="center"
                     android:paddingLeft="10dp"
                     android:text="Register"
-                    android:textColor="#00BCD4"
+                    android:textColor="#112d6a"
                     android:textSize="32sp"
                     android:textStyle="normal" />
 

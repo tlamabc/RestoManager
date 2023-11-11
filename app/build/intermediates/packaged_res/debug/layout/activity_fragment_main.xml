@@ -25,7 +25,7 @@
         android:background="#ffffff"
         app:layout_constraintEnd_toStartOf="parent"
         app:menu="@menu/menu_bottom_navigation"
-        app:itemIconTint="#00BCD4"
-        app:itemTextColor="#00BCD4"
+        app:itemIconTint="#112d6a"
+        app:itemTextColor="#112d6a"
         tools:ignore="InvalidId" />
 </androidx.constraintlayout.widget.ConstraintLayout>

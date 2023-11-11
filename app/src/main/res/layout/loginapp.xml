@@ -55,7 +55,7 @@
                     android:layout_gravity="center"
                     android:paddingLeft="10dp"
                     android:text="Welcome"
-                    android:textColor="#00BCD4"
+                    android:textColor="#112D6A"
                     android:textSize="32sp"
                     android:textStyle="normal" />
 
@@ -137,7 +137,7 @@
                         android:id="@+id/check_save"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:outlineSpotShadowColor="#00BCD4"
+                        android:outlineSpotShadowColor="#112d6a"
                         android:gravity="center">
                     </Switch>
                     <TextView
