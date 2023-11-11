@@ -44,6 +44,7 @@ drawable border_radius_15dp
 drawable border_radius_top_tren_duoi
 drawable bovienlogo
 drawable button_msg
+drawable cart
 drawable cat1
 drawable cat1_background
 drawable cat2
@@ -156,6 +157,8 @@ font lato_thin
 font latothinitalic
 id Airlines
 id BottomNavigationView
+id DiemDi
+id DienDen
 id ErrorMail
 id ErrorName
 id ErrorNgay
@@ -269,8 +272,8 @@ id progressBar1
 id recyclerview2
 id remove
 id remove_user_button
-id sanbayden
-id sanbaydi
+id sanbay1
+id sanbay2
 id sao0
 id sao1
 id sao2

@@ -2978,6 +2978,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_msg
+drawable cart
 drawable cat1
 drawable cat1_background
 drawable cat2
@@ -3206,6 +3207,8 @@ id BOTTOM_END
 id BOTTOM_START
 id BottomNavigationView
 id CTRL
+id DiemDi
+id DienDen
 id ErrorMail
 id ErrorName
 id ErrorNgay
@@ -3675,8 +3678,8 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id sanbayden
-id sanbaydi
+id sanbay1
+id sanbay2
 id sao0
 id sao1
 id sao2

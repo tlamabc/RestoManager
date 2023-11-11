@@ -2977,6 +2977,7 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x7f08008f
 int drawable btn_radio_on_mtrl 0x7f080090
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f080091
 int drawable button_msg 0x7f080164
+int drawable cart 0x7f080168
 int drawable cat1 0x7f080092
 int drawable cat1_background 0x7f080093
 int drawable cat2 0x7f080094
@@ -3205,6 +3206,8 @@ int id BOTTOM_END 0x7f0a0002
 int id BOTTOM_START 0x7f0a0003
 int id BottomNavigationView 0x7f0a0004
 int id CTRL 0x7f0a0005
+int id DiemDi 0x7f0a0293
+int id DienDen 0x7f0a0294
 int id ErrorMail 0x7f0a0006
 int id ErrorName 0x7f0a0007
 int id ErrorNgay 0x7f0a0008
@@ -3674,8 +3677,8 @@ int id right_icon 0x7f0a01d8
 int id right_side 0x7f0a01d9
 int id rounded 0x7f0a01da
 int id row_index_key 0x7f0a01db
-int id sanbayden 0x7f0a01dc
-int id sanbaydi 0x7f0a01dd
+int id sanbay1 0x7f0a0295
+int id sanbay2 0x7f0a0296
 int id sao0 0x7f0a01de
 int id sao1 0x7f0a01df
 int id sao2 0x7f0a01e0
