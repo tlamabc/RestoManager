@@ -96,6 +96,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/DiemDi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Đà Nẵng"
@@ -104,7 +105,7 @@
 
                 <TextView
                     android:textSize="12dp"
-                    android:id="@+id/sanbaydi"
+                    android:id="@+id/sanbay1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sân bay tân sơn nhất" />
@@ -119,6 +120,7 @@
                     android:text="bombo airline" />
 
                 <TextView
+                    android:id="@+id/DienDen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hà Nội"
@@ -127,7 +129,7 @@
 
                 <TextView
                     android:textSize="12dp"
-                    android:id="@+id/sanbayden"
+                    android:id="@+id/sanbay2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sân bay nội bài" />

@@ -54,8 +54,10 @@ public class TicketAdapter extends BaseAdapter {
         TextView dateTextView2 = convertView.findViewById(R.id.dateTextView2);
         TextView priceTextView = convertView.findViewById(R.id.priceTextView);
         TextView Airlines = convertView.findViewById(R.id.Airlines);
-        TextView sanbayden = convertView.findViewById(R.id.sanbayden);
-        TextView sanbaydi = convertView.findViewById(R.id.sanbaydi);
+        TextView sanbay1 = convertView.findViewById(R.id.sanbay1);
+        TextView sanbay2 = convertView.findViewById(R.id.sanbay2);
+        TextView DiemDi = convertView.findViewById(R.id.DiemDi);
+        TextView DiemDen = convertView.findViewById(R.id.DienDen);
 
         Ticket ticket = (Ticket) getItem(position);
 
@@ -66,8 +68,10 @@ public class TicketAdapter extends BaseAdapter {
             dateTextView2.setText(ticket.getDate());
             priceTextView.setText(ticket.getPrice());
             Airlines.setText(ticket.getAirlines());
-            sanbayden.setText(ticket.getSanbayden());
-            sanbaydi.setText(ticket.getSanbaydi());
+            sanbay1.setText(ticket.getSanbayden());
+            sanbay2.setText(ticket.getSanbaydi());
+            DiemDi.setText(ticket.getDiemDi());
+            DiemDen.setText(ticket.getDiemDen());
 
             tvmuave.setOnClickListener(new View.OnClickListener() {
                 @Override
