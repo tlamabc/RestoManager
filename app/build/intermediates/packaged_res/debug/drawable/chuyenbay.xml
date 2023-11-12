@@ -3,7 +3,7 @@
     <!-- Layer cho đổ bóng -->
     <item>
         <shape>
-            <gradient android:startColor="#FFFFFF" android:endColor="#219fdf" android:angle="90" /> <!-- Độ mờ đến độ đậm -->
+            <gradient android:startColor="#FFFFFF" android:endColor="#112d6a" android:angle="90" /> <!-- Độ mờ đến độ đậm -->
             <corners android:bottomLeftRadius="40dp" android:bottomRightRadius="40dp"  /> <!-- Bán kính bo góc -->
         </shape>
     </item>
