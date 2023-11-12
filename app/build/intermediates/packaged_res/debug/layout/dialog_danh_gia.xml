@@ -7,19 +7,75 @@
     android:orientation="vertical">
 
     <TextView
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#112d6a"
         android:gravity="center"
-        android:text="Đánh giá"
+        android:text="Ứng dụng như nào ?"
         android:textSize="26dp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="#112d6a"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Đánh giá của bạn giúp chúng tôi\n hoàn thiện hơn"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:textColor="#112d6a"/>
 
     <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/sao0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sao0"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/sao1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sao1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/sao2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sao2"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/sao3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sao3"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/sao4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sao4"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/sao5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/sao5"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
 
         <ImageView
             android:id="@+id/image1"
@@ -96,71 +152,28 @@
             android:background="@drawable/xo" />
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp">
-
-        <ImageView
-            android:id="@+id/sao0"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/sao0"
-            android:visibility="visible" />
-
-        <ImageView
-            android:id="@+id/sao1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/sao1"
-            android:visibility="invisible" />
-
-        <ImageView
-            android:id="@+id/sao2"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/sao2"
-            android:visibility="invisible" />
-
-        <ImageView
-            android:id="@+id/sao3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/sao3"
-            android:visibility="invisible" />
-
-        <ImageView
-            android:id="@+id/sao4"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/sao4"
-            android:visibility="invisible" />
-
-        <ImageView
-            android:id="@+id/sao5"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/sao5"
-            android:visibility="invisible" />
-    </FrameLayout>
-
     <LinearLayout
+        android:background="#F7F7F7"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_margin="5dp"
+            android:gravity="start"
+            android:id="@+id/editText"
+            android:hint="nhập dánh giá của bạn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginVertical="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="15dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/thoat"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginHorizontal="30dp"
-            android:layout_weight="1"
-            android:background="@drawable/thoat"
-            android:textColor="#112d6a"
-            android:gravity="center"
-            android:text="Thoát"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/giu"
@@ -168,10 +181,11 @@
             android:layout_height="40dp"
             android:layout_marginHorizontal="30dp"
             android:layout_weight="1"
-            android:background="#112d6a"
+            android:background="@drawable/style_button"
             android:gravity="center"
+            android:textSize="20dp"
             android:textColor="@color/white"
-            android:text="Gửi"
+            android:text="Đánh Giá"
             android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

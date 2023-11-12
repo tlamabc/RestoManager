@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScreenExplore.thoi_tiet">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/thanh_lienhe"
+            android:id="@+id/lnVetrangchu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="7dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#112d6a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Về trang chủ"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

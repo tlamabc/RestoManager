@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Đây là hình dạng của background, một hình chữ nhật -->
+
+    <!-- Bạn có thể thiết lập màu nền của EditText -->
+    <solid android:color="#ebebeb" />
+
+    <!-- Đây là gạch dưới của EditText, nếu không muốn gạch dưới, để height là 0dp -->
+    <stroke
+        android:width="0dp"
+        android:color="#000000" /> <!-- Màu của gạch dưới -->
+</shape>

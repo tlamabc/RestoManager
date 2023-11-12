@@ -65,10 +65,8 @@ public class DanhSachBay extends AppCompatActivity {
 
 
         listViewDanhSachBay = findViewById(R.id.listViewDanhSachBay);
-
         // Kết nối đến Firebase Realtime Database
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
         // Lắng nghe dữ liệu từ Firebase Realtime Database
         mDatabase.child("list_ticket").addValueEventListener(new ValueEventListener() {
             @Override
@@ -89,20 +87,40 @@ public class DanhSachBay extends AppCompatActivity {
                 // Xử lý lỗi nếu có
             }
         });
-            listViewDanhSachBay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listViewDanhSachBay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // Lấy dữ liệu từ item được chọn tại vị trí 'position'
                 Ticket selectedTicket = (Ticket) listViewDanhSachBay.getItemAtPosition(position);
 
                 // Lấy dữ liệu cần thiết từ 'selectedTicket'
+                String ticketId = String.valueOf(selectedTicket.getId());
+                String diemDi = selectedTicket.getDiemDi();
+                String diemDen = selectedTicket.getDiemDen();
+                String gio1 = selectedTicket.getScheduled();
+                String gio2 = selectedTicket.getScheduled2();
+                String ngay = selectedTicket.getDate();
+                String san1 = selectedTicket.getSanbaydi();
+                String san2 = selectedTicket.getSanbayden();
+                String ari1 = selectedTicket.getAirlines();
+                String timebay = selectedTicket.getTimebay();
                 int tien = selectedTicket.getPrice();
 
                 // Tạo Intent để chuyển dữ liệu sang Activity mới
                 Intent intent = new Intent(DanhSachBay.this, ThongTinThanhToan.class);
 
                 // Đính kèm dữ liệu vào Intent
-                intent.putExtra("SAN_BAY_DEN", tien);
+                intent.putExtra("TICKET_ID", ticketId);
+                intent.putExtra("DEPARTURE", diemDi);
+                intent.putExtra("DESTINATION", diemDen);
+                intent.putExtra("SCHEDULED", gio1);
+                intent.putExtra("SCHEDULED2", gio2);
+                intent.putExtra("DATE", ngay);
+                intent.putExtra("SANBAYDI", san1);
+                intent.putExtra("SANBAYDEN", san2);
+                intent.putExtra("AIRLINES", ari1);
+                intent.putExtra("TIMEBAY", timebay);
+                intent.putExtra("PRICE", tien);
 
                 // Khởi chạy Activity mới với Intent
                 startActivity(intent);

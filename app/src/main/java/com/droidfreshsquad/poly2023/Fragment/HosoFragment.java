@@ -122,7 +122,8 @@ public class HosoFragment extends Fragment {
 // Lấy phiên bản từ BuildConfig và hiển thị nó trên TextView
         String versionName = BuildConfig.VERSION_NAME;
         versionTextView = view.findViewById(R.id.versionTextView);
-        versionTextView.setText("Phiên bản: " + versionName);
+        versionTextView.setText("Phiên bản: " + "1.0.0" + " by DroidFresh Sixz"
+                );
         // Lấy tên và ảnh của người dùng
         String username = FirebaseAuth.getInstance().getCurrentUser().getEmail();
         Uri photoUrl = FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl();

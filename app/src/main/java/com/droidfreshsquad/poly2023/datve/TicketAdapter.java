@@ -56,6 +56,7 @@ public class TicketAdapter extends BaseAdapter {
         TextView sanbay2 = convertView.findViewById(R.id.sanbay2);
         TextView DiemDi = convertView.findViewById(R.id.DiemDi);
         TextView DiemDen = convertView.findViewById(R.id.DienDen);
+        TextView timebay = convertView.findViewById(R.id.thoigianbay);
 
         Ticket ticket = (Ticket) getItem(position);
 
@@ -74,6 +75,7 @@ public class TicketAdapter extends BaseAdapter {
             sanbay2.setText(ticket.getSanbaydi());
             DiemDi.setText(ticket.getDiemDi());
             DiemDen.setText(ticket.getDiemDen());
+            timebay.setText(ticket.getTimebay());
 
             LinearLayout maGiamGia = convertView.findViewById(R.id.maGiamGia);
             maGiamGia.setOnClickListener(new View.OnClickListener() {

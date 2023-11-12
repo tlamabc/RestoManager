@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 
 import com.droidfreshsquad.poly2023.Message;
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.VdCallActivity;
 import com.droidfreshsquad.poly2023.Zalo;
 
 import androidx.fragment.app.Fragment;
@@ -24,7 +25,7 @@ public class LienHeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_lien_he, container, false);
 
         lnl_Msg = view.findViewById(R.id.lnl_send);
-        lnl_Msg1 = view.findViewById(R.id.lnl_zalo);
+        lnl_Msg1 = view.findViewById(R.id.callok);
 
 
         lnl_Msg.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +45,7 @@ public class LienHeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 // Tạo một Intent mới
-                Intent intent = new Intent(getActivity(), Zalo.class);
+                Intent intent = new Intent(getActivity(), VdCallActivity.class);
 
                 startActivity(intent);
 

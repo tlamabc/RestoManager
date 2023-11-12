@@ -12,90 +12,71 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.datve.ThongTinKhach;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class DatveFragment extends Fragment {
 
-    private RecyclerView recyclerView;
+    private RecyclerView recyclerViewProducts;
     private TextView textViewTotal;
     private Button buttonCheckout;
+    private List<ThongTinKhach> gioHangItemList;
+    private GioHangAdapter gioHangAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_datve, container, false);
 
-//        // Ánh xạ các thành phần trong layout
-//        recyclerView = view.findViewById(R.id.recyclerViewProducts);
-//        textViewTotal = view.findViewById(R.id.);
-//        buttonCheckout = view.findViewById(R.id.buttonCheckout);
+        // Khởi tạo RecyclerView, TextView và Button
+        recyclerViewProducts = view.findViewById(R.id.recyclerViewProducts);
+        textViewTotal = view.findViewById(R.id.textViewTotal);
+        buttonCheckout = view.findViewById(R.id.buttonCheckout);
 
-        // Khởi tạo danh sách sản phẩm (Đây là ví dụ, bạn cần thay thế bằng danh sách thực tế)
-        List<String> productList = new ArrayList<>();
-        productList.add("Sản phẩm 1");
-        productList.add("Sản phẩm 2");
-        productList.add("Sản phẩm 3");
+        // Khởi tạo danh sách để lưu trữ dữ liệu từ Firebase
+        gioHangItemList = new ArrayList<>();
+        gioHangAdapter = new GioHangAdapter(gioHangItemList); // FIX GIÚP
 
-//        // Khởi tạo và cài đặt adapter cho RecyclerView
-//        RecyclerView.Adapter adapter = new ProductAdapter(productList);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-//        recyclerView.setAdapter(adapter);
+        // Thiết lập LinearLayoutManager cho RecyclerView
+        recyclerViewProducts.setLayoutManager(new LinearLayoutManager(getActivity()));
+        // Gán Adapter cho RecyclerView
+        recyclerViewProducts.setAdapter(gioHangAdapter);
 
-        // Tính tổng tiền (Đây là ví dụ, bạn cần thay thế bằng tính toán thực tế)
-        int total = calculateTotal(productList);
-//        textViewTotal.setText("Tổng tiền: " + total + " VND");
+        // Thực hiện truy vấn đến Firebase Realtime Database
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("gio_hang");
 
-        // Xử lý sự kiện khi nhấn nút thanh toán
-//        buttonCheckout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Xử lý logic thanh toán
-//            }
-//        });
+        // Lắng nghe sự kiện khi có thay đổi trong dữ liệu
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // Xóa dữ liệu cũ khi có sự thay đổi
+                gioHangItemList.clear();
+
+                // Lặp qua tất cả các nút con trong "gio_hang"
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                    // Đọc dữ liệu từ Firebase và thêm vào danh sách
+                    ThongTinKhach gioHangItem = postSnapshot.getValue(ThongTinKhach.class);
+                    gioHangItemList.add(gioHangItem);
+                }
+
+                // Cập nhật Adapter khi có dữ liệu thay đổi
+                gioHangAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Xử lý khi có lỗi xảy ra trong quá trình truy vấn
+            }
+        });
 
         return view;
-    }
-
-    // Hàm tính tổng tiền (Đây là ví dụ, bạn cần thay thế bằng tính toán thực tế)
-    private int calculateTotal(List<String> productList) {
-        // Logic tính tổng tiền ở đây
-        return productList.size() * 100000; // Giả sử giá của mỗi sản phẩm là 100,000 VND
-    }
-
-    // Adapter cho RecyclerView
-    private static class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHolder> {
-
-        private List<String> productList;
-
-        public ProductAdapter(List<String> productList) {
-            this.productList = productList;
-        }
-
-        @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
-            return new ViewHolder(view);
-        }
-
-        @Override
-        public void onBindViewHolder(ViewHolder holder, int position) {
-            holder.textViewProduct.setText(productList.get(position));
-        }
-
-        @Override
-        public int getItemCount() {
-            return productList.size();
-        }
-
-        public static class ViewHolder extends RecyclerView.ViewHolder {
-            public TextView textViewProduct;
-
-            public ViewHolder(View view) {
-                super(view);
-                textViewProduct = view.findViewById(android.R.id.text1);
-            }
-        }
     }
 }

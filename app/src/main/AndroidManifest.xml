@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="com.google.android.gms.wallet.api.enabled"
+        android:value="true" />
 
     <application
         android:allowBackup="true"
@@ -16,15 +21,28 @@
         android:theme="@style/MyAppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".ScreenExplore.thoi_tiet"
+            android:exported="false" />
+        <activity
+            android:name=".HoSo.danhgia"
+            android:exported="false" />
+        <activity android:name=".VdCallActivity">
 
+            <!-- Other activity-related configurations -->
+        </activity>
+        <activity android:name=".CallingActivity">
+
+            <!-- Other activity-related configurations -->
+        </activity>
         <activity
             android:name=".Zalo"
-            android:label="Zalo"
-            android:exported="false"/>
+            android:exported="false"
+            android:label="Zalo" />
         <activity
             android:name=".Message"
-            android:label="Message"
-            android:exported="false"/>
+            android:exported="false"
+            android:label="Message" />
         <activity
             android:name=".HoSo.BaoCao"
             android:exported="false" />
@@ -34,8 +52,6 @@
         <activity
             android:name=".HoSo.Danh_Gia"
             android:exported="false" />
-
-
         <activity
             android:name=".Fragment.FragmentMain"
             android:exported="false" />
@@ -84,7 +100,6 @@
         <activity
             android:name=".ScreenExplore.ScreenDanang"
             android:exported="false" />
-
     </application>
 
 </manifest>

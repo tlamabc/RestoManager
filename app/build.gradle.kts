@@ -32,6 +32,10 @@ android {
 }
 
 dependencies {
+    implementation ("com.google.android.gms:play-services-wallet:19.2.1")
+    implementation ("com.google.android.gms:play-services-identity:18.0.1")
+
+
     implementation ("com.google.android.gms:play-services-measurement-impl:15.0.4")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
@@ -59,7 +63,8 @@ dependencies {
     //database
     implementation ("com.google.firebase:firebase-database:20.0.0")
 
-
+    implementation ("com.github.ZEGOCLOUD:zego_uikit_prebuilt_call_android:+")   // Add this line to your module-level build.gradle file's dependencies, usually named [app].
+    implementation ("com.github.ZEGOCLOUD:zego_uikit_signaling_plugin_android:+")
     implementation(platform("com.google.firebase:firebase-bom:32.4.0"))
 
 }

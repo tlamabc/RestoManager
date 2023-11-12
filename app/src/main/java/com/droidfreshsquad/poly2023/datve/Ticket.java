@@ -15,6 +15,52 @@ public class Ticket implements Parcelable {
     private String DiemDen;
     private String sanbaydi;
     private String sanbayden;
+    private String timebay;
+
+
+    public void setDiemDi(String diemDi) {
+        this.DiemDi = diemDi;
+    }
+
+    public void setDiemDen(String diemDen) {
+        this.DiemDen = diemDen;
+    }
+
+    public void setScheduled(String scheduled) {
+        this.Scheduled = scheduled;
+    }
+
+    public void setScheduled2(String scheduled2) {
+        this.Scheduled2 = scheduled2;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setSanbaydi(String sanbaydi) {
+        this.sanbaydi = sanbaydi;
+    }
+
+    public void setSanbayden(String sanbayden) {
+        this.sanbayden = sanbayden;
+    }
+
+    public void setAirlines(String airlines) {
+        this.Airlines = airlines;
+    }
+
+    public void setTimebay(String timebay) {
+        this.timebay = timebay;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     // Empty constructor for Firebase
     public Ticket() {
@@ -23,32 +69,50 @@ public class Ticket implements Parcelable {
     public int getId() {
         return id;
     }
+
     public String getName_ticket() {
         return name_ticket;
     }
+
     public String getScheduled2() {
         return Scheduled2;
     }
+
     public String getAirlines() {
         return Airlines;
     }
+
     public String getScheduled() {
         return Scheduled;
     }
+
+    public String getTimebay() {
+        return timebay;
+    }
+
     public String getDate() {
         return date;
     }
+
     public int getPrice() {
         return price;
     }
+
     public String getDiemDi() {
         return DiemDi;
     }
+
     public String getDiemDen() {
         return DiemDen;
     }
-    public String getSanbaydi() {return sanbaydi;}
-    public String getSanbayden() {return sanbayden;}
+
+    public String getSanbaydi() {
+        return sanbaydi;
+    }
+
+    public String getSanbayden() {
+        return sanbayden;
+    }
 
     // Parcelable implementation
     protected Ticket(Parcel in) {
@@ -63,6 +127,7 @@ public class Ticket implements Parcelable {
         DiemDen = in.readString();
         sanbaydi = in.readString();
         sanbayden = in.readString();
+        timebay = in.readString();
     }
 
     public static final Creator<Ticket> CREATOR = new Creator<Ticket>() {
@@ -95,5 +160,6 @@ public class Ticket implements Parcelable {
         dest.writeString(DiemDen);
         dest.writeString(sanbaydi);
         dest.writeString(sanbayden);
+        dest.writeString(timebay);
     }
 }

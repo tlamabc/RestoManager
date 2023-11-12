@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="diem_den_data">
-        <item>Sa Pa</item>
-        <item>TP Hồ Chí Minh</item>
         <item>Đà Nẵng</item>
+        <item>Huế</item>
+        <item>TP Hồ Chí Minh</item>
         <item>Phú Quốc</item>
         <item>Hà Nội</item>
+        <item>Quảng Nam</item>
+
 
         
     </string-array>
     <string-array name="diem_di_data">
-        <item>Sa Pa</item>
+
         <item>TP Hồ Chí Minh</item>
         <item>Đà Nẵng</item>
         <item>Phú Quốc</item>
         <item>Hà Nội</item>
+        <item>Huế</item>
+        <item>Quảng Nam</item>
         
     </string-array>
     <color name="background">#00bcd4</color>

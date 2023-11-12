@@ -15,7 +15,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,9 +25,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.droidfreshsquad.poly2023.Adapter.ExploreAdapter;
 import com.droidfreshsquad.poly2023.Domain.ExploreDomain;
 import com.droidfreshsquad.poly2023.HoSo.Danh_Gia;
+import com.droidfreshsquad.poly2023.HoSo.danhgia;
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.ScreenExplore.thoi_tiet;
 import com.droidfreshsquad.poly2023.ScreenMainActivity;
 import com.droidfreshsquad.poly2023.datve.BookingActivity;
+import com.droidfreshsquad.poly2023.datve.DanhSachBay;
+import com.droidfreshsquad.poly2023.datve.Ticket;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -33,7 +44,8 @@ public class HomeFragment extends Fragment {
     private RecyclerView recyclerViewExploreList;
     private RecyclerView.Adapter adapter;
     private LinearLayout lnlSearch;
-    private ImageView danhgia;
+    private ImageView danhgia,vemaybay,thoitiet;
+    DatabaseReference mDatabase;
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -70,34 +82,70 @@ public class HomeFragment extends Fragment {
 
         lnlSearch = view.findViewById(R.id.lnlSearch);
         danhgia = (ImageView) view.findViewById(R.id.danhgia);
-
+        vemaybay = (ImageView) view.findViewById(R.id.vemaybay);
+        thoitiet = (ImageView) view.findViewById(R.id.thoitiet);
+//----------------------------------------------
         danhgia.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
-                Danh_Gia dialog = new Danh_Gia(HomeFragment.this);
-                dialog.handleDialogEvents();
-                dialog.show();
+                startActivity(new Intent(getActivity(), com.droidfreshsquad.poly2023.HoSo.danhgia.class));
             }
         });
+//------------------------------------------
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("list_ticket");
+        vemaybay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            ArrayList<Ticket> allTickets = new ArrayList<>();
+                            for (DataSnapshot ticketSnapshot : dataSnapshot.getChildren()) {
+                                Ticket ticket = ticketSnapshot.getValue(Ticket.class);
+                                if (ticket != null) {
+                                    allTickets.add(ticket);
+                                }
+                            }
+                            // Kiểm tra xem có vé nào trong danh sách không
+                            if (!allTickets.isEmpty()) {
+                                // Hiển thị danh sách vé tất cả
+                                Intent intent = new Intent(getActivity(), DanhSachBay.class);
+                                intent.putParcelableArrayListExtra("allTickets", allTickets);
+                                startActivity(intent);
+                            } else {
+                                // Hiển thị thông báo nếu không có vé nào
+                                Toast.makeText(getActivity(), "Không có vé máy bay nào", Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            // Hiển thị thông báo nếu không có dữ liệu
+                            Toast.makeText(getActivity(), "Không có dữ liệu vé máy bay", Toast.LENGTH_SHORT).show();
+                        }
+                    }
 
-
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                        // Xử lý lỗi nếu có
+                    }
+                });
+            }
+        });
+////-------------------------------------------------
         lnlSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), BookingActivity.class));
             }
         });
-
-
-        WebView webView = view.findViewById(R.id.webview);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.tomorrow.io/weather/vi/VN/DN/Da_Nang/130195/");
-
+        //=----------------------------------
+        thoitiet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), thoi_tiet.class));
+            }
+        });
 
         return view;
-
     }
 
 }

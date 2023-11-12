@@ -46,7 +46,6 @@ public class Danh_Gia {
         ImageView sao3 = dialog.findViewById(R.id.sao3);
         ImageView sao4 = dialog.findViewById(R.id.sao4);
         ImageView sao5 = dialog.findViewById(R.id.sao5);
-        TextView thoat = dialog.findViewById(R.id.thoat);
         TextView giu = dialog.findViewById(R.id.giu);
 
 
@@ -139,12 +138,6 @@ public class Danh_Gia {
                     sao4.setVisibility(View.INVISIBLE);
                     sao5.setVisibility(View.VISIBLE);
                 }
-            }
-        });
-        thoat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialog.dismiss();
             }
         });
         giu.setOnClickListener(new View.OnClickListener() {

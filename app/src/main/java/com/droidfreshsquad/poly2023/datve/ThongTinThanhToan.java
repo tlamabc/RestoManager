@@ -3,7 +3,9 @@ package com.droidfreshsquad.poly2023.datve;
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -12,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -22,10 +25,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.droidfreshsquad.poly2023.Fragment.DatveFragment;
 import com.droidfreshsquad.poly2023.R;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.Number;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.NumberData;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,15 +39,20 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 
 public class ThongTinThanhToan extends AppCompatActivity {
     EditText ngaysinh, phone, email, name;
-    TextView ErrorPhone,tieptuc, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach, TongSoNguoi;
+    TextView  ErrorPhone, tieptuc, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach;
     BottomSheetDialog dialog;
     LinearLayout LnThongtin;
     ListView listViewDanhSach;
     DatabaseReference mDatabase;
+    private int tongGiaTien = 0;
+    private int TongSoNguoi = 0;
     private int totalTicketPrice = 0;
 
     @SuppressLint("MissingInflatedId")
@@ -50,7 +60,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thong_tin_thanh_toan);
-        //thanh tiêu đề
+//thanh tiêu đề
         android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
         setActionBar(toolbar);
         ActionBar actionBar = getActionBar();
@@ -58,6 +68,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
         LayoutInflater inflater = LayoutInflater.from(this);
         View customView = inflater.inflate(R.layout.tieu_de, toolbar, false);
         ImageButton backButton = customView.findViewById(R.id.backButton);
+
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,53 +79,17 @@ public class ThongTinThanhToan extends AppCompatActivity {
         TextView title = customView.findViewById(R.id.toolbar_title);
         title.setText("Tìm chuyến bay");
         toolbar.addView(customView);
-        //thanh tiêu đề
-
-
-  listViewDanhSach = findViewById(R.id.listViewDanhSach);
-        tieptuc= findViewById(R.id.tieptuc);
-        tieptuc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });
-//        // Kết nối đến Firebase Realtime Database
-//        mDatabase = FirebaseDatabase.getInstance().getReference();
-//        // Lắng nghe dữ liệu từ Firebase Realtime Database
-//        mDatabase.child("list_ticket").addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                if (dataSnapshot.exists()) {
-//                    ArrayList<Ticket> ticketsToShow = new ArrayList<>();
-//
-//                    for (DataSnapshot ticketSnapshot : dataSnapshot.getChildren()) {
-//                        Ticket ticket = ticketSnapshot.getValue(Ticket.class);
-//                        ticketsToShow.add(ticket);
-//                    }
-//                    TicketAdapter adapter = new TicketAdapter(ThongTinThanhToan.this, ticketsToShow);
-//                    listViewDanhSach.setAdapter(adapter);
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//                // Xử lý lỗi nếu có
-//            }
-//        });
-
-
-        int tien = getIntent().getIntExtra("SAN_BAY_DEN", 0);
-        ArrayList<Integer> ticketPrices = new ArrayList<>();
-        ticketPrices.add(tien);
-
-        AdapterTT adapter = new AdapterTT(this, ticketPrices);
-        listViewDanhSach.setAdapter(adapter);
-
+//thanh tiêu đề
         viewSokhach = (TextView) findViewById(R.id.viewSokhach);
-        emailView = (TextView) findViewById(R.id.emailView);
         phoneView = (TextView) findViewById(R.id.phoneView);
         nameView = (TextView) findViewById(R.id.nameView);
         LnThongtin = (LinearLayout) findViewById(R.id.LnThongtin);
+        tieptuc = findViewById(R.id.tieptuc);
+
+
+// nút Tiếp Tục
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+
 //lấy Các giá trị Number số lượng khách
         Number numberObject = NumberData.getInstance().getNumberObject();// lấy ở SaveNumber
         int numberLon = 0;
@@ -138,13 +114,106 @@ public class ThongTinThanhToan extends AppCompatActivity {
         viewSokhach.setText(numbersText.toString());//in ra textView
 
         int TongSoNguoi = (numberTreEm + numberEmBe + numberLon);
-        TextView TongSoNguoiTextView = findViewById(R.id.TongSoNguoi);// in ra Tổng số người
-        TongSoNguoiTextView.setText("X" + TongSoNguoi);
 
+
+//lấy dữ liệu item từ danhsachbay
+        // Đọc dữ liệu từ Intent
+        viewSokhach.setText(numbersText.toString());
+        int tien = getIntent().getIntExtra("PRICE", 0);
+        String diemDi = getIntent().getStringExtra("DEPARTURE");
+        String diemDen = getIntent().getStringExtra("DESTINATION");
+        String gio1 = getIntent().getStringExtra("SCHEDULED");
+        String gio2 = getIntent().getStringExtra("SCHEDULED2");
+        String ngay = getIntent().getStringExtra("DATE");
+        String san1 = getIntent().getStringExtra("SANBAYDI");
+        String san2 = getIntent().getStringExtra("SANBAYDEN");
+        String ari1 = getIntent().getStringExtra("AIRLINES");
+        String timebay = getIntent().getStringExtra("TIMEBAY");
+        // Hiển thị dữ liệu vào các TextView tương ứng
+        TextView tongGiaTienTextView = findViewById(R.id.tonggiatien);
+        TextView di = findViewById(R.id.di);
+        TextView den = findViewById(R.id.den);
+        TextView giomot = findViewById(R.id.gio1);
+        TextView giohai = findViewById(R.id.gio2);
+        TextView ngaymot = findViewById(R.id.ngay1);
+        TextView ngayhai = findViewById(R.id.ngay2);
+        TextView sanmot = findViewById(R.id.san1);
+        TextView sanhai = findViewById(R.id.san2);
+        TextView arimot = findViewById(R.id.ari1);
+        TextView thoigianbay = findViewById(R.id.thoigianbay);
+        // Đặt dữ liệu vào các TextView
+        tongGiaTienTextView.setText(String.valueOf(tien));
+        di.setText(String.valueOf(diemDi));
+        den.setText(String.valueOf(diemDen));
+        giomot.setText(String.valueOf(gio1));
+        giohai.setText(String.valueOf(gio2));
+        ngaymot.setText(String.valueOf(ngay));
+        ngayhai.setText(String.valueOf(ngay));
+        sanmot.setText(String.valueOf(san1));
+        sanhai.setText(String.valueOf(san2));
+        arimot.setText(String.valueOf(ari1));
+        thoigianbay.setText(String.valueOf(timebay));
+
+        int tongGiaTien = tien * TongSoNguoi;
+        // Định dạng số theo 1,200,000  /vnd
+        NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
+        String formattedPrice = numberFormat.format(tongGiaTien);
+        tongGiaTienTextView.setText(formattedPrice);//in ra textview
+        // Định dạng số theo 1,200,000  /ve
+        NumberFormat numberForma = NumberFormat.getNumberInstance(Locale.getDefault());
+        String formattedPric = numberForma.format(tien);
+        TextView TongSoNguoiTextView = findViewById(R.id.TongSoNguoi);
+        TongSoNguoiTextView.setText(formattedPric + "/vé");
+        //in ra textview
 // Tạo giao diện cho bottom sheet dialog
         dialog = new BottomSheetDialog(this);
         View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_thongtinkhach, null);
         dialog.setContentView(viewDialog);
+//-----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("gio_hang");
+        tieptuc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // lấy tổng tiền
+                String tongGiaTienString = tongGiaTienTextView.getText().toString();
+                int tongGiaTien = Integer.parseInt(tongGiaTienString.replaceAll("[^0-9]", ""));
+
+                String diemDi = getIntent().getStringExtra("DIEM_DI");
+                String diemDen = getIntent().getStringExtra("DIEM_DEN");
+                String gio1 = getIntent().getStringExtra("GIO1");
+                String gio2 = getIntent().getStringExtra("GIO2");
+                String ngay = getIntent().getStringExtra("NGAY");
+                String san1 = getIntent().getStringExtra("SAN1");
+                String san2 = getIntent().getStringExtra("SAN2");
+                String ari1 = getIntent().getStringExtra("ARI1");
+                // thông tin khách hàng
+                String ten = name.getText().toString();
+                String ngaySinh = ngaysinh.getText().toString();
+                String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+
+                //String emailValue = email.getText().toString();
+                // String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail().toString();
+
+
+                String phoneValue = phone.getText().toString();
+
+                ThongTinKhach thongTinKhach = new ThongTinKhach(ten, ngaySinh, emailValue, phoneValue,tongGiaTien,  diemDi, diemDen, gio1, gio2, ngay, san1, san2, ari1);
+                // Đẩy dữ liệu lên Realtime Database
+                String key = myRef.push().getKey();
+                myRef.child(key).setValue(thongTinKhach);
+
+
+                // Thông báo khi dữ liệu đã được đẩy thành công (hoặc xử lý thêm logic tùy vào yêu cầu của bạn)
+                Toast.makeText(ThongTinThanhToan.this, "Dữ liệu đã được lưu trữ thành công", Toast.LENGTH_SHORT).show();
+
+            }
+
+        });
+
         // Hiển thị bottom sheet dialog
         LnThongtin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -219,8 +288,10 @@ public class ThongTinThanhToan extends AppCompatActivity {
                     ErrorMail.setVisibility(View.VISIBLE);
                 } else {
                     ErrorMail.setVisibility(View.INVISIBLE);
+
                     String nameValue = email.getText().toString();
                     emailView.setText(nameValue);
+
                 }
             }
         });
@@ -246,6 +317,9 @@ public class ThongTinThanhToan extends AppCompatActivity {
             }
         });
     }
+
+
+
 
     //kiểm tra định dạng ngày tháng
     private boolean isValidDateDDMMYYYY(String input) {
@@ -297,5 +371,5 @@ public class ThongTinThanhToan extends AppCompatActivity {
     }
 
 
-}
 
+}

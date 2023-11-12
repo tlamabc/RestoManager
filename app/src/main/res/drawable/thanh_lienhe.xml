@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Layer cho đổ bóng -->
-    <item>
-        <shape>
-            <gradient android:startColor="#00BCD4" android:endColor="#2196F3" android:angle="90" />  <!-- Bán kính bo góc -->
-        </shape>
-    </item>
-</layer-list>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="90dp" />
+    <solid android:color="#ffffff" /> <!-- Màu nền của nút -->
+    <corners android:radius="20dp" /> <!-- Bán kính bo góc -->
+</shape>

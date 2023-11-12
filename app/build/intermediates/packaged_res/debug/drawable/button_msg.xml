@@ -3,7 +3,7 @@
     <!-- Layer cho đổ bóng -->
     <item>
         <shape>
-            <stroke android:width="2dp" android:color="#2196F3"/>
+            <stroke android:width="2dp" android:color="#112d6a"/>
             <corners android:radius="10dp"/>
 
         </shape>
