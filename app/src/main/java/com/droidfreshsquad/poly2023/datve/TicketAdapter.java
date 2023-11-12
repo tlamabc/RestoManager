@@ -6,14 +6,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.droidfreshsquad.poly2023.R;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class TicketAdapter extends BaseAdapter {
     private Context context;
@@ -45,11 +46,8 @@ public class TicketAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.ticket_item, parent, false);
         }
 
-        LinearLayout tvmuave = convertView.findViewById(R.id.tvmuave);
-        LinearLayout maGiamGia = convertView.findViewById(R.id.maGiamGia);
-
         TextView scheduledTextView = convertView.findViewById(R.id.scheduledTextView);
-        TextView scheduledTextView2 = convertView.findViewById(R.id.scheduledTextView2); // TextView for scheduled2
+        TextView scheduledTextView2 = convertView.findViewById(R.id.scheduledTextView2);
         TextView dateTextView = convertView.findViewById(R.id.dateTextView);
         TextView dateTextView2 = convertView.findViewById(R.id.dateTextView2);
         TextView priceTextView = convertView.findViewById(R.id.priceTextView);
@@ -63,37 +61,28 @@ public class TicketAdapter extends BaseAdapter {
 
         if (ticket != null) {
             scheduledTextView.setText(ticket.getScheduled());
-            scheduledTextView2.setText(ticket.getScheduled2()); // Set scheduled2 to the new TextView
+            scheduledTextView2.setText(ticket.getScheduled2());
             dateTextView.setText(ticket.getDate());
             dateTextView2.setText(ticket.getDate());
-            priceTextView.setText(ticket.getPrice());
+
+            NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
+            String formattedPrice = numberFormat.format(ticket.getPrice());
+            priceTextView.setText(formattedPrice);
+
             Airlines.setText(ticket.getAirlines());
             sanbay1.setText(ticket.getSanbayden());
             sanbay2.setText(ticket.getSanbaydi());
             DiemDi.setText(ticket.getDiemDi());
             DiemDen.setText(ticket.getDiemDen());
 
-            tvmuave.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    layNumbe();
-                }
-            });
-
+            LinearLayout maGiamGia = convertView.findViewById(R.id.maGiamGia);
             maGiamGia.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Toast.makeText(context, "Bạn không có mã giảm giá nào", Toast.LENGTH_SHORT).show();
                 }
             });
-
         }
         return convertView;
     }
-
-    private void layNumbe() {
-        Intent intent1 = new Intent(context, ThongTinThanhToan.class);
-        context.startActivity(intent1);
-    }
-
 }

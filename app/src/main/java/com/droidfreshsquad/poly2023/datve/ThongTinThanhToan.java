@@ -2,28 +2,48 @@ package com.droidfreshsquad.poly2023.datve;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.droidfreshsquad.poly2023.R;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.Number;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.NumberData;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.Locale;
 
 public class ThongTinThanhToan extends AppCompatActivity {
     EditText ngaysinh, phone, email, name;
-    TextView ErrorPhone, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach, TongSoNguoi;
+    TextView ErrorPhone,tieptuc, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach, TongSoNguoi;
     BottomSheetDialog dialog;
     LinearLayout LnThongtin;
+    ListView listViewDanhSach;
+    DatabaseReference mDatabase;
+    private int totalTicketPrice = 0;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -48,6 +68,46 @@ public class ThongTinThanhToan extends AppCompatActivity {
         title.setText("Tìm chuyến bay");
         toolbar.addView(customView);
         //thanh tiêu đề
+
+
+  listViewDanhSach = findViewById(R.id.listViewDanhSach);
+        tieptuc= findViewById(R.id.tieptuc);
+        tieptuc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+//        // Kết nối đến Firebase Realtime Database
+//        mDatabase = FirebaseDatabase.getInstance().getReference();
+//        // Lắng nghe dữ liệu từ Firebase Realtime Database
+//        mDatabase.child("list_ticket").addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                if (dataSnapshot.exists()) {
+//                    ArrayList<Ticket> ticketsToShow = new ArrayList<>();
+//
+//                    for (DataSnapshot ticketSnapshot : dataSnapshot.getChildren()) {
+//                        Ticket ticket = ticketSnapshot.getValue(Ticket.class);
+//                        ticketsToShow.add(ticket);
+//                    }
+//                    TicketAdapter adapter = new TicketAdapter(ThongTinThanhToan.this, ticketsToShow);
+//                    listViewDanhSach.setAdapter(adapter);
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//                // Xử lý lỗi nếu có
+//            }
+//        });
+
+
+        int tien = getIntent().getIntExtra("SAN_BAY_DEN", 0);
+        ArrayList<Integer> ticketPrices = new ArrayList<>();
+        ticketPrices.add(tien);
+
+        AdapterTT adapter = new AdapterTT(this, ticketPrices);
+        listViewDanhSach.setAdapter(adapter);
 
         viewSokhach = (TextView) findViewById(R.id.viewSokhach);
         emailView = (TextView) findViewById(R.id.emailView);

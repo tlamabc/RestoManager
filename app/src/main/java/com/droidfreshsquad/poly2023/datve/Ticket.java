@@ -10,7 +10,7 @@ public class Ticket implements Parcelable {
     private String Scheduled2;
     private String date;
     private String name_ticket;
-    private String price;
+    private int price;
     private String DiemDi;
     private String DiemDen;
     private String sanbaydi;
@@ -38,7 +38,7 @@ public class Ticket implements Parcelable {
     public String getDate() {
         return date;
     }
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
     public String getDiemDi() {
@@ -52,13 +52,13 @@ public class Ticket implements Parcelable {
 
     // Parcelable implementation
     protected Ticket(Parcel in) {
+        id = in.readInt();
         Airlines = in.readString();
         Scheduled = in.readString();
-        date = in.readString();
-        id = in.readInt();
         Scheduled2 = in.readString();
+        date = in.readString();
         name_ticket = in.readString();
-        price = in.readString();
+        price = in.readInt();
         DiemDi = in.readString();
         DiemDen = in.readString();
         sanbaydi = in.readString();
@@ -84,16 +84,16 @@ public class Ticket implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
         dest.writeString(Airlines);
         dest.writeString(Scheduled);
-        dest.writeString(date);
-        dest.writeInt(id);
         dest.writeString(Scheduled2);
+        dest.writeString(date);
         dest.writeString(name_ticket);
-        dest.writeString(price);
+        dest.writeInt(price);
         dest.writeString(DiemDi);
         dest.writeString(DiemDen);
-        dest.writeString(sanbayden);
         dest.writeString(sanbaydi);
+        dest.writeString(sanbayden);
     }
 }

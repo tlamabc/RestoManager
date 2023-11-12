@@ -18,12 +18,12 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -94,7 +94,16 @@
                 android:padding="10dp"
                 android:textSize="19dp"
                 android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/listViewDanhSach"
+                android:layout_width="match_parent"
+                android:layout_height="311dp"
+                android:layout_margin="10dp"
+                android:scrollbars="none" />
         </LinearLayout>
+
+
 
     </androidx.core.widget.NestedScrollView>
 
@@ -137,6 +146,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tonggiatien"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -146,6 +156,7 @@
                 android:textStyle="bold" />
         </LinearLayout>
         <TextView
+            android:id="@+id/tieptuc"
             android:textSize="20dp"
             android:textStyle="bold"
             android:gravity="center"

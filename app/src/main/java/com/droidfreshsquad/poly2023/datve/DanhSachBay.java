@@ -15,13 +15,16 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
+import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -78,12 +81,31 @@ public class DanhSachBay extends AppCompatActivity {
                         ticketsToShow = getIntent().getParcelableArrayListExtra("allTickets");
                     }
                     TicketAdapter adapter = new TicketAdapter(DanhSachBay.this, ticketsToShow);
-                    listViewDanhSachBay.setAdapter(adapter);
+                    listViewDanhSachBay.setAdapter((ListAdapter) adapter);
                 }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 // Xử lý lỗi nếu có
+            }
+        });
+            listViewDanhSachBay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Lấy dữ liệu từ item được chọn tại vị trí 'position'
+                Ticket selectedTicket = (Ticket) listViewDanhSachBay.getItemAtPosition(position);
+
+                // Lấy dữ liệu cần thiết từ 'selectedTicket'
+                int tien = selectedTicket.getPrice();
+
+                // Tạo Intent để chuyển dữ liệu sang Activity mới
+                Intent intent = new Intent(DanhSachBay.this, ThongTinThanhToan.class);
+
+                // Đính kèm dữ liệu vào Intent
+                intent.putExtra("SAN_BAY_DEN", tien);
+
+                // Khởi chạy Activity mới với Intent
+                startActivity(intent);
             }
         });
     }
