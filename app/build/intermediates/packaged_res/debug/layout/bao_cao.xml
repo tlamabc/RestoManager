@@ -8,16 +8,17 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#00BCD4" />
+        android:background="#112d6a" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:fontFamily="@font/lato_black"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        android:text="Sự cố bạn gặp phải"
-        android:textColor="#000"
+        android:text="Sự cố bạn gặp phải ?"
+        android:textColor="#112d6a"
         android:textSize="20sp"
         />
 
@@ -189,7 +190,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/baocao6"
         android:layout_marginHorizontal="15dp"
-        android:background="@drawable/duong_vien_gach_duoi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
@@ -211,7 +211,7 @@
             android:layout_gravity="center"
             android:paddingLeft="10dp"
             android:text="Giao diện không phản ánh đúng"
-            android:textColor="#000"
+            android:textColor="#112d6a"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView3_6"
@@ -222,7 +222,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/baocao7"
         android:layout_marginHorizontal="15dp"
-        android:background="@drawable/duong_vien_gach_duoi"
+        android:background="#112d6a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"

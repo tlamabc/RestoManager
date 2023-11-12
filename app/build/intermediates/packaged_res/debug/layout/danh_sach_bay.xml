@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#27A2E0" />
+        android:background="#112d6a" />
 
     <ListView
         android:scrollbars="none"

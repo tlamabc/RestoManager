@@ -19,7 +19,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:text="Thông tin liên hệ"
-            android:textColor="#00BCD4"
+            android:textColor="#112d6a"
             android:textSize="27sp"
             android:textStyle="normal" />
 
