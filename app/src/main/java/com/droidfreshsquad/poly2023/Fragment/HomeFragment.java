@@ -63,8 +63,8 @@ public class HomeFragment extends Fragment {
         recyclerViewExploreList.setLayoutManager(linearLayoutManager);
         ArrayList<ExploreDomain> explore = new ArrayList<>();
         explore.add(new ExploreDomain("imgexplore1", "Đà Nẵng", "Tham Quan Địa Điểm Du Lịch Đà Nẵng Nổi Tiếng"));
-        explore.add(new ExploreDomain("imgexplore3", "Sài Gòn", "Tham Quan Địa Điểm Du Lịch Sài Gòn Nổi Tiếng"));
-        explore.add(new ExploreDomain("imgexplore2", "Hà Nội", "Tham Quan Địa Điểm Du Lịch Hà Nội Nổi Tiếng"));
+        explore.add(new ExploreDomain("imgexplore2", "Sài Gòn", "Tham Quan Địa Điểm Du Lịch Sài Gòn Nổi Tiếng"));
+        explore.add(new ExploreDomain("imgexplore3", "Hà Nội", "Tham Quan Địa Điểm Du Lịch Hà Nội Nổi Tiếng"));
         adapter = new ExploreAdapter(explore);
         recyclerViewExploreList.setAdapter(adapter);
 

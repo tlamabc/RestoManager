@@ -10,7 +10,7 @@
         android:text="Chọn số lượng hành khách"
         android:textStyle="bold"
         android:gravity="center"
-        android:background="@drawable/border_buttom"
+    android:textColor="#112d6a"
         android:padding="15dp"/>
 
 
