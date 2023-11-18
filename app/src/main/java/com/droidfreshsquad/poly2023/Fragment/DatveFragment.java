@@ -7,12 +7,19 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.droidfreshsquad.poly2023.R;
 import com.droidfreshsquad.poly2023.datve.ThongTinKhach;
+import com.google.android.gms.wallet.AutoResolveHelper;
+import com.google.android.gms.wallet.PaymentData;
+import com.google.android.gms.wallet.PaymentDataRequest;
+import com.google.android.gms.wallet.PaymentsClient;
+import com.google.android.gms.wallet.Wallet;
+import com.google.android.gms.wallet.WalletConstants;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,7 +28,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class DatveFragment extends Fragment {
 
@@ -30,53 +36,110 @@ public class DatveFragment extends Fragment {
     private Button buttonCheckout;
     private List<ThongTinKhach> gioHangItemList;
     private GioHangAdapter gioHangAdapter;
+    private PaymentsClient paymentsClient;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_datve, container, false);
 
-        // Khởi tạo RecyclerView, TextView và Button
         recyclerViewProducts = view.findViewById(R.id.recyclerViewProducts);
         textViewTotal = view.findViewById(R.id.textViewTotal);
         buttonCheckout = view.findViewById(R.id.buttonCheckout);
 
-        // Khởi tạo danh sách để lưu trữ dữ liệu từ Firebase
         gioHangItemList = new ArrayList<>();
-        gioHangAdapter = new GioHangAdapter(gioHangItemList); // FIX GIÚP
+        gioHangAdapter = new GioHangAdapter(gioHangItemList);
 
-        // Thiết lập LinearLayoutManager cho RecyclerView
         recyclerViewProducts.setLayoutManager(new LinearLayoutManager(getActivity()));
-        // Gán Adapter cho RecyclerView
         recyclerViewProducts.setAdapter(gioHangAdapter);
 
-        // Thực hiện truy vấn đến Firebase Realtime Database
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("gio_hang");
 
-        // Lắng nghe sự kiện khi có thay đổi trong dữ liệu
+        // Initialize PaymentsClient
+        paymentsClient = Wallet.getPaymentsClient(
+                getActivity(),
+                new Wallet.WalletOptions.Builder()
+                        .setEnvironment(WalletConstants.ENVIRONMENT_TEST)
+                        .build()
+        );
+
+        // Thay đổi phương thức `buttonCheckout.setOnClickListener()`
+        buttonCheckout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start GPay payment flow
+                PaymentDataRequest request = createPaymentDataRequest();
+                if (request != null) {
+                    // Trình xử lý dữ liệu thanh toán
+                    AutoResolveHelper.resolveTask(
+                            paymentsClient.loadPaymentData(request),
+                            getActivity(),
+                            1234
+                    );
+                }
+            }
+        });
+
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                // Xóa dữ liệu cũ khi có sự thay đổi
                 gioHangItemList.clear();
 
-                // Lặp qua tất cả các nút con trong "gio_hang"
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    // Đọc dữ liệu từ Firebase và thêm vào danh sách
                     ThongTinKhach gioHangItem = postSnapshot.getValue(ThongTinKhach.class);
                     gioHangItemList.add(gioHangItem);
                 }
 
-                // Cập nhật Adapter khi có dữ liệu thay đổi
                 gioHangAdapter.notifyDataSetChanged();
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                // Xử lý khi có lỗi xảy ra trong quá trình truy vấn
+                // Handle query errors
             }
         });
 
         return view;
+    }
+    // Thay đổi phương thức `createPaymentDataRequest()`
+    private PaymentDataRequest createPaymentDataRequest() {
+        PaymentDataRequest request = null;
+        // Tạo PaymentDataRequest object dựa trên yêu cầu thanh toán của bạn
+        // Ví dụ:
+        request = PaymentDataRequest.fromJson(
+                "{\n" +
+                        "  \"apiVersion\": 2,\n" +
+                        "  \"apiVersionMinor\": 0,\n" +
+                        "  \"allowedPaymentMethods\": [\n" +
+                        "    {\n" +
+                        "      \"type\": \"CARD\",\n" +
+                        "      \"tokenizationSpecification\": {\n" +
+                        "        \"type\": \"PAYMENT_GATEWAY\",\n" +
+                        "        \"parameters\": {\n" +
+                        "          \"gateway\": \"Thanh Lam\",\n" +
+                        "          \"gatewayMerchantId\": \"BCR2DN4TY2CLEMA\"\n" +
+                        "        }\n" +
+                        "      },\n" +
+                        "      \"parameters\": {\n" +
+                        "        \"allowedCardNetworks\": [\"VISA\", \"MASTERCARD\"],\n" +
+                        "        \"allowPrepaidCards\": true,\n" +
+                        "        \"allowCreditCards\": true,\n" +
+                        "        \"allowDebitCards\": true\n" +
+                        "      }\n" +
+                        "    }\n" +
+                        "  ],\n" +
+                        "  \"merchantInfo\": {\n" +
+                        "    \"merchantName\": \"Easy Fly\",\n" +
+                        "    \"merchantId\": \"BCR2DN4TY3OLHPYJ\"\n" +
+                        "  },\n" +
+                        "  \"transactionInfo\": {\n" +
+                        "    \"totalPriceStatus\": \"FINAL\",\n" +
+                        "    \"totalPrice\": \"1.00\",\n" +
+                        "    \"currencyCode\": \"USD\"\n" +
+                        "  }\n" +
+                        "}"
+        );
+
+        return request;
     }
 }

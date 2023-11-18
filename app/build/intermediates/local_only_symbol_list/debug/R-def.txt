@@ -435,6 +435,7 @@ string title_activity_profile
 string title_activity_reset_password
 style Base.Theme.RestoManager
 style Base.Theme.TestFireBase
+style GPayButton
 style MyAppTheme
 style Theme.TestFireBase
 xml backup_rules

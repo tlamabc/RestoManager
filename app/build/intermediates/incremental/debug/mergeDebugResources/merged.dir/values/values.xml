@@ -13,12 +13,9 @@
         <item>Phú Quốc</item>
         <item>Hà Nội</item>
         <item>Quảng Nam</item>
-
-
         
     </string-array>
     <string-array name="diem_di_data">
-
         <item>TP Hồ Chí Minh</item>
         <item>Đà Nẵng</item>
         <item>Phú Quốc</item>
@@ -5659,6 +5656,11 @@ email</string>
     </style>
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="GPayButton">
+
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">16dp</item>
     </style>
     <style name="MaterialAlertDialog.Material3" parent="MaterialAlertDialog.MaterialComponents">
     <item name="enforceMaterialTheme">true</item>

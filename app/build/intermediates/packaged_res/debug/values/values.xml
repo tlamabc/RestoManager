@@ -13,12 +13,9 @@
         <item>Phú Quốc</item>
         <item>Hà Nội</item>
         <item>Quảng Nam</item>
-
-
         
     </string-array>
     <string-array name="diem_di_data">
-
         <item>TP Hồ Chí Minh</item>
         <item>Đà Nẵng</item>
         <item>Phú Quốc</item>
@@ -96,6 +93,11 @@ email</string>
     <style name="Base.Theme.TestFireBase" parent="Theme.Material3.DayNight.NoActionBar">
         
         
+    </style>
+    <style name="GPayButton">
+
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">16dp</item>
     </style>
     <style name="MyAppTheme" parent="Theme.AppCompat.Light">
         <item name="windowNoTitle">true</item>
