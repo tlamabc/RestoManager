@@ -62,6 +62,8 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     //database
     implementation ("com.google.firebase:firebase-database:20.0.0")
+            implementation ("com.github.ZEGOCLOUD:zego_uikit_prebuilt_call_android:+")   // Add this line to your module-level build.gradle file's dependencies, usually named [app].
+            implementation ("com.github.ZEGOCLOUD:zego_uikit_signaling_plugin_android:+")
 
     implementation ("com.github.ZEGOCLOUD:zego_uikit_prebuilt_call_android:+")   // Add this line to your module-level build.gradle file's dependencies, usually named [app].
     implementation ("com.github.ZEGOCLOUD:zego_uikit_signaling_plugin_android:+")

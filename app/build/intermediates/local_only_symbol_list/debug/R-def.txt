@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 anim slide_in_right
 anim slide_out_right
+array call_data
 array diem_den_data
 array diem_di_data
 color background
@@ -320,6 +321,7 @@ id sign_out_button
 id sign_up_button
 id spinnerDiemDen
 id spinnerDiemDi
+id spinnercall
 id start_btn
 id textDen
 id textDi
@@ -343,7 +345,6 @@ id tvNumberTreEm
 id tvmuave
 id tvsohanhkhach
 id tvtien
-id user_id_call
 id user_id_edit_text
 id vemaybay
 id versionTextView

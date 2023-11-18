@@ -76,6 +76,7 @@ int animator mtrl_fab_hide_motion_spec 0x7f02001e
 int animator mtrl_fab_show_motion_spec 0x7f02001f
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f020020
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020021
+int array call_data 0x7f030002
 int array diem_den_data 0x7f030000
 int array diem_di_data 0x7f030001
 int attr SharedValue 0x7f040000
@@ -4061,6 +4062,7 @@ int id spacer 0x7f0a0298
 int id special_effects_controller_view_tag 0x7f0a0299
 int id spinnerDiemDen 0x7f0a029a
 int id spinnerDiemDi 0x7f0a029b
+int id spinnercall 0x7f0a0320
 int id spline 0x7f0a029c
 int id split_action_bar 0x7f0a029d
 int id spread 0x7f0a029e
@@ -4163,7 +4165,6 @@ int id uniform 0x7f0a02fc
 int id unlabeled 0x7f0a02fd
 int id up 0x7f0a02fe
 int id useLogo 0x7f0a02ff
-int id user_id_call 0x7f0a031f
 int id user_id_edit_text 0x7f0a0300
 int id vemaybay 0x7f0a031b
 int id versionTextView 0x7f0a0301

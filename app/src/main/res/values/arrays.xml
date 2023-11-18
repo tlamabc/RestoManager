@@ -7,19 +7,23 @@
         <item>Phú Quốc</item>
         <item>Hà Nội</item>
         <item>Quảng Nam</item>
-
-
         <!-- Thêm các điểm đến khác theo cú pháp trên -->
     </string-array>
 
     <string-array name="diem_di_data">
-
         <item>TP Hồ Chí Minh</item>
         <item>Đà Nẵng</item>
         <item>Phú Quốc</item>
         <item>Hà Nội</item>
         <item>Huế</item>
         <item>Quảng Nam</item>
+        <!-- Thêm các điểm đi khác theo cú pháp trên -->
+    </string-array>
+
+    <string-array name="call_data">
+        <item>cskhnhac</item>
+        <item></item>
+        <item>CSKH_3</item>
         <!-- Thêm các điểm đi khác theo cú pháp trên -->
     </string-array>
 </resources>
