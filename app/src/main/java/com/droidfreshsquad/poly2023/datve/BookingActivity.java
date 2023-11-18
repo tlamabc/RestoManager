@@ -83,8 +83,8 @@ public class BookingActivity extends AppCompatActivity {
 
         LinearLayout btndatve = findViewById(R.id.btndatve);
         LinearLayout btnTimKiem = findViewById(R.id.searchButton);
-        Spinner spinnerDiemDen = findViewById(R.id.spinnerDiemDen);
-        Spinner spinnerDiemDi = findViewById(R.id.spinnerDiemDi);
+        spinnerDiemDen = findViewById(R.id.spinnerDiemDen);
+        spinnerDiemDi = findViewById(R.id.spinnerDiemDi);
 
         mDatabase = FirebaseDatabase.getInstance().getReference().child("list_ticket");
 
@@ -97,7 +97,7 @@ public class BookingActivity extends AppCompatActivity {
                 String thoigian = edtthoigian.getText().toString().trim();
 
                 if (!diemDi.isEmpty() && !diemDen.isEmpty()) {
-                    mDatabase.orderByChild("DiemDi").equalTo(diemDi)
+                    mDatabase.orderByChild("diemDi").equalTo(diemDi)
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

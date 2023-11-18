@@ -4,9 +4,14 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
 import androidx.constraintlayout.widget.ConstraintLayout; // Import thêm dòng này
 import com.droidfreshsquad.poly2023.R;
 
@@ -19,14 +24,21 @@ public class BaoCao extends AppCompatActivity {
         //thanh tiêu đề
         android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
         setActionBar(toolbar);
-        getActionBar().setTitle("Báo cáo");
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View customView = inflater.inflate(R.layout.tieu_de, toolbar, false);
+        ImageButton backButton = customView.findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
         });
+        TextView title = customView.findViewById(R.id.toolbar_title);
+        title.setText("Báo cáo");
+        toolbar.addView(customView);
+        //thanh tiêu đề
 
         ConstraintLayout baocao1 = findViewById(R.id.baocao1);
         ConstraintLayout baocao2 = findViewById(R.id.baocao2);

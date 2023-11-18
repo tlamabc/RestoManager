@@ -4,14 +4,18 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -32,6 +36,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //thanh tiêu đề
+        android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setActionBar(toolbar);
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View customView = inflater.inflate(R.layout.tieu_de, toolbar, false);
+        ImageButton backButton = customView.findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        TextView title = customView.findViewById(R.id.toolbar_title);
+        title.setText("Bảo mật");
+        toolbar.addView(customView);
+        //thanh tiêu đề
 //get firebase auth instance
         auth = FirebaseAuth.getInstance();
 //get current user
@@ -72,18 +94,6 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
         newPassword = (EditText) findViewById(R.id.newPassword);
         thoat = (Button) findViewById(R.id.thoat);
-
-//thanh tiêu đề
-        android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
-        setActionBar(toolbar);
-        getActionBar().setTitle("Bảo mật");
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
 
         oldEmail.setVisibility(View.GONE);
         newEmail.setVisibility(View.GONE);

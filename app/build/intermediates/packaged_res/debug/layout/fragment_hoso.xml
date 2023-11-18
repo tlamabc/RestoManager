@@ -17,10 +17,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-
-
-                android:background="@drawable/background"
+                android:background="@drawable/style_user"
+                android:layout_height="250dp"
                 android:orientation="vertical">
 
 <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
@@ -45,13 +43,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="30dp"
                     app:cardCornerRadius="1000dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/avatarView"
-                        android:layout_width="142dp"
-                        android:layout_height="145dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/logochim" />
                 </androidx.cardview.widget.CardView>
@@ -59,13 +57,15 @@
 
 
                 <TextView
+                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Have a good day !!!"
+                    android:text="Xin chào"
+                    android:textStyle="bold"
                     android:fontFamily="@font/lato_black"
-                    android:textColor="#FFFFFF"
-                    android:textSize="23sp"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
                      />
 
                 <TextView
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="USER"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#ffffff"
                     android:textSize="20sp"
                     android:fontFamily="@font/lato_regular" />
 
@@ -88,30 +88,24 @@
                 android:layout_height="wrap_content" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Tài Khoản"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:fontFamily="@font/lato_black" />
-
 
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/ctlcaidat"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/bg_edt"
+                android:layout_marginVertical="5dp"
+                android:paddingVertical="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:src="@drawable/icons8_password"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -124,8 +118,9 @@
                     android:paddingLeft="10dp"
                     android:text="Mật khẩu và bảo mật"
                     android:textColor="#000000"
+                    android:textStyle="bold"
                     android:fontFamily="@font/lato_regular"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
@@ -140,14 +135,17 @@
                 android:id="@+id/baocao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="10dp"
                 android:orientation="horizontal"
+                android:background="@drawable/bg_edt"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingVertical="15dp"
                 android:paddingLeft="20dp">
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:src="@drawable/icons8_error"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -160,7 +158,8 @@
                     android:paddingLeft="10dp"
                     android:text="Báo cáo sự cố"
                     android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
                     android:fontFamily="@font/lato_regular"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
@@ -173,15 +172,18 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cc"
                 android:layout_width="match_parent"
+                android:background="@drawable/bg_edt"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingVertical="15dp"
                 android:layout_height="wrap_content"
-                android:paddingVertical="10dp"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:src="@drawable/icons8_card"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -195,7 +197,8 @@
                     android:text="Hỗ trợ thanh toán"
                     android:fontFamily="@font/lato_regular"
                     android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -208,14 +211,17 @@
                 android:id="@+id/dieukhoan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="10dp"
                 android:orientation="horizontal"
+                android:background="@drawable/bg_edt"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingVertical="15dp"
                 android:paddingLeft="20dp">
 
                 <ImageView
                     android:id="@+id/imageView5"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:src="@drawable/icons8_purchase"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -229,7 +235,7 @@
                     android:text="Điều khoản"
                     android:fontFamily="@font/lato_regular"
                     android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:textStyle="bold"                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView5"
                     app:layout_constraintTop_toTopOf="parent"
@@ -240,14 +246,17 @@
                 android:id="@+id/danhgia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_edt"
                 android:orientation="horizontal"
+                android:paddingVertical="15dp"
                 android:paddingLeft="20dp">
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
                     android:src="@drawable/icons8_like"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -257,11 +266,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/lato_regular"
                     android:paddingLeft="10dp"
                     android:text="Đánh giá"
-                    android:fontFamily="@font/lato_regular"
                     android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView6"
@@ -273,14 +283,17 @@
                 android:id="@+id/sign_out_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="10dp"
                 android:orientation="horizontal"
+                android:background="@drawable/bg_edt"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingVertical="15dp"
                 android:paddingLeft="20dp">
 
                 <ImageView
                     android:id="@+id/imageView7"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:src="@drawable/icons8_logout"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -293,8 +306,8 @@
                     android:paddingLeft="10dp"
                     android:text="Đăng xuất"
                     android:fontFamily="@font/lato_regular"
-                    android:textColor="#FF0000"
-                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.051"
                     app:layout_constraintStart_toEndOf="@+id/imageView7"
@@ -302,12 +315,28 @@
                     app:layout_constraintVertical_bias="0.483" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/versionTextView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:textSize="17dp" />
+           <LinearLayout
+               android:layout_marginVertical="50dp"
+               android:layout_gravity="bottom"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:id="@+id/eesyfly"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="EesyFly"
+                   android:textStyle="bold"
+                   android:textColor="#112d6a"
+                   android:gravity="center"
+                   android:textSize="24dp" />
+               <TextView
+                   android:id="@+id/versionTextView"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:textSize="16dp" />
+           </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

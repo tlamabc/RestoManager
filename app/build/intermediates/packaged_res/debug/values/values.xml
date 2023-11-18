@@ -13,12 +13,9 @@
         <item>Phú Quốc</item>
         <item>Hà Nội</item>
         <item>Quảng Nam</item>
-
-
         
     </string-array>
     <string-array name="diem_di_data">
-
         <item>TP Hồ Chí Minh</item>
         <item>Đà Nẵng</item>
         <item>Phú Quốc</item>

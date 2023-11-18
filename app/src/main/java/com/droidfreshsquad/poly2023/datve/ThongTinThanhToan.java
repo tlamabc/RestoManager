@@ -154,7 +154,13 @@ public class ThongTinThanhToan extends AppCompatActivity {
         arimot.setText(String.valueOf(ari1));
         thoigianbay.setText(String.valueOf(timebay));
 
-        int tongGiaTien = tien * TongSoNguoi;
+        int tongGiaTien;
+        if (TongSoNguoi > 0) {
+            tongGiaTien = tien * TongSoNguoi;  //bấm vào tìm kiếm này có thêm được số người
+        } else {
+            tongGiaTien = tien * 1; //bấm vào vé có sẵn thì tổng số người = 0 nên cho nó nhân 1
+        }
+
         // Định dạng số theo 1,200,000  /vnd
         NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
         String formattedPrice = numberFormat.format(tongGiaTien);
