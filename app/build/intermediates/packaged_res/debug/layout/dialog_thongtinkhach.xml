@@ -76,6 +76,7 @@
             android:visibility="invisible" />
 
         <TextView
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -84,6 +85,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:visibility="gone"
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,6 +94,7 @@
             android:textColorHint="#808080" />
 
         <TextView
+
             android:id="@+id/ErrorMail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -99,7 +102,7 @@
             android:text=" Vui lòng nhập đúng Email !"
             android:textColor="#DF2424"
             android:textStyle="normal"
-            android:visibility="invisible" />
+            android:visibility="gone" />
 
         <TextView
             android:layout_width="wrap_content"

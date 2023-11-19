@@ -35,7 +35,6 @@ dependencies {
     implementation ("com.google.android.gms:play-services-wallet:19.2.1")
     implementation ("com.google.android.gms:play-services-identity:18.0.1")
 
-
     implementation ("com.google.android.gms:play-services-measurement-impl:15.0.4")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")

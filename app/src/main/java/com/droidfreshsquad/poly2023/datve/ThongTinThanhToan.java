@@ -46,6 +46,7 @@ import java.util.Locale;
 
 public class ThongTinThanhToan extends AppCompatActivity {
     EditText ngaysinh, phone, email, name;
+
     TextView  ErrorPhone, tieptuc, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach;
     BottomSheetDialog dialog;
     LinearLayout LnThongtin;
@@ -88,7 +89,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
 
 
 // nút Tiếp Tục
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+
 
 //lấy Các giá trị Number số lượng khách
         Number numberObject = NumberData.getInstance().getNumberObject();// lấy ở SaveNumber
@@ -125,10 +126,11 @@ public class ThongTinThanhToan extends AppCompatActivity {
         String gio1 = getIntent().getStringExtra("SCHEDULED");
         String gio2 = getIntent().getStringExtra("SCHEDULED2");
         String ngay = getIntent().getStringExtra("DATE");
-        String san1 = getIntent().getStringExtra("SANBAYDI");
-        String san2 = getIntent().getStringExtra("SANBAYDEN");
+        String san1 = getIntent().getStringExtra("SANBAYDEN");
+        String san2 = getIntent().getStringExtra("SANBAYDI");
         String ari1 = getIntent().getStringExtra("AIRLINES");
-        String timebay = getIntent().getStringExtra("TIMEBAY");
+
+
         // Hiển thị dữ liệu vào các TextView tương ứng
         TextView tongGiaTienTextView = findViewById(R.id.tonggiatien);
         TextView di = findViewById(R.id.di);
@@ -140,9 +142,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
         TextView sanmot = findViewById(R.id.san1);
         TextView sanhai = findViewById(R.id.san2);
         TextView arimot = findViewById(R.id.ari1);
-        TextView thoigianbay = findViewById(R.id.thoigianbay);
         // Đặt dữ liệu vào các TextView
-        tongGiaTienTextView.setText(String.valueOf(tien));
+//        tongGiaTienTextView.setText(String.valueOf(tien));
         di.setText(String.valueOf(diemDi));
         den.setText(String.valueOf(diemDen));
         giomot.setText(String.valueOf(gio1));
@@ -152,7 +153,6 @@ public class ThongTinThanhToan extends AppCompatActivity {
         sanmot.setText(String.valueOf(san1));
         sanhai.setText(String.valueOf(san2));
         arimot.setText(String.valueOf(ari1));
-        thoigianbay.setText(String.valueOf(timebay));
 
         int tongGiaTien;
         if (TongSoNguoi > 0) {
@@ -167,7 +167,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
         tongGiaTienTextView.setText(formattedPrice);//in ra textview
         // Định dạng số theo 1,200,000  /ve
         NumberFormat numberForma = NumberFormat.getNumberInstance(Locale.getDefault());
-        String formattedPric = numberForma.format(tien);
+        String formattedPric = numberForma.format(tongGiaTien);
         TextView TongSoNguoiTextView = findViewById(R.id.TongSoNguoi);
         TongSoNguoiTextView.setText(formattedPric + "/vé");
         //in ra textview
@@ -175,9 +175,6 @@ public class ThongTinThanhToan extends AppCompatActivity {
         dialog = new BottomSheetDialog(this);
         View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_thongtinkhach, null);
         dialog.setContentView(viewDialog);
-//-----------------------------------------------------------------------------------------------------------
-// -----------------------------------------------------------------------------------------------------------
-// -----------------------------------------------------------------------------------------------------------
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("gio_hang");
@@ -188,14 +185,15 @@ public class ThongTinThanhToan extends AppCompatActivity {
                 String tongGiaTienString = tongGiaTienTextView.getText().toString();
                 int tongGiaTien = Integer.parseInt(tongGiaTienString.replaceAll("[^0-9]", ""));
 
-                String diemDi = getIntent().getStringExtra("DIEM_DI");
-                String diemDen = getIntent().getStringExtra("DIEM_DEN");
-                String gio1 = getIntent().getStringExtra("GIO1");
-                String gio2 = getIntent().getStringExtra("GIO2");
-                String ngay = getIntent().getStringExtra("NGAY");
-                String san1 = getIntent().getStringExtra("SAN1");
-                String san2 = getIntent().getStringExtra("SAN2");
-                String ari1 = getIntent().getStringExtra("ARI1");
+                int tien = getIntent().getIntExtra("PRICE", 0);
+                String diemDi = getIntent().getStringExtra("DEPARTURE");
+                String diemDen = getIntent().getStringExtra("DESTINATION");
+                String gio1 = getIntent().getStringExtra("SCHEDULED");
+                String gio2 = getIntent().getStringExtra("SCHEDULED2");
+                String ngay = getIntent().getStringExtra("DATE");
+                String san1 = getIntent().getStringExtra("SANBAYDEN");
+                String san2 = getIntent().getStringExtra("SANBAYDI");
+                String ari1 = getIntent().getStringExtra("AIRLINES");
                 // thông tin khách hàng
                 String ten = name.getText().toString();
                 String ngaySinh = ngaysinh.getText().toString();
@@ -213,8 +211,10 @@ public class ThongTinThanhToan extends AppCompatActivity {
                 myRef.child(key).setValue(thongTinKhach);
 
 
+
+
                 // Thông báo khi dữ liệu đã được đẩy thành công (hoặc xử lý thêm logic tùy vào yêu cầu của bạn)
-                Toast.makeText(ThongTinThanhToan.this, "Dữ liệu đã được lưu trữ thành công", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ThongTinThanhToan.this, "Thêm giỏ hàng thành công", Toast.LENGTH_SHORT).show();
 
             }
 

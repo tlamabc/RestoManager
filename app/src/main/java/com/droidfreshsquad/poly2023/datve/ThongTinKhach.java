@@ -7,6 +7,59 @@ public class ThongTinKhach implements Parcelable {
 
     public String ten;
     public String ngaySinh;
+
+    public String getTen() {
+        return ten;
+    }
+
+    public String getNgaySinh() {
+        return ngaySinh;
+    }
+
+    public String getSoDienThoai() {
+        return soDienThoai;
+    }
+
+    public int getTien() {
+        return tien;
+    }
+
+    public String getDiemDi() {
+        return diemDi;
+    }
+
+    public String getDiemDen() {
+        return diemDen;
+    }
+
+    public String getGio1() {
+        return gio1;
+    }
+
+    public String getGio2() {
+        return gio2;
+    }
+
+    public String getNgay() {
+        return ngay;
+    }
+
+    public String getSan1() {
+        return san1;
+    }
+
+    public String getSan2() {
+        return san2;
+    }
+
+    public String getAri1() {
+        return ari1;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     public String email;
     public String soDienThoai;
     public int tien;
