@@ -26,6 +26,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.droidfreshsquad.poly2023.Fragment.DatveFragment;
+import com.droidfreshsquad.poly2023.Fragment.GioHangAdapter;
+import com.droidfreshsquad.poly2023.MainActivity;
 import com.droidfreshsquad.poly2023.R;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.Number;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.NumberData;
@@ -210,15 +212,12 @@ public class ThongTinThanhToan extends AppCompatActivity {
                 String key = myRef.push().getKey();
                 myRef.child(key).setValue(thongTinKhach);
 
-
-
-
                 // Thông báo khi dữ liệu đã được đẩy thành công (hoặc xử lý thêm logic tùy vào yêu cầu của bạn)
                 Toast.makeText(ThongTinThanhToan.this, "Thêm giỏ hàng thành công", Toast.LENGTH_SHORT).show();
-
             }
 
         });
+
 
         // Hiển thị bottom sheet dialog
         LnThongtin.setOnClickListener(new View.OnClickListener() {

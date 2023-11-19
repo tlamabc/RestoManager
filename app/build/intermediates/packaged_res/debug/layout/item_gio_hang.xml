@@ -216,7 +216,7 @@
         android:id="@+id/textViewProductName"
         android:layout_width="405dp"
         android:layout_height="wrap_content"
-        android:text="lum
+        android:text="Tên
 " />
 
     <TextView
@@ -241,5 +241,41 @@
         android:layout_width="405dp"
         android:layout_height="wrap_content"
         android:text="điểm đến
+" />
+    <TextView
+        android:id="@+id/ngaysinhh"
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:text="Ngày Sinh:
+" />
+    <TextView
+        android:id="@+id/gio11"
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:text="Giờ đi
+" />
+    <TextView
+        android:id="@+id/gio22"
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:text="Giờ đến
+" />
+    <TextView
+        android:id="@+id/ngaydii"
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:text="Ngày đi
+" />
+    <TextView
+        android:id="@+id/sdtt"
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại
+" />
+    <TextView
+        android:id="@+id/hangbayy"
+        android:layout_width="405dp"
+        android:layout_height="wrap_content"
+        android:text="Hãng bay
 " />
 </LinearLayout>

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-3:/values-v26/values-v26.xml",
+            "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-43:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\d476715df036646142b5c2874a942f2b\\transformed\\appcompat-1.6.1\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\d476715df036646142b5c2874a942f2b\\transformed\\appcompat-1.6.1\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
