@@ -1,44 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-43:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-3:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\89a5b1c8a1b64703a7e3cc4364a267e1\\transformed\\play-services-basement-18.1.0\\res\\values-pt-rBR\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "199",
-                        "endColumns": "140",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "49",
-                        "startColumns": "4",
-                        "startOffsets": "4802",
-                        "endColumns": "144",
-                        "endOffsets": "4942"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\58b07198376f67aef2aac074a201ccd5\\transformed\\core-1.9.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "119",
-                        "startColumns": "4",
-                        "startOffsets": "10914",
-                        "endColumns": "100",
-                        "endOffsets": "11010"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\d476715df036646142b5c2874a942f2b\\transformed\\appcompat-1.6.1\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\d476715df036646142b5c2874a942f2b\\transformed\\appcompat-1.6.1\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\4e791fdb27d989eca63c067eec6c1050\\transformed\\play-services-wallet-19.2.1\\res\\values-pt-rBR\\values.xml",
+                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\4e791fdb27d989eca63c067eec6c1050\\transformed\\play-services-wallet-19.2.1\\res\\values-pt-rBR\\values.xml",
                     "from": {
                         "startLines": "4,5",
                         "startColumns": "0,0",
@@ -72,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\0f500782e1d693aff5a91c12ca831fc1\\transformed\\play-services-base-18.1.0\\res\\values-pt-rBR\\values.xml",
+                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\58b07198376f67aef2aac074a201ccd5\\transformed\\core-1.9.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "119",
+                        "startColumns": "4",
+                        "startOffsets": "10914",
+                        "endColumns": "100",
+                        "endOffsets": "11010"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\0f500782e1d693aff5a91c12ca831fc1\\transformed\\play-services-base-18.1.0\\res\\values-pt-rBR\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -89,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\7d76400185e35ad17aca67d71ca38534\\transformed\\browser-1.4.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\7d76400185e35ad17aca67d71ca38534\\transformed\\browser-1.4.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -106,7 +89,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\3f0bee673dd301dd5fa353fb2a75ddd0\\transformed\\material-1.9.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\3f0bee673dd301dd5fa353fb2a75ddd0\\transformed\\material-1.9.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -122,6 +105,23 @@
                         "endLines": "5,33,34,35,36,37,38,39,40,60,61,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117",
                         "endColumns": "12,80,77,83,94,88,100,119,80,63,91,78,59,89,63,70,62,74,63,53,126,57,61,53,78,140,86,81,138,82,83,86,55,50,65,73,79,86,72,76,68,73,87,76,92,95,73,79,96,51,65,86,87,61,63,62,111,108,106,109,59,54,76",
                         "endOffsets": "318,3137,3215,3299,3394,3483,3584,3704,3785,6226,6318,6775,6835,6925,6989,7060,7123,7198,7262,7316,7443,7501,7563,7617,7696,7837,7924,8006,8145,8228,8312,8399,8455,8506,8572,8646,8726,8813,8886,8963,9032,9106,9194,9271,9364,9460,9534,9614,9711,9763,9829,9916,10004,10066,10130,10193,10305,10414,10521,10631,10691,10746,10823"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\89a5b1c8a1b64703a7e3cc4364a267e1\\transformed\\play-services-basement-18.1.0\\res\\values-pt-rBR\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "199",
+                        "endColumns": "140",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "49",
+                        "startColumns": "4",
+                        "startOffsets": "4802",
+                        "endColumns": "144",
+                        "endOffsets": "4942"
                     }
                 }
             ]

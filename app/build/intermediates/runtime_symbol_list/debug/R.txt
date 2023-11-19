@@ -3728,7 +3728,9 @@ int id fullscreen_header 0x7f0a014a
 int id ghost_view 0x7f0a014b
 int id ghost_view_holder 0x7f0a014c
 int id gio1 0x7f0a014d
+int id gio11 0x7f0a031e
 int id gio2 0x7f0a014e
+int id gio22 0x7f0a031f
 int id giu 0x7f0a014f
 int id glide_custom_view_target_tag 0x7f0a0150
 int id gone 0x7f0a0151
@@ -3742,6 +3744,7 @@ int id grayscale 0x7f0a0158
 int id group_divider 0x7f0a0159
 int id grouping 0x7f0a015a
 int id groups 0x7f0a015b
+int id hangbayy 0x7f0a0321
 int id header_title 0x7f0a015c
 int id hideable 0x7f0a015d
 int id holo_dark 0x7f0a015e
@@ -3920,7 +3923,9 @@ int id newPassword 0x7f0a020a
 int id new_email 0x7f0a020b
 int id ngay1 0x7f0a020c
 int id ngay2 0x7f0a020d
+int id ngaydii 0x7f0a0322
 int id ngaysinh 0x7f0a020e
+int id ngaysinhh 0x7f0a0320
 int id noScroll 0x7f0a020f
 int id noState 0x7f0a0210
 int id none 0x7f0a0211
@@ -4006,6 +4011,7 @@ int id scrollIndicatorDown 0x7f0a0260
 int id scrollIndicatorUp 0x7f0a0261
 int id scrollView 0x7f0a0262
 int id scrollable 0x7f0a0263
+int id sdtt 0x7f0a0323
 int id searchButton 0x7f0a0264
 int id search_badge 0x7f0a0265
 int id search_bar 0x7f0a0266

@@ -239,8 +239,11 @@ id exploreName1
 id explorePic
 id framelayout
 id gio1
+id gio11
 id gio2
+id gio22
 id giu
+id hangbayy
 id image1
 id image11
 id image2
@@ -287,7 +290,9 @@ id newPassword
 id new_email
 id ngay1
 id ngay2
+id ngaydii
 id ngaysinh
+id ngaysinhh
 id old_email
 id password
 id phone
@@ -312,6 +317,7 @@ id sao4
 id sao5
 id scheduledTextView
 id scheduledTextView2
+id sdtt
 id searchButton
 id send
 id sending_pass_reset_button
