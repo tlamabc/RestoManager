@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
+import javax.mail.internet.*;
+import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import java.util.Properties;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -180,17 +185,12 @@ public class DatveFragment extends Fragment {
         tvthanhtoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Lấy người dùng hiện tại
                 FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                 if (currentUser != null) {
-                    // Lấy email của người dùng hiện tại
                     String currentEmail = currentUser.getEmail();
-                    // Tham chiếu đến nút "thanh_toan" trong Firebase
                     DatabaseReference thanhToanRef = FirebaseDatabase.getInstance().getReference("thanh_toan");
 
-                    // Kiểm tra nếu gioHangItemList trống
                     if (gioHangItemList.isEmpty()) {
-                        // Hiển thị hộp thoại thông báo không có đơn hàng để thanh toán
                         AlertDialog.Builder emptyCartDialog = new AlertDialog.Builder(getActivity());
                         emptyCartDialog.setTitle("Thông báo")
                                 .setMessage("Bạn chưa có đơn hàng để thanh toán.")
@@ -203,40 +203,78 @@ public class DatveFragment extends Fragment {
                         AlertDialog alert = emptyCartDialog.create();
                         alert.show();
                     } else {
-                        // Hiển thị hộp thoại xác nhận thanh toán
                         AlertDialog.Builder confirmPaymentDialog = new AlertDialog.Builder(getActivity());
                         confirmPaymentDialog.setTitle("Xác nhận thanh toán")
                                 .setMessage("Bạn có chắc chắn muốn thanh toán cho đơn hàng này?")
                                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
-                                        // Đẩy từng mục trong gioHangItemList lên Firebase
-                                        for (ThongTinKhach gioHangItem : gioHangItemList) {
-                                            gioHangItem.setEmail(currentEmail);
-                                            thanhToanRef.push().setValue(gioHangItem);
-                                        }
+                                        new AsyncTask<Void, Void, Void>() {
+                                            @Override
+                                            protected Void doInBackground(Void... voids) {
+                                                for (ThongTinKhach gioHangItem : gioHangItemList) {
+                                                    gioHangItem.setEmail(currentEmail);
+                                                    String ten = gioHangItem.getTen();
+                                                    thanhToanRef.push().setValue(gioHangItem);
+                                                }
 
-                                        // Xóa danh sách cục bộ
-                                        gioHangItemList.clear();
-                                        gioHangAdapter.notifyDataSetChanged();
-                                        clearGioHangData(currentEmail);
+                                                String subject = "Xác nhận thanh toán";
+                                                String message = "Cảm ơn bạn đã đặt vé."
+                                                        +"\n Vé máy bay của bạn đã được xác nhận."
+                                                        +"\n Thông Tin Vé:"
+                                                        +"\n _______________________________________"
+                                                        +"\n Hãng Bay : " + gioHangItemList.get(0).getAri1()
+                                                        +"\n Tên : " + gioHangItemList.get(0).getTen()
+                                                        +"\n Ngày Sinh : " + gioHangItemList.get(0).getNgaySinh()
+                                                        +"\n Số Điện Thoại : " + gioHangItemList.get(0).getSoDienThoai()
+                                                        +"\n Giờ bay : " + gioHangItemList.get(0).getGio1()
+                                                        +"\n Giờ Đến : " + gioHangItemList.get(0).getGio2()
+                                                        +"\n Email : " + gioHangItemList.get(0).getEmail()
+                                                        +"\n Điểm Đi : " + gioHangItemList.get(0).getDiemDi()
+                                                        +"\n Điểm Đến : " + gioHangItemList.get(0).getDiemDen()
+                                                        +"\n Ngày Đi : " + gioHangItemList.get(0).getNgay()
+                                                        +"\n Sân Bay Đi : " + gioHangItemList.get(0).getSan1()
+                                                        +"\n Sân Bay Đến : " + gioHangItemList.get(0).getSan2()
+                                                        +"\n Số Tiền : " + gioHangItemList.get(0).getTien()
+                                                        +"\n Thời Gian Bay : " + gioHangItemList.get(0).getTimebay()
+                                                        +"\n _______________________________________"
+                                                        +"\n Vui lòng đến địa chỉ sau để thanh toán vé:"
+                                                        + "\n 137 Nguyễn Thị Thập, Phường Hòa Minh, Quận Liên Chiểu, Thành Phố Đà Nẵng"
+                                                        + "\n Giờ làm việc: 8:00 - 17:00 "
+                                                        + "\n Để biết thêm thông tin vui lòng liên hệ:"
+                                                        +"\n _______________________________________"
+                                                        +"\n Đăng Thanh Lâm"
+                                                        +"\n Số điện thoại: 0359001647";
 
-                                        // Hiển thị thông báo thanh toán thành công
-                                        AlertDialog.Builder paymentSuccessDialog = new AlertDialog.Builder(getActivity());
-                                        paymentSuccessDialog.setTitle("Thông báo")
-                                                .setMessage("Thông tin vé của bạn đã được gửi về email của bạn.")
-                                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                                    public void onClick(DialogInterface dialog, int id) {
-                                                        dialog.dismiss();
-                                                    }
-                                                });
 
-                                        AlertDialog paymentAlert = paymentSuccessDialog.create();
-                                        paymentAlert.show();
-                                    }
-                                })
-                                .setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        dialog.dismiss();
+                                                String senderEmail = "easyflycskh1@gmail.com"; // Thay bằng địa chỉ email của bạn
+                                                String senderPassword = "mggcqkabtauhoqde"; // Thay bằng mật khẩu email của bạn
+
+                                                EmailSender.sendEmail(senderEmail, senderPassword, currentEmail, subject, message);
+
+                                                return null;
+                                            }
+
+                                            @Override
+                                            protected void onPostExecute(Void aVoid) {
+                                                super.onPostExecute(aVoid);
+
+                                                gioHangItemList.clear();
+                                                gioHangAdapter.notifyDataSetChanged();
+                                                clearGioHangData(currentEmail);
+
+                                                AlertDialog.Builder paymentSuccessDialog = new AlertDialog.Builder(getActivity());
+                                                paymentSuccessDialog.setTitle("Thông báo")
+                                                        .setMessage("Thông tin vé của bạn đã được gửi về email của bạn.")
+                                                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                                            public void onClick(DialogInterface dialog, int id) {
+                                                                dialog.dismiss();
+                                                            }
+                                                        });
+
+                                                AlertDialog paymentAlert = paymentSuccessDialog.create();
+                                                paymentAlert.show();
+                                            }
+                                        }.execute();
                                     }
                                 });
 
@@ -245,6 +283,19 @@ public class DatveFragment extends Fragment {
                     }
                 }
             }
+
+
+//                                .setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+//                                    public void onClick(DialogInterface dialog, int id) {
+//                                        dialog.dismiss();
+//                                    }
+//                                });
+//
+//                        AlertDialog confirmAlert = confirmPaymentDialog.create();
+//                        confirmAlert.show();
+//                    }
+//                }
+//            }
 
             private void clearGioHangData(String currentEmail) {
                 // Xóa dữ liệu từ nút "gio_hang" trong Firebase

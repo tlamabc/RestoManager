@@ -8,29 +8,42 @@
     android:padding="10dp">
 
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        >
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/bologin"
             android:orientation="vertical"
             android:padding="20dp">
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center"
-                app:cardCornerRadius="90dp">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/logo" />
-            </androidx.cardview.widget.CardView>
+                android:src="@drawable/icons8_chim"
+                app:cardCornerRadius="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter_bold"
+                android:text="EASY FLY"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter_bold"
+                android:text="made by DroidFresh Sixz"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
 
 
         </LinearLayout>
@@ -39,9 +52,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            app:cardCornerRadius="28dp"
             android:layout_marginBottom="-20dp"
-            >
+            app:cardCornerRadius="28dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -101,7 +114,8 @@
                     android:layout_height="wrap_content"
                     android:alpha="0.7"
                     android:text="Password"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -123,10 +137,7 @@
                     >
 
 
-
-
                 </RelativeLayout>
-
 
 
                 <LinearLayout
@@ -137,31 +148,30 @@
                         android:id="@+id/check_save"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:outlineSpotShadowColor="#112d6a"
-                        android:gravity="center">
-                    </Switch>
+                        android:gravity="center"
+                        android:outlineSpotShadowColor="#112d6a"></Switch>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
+                        android:text="Save password"
                         android:textSize="12sp"
-                        android:text="Save password"/>
+                        android:textStyle="bold" />
 
 
                     <TextView
-                        android:layout_weight="1"
                         android:id="@+id/btn_reset_password"
                         android:layout_width="wrap_content"
-                        android:layout_gravity="center"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:gravity="right"
-                        android:textSize="12sp"
-                        android:textStyle="bold"
-
                         android:text="Forgot my password"
-                        android:textColor="#ff0000" />
-                </LinearLayout>
+                        android:textColor="#ff0000"
 
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
 
                 <!--                <RelativeLayout-->
@@ -199,6 +209,7 @@
                     android:background="@drawable/stylebutton"
                     android:text="Login"
                     app:cornerRadius="32dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -207,16 +218,15 @@
                     android:text="Do you already have an account?" />
 
                 <Button
-                    android:layout_width="match_parent"
                     android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/stylebutton"
                     android:text="Register"
                     app:cornerRadius="32dp" />
-
 
 
             </LinearLayout>

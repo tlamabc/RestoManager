@@ -11,21 +11,34 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:background="@color/white"
         android:layout_height="wrap_content">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp"
             android:orientation="vertical"
+            android:background="@drawable/bologin"
             android:padding="20dp">
 
-            <ImageView
-                android:layout_width="171dp"
-                android:layout_height="155dp"
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EASY FLY"
+                android:textColor="@color/white"
                 android:layout_gravity="center"
-                android:src="@drawable/logo" />
+                android:textSize="50sp"
+                android:fontFamily="@font/inter_bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="made by DroidFresh Sixz"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:fontFamily="@font/inter_bold"
+                />
 
 
         </LinearLayout>

@@ -42,6 +42,7 @@ drawable boder_goi
 drawable boder_lienhe
 drawable boder_seach
 drawable boder_slideshow
+drawable bologin
 drawable border_buttom
 drawable border_radius_15dp
 drawable border_radius_top_tren_duoi
@@ -56,6 +57,7 @@ drawable cat4
 drawable cat_background
 drawable cham_thang
 drawable chat
+drawable chimmoi
 drawable chuong
 drawable chuyenbay
 drawable codohue
@@ -159,6 +161,7 @@ drawable phuquoc3
 drawable phuquoc4
 drawable phuquoc5
 drawable phuuquoc1
+drawable radius_1000dp
 drawable remove_icon
 drawable rounded_corner
 drawable sao0
@@ -432,6 +435,7 @@ layout loginapp
 layout ngay_thang_nam
 layout open_mess
 layout open_zalo
+layout radius_1000dp
 layout signupapp
 layout testfigma
 layout thong_tin_thanh_toan

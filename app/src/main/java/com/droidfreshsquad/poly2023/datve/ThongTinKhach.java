@@ -13,6 +13,9 @@ public class ThongTinKhach implements Parcelable {
     public ThongTinKhach(String ten, String ngaySinh, String emailValue, String phoneValue, int tongGiaTien, String diemDi, String diemDen, String gio1, String gio2, String ngay, String san1, String san2, String ari1) {
     }
 
+    public String getTimebay() {
+        return timebay;
+    }
 
     public void setEmail(String email) {
         this.email = email;
@@ -94,8 +97,8 @@ public class ThongTinKhach implements Parcelable {
 
         this.ten = ten;
         this.ngaySinh = ngaySinh;
-        this.email = emailValue;  // Use the provided parameter
-        this.soDienThoai = phoneValue;  // Use the provided parameter
+        this.email = emailValue;
+        this.soDienThoai = phoneValue;
         this.tien = tongGiaTien;  // Use the provided parameter
         this.diemDi = diemDi;
         this.diemDen = diemDen;

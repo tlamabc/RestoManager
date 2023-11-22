@@ -13,15 +13,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="32sp"/>
+        android:textSize="0sp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Let's get started"
-        android:textSize="32sp"
+        android:textSize="0sp"
         android:textStyle="bold"
         android:fontFamily="monospace"
         android:layout_marginTop="80dp" />
+    <TextView
+        android:textColor="#112d6a"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy Fly"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+    <TextView
+        android:textColor="#112d6a"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trung tâm chăm sóc khách hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -37,7 +55,8 @@
         android:text="Start"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_corner"
+        android:textColor="@color/white"
+        android:background="@drawable/style_button"
         android:id="@+id/start_btn"/>
 
 

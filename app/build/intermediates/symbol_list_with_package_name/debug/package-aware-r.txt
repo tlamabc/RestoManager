@@ -3053,6 +3053,7 @@ drawable boder_goi
 drawable boder_lienhe
 drawable boder_seach
 drawable boder_slideshow
+drawable bologin
 drawable border_buttom
 drawable border_radius_15dp
 drawable border_radius_top_tren_duoi
@@ -3108,6 +3109,7 @@ drawable cat4
 drawable cat_background
 drawable cham_thang
 drawable chat
+drawable chimmoi
 drawable chuong
 drawable chuyenbay
 drawable codohue
@@ -3331,6 +3333,7 @@ drawable phuquoc3
 drawable phuquoc4
 drawable phuquoc5
 drawable phuuquoc1
+drawable radius_1000dp
 drawable remove_icon
 drawable rounded_corner
 drawable sao0
@@ -4473,6 +4476,7 @@ layout open_zalo
 layout paybutton_generic
 layout permissionx_default_dialog_layout
 layout permissionx_permission_item
+layout radius_1000dp
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

@@ -67,9 +67,9 @@
         android:debuggable="true"
         android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/chimmoi"
         android:label="Easy Fly"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/chimmoi"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MaterialComponents"
@@ -130,6 +130,10 @@
             android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.Fragment.FragmentMain"
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name="com.droidfreshsquad.poly2023.Fragment.EmailSender"
             android:exported="false"
             android:theme="@style/MyAppTheme" />
         <activity

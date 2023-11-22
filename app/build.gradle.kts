@@ -6,6 +6,11 @@ plugins {
 android {
     namespace = "com.droidfreshsquad.poly2023"
     compileSdk = 34
+    packagingOptions {
+        exclude ("META-INF/LICENSE.md")
+        exclude("META-INF/NOTICE.md")
+        // You can add more exclusions or customize further if needed
+    }
 
     defaultConfig {
         applicationId = "com.droidfreshsquad.poly2023"
@@ -14,6 +19,7 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -32,9 +38,12 @@ android {
 }
 
 dependencies {
+    implementation ("com.sun.mail:android-mail:1.6.2")
+    implementation ("com.sun.mail:android-activation:1.6.2")
     implementation ("com.google.android.gms:play-services-wallet:19.2.1")
     implementation ("com.google.android.gms:play-services-identity:18.0.1")
-
+    implementation ("com.sun.mail:android-mail:1.6.6")
+    implementation ("com.sun.mail:android-activation:1.6.6")
     implementation ("com.google.android.gms:play-services-measurement-impl:15.0.4")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")

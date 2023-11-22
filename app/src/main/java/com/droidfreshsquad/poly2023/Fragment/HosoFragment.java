@@ -163,7 +163,7 @@ public class HosoFragment extends Fragment {
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
                                 // Update the ImageView with the new avatar
-                                Glide.with(getContext()).load(selectedImageUri).error(R.drawable.logochim).into(imgAvatar);
+                                Glide.with(getContext()).load(selectedImageUri).error(R.drawable.chimmoi).into(imgAvatar);
                                 Toast.makeText(getContext(), "Avatar updated successfully", Toast.LENGTH_SHORT).show();
                             } else {
                                 Toast.makeText(getContext(), "Failed to update avatar", Toast.LENGTH_SHORT).show();

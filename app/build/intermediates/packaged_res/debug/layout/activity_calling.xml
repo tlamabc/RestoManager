@@ -14,7 +14,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Hey User"
+        android:textSize="0sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginTop="80dp"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Chào bạn!"
         android:textSize="32sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:fontFamily="monospace"
         android:layout_marginTop="80dp" />
@@ -23,10 +34,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Lest start a call"
-        android:textSize="32sp"
+        android:textSize="0sp"
         android:textStyle="bold"
         android:fontFamily="monospace"
-         />
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Chọn nhân viên chăm sóc khách hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
