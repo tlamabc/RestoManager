@@ -77,6 +77,9 @@ public class HomeFragment extends Fragment {
         explore.add(new ExploreDomain("imgexplore1", "Đà Nẵng", "Tham Quan Địa Điểm Du Lịch Đà Nẵng Nổi Tiếng"));
         explore.add(new ExploreDomain("imgexplore2", "Sài Gòn", "Tham Quan Địa Điểm Du Lịch Sài Gòn Nổi Tiếng"));
         explore.add(new ExploreDomain("imgexplore3", "Hà Nội", "Tham Quan Địa Điểm Du Lịch Hà Nội Nổi Tiếng"));
+        explore.add(new ExploreDomain("imgexplore4", "Huế", "Tham Quan Địa Điểm Du Lịch Huế Nổi Tiếng"));
+        explore.add(new ExploreDomain("imgexplore5", "Phú Quốc", "Tham Quan Địa Điểm Du Lịch Phú Quốc Nổi Tiếng"));
+
         adapter = new ExploreAdapter(explore);
         recyclerViewExploreList.setAdapter(adapter);
 

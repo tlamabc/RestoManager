@@ -17,6 +17,8 @@ import com.droidfreshsquad.poly2023.Domain.ExploreDomain;
 import com.droidfreshsquad.poly2023.R;
 import com.droidfreshsquad.poly2023.ScreenExplore.ScreenDanang;
 import com.droidfreshsquad.poly2023.ScreenExplore.ScreenHanoi;
+import com.droidfreshsquad.poly2023.ScreenExplore.ScreenHue;
+import com.droidfreshsquad.poly2023.ScreenExplore.ScreenPhuQuoc;
 import com.droidfreshsquad.poly2023.ScreenExplore.ScreenSaigon;
 
 import java.util.ArrayList;
@@ -67,7 +69,22 @@ public class ExploreAdapter extends RecyclerView.Adapter<ExploreAdapter.ViewHode
                 context.startActivity(intent);
             }
         };
-
+        View.OnClickListener myClickListener3 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                Intent intent = new Intent(context, ScreenHue.class);
+                context.startActivity(intent);
+            }
+        };
+        View.OnClickListener myClickListener4 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                Intent intent = new Intent(context, ScreenPhuQuoc.class);
+                context.startActivity(intent);
+            }
+        };
         holder.exploreName.setText(exploreDomains.get(position).getTitle());
         holder.exploreName1.setText(exploreDomains.get(position).getTitle1());
         holder.exploreName1.setOnClickListener(myClickListener);
@@ -91,6 +108,20 @@ public class ExploreAdapter extends RecyclerView.Adapter<ExploreAdapter.ViewHode
 
                 holder.explorePic.setImageResource(R.drawable.imgexplore3);
                 holder.explorePic.setOnClickListener(myClickListener2);
+                break;
+            }
+            case 3: {
+                picUrl = "hue18";
+
+                holder.explorePic.setImageResource(R.drawable.hue18);
+                holder.explorePic.setOnClickListener(myClickListener3);
+                break;
+            }
+            case 4: {
+                picUrl = "phuquoc21";
+
+                holder.explorePic.setImageResource(R.drawable.phuquoc21);
+                holder.explorePic.setOnClickListener(myClickListener4);
                 break;
             }
         }

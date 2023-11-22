@@ -18,65 +18,90 @@
         android:label="Easy Fly"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/MyAppTheme"
+        android:theme="@style/Theme.MaterialComponents"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ScreenExplore.ScreenHue"
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
+        <activity
+            android:name=".ScreenExplore.ScreenPhuQuoc"
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
+        <activity
             android:name=".ScreenExplore.ChuyentrangActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.thoi_tiet"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".HoSo.danhgia"
-            android:exported="false" />
-        <activity android:name=".VdCallActivity">
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
+        <activity android:name=".VdCallActivity"
+            android:theme="@style/MyAppTheme">
 
             <!-- Other activity-related configurations -->
         </activity>
-        <activity android:name=".CallingActivity">
+        <activity android:name=".CallingActivity"
+            android:theme="@style/MyAppTheme">
 
             <!-- Other activity-related configurations -->
         </activity>
         <activity
             android:name=".Zalo"
             android:exported="false"
-            android:label="Zalo" />
+            android:label="Zalo"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".Message"
             android:exported="false"
-            android:label="Message" />
+            android:label="Message"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".HoSo.BaoCao"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".HoSo.DieuKhoan"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".HoSo.Danh_Gia"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".Fragment.FragmentMain"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".datve.ThongTinThanhToan"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".datve.DanhSachBay"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenMainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".datve.Ngay_thang_nam"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/MyAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -86,23 +111,29 @@
         <activity
             android:name=".SignupActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".datve.BookingActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ResetPasswordActivity"
-            android:label="Reset Password" />
+            android:label="Reset Password"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.ScreenSaigon"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.ScreenHanoi"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.ScreenDanang"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme"/>
     </application>
 
 </manifest>

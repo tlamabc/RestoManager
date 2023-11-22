@@ -72,63 +72,90 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/MyAppTheme"
+        android:theme="@style/Theme.MaterialComponents"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenHue"
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenPhuQuoc"
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
+        <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ChuyentrangActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.thoi_tiet"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.danhgia"
-            android:exported="false" />
-        <activity android:name="com.droidfreshsquad.poly2023.VdCallActivity" >
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name="com.droidfreshsquad.poly2023.VdCallActivity"
+            android:theme="@style/MyAppTheme" >
 
             <!-- Other activity-related configurations -->
         </activity>
-        <activity android:name="com.droidfreshsquad.poly2023.CallingActivity" >
+        <activity
+            android:name="com.droidfreshsquad.poly2023.CallingActivity"
+            android:theme="@style/MyAppTheme" >
 
             <!-- Other activity-related configurations -->
         </activity>
         <activity
             android:name="com.droidfreshsquad.poly2023.Zalo"
             android:exported="false"
-            android:label="Zalo" />
+            android:label="Zalo"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.Message"
             android:exported="false"
-            android:label="Message" />
+            android:label="Message"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.BaoCao"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.DieuKhoan"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.Danh_Gia"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.Fragment.FragmentMain"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.ThongTinThanhToan"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.DanhSachBay"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenMainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.Ngay_thang_nam"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.LoginActivity"
             android:exported="true"
+            android:theme="@style/MyAppTheme"
             android:windowSoftInputMode="adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -139,23 +166,29 @@
         <activity
             android:name="com.droidfreshsquad.poly2023.SignupActivity"
             android:exported="true"
+            android:theme="@style/MyAppTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.BookingActivity"
             android:exported="false"
+            android:theme="@style/MyAppTheme"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ResetPasswordActivity"
-            android:label="Reset Password" />
+            android:label="Reset Password"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenSaigon"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenHanoi"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenDanang"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/MyAppTheme" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

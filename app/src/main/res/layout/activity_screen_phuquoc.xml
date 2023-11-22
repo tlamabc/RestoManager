@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#112d6a"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Tham quan du lịch Phú Quốc"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tham Quan Địa Điểm Du Lịch Phú Quốc Nổi Tiếng"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/phuquoc0" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/phuquoc2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/phucquoc6" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#000000"
+                    android:text="Phú Quốc là hòn đảo lớn nhất Việt Nam với khí hậu ôn hòa được thiên nhiên ưu ái. Nơi đây dần trở thành thiên đường nghỉ dưỡng của cả du khách trong và ngoài nước. Không hoa lệ như Sài Gòn, cũng không cổ kính như Hà Nội, các địa điểm du lịch Phú Quốc sẽ mang đến cho bạn vô vàn trải nghiệm thú vị. "
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tham Quan Địa Điểm Du Lịch Phú Quốc Nổi Tiếng Nổi Tiếng"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="1. Vườn tiêu Phú Quố"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/phuquoc4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tiêu Phú Quốc nổi tiếng về chất lượng hạt, vỏ thơm, vị cay nồng đặc trưng mà không nơi nào có được. Trên đường đi Gành Dầu, có một số vườn tiêu mà bạn có thể ghé thăm. Hầu hết các vườn tiêu hiện nay đều không thu phí vé vào cửa, bạn hoàn toàn có thể thoải mái tham quan, thả dáng check in tại vườn tiêu hay tham gia trải nghiệm thu hoạch tiêu cùng những người nông dân vô cùng thú vị.  "/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2. Vinpearl Safari Phú Quốc - Trải nghiệm “nhốt người thả thú” có 1 - 0 - 2"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/phuquoc5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vinpearl Safari là địa điểm tham quan Phú Quốc, công viên chăm sóc và bảo tồn động vật lớn nhất Việt Nam. Với mô hình cực kỳ độc đáo “nhốt người thả thú”, bạn sẽ được ngồi trên những chuyến xe điện, tận mắt chứng kiến cuộc sống của muôn loài động vật, trực tiếp cho chúng ăn và selfie cùng muông thú. Lần đầu tiên và duy nhất tại Việt Nam, Vinpearl Safari Phú Quốc đem du khách tới gần hơn với đời sống tự nhiên và hoang dã của những loài động vật quý hiếm như tê giác Nam Phi, kangaroo từ Úc, hổ Ấn Độ, ngựa vằn Kenya…"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="3. Bãi Ông Lang - Nơi lý tưởng cho những chuyến picnic"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/phuquoc3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bãi Ông Lang - bãi biển có hoàng hôn đẹp nhất Phú Quốc, là địa điểm du lịch Phú Quốc không thể bỏ qua với những ai mê check in sống ảo. Nơi đây sở hữu vẻ đẹp thiên nhiên hoang sơ, yên bình với làn nước biển xanh biếc, bãi cát trắng mịn cùng những con sóng dịu nhẹ. Đến đây, du khách có thể tận hưởng không gian thoáng đãng, thảnh thơi thư giãn, tránh xa cái nóng oi bức của thành phố và trải nghiệm vô vàn hoạt động vui chơi thú vị như: tắm biển, lặn biển ngắm san hô, câu cá, chèo thuyền kayak…"/>
+
+
+
+"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

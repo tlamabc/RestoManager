@@ -162,7 +162,7 @@
             android:layout_margin="5dp"
             android:gravity="start"
             android:id="@+id/editText"
-            android:hint="nhập dánh giá của bạn"
+            android:hint="Hãy nhập đánh giá của bạn với trải nghiệm của chúng tôi để có trải nghiệm tốt hơn sau này nhé...."
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/edittext" />

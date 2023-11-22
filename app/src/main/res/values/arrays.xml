@@ -21,9 +21,9 @@
     </string-array>
 
     <string-array name="call_data">
-        <item>cskhnhac</item>
-        <item></item>
-        <item>CSKH_3</item>
+        <item>cskh1</item>
+        <item>cskh2</item>
+        <item>cskh3</item>
         <!-- Thêm các điểm đi khác theo cú pháp trên -->
     </string-array>
 </resources>

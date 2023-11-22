@@ -112,19 +112,17 @@
                             android:id="@+id/callok"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
-
                             app:cardCornerRadius="90dp">
                             <ImageView
                                 android:layout_width="50dp"
                                 android:padding="5dp"
-                                android:background="@drawable/boder_goi"
+                                android:background="#112d6a"
                                 android:layout_height="50dp"
-                                android:src="@drawable/phone_icon"/>
+                                android:src="@drawable/icons8_chim"/>
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Liên hệ qua điện thoại"
+                                android:text="Liên hệ với nhân viên"
                                 android:layout_gravity="center"
                                 android:textColor="#000000"
                                 android:textSize="18dp"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="call_data">
-        <item>cskhnhac</item>
-        <item/>
-        <item>CSKH_3</item>
+        <item>cskh1</item>
+        <item>cskh2</item>
+        <item>cskh3</item>
         
     </string-array>
     <string-array name="diem_den_data">
