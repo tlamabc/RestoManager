@@ -1,10 +1,12 @@
 package com.droidfreshsquad.poly2023.Fragment;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -34,18 +36,21 @@ public class DatveFragment extends Fragment {
     private RecyclerView recyclerViewProducts;
     private TextView textViewTotal;
     private Button buttonCheckout;
+    LinearLayout tvHuydon, thanhtoan;
     private List<ThongTinKhach> gioHangItemList;
     private GioHangAdapter gioHangAdapter;
     private PaymentsClient paymentsClient;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_datve, container, false);
 
         recyclerViewProducts = view.findViewById(R.id.recyclerViewProducts);
-        textViewTotal = view.findViewById(R.id.textViewTotal);
-        buttonCheckout = view.findViewById(R.id.buttonCheckout);
+        LinearLayout buttonCheckout = view.findViewById(R.id.buttonCheckout);
+        LinearLayout tvHuydon = view.findViewById(R.id.tvHuydon);
+        LinearLayout tvthanhtoan = view.findViewById(R.id.tvthanhtoan);
 
         gioHangItemList = new ArrayList<>();
         gioHangAdapter = new GioHangAdapter(gioHangItemList);
@@ -76,7 +81,7 @@ public class DatveFragment extends Fragment {
 
                     for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                         ThongTinKhach gioHangItem = postSnapshot.getValue(ThongTinKhach.class);
-                        if (gioHangItem != null && gioHangItem.getEmail().equals(currentEmail)) {
+                        if (gioHangItem != null && currentEmail.equals(gioHangItem.getEmail())) {
                             gioHangItemList.add(gioHangItem);
                         }
                     }
@@ -84,18 +89,112 @@ public class DatveFragment extends Fragment {
                     gioHangAdapter.notifyDataSetChanged();
                 }
 
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    // Handle query errors
+                }
+            });
+
+
+        }
+        tvHuydon.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCancelled(DatabaseError databaseError) {
-                // Handle query errors
+            public void onClick(View v) {
+                // Nhận người dùng hiện tại
+                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
+                if (currentUser != null) {
+                    // Nhận email của người dùng hiện tại
+                    String currentEmail = currentUser.getEmail();
+
+                    // Tham chiếu đến nút "gio_hang" trong Firebase
+                    DatabaseReference gioHangRef = FirebaseDatabase.getInstance().getReference("gio_hang");
+
+                    // Truy vấn để tìm các mặt hàng trong giỏ hàng cho người dùng hiện tại
+                    gioHangRef.orderByChild("email").equalTo(currentEmail).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            // Lặp lại các mục trong giỏ hàng cho người dùng hiện tại
+                            for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                                ThongTinKhach gioHangItem = postSnapshot.getValue(ThongTinKhach.class);
+
+                                //Xóa mặt hàng khỏi giỏ hàng
+                                postSnapshot.getRef().removeValue();
+
+                                // Xóa mục khỏi danh sách cục bộ
+                                gioHangItemList.remove(gioHangItem);
+                            }
+
+                            // Cập nhật bộ chuyển đổi để phản ánh những thay đổi
+                            gioHangAdapter.notifyDataSetChanged();
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            // Handle query errors
+                        }
+                    });
+                }
+            }
+        });
+        tvthanhtoan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get the current user
+                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                if (currentUser != null) {
+                    // Get the email of the current user
+                    String currentEmail = currentUser.getEmail();
+                    // Reference to the "thanh_toan" node in Firebase
+                    DatabaseReference thanhToanRef = FirebaseDatabase.getInstance().getReference("thanh_toan");
+                    // Create a new ThongTinKhach object for payment status
+
+                    // Iterate through the gioHangItemList and push each item to Firebase
+                    for (ThongTinKhach gioHangItem : gioHangItemList) {
+                        // Set the email of the user
+                        gioHangItem.setEmail(currentEmail);
+
+                        // Push the gioHangItem to Firebase
+                        thanhToanRef.push().setValue(gioHangItem);
+                    }
+                    // Clear the local list
+                    gioHangItemList.clear();
+                    // Notify the adapter about the change
+                    gioHangAdapter.notifyDataSetChanged();
+                    // Remove data from Firebase "gio_hang" node
+                    clearGioHangData(currentEmail);
+                    // You can also perform other necessary actions
+                }
+            }
+            private void clearGioHangData(String currentEmail) {
+                // Reference to the "gio_hang" node in Firebase
+                DatabaseReference gioHangRef = FirebaseDatabase.getInstance().getReference("gio_hang");
+                // Truy vấn để tìm các mặt hàng trong giỏ hàng cho người dùng hiện tại
+                gioHangRef.orderByChild("email").equalTo(currentEmail).addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        // Lặp lại các mục trong giỏ hàng cho người dùng hiện tại
+                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                            ThongTinKhach gioHangItem = postSnapshot.getValue(ThongTinKhach.class);
+                            // Xóa mặt hàng khỏi giỏ hàng
+                            postSnapshot.getRef().removeValue();
+                            // Xóa mục khỏi danh sách cục bộ
+                            gioHangItemList.remove(gioHangItem);
+                        }
+                        // Cập nhật bộ chuyển đổi để phản ánh những thay đổi
+                        gioHangAdapter.notifyDataSetChanged();
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        // Handle query errors
+                    }
+                });
             }
         });
 
 
-
-
-        }
-
-        // Thay đổi phương thức `buttonCheckout.setOnClickListener()`
+        //   Thay đổi phương thức
+        //  buttonCheckout.setOnClickListener();
         buttonCheckout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

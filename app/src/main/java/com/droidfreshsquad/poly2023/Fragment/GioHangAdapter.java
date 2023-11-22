@@ -48,9 +48,12 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
         holder.gio11.setText(gioHangItem.gio1);
         holder.gio22.setText(gioHangItem.gio2);
         holder.ngaydii.setText(gioHangItem.ngay);
+        holder.ngaydii2.setText(gioHangItem.ngay);
         holder.sdtt.setText(gioHangItem.soDienThoai);
         holder.hangbayy.setText(gioHangItem.ari1);
-
+        holder.san1.setText(gioHangItem.san2);
+        holder.san2.setText(gioHangItem.san1);
+        holder.timebay.setText(gioHangItem.timebay);
 
 
 
@@ -64,7 +67,7 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView textViewProductName, email,tongtien,diemdi,diemden,ngaysinhh, gio11,gio22, ngaydii, sdtt,hangbayy;
+        public TextView textViewProductName, email,tongtien,diemdi,diemden,ngaysinhh,ngaydii2, gio11,gio22,san1,san2, ngaydii, sdtt,hangbayy,timebay;
 
 
         public ViewHolder(@NonNull View itemView) {
@@ -78,8 +81,12 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
             gio11 = itemView.findViewById(R.id.gio11) ;
             gio22 = itemView.findViewById(R.id.gio22) ;
             ngaydii = itemView.findViewById(R.id.ngaydii) ;
+            ngaydii2 = itemView.findViewById(R.id.ngaydii2) ;
             sdtt = itemView.findViewById(R.id.sdtt) ;
             hangbayy = itemView.findViewById(R.id.hangbayy) ;
+            san1 = itemView.findViewById(R.id.san1) ;
+            san2 = itemView.findViewById(R.id.san2) ;
+            timebay = itemView.findViewById(R.id.tvtimebay);
             // Kết nối các thành phần khác tùy thuộc vào thông tin bạn muốn hiển thị
         }
     }

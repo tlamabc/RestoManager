@@ -3149,6 +3149,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gpay_logo_generic_dark
 drawable gpay_logo_generic_light
+drawable hangbay
 drawable heart
 drawable hoian
 drawable home
@@ -3722,6 +3723,7 @@ id foreground_camera
 id foreground_mic
 id foreground_textview
 id forever
+id fragment_container
 id fragment_container_view_tag
 id framelayout
 id frost
@@ -3926,6 +3928,7 @@ id new_email
 id ngay1
 id ngay2
 id ngaydii
+id ngaydii2
 id ngaysinh
 id ngaysinhh
 id noScroll
@@ -4123,7 +4126,6 @@ id textView3
 id textView4
 id textView5
 id textViewProductName
-id textViewTotal
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -4161,13 +4163,16 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvHuydon
 id tvNumberEmBe
 id tvNumberLon
 id tvNumberTreEm
 id tv_inroom_message
 id tvmuave
 id tvsohanhkhach
+id tvthanhtoan
 id tvtien
+id tvtimebay
 id unchecked
 id uniform
 id unlabeled
@@ -4316,6 +4321,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_booking
 layout activity_calling
+layout activity_chuyentrang
 layout activity_danhgia
 layout activity_fragment_main
 layout activity_main

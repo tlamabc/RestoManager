@@ -44,7 +44,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-15dp"
                         android:gravity="center"
-                        android:text="EesyFly "
+                        android:text="EasyFly"
                         android:textColor="#FFFFFF"
                         android:textSize="34dp"
                         android:textStyle="bold" />

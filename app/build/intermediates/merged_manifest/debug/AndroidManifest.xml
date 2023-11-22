@@ -75,6 +75,9 @@
         android:theme="@style/MyAppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ChuyentrangActivity"
+            android:exported="false" />
+        <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.thoi_tiet"
             android:exported="false" />
         <activity

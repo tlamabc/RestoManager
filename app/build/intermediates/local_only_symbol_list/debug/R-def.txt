@@ -69,6 +69,7 @@ drawable explore1_background
 drawable explore2
 drawable eye
 drawable giu
+drawable hangbay
 drawable heart
 drawable hoian
 drawable home
@@ -238,6 +239,7 @@ id emailView
 id exploreName
 id exploreName1
 id explorePic
+id fragment_container
 id framelayout
 id gio1
 id gio11
@@ -292,6 +294,7 @@ id new_email
 id ngay1
 id ngay2
 id ngaydii
+id ngaydii2
 id ngaysinh
 id ngaysinhh
 id old_email
@@ -336,7 +339,6 @@ id textView3
 id textView4
 id textView5
 id textViewProductName
-id textViewTotal
 id thoat
 id thoigianbay
 id thoitiet
@@ -346,12 +348,15 @@ id tonggiatien
 id tongtien
 id toolbar
 id toolbar_title
+id tvHuydon
 id tvNumberEmBe
 id tvNumberLon
 id tvNumberTreEm
 id tvmuave
 id tvsohanhkhach
+id tvthanhtoan
 id tvtien
+id tvtimebay
 id user_id_edit_text
 id vemaybay
 id versionTextView
@@ -362,6 +367,7 @@ id webview
 id zalo
 layout activity_booking
 layout activity_calling
+layout activity_chuyentrang
 layout activity_danhgia
 layout activity_fragment_main
 layout activity_main

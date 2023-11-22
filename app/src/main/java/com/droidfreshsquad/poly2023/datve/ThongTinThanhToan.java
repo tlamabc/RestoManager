@@ -29,6 +29,7 @@ import com.droidfreshsquad.poly2023.Fragment.DatveFragment;
 import com.droidfreshsquad.poly2023.Fragment.GioHangAdapter;
 import com.droidfreshsquad.poly2023.MainActivity;
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.ScreenExplore.ChuyentrangActivity;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.Number;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.NumberData;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -131,6 +132,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
         String san1 = getIntent().getStringExtra("SANBAYDEN");
         String san2 = getIntent().getStringExtra("SANBAYDI");
         String ari1 = getIntent().getStringExtra("AIRLINES");
+        String timebay = getIntent().getStringExtra("TIMEBAY");
 
 
         // Hiển thị dữ liệu vào các TextView tương ứng
@@ -144,6 +146,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
         TextView sanmot = findViewById(R.id.san1);
         TextView sanhai = findViewById(R.id.san2);
         TextView arimot = findViewById(R.id.ari1);
+        TextView thoigianbay = findViewById(R.id.thoigianbay);
+
         // Đặt dữ liệu vào các TextView
 //        tongGiaTienTextView.setText(String.valueOf(tien));
         di.setText(String.valueOf(diemDi));
@@ -155,6 +159,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
         sanmot.setText(String.valueOf(san1));
         sanhai.setText(String.valueOf(san2));
         arimot.setText(String.valueOf(ari1));
+        thoigianbay.setText(String.valueOf(timebay));
+
 
         int tongGiaTien;
         if (TongSoNguoi > 0) {
@@ -169,7 +175,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
         tongGiaTienTextView.setText(formattedPrice);//in ra textview
         // Định dạng số theo 1,200,000  /ve
         NumberFormat numberForma = NumberFormat.getNumberInstance(Locale.getDefault());
-        String formattedPric = numberForma.format(tongGiaTien);
+        String formattedPric = numberForma.format(tien);
         TextView TongSoNguoiTextView = findViewById(R.id.TongSoNguoi);
         TongSoNguoiTextView.setText(formattedPric + "/vé");
         //in ra textview
@@ -183,9 +189,16 @@ public class ThongTinThanhToan extends AppCompatActivity {
         tieptuc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                Intent intent = new Intent(ThongTinThanhToan.this, ChuyentrangActivity.class); // Assuming MainActivity hosts DatveFragment
+                intent.putExtra("FRAGMENT_TO_LOAD", "DATVE_FRAGMENT"); // Add an extra to indicate which fragment to load
+                startActivity(intent);
+                finish();
                 // lấy tổng tiền
                 String tongGiaTienString = tongGiaTienTextView.getText().toString();
                 int tongGiaTien = Integer.parseInt(tongGiaTienString.replaceAll("[^0-9]", ""));
+
 
                 int tien = getIntent().getIntExtra("PRICE", 0);
                 String diemDi = getIntent().getStringExtra("DEPARTURE");
@@ -196,6 +209,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
                 String san1 = getIntent().getStringExtra("SANBAYDEN");
                 String san2 = getIntent().getStringExtra("SANBAYDI");
                 String ari1 = getIntent().getStringExtra("AIRLINES");
+                String timebay = getIntent().getStringExtra("TIMEBAY");
                 // thông tin khách hàng
                 String ten = name.getText().toString();
                 String ngaySinh = ngaysinh.getText().toString();
@@ -207,7 +221,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
 
                 String phoneValue = phone.getText().toString();
 
-                ThongTinKhach thongTinKhach = new ThongTinKhach(ten, ngaySinh, emailValue, phoneValue,tongGiaTien,  diemDi, diemDen, gio1, gio2, ngay, san1, san2, ari1);
+                ThongTinKhach thongTinKhach = new ThongTinKhach(ten, ngaySinh, emailValue, phoneValue,tongGiaTien,  diemDi, diemDen, gio1, gio2, ngay, san1, san2, ari1,timebay);
                 // Đẩy dữ liệu lên Realtime Database
                 String key = myRef.push().getKey();
                 myRef.child(key).setValue(thongTinKhach);
