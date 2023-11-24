@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.datve.SaveNumber.DestinationData;
 import com.droidfreshsquad.poly2023.datve.ThongTinKhach;
 import com.google.gson.Gson;
 import java.util.ArrayList;
@@ -39,6 +40,10 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         ThongTinKhach gioHangItem = gioHangItemList.get(position);
+        // Lưu thông tin điểm đi và điểm đến vào class DestinationData
+        DestinationData destinationData = DestinationData.getInstance();
+        destinationData.setDiemDi(gioHangItem.getDiemDi());
+        destinationData.setDiemDen(gioHangItem.getDiemDen());
             holder.textViewProductName.setText(gioHangItem.ten);
         holder.email.setText(gioHangItem.email);
         holder.diemdi.setText(gioHangItem.diemDi);
@@ -74,7 +79,7 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
             super(itemView);
             textViewProductName = itemView.findViewById(R.id.textViewProductName);
             email = itemView.findViewById(R.id.email);
-          tongtien = itemView.findViewById(R.id.tongtien) ;
+            tongtien = itemView.findViewById(R.id.tongtien) ;
             diemdi = itemView.findViewById(R.id.diemdi) ;
             diemden = itemView.findViewById(R.id.diemden) ;
             ngaysinhh = itemView.findViewById(R.id.ngaysinhh) ;

@@ -1,6 +1,9 @@
 package com.droidfreshsquad.poly2023.Fragment;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +17,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.datve.SaveNumber.CountData;
 import com.droidfreshsquad.poly2023.datve.ThongTinKhach;
+import com.droidfreshsquad.poly2023.datve.khuhoi;
 import com.google.android.gms.wallet.AutoResolveHelper;
 import com.google.android.gms.wallet.PaymentDataRequest;
 import com.google.android.gms.wallet.PaymentsClient;
@@ -34,9 +39,6 @@ import java.util.List;
 public class DatveFragment extends Fragment {
 
     private RecyclerView recyclerViewProducts;
-    private TextView textViewTotal;
-    private Button buttonCheckout;
-    LinearLayout tvHuydon, thanhtoan;
     private List<ThongTinKhach> gioHangItemList;
     private GioHangAdapter gioHangAdapter;
     private PaymentsClient paymentsClient;
@@ -51,9 +53,12 @@ public class DatveFragment extends Fragment {
         LinearLayout buttonCheckout = view.findViewById(R.id.buttonCheckout);
         LinearLayout tvHuydon = view.findViewById(R.id.tvHuydon);
         LinearLayout tvthanhtoan = view.findViewById(R.id.tvthanhtoan);
+        LinearLayout tvkhuhoi = view.findViewById(R.id.tvkhuhoi);
+
 
         gioHangItemList = new ArrayList<>();
         gioHangAdapter = new GioHangAdapter(gioHangItemList);
+
 
         recyclerViewProducts.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerViewProducts.setAdapter(gioHangAdapter);
@@ -68,7 +73,7 @@ public class DatveFragment extends Fragment {
                         .build()
         );
 
-        // Lắng nghe sự kiện khi có thay đổi trong dữ liệu
+// Lắng nghe sự kiện khi có thay đổi trong dữ liệu
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null) {
             // Lấy email của người dùng hiện tại
@@ -85,113 +90,201 @@ public class DatveFragment extends Fragment {
                             gioHangItemList.add(gioHangItem);
                         }
                     }
+                    int itemCount = gioHangItemList.size(); // Đếm số lượng mục trong gioHangItemList
+                    CountData.getInstance().setCount(itemCount);//cập nhật lưu vào class countData
 
                     gioHangAdapter.notifyDataSetChanged();
                 }
-
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
                     // Handle query errors
                 }
             });
-
-
         }
+//------------------------------
         tvHuydon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Nhận người dùng hiện tại
-                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                int retrievedItemCount = CountData.getInstance().getCount();//lấy từ class countData
+                if (retrievedItemCount > 0) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setTitle("Xác nhận hủy đơn")
+                            .setMessage("Bạn có muốn hủy tất cả đơn trong giỏ hàng này không?")
+                            .setCancelable(false)
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    // Nhận người dùng hiện tại
+                                    FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
-                if (currentUser != null) {
-                    // Nhận email của người dùng hiện tại
-                    String currentEmail = currentUser.getEmail();
+                                    if (currentUser != null) {
+                                        // Nhận email của người dùng hiện tại
+                                        String currentEmail = currentUser.getEmail();
 
-                    // Tham chiếu đến nút "gio_hang" trong Firebase
-                    DatabaseReference gioHangRef = FirebaseDatabase.getInstance().getReference("gio_hang");
+                                        // Tham chiếu đến nút "gio_hang" trong Firebase
+                                        DatabaseReference gioHangRef = FirebaseDatabase.getInstance().getReference("gio_hang");
 
-                    // Truy vấn để tìm các mặt hàng trong giỏ hàng cho người dùng hiện tại
-                    gioHangRef.orderByChild("email").equalTo(currentEmail).addListenerForSingleValueEvent(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(DataSnapshot dataSnapshot) {
-                            // Lặp lại các mục trong giỏ hàng cho người dùng hiện tại
-                            for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                                ThongTinKhach gioHangItem = postSnapshot.getValue(ThongTinKhach.class);
+                                        // Truy vấn để tìm các mặt hàng trong giỏ hàng cho người dùng hiện tại
+                                        gioHangRef.orderByChild("email").equalTo(currentEmail).addListenerForSingleValueEvent(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                                // Lặp lại các mục trong giỏ hàng cho người dùng hiện tại
+                                                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                                                    ThongTinKhach gioHangItem = postSnapshot.getValue(ThongTinKhach.class);
 
-                                //Xóa mặt hàng khỏi giỏ hàng
-                                postSnapshot.getRef().removeValue();
+                                                    //Xóa mặt hàng khỏi giỏ hàng
+                                                    postSnapshot.getRef().removeValue();
 
-                                // Xóa mục khỏi danh sách cục bộ
-                                gioHangItemList.remove(gioHangItem);
-                            }
+                                                    // Xóa mục khỏi danh sách cục bộ
+                                                    gioHangItemList.remove(gioHangItem);
+                                                }
 
-                            // Cập nhật bộ chuyển đổi để phản ánh những thay đổi
-                            gioHangAdapter.notifyDataSetChanged();
-                        }
+                                                // Cập nhật bộ chuyển đổi để phản ánh những thay đổi
+                                                gioHangAdapter.notifyDataSetChanged();
+                                                tvkhuhoi.setVisibility(View.GONE);
+                                            }
 
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
-                            // Handle query errors
-                        }
-                    });
+                                            @Override
+                                            public void onCancelled(DatabaseError databaseError) {
+                                                // Xử lý lỗi truy vấn
+                                            }
+                                        });
+                                    }
+                                }
+                            })
+                            .setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel(); // Đóng AlertDialog
+                                }
+                            });
+
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                } else {
+                    // Biến count bằng 0, hiển thị thông báo không có đơn hàng để hủy
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setTitle("Thông báo")
+                            .setMessage("Bạn không có đơn hàng để hủy.")
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel(); // Đóng AlertDialog
+                                }
+                            });
+
+                    AlertDialog alert = builder.create();
+                    alert.show();
                 }
             }
         });
+
+//-----------------------------------
         tvthanhtoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Get the current user
+                // Lấy người dùng hiện tại
                 FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                 if (currentUser != null) {
-                    // Get the email of the current user
+                    // Lấy email của người dùng hiện tại
                     String currentEmail = currentUser.getEmail();
-                    // Reference to the "thanh_toan" node in Firebase
+                    // Tham chiếu đến nút "thanh_toan" trong Firebase
                     DatabaseReference thanhToanRef = FirebaseDatabase.getInstance().getReference("thanh_toan");
-                    // Create a new ThongTinKhach object for payment status
 
-                    // Iterate through the gioHangItemList and push each item to Firebase
-                    for (ThongTinKhach gioHangItem : gioHangItemList) {
-                        // Set the email of the user
-                        gioHangItem.setEmail(currentEmail);
+                    // Kiểm tra nếu gioHangItemList trống
+                    if (gioHangItemList.isEmpty()) {
+                        // Hiển thị hộp thoại thông báo không có đơn hàng để thanh toán
+                        AlertDialog.Builder emptyCartDialog = new AlertDialog.Builder(getActivity());
+                        emptyCartDialog.setTitle("Thông báo")
+                                .setMessage("Bạn chưa có đơn hàng để thanh toán.")
+                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.dismiss();
+                                    }
+                                });
 
-                        // Push the gioHangItem to Firebase
-                        thanhToanRef.push().setValue(gioHangItem);
+                        AlertDialog alert = emptyCartDialog.create();
+                        alert.show();
+                    } else {
+                        // Hiển thị hộp thoại xác nhận thanh toán
+                        AlertDialog.Builder confirmPaymentDialog = new AlertDialog.Builder(getActivity());
+                        confirmPaymentDialog.setTitle("Xác nhận thanh toán")
+                                .setMessage("Bạn có chắc chắn muốn thanh toán cho đơn hàng này?")
+                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        // Đẩy từng mục trong gioHangItemList lên Firebase
+                                        for (ThongTinKhach gioHangItem : gioHangItemList) {
+                                            gioHangItem.setEmail(currentEmail);
+                                            thanhToanRef.push().setValue(gioHangItem);
+                                        }
+
+                                        // Xóa danh sách cục bộ
+                                        gioHangItemList.clear();
+                                        gioHangAdapter.notifyDataSetChanged();
+                                        clearGioHangData(currentEmail);
+
+                                        // Hiển thị thông báo thanh toán thành công
+                                        AlertDialog.Builder paymentSuccessDialog = new AlertDialog.Builder(getActivity());
+                                        paymentSuccessDialog.setTitle("Thông báo")
+                                                .setMessage("Thông tin vé của bạn đã được gửi về email của bạn.")
+                                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                                    public void onClick(DialogInterface dialog, int id) {
+                                                        dialog.dismiss();
+                                                    }
+                                                });
+
+                                        AlertDialog paymentAlert = paymentSuccessDialog.create();
+                                        paymentAlert.show();
+                                    }
+                                })
+                                .setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.dismiss();
+                                    }
+                                });
+
+                        AlertDialog confirmAlert = confirmPaymentDialog.create();
+                        confirmAlert.show();
                     }
-                    // Clear the local list
-                    gioHangItemList.clear();
-                    // Notify the adapter about the change
-                    gioHangAdapter.notifyDataSetChanged();
-                    // Remove data from Firebase "gio_hang" node
-                    clearGioHangData(currentEmail);
-                    // You can also perform other necessary actions
                 }
             }
+
             private void clearGioHangData(String currentEmail) {
-                // Reference to the "gio_hang" node in Firebase
+                // Xóa dữ liệu từ nút "gio_hang" trong Firebase
                 DatabaseReference gioHangRef = FirebaseDatabase.getInstance().getReference("gio_hang");
-                // Truy vấn để tìm các mặt hàng trong giỏ hàng cho người dùng hiện tại
                 gioHangRef.orderByChild("email").equalTo(currentEmail).addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        // Lặp lại các mục trong giỏ hàng cho người dùng hiện tại
                         for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                             ThongTinKhach gioHangItem = postSnapshot.getValue(ThongTinKhach.class);
-                            // Xóa mặt hàng khỏi giỏ hàng
                             postSnapshot.getRef().removeValue();
-                            // Xóa mục khỏi danh sách cục bộ
                             gioHangItemList.remove(gioHangItem);
                         }
-                        // Cập nhật bộ chuyển đổi để phản ánh những thay đổi
                         gioHangAdapter.notifyDataSetChanged();
                     }
+
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
-                        // Handle query errors
+                        // Xử lý lỗi truy vấn
                     }
                 });
             }
         });
 
+
+//----lấy số lượng item để cho ẩn hoặc hiện khứ hồi
+        int retrievedItemCount = CountData.getInstance().getCount();//lấy từ class countData
+        if (retrievedItemCount == 0 || retrievedItemCount > 1) {
+            tvkhuhoi.setVisibility(View.GONE);
+        } else if (retrievedItemCount == 1) {
+            tvkhuhoi.setVisibility(View.VISIBLE);
+        }
+        //chuyển sang màng hình khứ hồi
+        tvkhuhoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), khuhoi.class);
+                startActivity(intent);
+            }
+        });
+//-------------------
 
         //   Thay đổi phương thức
         //  buttonCheckout.setOnClickListener();

@@ -2,49 +2,32 @@ package com.droidfreshsquad.poly2023.datve;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.droidfreshsquad.poly2023.Fragment.DatveFragment;
-import com.droidfreshsquad.poly2023.Fragment.GioHangAdapter;
-import com.droidfreshsquad.poly2023.MainActivity;
 import com.droidfreshsquad.poly2023.R;
 import com.droidfreshsquad.poly2023.ScreenExplore.ChuyentrangActivity;
+import com.droidfreshsquad.poly2023.datve.SaveNumber.DestinationData;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.Number;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.NumberData;
+import com.droidfreshsquad.poly2023.datve.SaveNumber.CountData;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
 
 public class ThongTinThanhToan extends AppCompatActivity {
@@ -53,7 +36,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
     TextView  ErrorPhone, tieptuc, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach;
     BottomSheetDialog dialog;
     LinearLayout LnThongtin;
-    ListView listViewDanhSach;
+
     DatabaseReference mDatabase;
     private int tongGiaTien = 0;
     private int TongSoNguoi = 0;
@@ -72,8 +55,6 @@ public class ThongTinThanhToan extends AppCompatActivity {
         LayoutInflater inflater = LayoutInflater.from(this);
         View customView = inflater.inflate(R.layout.tieu_de, toolbar, false);
         ImageButton backButton = customView.findViewById(R.id.backButton);
-
-
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,9 +71,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
         LnThongtin = (LinearLayout) findViewById(R.id.LnThongtin);
         tieptuc = findViewById(R.id.tieptuc);
 
-
-// nút Tiếp Tục
-
+//lấy giá trị số lượng item trong giỏ hàng lưu ở saveSoVe
+        int retrievedItemCount = CountData.getInstance().getCount();
 
 //lấy Các giá trị Number số lượng khách
         Number numberObject = NumberData.getInstance().getNumberObject();// lấy ở SaveNumber
@@ -189,45 +169,47 @@ public class ThongTinThanhToan extends AppCompatActivity {
         tieptuc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (retrievedItemCount < 2){
+                    Intent intent = new Intent(ThongTinThanhToan.this, ChuyentrangActivity.class); // Assuming MainActivity hosts DatveFragment
+                    intent.putExtra("FRAGMENT_TO_LOAD", "DATVE_FRAGMENT"); // Add an extra to indicate which fragment to load
+                    startActivity(intent);
+                    finish();
+                    // lấy tổng tiền
+                    String tongGiaTienString = tongGiaTienTextView.getText().toString();
+                    int tongGiaTien = Integer.parseInt(tongGiaTienString.replaceAll("[^0-9]", ""));
 
 
-                Intent intent = new Intent(ThongTinThanhToan.this, ChuyentrangActivity.class); // Assuming MainActivity hosts DatveFragment
-                intent.putExtra("FRAGMENT_TO_LOAD", "DATVE_FRAGMENT"); // Add an extra to indicate which fragment to load
-                startActivity(intent);
-                finish();
-                // lấy tổng tiền
-                String tongGiaTienString = tongGiaTienTextView.getText().toString();
-                int tongGiaTien = Integer.parseInt(tongGiaTienString.replaceAll("[^0-9]", ""));
+                    int tien = getIntent().getIntExtra("PRICE", 0);
+                    String diemDi = getIntent().getStringExtra("DEPARTURE");
+                    String diemDen = getIntent().getStringExtra("DESTINATION");
+                    String gio1 = getIntent().getStringExtra("SCHEDULED");
+                    String gio2 = getIntent().getStringExtra("SCHEDULED2");
+                    String ngay = getIntent().getStringExtra("DATE");
+                    String san1 = getIntent().getStringExtra("SANBAYDEN");
+                    String san2 = getIntent().getStringExtra("SANBAYDI");
+                    String ari1 = getIntent().getStringExtra("AIRLINES");
+                    String timebay = getIntent().getStringExtra("TIMEBAY");
+                    // thông tin khách hàng
+                    String ten = name.getText().toString();
+                    String ngaySinh = ngaysinh.getText().toString();
+                    String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+
+                    //String emailValue = email.getText().toString();
+                    // String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail().toString();
 
 
-                int tien = getIntent().getIntExtra("PRICE", 0);
-                String diemDi = getIntent().getStringExtra("DEPARTURE");
-                String diemDen = getIntent().getStringExtra("DESTINATION");
-                String gio1 = getIntent().getStringExtra("SCHEDULED");
-                String gio2 = getIntent().getStringExtra("SCHEDULED2");
-                String ngay = getIntent().getStringExtra("DATE");
-                String san1 = getIntent().getStringExtra("SANBAYDEN");
-                String san2 = getIntent().getStringExtra("SANBAYDI");
-                String ari1 = getIntent().getStringExtra("AIRLINES");
-                String timebay = getIntent().getStringExtra("TIMEBAY");
-                // thông tin khách hàng
-                String ten = name.getText().toString();
-                String ngaySinh = ngaysinh.getText().toString();
-                String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+                    String phoneValue = phone.getText().toString();
 
-                //String emailValue = email.getText().toString();
-                // String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail().toString();
+                    ThongTinKhach thongTinKhach = new ThongTinKhach(ten, ngaySinh, emailValue, phoneValue,tongGiaTien,  diemDi, diemDen, gio1, gio2, ngay, san1, san2, ari1,timebay);
+                    // Đẩy dữ liệu lên Realtime Database
+                    String key = myRef.push().getKey();
+                    myRef.child(key).setValue(thongTinKhach);
 
-
-                String phoneValue = phone.getText().toString();
-
-                ThongTinKhach thongTinKhach = new ThongTinKhach(ten, ngaySinh, emailValue, phoneValue,tongGiaTien,  diemDi, diemDen, gio1, gio2, ngay, san1, san2, ari1,timebay);
-                // Đẩy dữ liệu lên Realtime Database
-                String key = myRef.push().getKey();
-                myRef.child(key).setValue(thongTinKhach);
-
-                // Thông báo khi dữ liệu đã được đẩy thành công (hoặc xử lý thêm logic tùy vào yêu cầu của bạn)
-                Toast.makeText(ThongTinThanhToan.this, "Thêm giỏ hàng thành công", Toast.LENGTH_SHORT).show();
+                    // Thông báo khi dữ liệu đã được đẩy thành công (hoặc xử lý thêm logic tùy vào yêu cầu của bạn)
+                    Toast.makeText(ThongTinThanhToan.this, "Thêm giỏ hàng thành công", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(ThongTinThanhToan.this, "Bạn còn 2 vé chưa thanh toán", Toast.LENGTH_SHORT).show();
+                }
             }
 
         });

@@ -99,6 +99,10 @@
             android:exported="true"
             android:theme="@style/MyAppTheme"/>
         <activity
+            android:name=".datve.khuhoi"
+            android:exported="true"
+            android:theme="@style/MyAppTheme"/>
+        <activity
             android:name=".LoginActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize"

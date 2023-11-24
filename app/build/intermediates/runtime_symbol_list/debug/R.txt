@@ -3650,6 +3650,7 @@ int id contiguous 0x7f0a00de
 int id continuousVelocity 0x7f0a00df
 int id coordinator 0x7f0a00e0
 int id cos 0x7f0a00e1
+int id cou 0x7f0a032a
 int id counterclockwise 0x7f0a00e2
 int id cradle 0x7f0a00e3
 int id ctlcaidat 0x7f0a00e4
@@ -4191,11 +4192,14 @@ int id transition_position 0x7f0a02fb
 int id transition_scene_layoutid_cache 0x7f0a02fc
 int id transition_transform 0x7f0a02fd
 int id triangle 0x7f0a02fe
+int id tvDiemDen 0x7f0a032c
+int id tvDiemDi 0x7f0a032b
 int id tvHuydon 0x7f0a02ff
 int id tvNumberEmBe 0x7f0a0300
 int id tvNumberLon 0x7f0a0301
 int id tvNumberTreEm 0x7f0a0302
 int id tv_inroom_message 0x7f0a0303
+int id tvkhuhoi 0x7f0a0329
 int id tvmuave 0x7f0a0304
 int id tvsohanhkhach 0x7f0a0305
 int id tvthanhtoan 0x7f0a0306
@@ -4403,6 +4407,7 @@ int layout hanhly_activity 0x7f0d0050
 int layout item_danhsachve 0x7f0d0051
 int layout item_gio_hang 0x7f0d0052
 int layout item_tt 0x7f0d0053
+int layout khuhoi 0x7f0d00a7
 int layout loginapp 0x7f0d0054
 int layout m3_alert_dialog 0x7f0d0055
 int layout m3_alert_dialog_actions 0x7f0d0056

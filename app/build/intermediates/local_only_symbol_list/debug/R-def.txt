@@ -250,6 +250,7 @@ id changePass
 id change_email_button
 id change_password_button
 id check_save
+id cou
 id ctlcaidat
 id danhgia
 id datePicker
@@ -377,10 +378,13 @@ id tonggiatien
 id tongtien
 id toolbar
 id toolbar_title
+id tvDiemDen
+id tvDiemDi
 id tvHuydon
 id tvNumberEmBe
 id tvNumberLon
 id tvNumberTreEm
+id tvkhuhoi
 id tvmuave
 id tvsohanhkhach
 id tvthanhtoan
@@ -423,6 +427,7 @@ layout hanhly_activity
 layout item_danhsachve
 layout item_gio_hang
 layout item_tt
+layout khuhoi
 layout loginapp
 layout ngay_thang_nam
 layout open_mess
