@@ -11,8 +11,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@color/white"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,6 @@
 
 
         </LinearLayout>
-
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingLeft="10dp"
-                    android:text="Register"
+                    android:text="Đăng ký"
                     android:textColor="#112d6a"
                     android:textSize="32sp"
                     android:textStyle="normal" />
@@ -73,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingStart="10dp"
-                    android:text="Login to your account"
+                    android:text="Đăng nhập vào tài khoản của bạn"
                     android:textColor="#090909" />
 
                 <View
@@ -156,7 +155,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:alpha="0.7"
-                        android:text="I agree to your privacy policy and terms condition"
+                        android:text="Tôi đồng ý với chính sách bảo mật và điều kiện của bạn"
                         android:textColor="#403F3F" />
 
 
@@ -175,7 +174,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/stylebutton"
-                    android:text="REGISTER"
+                    android:text="Đăng ký"
                     app:cornerRadius="32dp" />
 
                 <TextView
@@ -183,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:alpha="0.7"
-                    android:text="Do you already have an account?" />
+                    android:text="Bạn đã có tài khoản chưa?" />
 
                 <Button
                     android:id="@+id/sign_in_button"
@@ -192,7 +191,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/stylebutton"
-                    android:text="BACK TO LOGIN"
+                    android:text="TRỞ VỀ ĐĂNG NHẬP"
                     app:cornerRadius="32dp" />
 
             </LinearLayout>

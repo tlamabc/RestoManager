@@ -215,6 +215,10 @@ public class DatveFragment extends Fragment {
                                                     gioHangItem.setEmail(currentEmail);
                                                     String ten = gioHangItem.getTen();
                                                     thanhToanRef.push().setValue(gioHangItem);
+                                                    // Thêm thông tin vé khứ hồi
+                                                    ThongTinKhach gioHangItem2 = gioHangItemList.get(1);
+                                                    gioHangItem2.setEmail(currentEmail);
+                                                    thanhToanRef.push().setValue(gioHangItem2);
                                                 }
 
                                                 String subject = "Xác nhận thanh toán";
@@ -236,6 +240,24 @@ public class DatveFragment extends Fragment {
                                                         +"\n Sân Bay Đến : " + gioHangItemList.get(0).getSan2()
                                                         +"\n Số Tiền : " + gioHangItemList.get(0).getTien()
                                                         +"\n Thời Gian Bay : " + gioHangItemList.get(0).getTimebay()
+
+                                                        + "\n _______________________________________"
+                                                        + "\n Thông Tin Vé Khứ Hồi:"
+                                                        + "\n _______________________________________"
+                                                        + "\n Hãng Bay : " + gioHangItemList.get(1).getAri1()
+                                                        + "\n Tên : " + gioHangItemList.get(1).getTen()
+                                                        + "\n Ngày Sinh : " + gioHangItemList.get(1).getNgaySinh()
+                                                        + "\n Số Điện Thoại : " + gioHangItemList.get(1).getSoDienThoai()
+                                                        + "\n Giờ bay : " + gioHangItemList.get(1).getGio1()
+                                                        + "\n Giờ Đến : " + gioHangItemList.get(1).getGio2()
+                                                        + "\n Email : " + gioHangItemList.get(1).getEmail()
+                                                        + "\n Điểm Đi : " + gioHangItemList.get(1).getDiemDi()
+                                                        + "\n Điểm Đến : " + gioHangItemList.get(1).getDiemDen()
+                                                        + "\n Ngày Đi : " + gioHangItemList.get(1).getNgay()
+                                                        + "\n Sân Bay Đi : " + gioHangItemList.get(1).getSan1()
+                                                        + "\n Sân Bay Đến : " + gioHangItemList.get(1).getSan2()
+                                                        + "\n Số Tiền : " + gioHangItemList.get(1).getTien()
+                                                        + "\n Thời Gian Bay : " + gioHangItemList.get(1).getTimebay()
                                                         +"\n _______________________________________"
                                                         +"\n Vui lòng đến địa chỉ sau để thanh toán vé:"
                                                         + "\n 137 Nguyễn Thị Thập, Phường Hòa Minh, Quận Liên Chiểu, Thành Phố Đà Nẵng"
@@ -248,9 +270,7 @@ public class DatveFragment extends Fragment {
 
                                                 String senderEmail = "easyflycskh1@gmail.com"; // Thay bằng địa chỉ email của bạn
                                                 String senderPassword = "mggcqkabtauhoqde"; // Thay bằng mật khẩu email của bạn
-
                                                 EmailSender.sendEmail(senderEmail, senderPassword, currentEmail, subject, message);
-
                                                 return null;
                                             }
 

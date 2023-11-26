@@ -40,6 +40,7 @@ drawable bgr_hanhkhach
 drawable bgr_line
 drawable boder_goi
 drawable boder_lienhe
+drawable boder_logochinh
 drawable boder_seach
 drawable boder_slideshow
 drawable bologin
