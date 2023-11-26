@@ -97,7 +97,6 @@ public class DatveFragment extends Fragment {
                     }
                     int itemCount = gioHangItemList.size(); // Đếm số lượng mục trong gioHangItemList
                     CountData.getInstance().setCount(itemCount);//cập nhật lưu vào class countData
-
                     gioHangAdapter.notifyDataSetChanged();
                 }
                 @Override
@@ -183,13 +182,13 @@ public class DatveFragment extends Fragment {
 
 //-----------------------------------
         tvthanhtoan.setOnClickListener(new View.OnClickListener() {
+            private int counter = 0;
             @Override
             public void onClick(View v) {
                 FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                 if (currentUser != null) {
                     String currentEmail = currentUser.getEmail();
                     DatabaseReference thanhToanRef = FirebaseDatabase.getInstance().getReference("thanh_toan");
-
                     if (gioHangItemList.isEmpty()) {
                         AlertDialog.Builder emptyCartDialog = new AlertDialog.Builder(getActivity());
                         emptyCartDialog.setTitle("Thông báo")
@@ -199,7 +198,6 @@ public class DatveFragment extends Fragment {
                                         dialog.dismiss();
                                     }
                                 });
-
                         AlertDialog alert = emptyCartDialog.create();
                         alert.show();
                     } else {
@@ -211,62 +209,23 @@ public class DatveFragment extends Fragment {
                                         new AsyncTask<Void, Void, Void>() {
                                             @Override
                                             protected Void doInBackground(Void... voids) {
-                                                for (ThongTinKhach gioHangItem : gioHangItemList) {
+                                                for (int i = 0; i < gioHangItemList.size(); i++) {
+                                                    ThongTinKhach gioHangItem = gioHangItemList.get(i);
                                                     gioHangItem.setEmail(currentEmail);
-                                                    String ten = gioHangItem.getTen();
-                                                    thanhToanRef.push().setValue(gioHangItem);
-                                                    // Thêm thông tin vé khứ hồi
-                                                    ThongTinKhach gioHangItem2 = gioHangItemList.get(1);
-                                                    gioHangItem2.setEmail(currentEmail);
-                                                    thanhToanRef.push().setValue(gioHangItem2);
-                                                }
+                                                    thanhToanRef.child(String.valueOf(++counter)).setValue(gioHangItem);
 
+
+                                                    // Check if gioHangItemList has more than 1 item before accessing the second item
+                                                    if (gioHangItemList.size() > 1 && i == 0) {
+                                                        // Thêm thông tin vé khứ hồi
+                                                        ThongTinKhach gioHangItem2 = gioHangItemList.get(1);
+                                                        gioHangItem2.setEmail(currentEmail);
+                                                        thanhToanRef.push().setValue(gioHangItem2);
+
+                                                    }
+                                                     }
                                                 String subject = "Xác nhận thanh toán";
-                                                String message = "Cảm ơn bạn đã đặt vé."
-                                                        +"\n Vé máy bay của bạn đã được xác nhận."
-                                                        +"\n Thông Tin Vé:"
-                                                        +"\n _______________________________________"
-                                                        +"\n Hãng Bay : " + gioHangItemList.get(0).getAri1()
-                                                        +"\n Tên : " + gioHangItemList.get(0).getTen()
-                                                        +"\n Ngày Sinh : " + gioHangItemList.get(0).getNgaySinh()
-                                                        +"\n Số Điện Thoại : " + gioHangItemList.get(0).getSoDienThoai()
-                                                        +"\n Giờ bay : " + gioHangItemList.get(0).getGio1()
-                                                        +"\n Giờ Đến : " + gioHangItemList.get(0).getGio2()
-                                                        +"\n Email : " + gioHangItemList.get(0).getEmail()
-                                                        +"\n Điểm Đi : " + gioHangItemList.get(0).getDiemDi()
-                                                        +"\n Điểm Đến : " + gioHangItemList.get(0).getDiemDen()
-                                                        +"\n Ngày Đi : " + gioHangItemList.get(0).getNgay()
-                                                        +"\n Sân Bay Đi : " + gioHangItemList.get(0).getSan1()
-                                                        +"\n Sân Bay Đến : " + gioHangItemList.get(0).getSan2()
-                                                        +"\n Số Tiền : " + gioHangItemList.get(0).getTien()
-                                                        +"\n Thời Gian Bay : " + gioHangItemList.get(0).getTimebay()
-
-                                                        + "\n _______________________________________"
-                                                        + "\n Thông Tin Vé Khứ Hồi:"
-                                                        + "\n _______________________________________"
-                                                        + "\n Hãng Bay : " + gioHangItemList.get(1).getAri1()
-                                                        + "\n Tên : " + gioHangItemList.get(1).getTen()
-                                                        + "\n Ngày Sinh : " + gioHangItemList.get(1).getNgaySinh()
-                                                        + "\n Số Điện Thoại : " + gioHangItemList.get(1).getSoDienThoai()
-                                                        + "\n Giờ bay : " + gioHangItemList.get(1).getGio1()
-                                                        + "\n Giờ Đến : " + gioHangItemList.get(1).getGio2()
-                                                        + "\n Email : " + gioHangItemList.get(1).getEmail()
-                                                        + "\n Điểm Đi : " + gioHangItemList.get(1).getDiemDi()
-                                                        + "\n Điểm Đến : " + gioHangItemList.get(1).getDiemDen()
-                                                        + "\n Ngày Đi : " + gioHangItemList.get(1).getNgay()
-                                                        + "\n Sân Bay Đi : " + gioHangItemList.get(1).getSan1()
-                                                        + "\n Sân Bay Đến : " + gioHangItemList.get(1).getSan2()
-                                                        + "\n Số Tiền : " + gioHangItemList.get(1).getTien()
-                                                        + "\n Thời Gian Bay : " + gioHangItemList.get(1).getTimebay()
-                                                        +"\n _______________________________________"
-                                                        +"\n Vui lòng đến địa chỉ sau để thanh toán vé:"
-                                                        + "\n 137 Nguyễn Thị Thập, Phường Hòa Minh, Quận Liên Chiểu, Thành Phố Đà Nẵng"
-                                                        + "\n Giờ làm việc: 8:00 - 17:00 "
-                                                        + "\n Để biết thêm thông tin vui lòng liên hệ:"
-                                                        +"\n _______________________________________"
-                                                        +"\n Đăng Thanh Lâm"
-                                                        +"\n Số điện thoại: 0359001647";
-
+                                                String message = buildEmailMessage(gioHangItemList);
 
                                                 String senderEmail = "easyflycskh1@gmail.com"; // Thay bằng địa chỉ email của bạn
                                                 String senderPassword = "mggcqkabtauhoqde"; // Thay bằng mật khẩu email của bạn
@@ -274,6 +233,38 @@ public class DatveFragment extends Fragment {
                                                 return null;
                                             }
 
+                                            private String buildEmailMessage(List<ThongTinKhach> gioHangItemList) {
+                                                StringBuilder messageBuilder = new StringBuilder("Cảm ơn bạn đã đặt vé."
+                                                        + "\n Vé máy bay của bạn đã được xác nhận.");
+
+                                                for (ThongTinKhach gioHangItem : gioHangItemList) {
+                                                    messageBuilder.append("\n _______________________________________")
+                                                            .append("\n Hãng Bay : ").append(gioHangItem.getAri1())
+                                                            .append("\n Tên : ").append(gioHangItem.getTen())
+                                                            .append("\n Ngày Sinh : ").append(gioHangItem.getNgaySinh())
+                                                            .append("\n Số Điện Thoại : ").append(gioHangItem.getSoDienThoai())
+                                                            .append("\n Giờ bay : ").append(gioHangItem.getGio1())
+                                                            .append("\n Giờ Đến : ").append(gioHangItem.getGio2())
+                                                            .append("\n Email : ").append(gioHangItem.getEmail())
+                                                            .append("\n Điểm Đi : ").append(gioHangItem.getDiemDi())
+                                                            .append("\n Điểm Đến : ").append(gioHangItem.getDiemDen())
+                                                            .append("\n Ngày Đi : ").append(gioHangItem.getNgay())
+                                                            .append("\n Sân Bay Đi : ").append(gioHangItem.getSan1())
+                                                            .append("\n Sân Bay Đến : ").append(gioHangItem.getSan2())
+                                                            .append("\n Số Tiền : ").append(gioHangItem.getTien())
+                                                            .append("\n Thời Gian Bay : ").append(gioHangItem.getTimebay());
+                                                            }
+                                                         messageBuilder.append("\n _______________________________________")
+                                                        .append("\n Vui lòng đến địa chỉ sau để thanh toán vé:")
+                                                        .append("\n 137 Nguyễn Thị Thập, Phường Hòa Minh, Quận Liên Chiểu, Thành Phố Đà Nẵng")
+                                                        .append("\n Giờ làm việc: 8:00 - 17:00 ")
+                                                        .append("\n Để biết thêm thông tin vui lòng liên hệ:")
+                                                        .append("\n _______________________________________")
+                                                        .append("\n Đăng Thanh Lâm")
+                                                        .append("\n Số điện thoại: 0359001647");
+
+                                                return messageBuilder.toString();
+                                            }
                                             @Override
                                             protected void onPostExecute(Void aVoid) {
                                                 super.onPostExecute(aVoid);

@@ -9,21 +9,21 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\RestoManager33\app\src\main\AndroidManifest.xml:6:5-67
-11-->C:\RestoManager33\app\src\main\AndroidManifest.xml:6:22-64
+11-->C:\RestoManager36\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\RestoManager36\app\src\main\AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->C:\RestoManager33\app\src\main\AndroidManifest.xml:7:5-79
-12-->C:\RestoManager33\app\src\main\AndroidManifest.xml:7:22-76
+12-->C:\RestoManager36\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\RestoManager36\app\src\main\AndroidManifest.xml:7:22-76
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->C:\RestoManager33\app\src\main\AndroidManifest.xml:8:5-80
-13-->C:\RestoManager33\app\src\main\AndroidManifest.xml:8:22-77
+13-->C:\RestoManager36\app\src\main\AndroidManifest.xml:8:5-80
+13-->C:\RestoManager36\app\src\main\AndroidManifest.xml:8:22-77
 14
 15    <meta-data
-15-->C:\RestoManager33\app\src\main\AndroidManifest.xml:10:5-12:32
+15-->C:\RestoManager36\app\src\main\AndroidManifest.xml:10:5-12:32
 16        android:name="com.google.android.gms.wallet.api.enabled"
-16-->C:\RestoManager33\app\src\main\AndroidManifest.xml:11:9-65
+16-->C:\RestoManager36\app\src\main\AndroidManifest.xml:11:9-65
 17        android:value="true" />
-17-->C:\RestoManager33\app\src\main\AndroidManifest.xml:12:9-29
+17-->C:\RestoManager36\app\src\main\AndroidManifest.xml:12:9-29
 18
 19    <uses-permission android:name="android.permission.WAKE_LOCK" />
 19-->[com.google.android.gms:play-services-measurement:21.4.0] C:\Users\84329\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:25:5-68
@@ -128,269 +128,269 @@
 61-->[androidx.core:core:1.9.0] C:\Users\84329\.gradle\caches\transforms-3\58b07198376f67aef2aac074a201ccd5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 62
 63    <application
-63-->C:\RestoManager33\app\src\main\AndroidManifest.xml:14:5-147:19
+63-->C:\RestoManager36\app\src\main\AndroidManifest.xml:14:5-147:19
 64        android:allowBackup="true"
-64-->C:\RestoManager33\app\src\main\AndroidManifest.xml:15:9-35
+64-->C:\RestoManager36\app\src\main\AndroidManifest.xml:15:9-35
 65        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 65-->[androidx.core:core:1.9.0] C:\Users\84329\.gradle\caches\transforms-3\58b07198376f67aef2aac074a201ccd5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 66        android:dataExtractionRules="@xml/data_extraction_rules"
-66-->C:\RestoManager33\app\src\main\AndroidManifest.xml:16:9-65
+66-->C:\RestoManager36\app\src\main\AndroidManifest.xml:16:9-65
 67        android:debuggable="true"
 68        android:extractNativeLibs="false"
 69        android:fullBackupContent="@xml/backup_rules"
-69-->C:\RestoManager33\app\src\main\AndroidManifest.xml:17:9-54
+69-->C:\RestoManager36\app\src\main\AndroidManifest.xml:17:9-54
 70        android:icon="@drawable/chimmoi"
-70-->C:\RestoManager33\app\src\main\AndroidManifest.xml:18:9-41
+70-->C:\RestoManager36\app\src\main\AndroidManifest.xml:18:9-41
 71        android:label="Easy Fly"
-71-->C:\RestoManager33\app\src\main\AndroidManifest.xml:19:9-33
+71-->C:\RestoManager36\app\src\main\AndroidManifest.xml:19:9-33
 72        android:roundIcon="@drawable/chimmoi"
-72-->C:\RestoManager33\app\src\main\AndroidManifest.xml:20:9-46
+72-->C:\RestoManager36\app\src\main\AndroidManifest.xml:20:9-46
 73        android:supportsRtl="true"
-73-->C:\RestoManager33\app\src\main\AndroidManifest.xml:21:9-35
+73-->C:\RestoManager36\app\src\main\AndroidManifest.xml:21:9-35
 74        android:testOnly="true"
 75        android:theme="@style/Theme.MaterialComponents"
-75-->C:\RestoManager33\app\src\main\AndroidManifest.xml:22:9-56
+75-->C:\RestoManager36\app\src\main\AndroidManifest.xml:22:9-56
 76        android:usesCleartextTraffic="true" >
-76-->C:\RestoManager33\app\src\main\AndroidManifest.xml:23:9-44
+76-->C:\RestoManager36\app\src\main\AndroidManifest.xml:23:9-44
 77        <activity
-77-->C:\RestoManager33\app\src\main\AndroidManifest.xml:26:9-29:48
+77-->C:\RestoManager36\app\src\main\AndroidManifest.xml:26:9-29:48
 78            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenHue"
-78-->C:\RestoManager33\app\src\main\AndroidManifest.xml:27:13-52
+78-->C:\RestoManager36\app\src\main\AndroidManifest.xml:27:13-52
 79            android:exported="false"
-79-->C:\RestoManager33\app\src\main\AndroidManifest.xml:28:13-37
+79-->C:\RestoManager36\app\src\main\AndroidManifest.xml:28:13-37
 80            android:theme="@style/MyAppTheme" />
-80-->C:\RestoManager33\app\src\main\AndroidManifest.xml:29:13-46
+80-->C:\RestoManager36\app\src\main\AndroidManifest.xml:29:13-46
 81        <activity
-81-->C:\RestoManager33\app\src\main\AndroidManifest.xml:30:9-33:48
+81-->C:\RestoManager36\app\src\main\AndroidManifest.xml:30:9-33:48
 82            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenPhuQuoc"
-82-->C:\RestoManager33\app\src\main\AndroidManifest.xml:31:13-56
+82-->C:\RestoManager36\app\src\main\AndroidManifest.xml:31:13-56
 83            android:exported="false"
-83-->C:\RestoManager33\app\src\main\AndroidManifest.xml:32:13-37
+83-->C:\RestoManager36\app\src\main\AndroidManifest.xml:32:13-37
 84            android:theme="@style/MyAppTheme" />
-84-->C:\RestoManager33\app\src\main\AndroidManifest.xml:33:13-46
+84-->C:\RestoManager36\app\src\main\AndroidManifest.xml:33:13-46
 85        <activity
-85-->C:\RestoManager33\app\src\main\AndroidManifest.xml:34:9-37:48
+85-->C:\RestoManager36\app\src\main\AndroidManifest.xml:34:9-37:48
 86            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ChuyentrangActivity"
-86-->C:\RestoManager33\app\src\main\AndroidManifest.xml:35:13-62
+86-->C:\RestoManager36\app\src\main\AndroidManifest.xml:35:13-62
 87            android:exported="false"
-87-->C:\RestoManager33\app\src\main\AndroidManifest.xml:36:13-37
+87-->C:\RestoManager36\app\src\main\AndroidManifest.xml:36:13-37
 88            android:theme="@style/MyAppTheme" />
-88-->C:\RestoManager33\app\src\main\AndroidManifest.xml:37:13-46
+88-->C:\RestoManager36\app\src\main\AndroidManifest.xml:37:13-46
 89        <activity
-89-->C:\RestoManager33\app\src\main\AndroidManifest.xml:38:9-41:48
+89-->C:\RestoManager36\app\src\main\AndroidManifest.xml:38:9-41:48
 90            android:name="com.droidfreshsquad.poly2023.ScreenExplore.thoi_tiet"
-90-->C:\RestoManager33\app\src\main\AndroidManifest.xml:39:13-52
+90-->C:\RestoManager36\app\src\main\AndroidManifest.xml:39:13-52
 91            android:exported="false"
-91-->C:\RestoManager33\app\src\main\AndroidManifest.xml:40:13-37
+91-->C:\RestoManager36\app\src\main\AndroidManifest.xml:40:13-37
 92            android:theme="@style/MyAppTheme" />
-92-->C:\RestoManager33\app\src\main\AndroidManifest.xml:41:13-46
+92-->C:\RestoManager36\app\src\main\AndroidManifest.xml:41:13-46
 93        <activity
-93-->C:\RestoManager33\app\src\main\AndroidManifest.xml:42:9-45:48
+93-->C:\RestoManager36\app\src\main\AndroidManifest.xml:42:9-45:48
 94            android:name="com.droidfreshsquad.poly2023.HoSo.danhgia"
-94-->C:\RestoManager33\app\src\main\AndroidManifest.xml:43:13-41
+94-->C:\RestoManager36\app\src\main\AndroidManifest.xml:43:13-41
 95            android:exported="false"
-95-->C:\RestoManager33\app\src\main\AndroidManifest.xml:44:13-37
+95-->C:\RestoManager36\app\src\main\AndroidManifest.xml:44:13-37
 96            android:theme="@style/MyAppTheme" />
-96-->C:\RestoManager33\app\src\main\AndroidManifest.xml:45:13-46
+96-->C:\RestoManager36\app\src\main\AndroidManifest.xml:45:13-46
 97        <activity
-97-->C:\RestoManager33\app\src\main\AndroidManifest.xml:46:9-50:20
+97-->C:\RestoManager36\app\src\main\AndroidManifest.xml:46:9-50:20
 98            android:name="com.droidfreshsquad.poly2023.VdCallActivity"
-98-->C:\RestoManager33\app\src\main\AndroidManifest.xml:46:19-49
+98-->C:\RestoManager36\app\src\main\AndroidManifest.xml:46:19-49
 99            android:theme="@style/MyAppTheme" >
-99-->C:\RestoManager33\app\src\main\AndroidManifest.xml:47:13-46
+99-->C:\RestoManager36\app\src\main\AndroidManifest.xml:47:13-46
 100
 101            <!-- Other activity-related configurations -->
 102        </activity>
 103        <activity
-103-->C:\RestoManager33\app\src\main\AndroidManifest.xml:51:9-55:20
+103-->C:\RestoManager36\app\src\main\AndroidManifest.xml:51:9-55:20
 104            android:name="com.droidfreshsquad.poly2023.CallingActivity"
-104-->C:\RestoManager33\app\src\main\AndroidManifest.xml:51:19-50
+104-->C:\RestoManager36\app\src\main\AndroidManifest.xml:51:19-50
 105            android:theme="@style/MyAppTheme" >
-105-->C:\RestoManager33\app\src\main\AndroidManifest.xml:52:13-46
+105-->C:\RestoManager36\app\src\main\AndroidManifest.xml:52:13-46
 106
 107            <!-- Other activity-related configurations -->
 108        </activity>
 109        <activity
-109-->C:\RestoManager33\app\src\main\AndroidManifest.xml:56:9-60:48
+109-->C:\RestoManager36\app\src\main\AndroidManifest.xml:56:9-60:48
 110            android:name="com.droidfreshsquad.poly2023.Zalo"
-110-->C:\RestoManager33\app\src\main\AndroidManifest.xml:57:13-33
+110-->C:\RestoManager36\app\src\main\AndroidManifest.xml:57:13-33
 111            android:exported="false"
-111-->C:\RestoManager33\app\src\main\AndroidManifest.xml:58:13-37
+111-->C:\RestoManager36\app\src\main\AndroidManifest.xml:58:13-37
 112            android:label="Zalo"
-112-->C:\RestoManager33\app\src\main\AndroidManifest.xml:59:13-33
+112-->C:\RestoManager36\app\src\main\AndroidManifest.xml:59:13-33
 113            android:theme="@style/MyAppTheme" />
-113-->C:\RestoManager33\app\src\main\AndroidManifest.xml:60:13-46
+113-->C:\RestoManager36\app\src\main\AndroidManifest.xml:60:13-46
 114        <activity
-114-->C:\RestoManager33\app\src\main\AndroidManifest.xml:61:9-65:48
+114-->C:\RestoManager36\app\src\main\AndroidManifest.xml:61:9-65:48
 115            android:name="com.droidfreshsquad.poly2023.Message"
-115-->C:\RestoManager33\app\src\main\AndroidManifest.xml:62:13-36
+115-->C:\RestoManager36\app\src\main\AndroidManifest.xml:62:13-36
 116            android:exported="false"
-116-->C:\RestoManager33\app\src\main\AndroidManifest.xml:63:13-37
+116-->C:\RestoManager36\app\src\main\AndroidManifest.xml:63:13-37
 117            android:label="Message"
-117-->C:\RestoManager33\app\src\main\AndroidManifest.xml:64:13-36
+117-->C:\RestoManager36\app\src\main\AndroidManifest.xml:64:13-36
 118            android:theme="@style/MyAppTheme" />
-118-->C:\RestoManager33\app\src\main\AndroidManifest.xml:65:13-46
+118-->C:\RestoManager36\app\src\main\AndroidManifest.xml:65:13-46
 119        <activity
-119-->C:\RestoManager33\app\src\main\AndroidManifest.xml:66:9-69:48
+119-->C:\RestoManager36\app\src\main\AndroidManifest.xml:66:9-69:48
 120            android:name="com.droidfreshsquad.poly2023.HoSo.BaoCao"
-120-->C:\RestoManager33\app\src\main\AndroidManifest.xml:67:13-40
+120-->C:\RestoManager36\app\src\main\AndroidManifest.xml:67:13-40
 121            android:exported="false"
-121-->C:\RestoManager33\app\src\main\AndroidManifest.xml:68:13-37
+121-->C:\RestoManager36\app\src\main\AndroidManifest.xml:68:13-37
 122            android:theme="@style/MyAppTheme" />
-122-->C:\RestoManager33\app\src\main\AndroidManifest.xml:69:13-46
+122-->C:\RestoManager36\app\src\main\AndroidManifest.xml:69:13-46
 123        <activity
-123-->C:\RestoManager33\app\src\main\AndroidManifest.xml:70:9-73:48
+123-->C:\RestoManager36\app\src\main\AndroidManifest.xml:70:9-73:48
 124            android:name="com.droidfreshsquad.poly2023.HoSo.DieuKhoan"
-124-->C:\RestoManager33\app\src\main\AndroidManifest.xml:71:13-43
+124-->C:\RestoManager36\app\src\main\AndroidManifest.xml:71:13-43
 125            android:exported="false"
-125-->C:\RestoManager33\app\src\main\AndroidManifest.xml:72:13-37
+125-->C:\RestoManager36\app\src\main\AndroidManifest.xml:72:13-37
 126            android:theme="@style/MyAppTheme" />
-126-->C:\RestoManager33\app\src\main\AndroidManifest.xml:73:13-46
+126-->C:\RestoManager36\app\src\main\AndroidManifest.xml:73:13-46
 127        <activity
-127-->C:\RestoManager33\app\src\main\AndroidManifest.xml:74:9-77:48
+127-->C:\RestoManager36\app\src\main\AndroidManifest.xml:74:9-77:48
 128            android:name="com.droidfreshsquad.poly2023.HoSo.Danh_Gia"
-128-->C:\RestoManager33\app\src\main\AndroidManifest.xml:75:13-42
+128-->C:\RestoManager36\app\src\main\AndroidManifest.xml:75:13-42
 129            android:exported="false"
-129-->C:\RestoManager33\app\src\main\AndroidManifest.xml:76:13-37
+129-->C:\RestoManager36\app\src\main\AndroidManifest.xml:76:13-37
 130            android:theme="@style/MyAppTheme" />
-130-->C:\RestoManager33\app\src\main\AndroidManifest.xml:77:13-46
+130-->C:\RestoManager36\app\src\main\AndroidManifest.xml:77:13-46
 131        <activity
-131-->C:\RestoManager33\app\src\main\AndroidManifest.xml:78:9-81:48
+131-->C:\RestoManager36\app\src\main\AndroidManifest.xml:78:9-81:48
 132            android:name="com.droidfreshsquad.poly2023.Fragment.FragmentMain"
-132-->C:\RestoManager33\app\src\main\AndroidManifest.xml:79:13-50
+132-->C:\RestoManager36\app\src\main\AndroidManifest.xml:79:13-50
 133            android:exported="false"
-133-->C:\RestoManager33\app\src\main\AndroidManifest.xml:80:13-37
+133-->C:\RestoManager36\app\src\main\AndroidManifest.xml:80:13-37
 134            android:theme="@style/MyAppTheme" />
-134-->C:\RestoManager33\app\src\main\AndroidManifest.xml:81:13-46
+134-->C:\RestoManager36\app\src\main\AndroidManifest.xml:81:13-46
 135        <activity
-135-->C:\RestoManager33\app\src\main\AndroidManifest.xml:82:9-85:48
+135-->C:\RestoManager36\app\src\main\AndroidManifest.xml:82:9-85:48
 136            android:name="com.droidfreshsquad.poly2023.Fragment.EmailSender"
-136-->C:\RestoManager33\app\src\main\AndroidManifest.xml:83:13-49
+136-->C:\RestoManager36\app\src\main\AndroidManifest.xml:83:13-49
 137            android:exported="false"
-137-->C:\RestoManager33\app\src\main\AndroidManifest.xml:84:13-37
+137-->C:\RestoManager36\app\src\main\AndroidManifest.xml:84:13-37
 138            android:theme="@style/MyAppTheme" />
-138-->C:\RestoManager33\app\src\main\AndroidManifest.xml:85:13-46
+138-->C:\RestoManager36\app\src\main\AndroidManifest.xml:85:13-46
 139        <activity
-139-->C:\RestoManager33\app\src\main\AndroidManifest.xml:86:9-89:48
+139-->C:\RestoManager36\app\src\main\AndroidManifest.xml:86:9-89:48
 140            android:name="com.droidfreshsquad.poly2023.datve.ThongTinThanhToan"
-140-->C:\RestoManager33\app\src\main\AndroidManifest.xml:87:13-52
+140-->C:\RestoManager36\app\src\main\AndroidManifest.xml:87:13-52
 141            android:exported="false"
-141-->C:\RestoManager33\app\src\main\AndroidManifest.xml:88:13-37
+141-->C:\RestoManager36\app\src\main\AndroidManifest.xml:88:13-37
 142            android:theme="@style/MyAppTheme" />
-142-->C:\RestoManager33\app\src\main\AndroidManifest.xml:89:13-46
+142-->C:\RestoManager36\app\src\main\AndroidManifest.xml:89:13-46
 143        <activity
-143-->C:\RestoManager33\app\src\main\AndroidManifest.xml:90:9-93:48
+143-->C:\RestoManager36\app\src\main\AndroidManifest.xml:90:9-93:48
 144            android:name="com.droidfreshsquad.poly2023.datve.DanhSachBay"
-144-->C:\RestoManager33\app\src\main\AndroidManifest.xml:91:13-46
+144-->C:\RestoManager36\app\src\main\AndroidManifest.xml:91:13-46
 145            android:exported="false"
-145-->C:\RestoManager33\app\src\main\AndroidManifest.xml:92:13-37
+145-->C:\RestoManager36\app\src\main\AndroidManifest.xml:92:13-37
 146            android:theme="@style/MyAppTheme" />
-146-->C:\RestoManager33\app\src\main\AndroidManifest.xml:93:13-46
+146-->C:\RestoManager36\app\src\main\AndroidManifest.xml:93:13-46
 147        <activity
-147-->C:\RestoManager33\app\src\main\AndroidManifest.xml:94:9-97:48
+147-->C:\RestoManager36\app\src\main\AndroidManifest.xml:94:9-97:48
 148            android:name="com.droidfreshsquad.poly2023.ScreenMainActivity"
-148-->C:\RestoManager33\app\src\main\AndroidManifest.xml:95:13-47
+148-->C:\RestoManager36\app\src\main\AndroidManifest.xml:95:13-47
 149            android:exported="true"
-149-->C:\RestoManager33\app\src\main\AndroidManifest.xml:96:13-36
+149-->C:\RestoManager36\app\src\main\AndroidManifest.xml:96:13-36
 150            android:theme="@style/MyAppTheme" />
-150-->C:\RestoManager33\app\src\main\AndroidManifest.xml:97:13-46
+150-->C:\RestoManager36\app\src\main\AndroidManifest.xml:97:13-46
 151        <activity
-151-->C:\RestoManager33\app\src\main\AndroidManifest.xml:98:9-101:48
+151-->C:\RestoManager36\app\src\main\AndroidManifest.xml:98:9-101:48
 152            android:name="com.droidfreshsquad.poly2023.datve.Ngay_thang_nam"
-152-->C:\RestoManager33\app\src\main\AndroidManifest.xml:99:13-49
+152-->C:\RestoManager36\app\src\main\AndroidManifest.xml:99:13-49
 153            android:exported="false"
-153-->C:\RestoManager33\app\src\main\AndroidManifest.xml:100:13-37
+153-->C:\RestoManager36\app\src\main\AndroidManifest.xml:100:13-37
 154            android:theme="@style/MyAppTheme" />
-154-->C:\RestoManager33\app\src\main\AndroidManifest.xml:101:13-46
+154-->C:\RestoManager36\app\src\main\AndroidManifest.xml:101:13-46
 155        <activity
-155-->C:\RestoManager33\app\src\main\AndroidManifest.xml:102:9-105:48
+155-->C:\RestoManager36\app\src\main\AndroidManifest.xml:102:9-105:48
 156            android:name="com.droidfreshsquad.poly2023.MainActivity"
-156-->C:\RestoManager33\app\src\main\AndroidManifest.xml:103:13-41
+156-->C:\RestoManager36\app\src\main\AndroidManifest.xml:103:13-41
 157            android:exported="true"
-157-->C:\RestoManager33\app\src\main\AndroidManifest.xml:104:13-36
+157-->C:\RestoManager36\app\src\main\AndroidManifest.xml:104:13-36
 158            android:theme="@style/MyAppTheme" />
-158-->C:\RestoManager33\app\src\main\AndroidManifest.xml:105:13-46
+158-->C:\RestoManager36\app\src\main\AndroidManifest.xml:105:13-46
 159        <activity
-159-->C:\RestoManager33\app\src\main\AndroidManifest.xml:106:9-109:48
+159-->C:\RestoManager36\app\src\main\AndroidManifest.xml:106:9-109:48
 160            android:name="com.droidfreshsquad.poly2023.datve.khuhoi"
-160-->C:\RestoManager33\app\src\main\AndroidManifest.xml:107:13-41
+160-->C:\RestoManager36\app\src\main\AndroidManifest.xml:107:13-41
 161            android:exported="true"
-161-->C:\RestoManager33\app\src\main\AndroidManifest.xml:108:13-36
+161-->C:\RestoManager36\app\src\main\AndroidManifest.xml:108:13-36
 162            android:theme="@style/MyAppTheme" />
-162-->C:\RestoManager33\app\src\main\AndroidManifest.xml:109:13-46
+162-->C:\RestoManager36\app\src\main\AndroidManifest.xml:109:13-46
 163        <activity
-163-->C:\RestoManager33\app\src\main\AndroidManifest.xml:110:9-120:20
+163-->C:\RestoManager36\app\src\main\AndroidManifest.xml:110:9-120:20
 164            android:name="com.droidfreshsquad.poly2023.LoginActivity"
-164-->C:\RestoManager33\app\src\main\AndroidManifest.xml:111:13-42
+164-->C:\RestoManager36\app\src\main\AndroidManifest.xml:111:13-42
 165            android:exported="true"
-165-->C:\RestoManager33\app\src\main\AndroidManifest.xml:112:13-36
+165-->C:\RestoManager36\app\src\main\AndroidManifest.xml:112:13-36
 166            android:theme="@style/MyAppTheme"
-166-->C:\RestoManager33\app\src\main\AndroidManifest.xml:114:13-46
+166-->C:\RestoManager36\app\src\main\AndroidManifest.xml:114:13-46
 167            android:windowSoftInputMode="adjustResize" >
-167-->C:\RestoManager33\app\src\main\AndroidManifest.xml:113:13-55
+167-->C:\RestoManager36\app\src\main\AndroidManifest.xml:113:13-55
 168            <intent-filter>
-168-->C:\RestoManager33\app\src\main\AndroidManifest.xml:115:13-119:29
+168-->C:\RestoManager36\app\src\main\AndroidManifest.xml:115:13-119:29
 169                <action android:name="android.intent.action.MAIN" />
-169-->C:\RestoManager33\app\src\main\AndroidManifest.xml:116:17-69
-169-->C:\RestoManager33\app\src\main\AndroidManifest.xml:116:25-66
+169-->C:\RestoManager36\app\src\main\AndroidManifest.xml:116:17-69
+169-->C:\RestoManager36\app\src\main\AndroidManifest.xml:116:25-66
 170
 171                <category android:name="android.intent.category.LAUNCHER" />
-171-->C:\RestoManager33\app\src\main\AndroidManifest.xml:118:17-77
-171-->C:\RestoManager33\app\src\main\AndroidManifest.xml:118:27-74
+171-->C:\RestoManager36\app\src\main\AndroidManifest.xml:118:17-77
+171-->C:\RestoManager36\app\src\main\AndroidManifest.xml:118:27-74
 172            </intent-filter>
 173        </activity>
 174        <activity
-174-->C:\RestoManager33\app\src\main\AndroidManifest.xml:121:9-125:48
+174-->C:\RestoManager36\app\src\main\AndroidManifest.xml:121:9-125:48
 175            android:name="com.droidfreshsquad.poly2023.SignupActivity"
-175-->C:\RestoManager33\app\src\main\AndroidManifest.xml:122:13-43
+175-->C:\RestoManager36\app\src\main\AndroidManifest.xml:122:13-43
 176            android:exported="true"
-176-->C:\RestoManager33\app\src\main\AndroidManifest.xml:123:13-36
+176-->C:\RestoManager36\app\src\main\AndroidManifest.xml:123:13-36
 177            android:theme="@style/MyAppTheme"
-177-->C:\RestoManager33\app\src\main\AndroidManifest.xml:125:13-46
+177-->C:\RestoManager36\app\src\main\AndroidManifest.xml:125:13-46
 178            android:windowSoftInputMode="adjustResize" />
-178-->C:\RestoManager33\app\src\main\AndroidManifest.xml:124:13-55
+178-->C:\RestoManager36\app\src\main\AndroidManifest.xml:124:13-55
 179        <activity
-179-->C:\RestoManager33\app\src\main\AndroidManifest.xml:126:9-130:48
+179-->C:\RestoManager36\app\src\main\AndroidManifest.xml:126:9-130:48
 180            android:name="com.droidfreshsquad.poly2023.datve.BookingActivity"
-180-->C:\RestoManager33\app\src\main\AndroidManifest.xml:127:13-50
+180-->C:\RestoManager36\app\src\main\AndroidManifest.xml:127:13-50
 181            android:exported="false"
-181-->C:\RestoManager33\app\src\main\AndroidManifest.xml:128:13-37
+181-->C:\RestoManager36\app\src\main\AndroidManifest.xml:128:13-37
 182            android:theme="@style/MyAppTheme"
-182-->C:\RestoManager33\app\src\main\AndroidManifest.xml:130:13-46
+182-->C:\RestoManager36\app\src\main\AndroidManifest.xml:130:13-46
 183            android:windowSoftInputMode="adjustResize" />
-183-->C:\RestoManager33\app\src\main\AndroidManifest.xml:129:13-55
+183-->C:\RestoManager36\app\src\main\AndroidManifest.xml:129:13-55
 184        <activity
-184-->C:\RestoManager33\app\src\main\AndroidManifest.xml:131:9-134:48
+184-->C:\RestoManager36\app\src\main\AndroidManifest.xml:131:9-134:48
 185            android:name="com.droidfreshsquad.poly2023.ResetPasswordActivity"
-185-->C:\RestoManager33\app\src\main\AndroidManifest.xml:132:13-50
+185-->C:\RestoManager36\app\src\main\AndroidManifest.xml:132:13-50
 186            android:label="Reset Password"
-186-->C:\RestoManager33\app\src\main\AndroidManifest.xml:133:13-43
+186-->C:\RestoManager36\app\src\main\AndroidManifest.xml:133:13-43
 187            android:theme="@style/MyAppTheme" />
-187-->C:\RestoManager33\app\src\main\AndroidManifest.xml:134:13-46
+187-->C:\RestoManager36\app\src\main\AndroidManifest.xml:134:13-46
 188        <activity
-188-->C:\RestoManager33\app\src\main\AndroidManifest.xml:135:9-138:48
+188-->C:\RestoManager36\app\src\main\AndroidManifest.xml:135:9-138:48
 189            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenSaigon"
-189-->C:\RestoManager33\app\src\main\AndroidManifest.xml:136:13-55
+189-->C:\RestoManager36\app\src\main\AndroidManifest.xml:136:13-55
 190            android:exported="false"
-190-->C:\RestoManager33\app\src\main\AndroidManifest.xml:137:13-37
+190-->C:\RestoManager36\app\src\main\AndroidManifest.xml:137:13-37
 191            android:theme="@style/MyAppTheme" />
-191-->C:\RestoManager33\app\src\main\AndroidManifest.xml:138:13-46
+191-->C:\RestoManager36\app\src\main\AndroidManifest.xml:138:13-46
 192        <activity
-192-->C:\RestoManager33\app\src\main\AndroidManifest.xml:139:9-142:48
+192-->C:\RestoManager36\app\src\main\AndroidManifest.xml:139:9-142:48
 193            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenHanoi"
-193-->C:\RestoManager33\app\src\main\AndroidManifest.xml:140:13-54
+193-->C:\RestoManager36\app\src\main\AndroidManifest.xml:140:13-54
 194            android:exported="false"
-194-->C:\RestoManager33\app\src\main\AndroidManifest.xml:141:13-37
+194-->C:\RestoManager36\app\src\main\AndroidManifest.xml:141:13-37
 195            android:theme="@style/MyAppTheme" />
-195-->C:\RestoManager33\app\src\main\AndroidManifest.xml:142:13-46
+195-->C:\RestoManager36\app\src\main\AndroidManifest.xml:142:13-46
 196        <activity
-196-->C:\RestoManager33\app\src\main\AndroidManifest.xml:143:9-146:48
+196-->C:\RestoManager36\app\src\main\AndroidManifest.xml:143:9-146:48
 197            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenDanang"
-197-->C:\RestoManager33\app\src\main\AndroidManifest.xml:144:13-55
+197-->C:\RestoManager36\app\src\main\AndroidManifest.xml:144:13-55
 198            android:exported="false"
-198-->C:\RestoManager33\app\src\main\AndroidManifest.xml:145:13-37
+198-->C:\RestoManager36\app\src\main\AndroidManifest.xml:145:13-37
 199            android:theme="@style/MyAppTheme" />
-199-->C:\RestoManager33\app\src\main\AndroidManifest.xml:146:13-46
+199-->C:\RestoManager36\app\src\main\AndroidManifest.xml:146:13-46
 200
 201        <receiver
 201-->[com.google.android.gms:play-services-measurement:21.4.0] C:\Users\84329\.gradle\caches\transforms-3\f789d3340212842aeb08836a9bcc7d7a\transformed\play-services-measurement-21.4.0\AndroidManifest.xml:29:9-33:20

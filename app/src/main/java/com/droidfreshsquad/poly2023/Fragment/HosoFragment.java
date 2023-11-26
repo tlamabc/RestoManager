@@ -129,7 +129,7 @@ public class HosoFragment extends Fragment {
         Uri photoUrl = FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl();
         txtName.setText(username);
 //        imgAvatar.setImageURI(photoUrl);
-        Glide.with(this).load(photoUrl).error(R.drawable.logochim).into(imgAvatar);
+        Glide.with(this).load(photoUrl).error(R.drawable.xzxz).into(imgAvatar);
         imgAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

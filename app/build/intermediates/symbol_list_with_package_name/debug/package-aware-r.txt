@@ -3370,6 +3370,7 @@ drawable vien_gach_dut
 drawable vinhhajlong
 drawable xao
 drawable xo
+drawable xzxz
 drawable zego_uikit_bg_button
 drawable zego_uikit_bg_stop_share_button
 drawable zego_uikit_chat_round_rect_recv

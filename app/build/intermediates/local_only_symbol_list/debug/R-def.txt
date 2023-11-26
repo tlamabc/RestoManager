@@ -194,6 +194,7 @@ drawable vien_gach_dut
 drawable vinhhajlong
 drawable xao
 drawable xo
+drawable xzxz
 font inter_bold
 font inter_regular
 font lato_black

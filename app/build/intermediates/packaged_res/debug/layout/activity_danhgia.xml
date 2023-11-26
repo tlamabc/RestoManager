@@ -174,7 +174,7 @@
             android:layout_margin="10dp"
             android:gravity="start"
             android:id="@+id/editText"
-            android:hint="nhập dánh giá của bạn"
+            android:hint="nhập đánh giá của bạn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/thoat" />
