@@ -3041,6 +3041,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
+drawable anhlienhe
 drawable arrow_icon
 drawable avd_hide_password
 drawable avd_show_password
@@ -3053,6 +3054,7 @@ drawable bgr1
 drawable bgr_bottomappbar
 drawable bgr_hanhkhach
 drawable bgr_line
+drawable bgr_spinlucky
 drawable boder_goi
 drawable boder_lienhe
 drawable boder_logochinh
@@ -3375,6 +3377,7 @@ drawable slideshow12
 drawable slideshow13
 drawable slideshow14
 drawable smallicon_notification_background
+drawable spinluckyyboy
 drawable style_button
 drawable style_screenmain
 drawable style_user
@@ -4223,6 +4226,7 @@ id title_split_line
 id title_template
 id toggle
 id tonggiatien
+id tonggiatienTextView
 id tongtien
 id toolbar
 id toolbar_title

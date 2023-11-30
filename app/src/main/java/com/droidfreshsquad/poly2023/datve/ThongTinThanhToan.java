@@ -40,7 +40,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
     TextView ngaysinhView,discountCodeEditText,tongGiaTienTextView, TongSoNguoiTextView, ErrorPhone, tieptuc, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach;
     BottomSheetDialog dialog;
     LinearLayout LnThongtin;
-Button buttonOpenSpinWheel;
+    Button buttonOpenSpinWheel;
     int tien;
 
 
@@ -74,9 +74,6 @@ Button buttonOpenSpinWheel;
         ngaysinhView = findViewById(R.id.ngaysinhView);
         LnThongtin = findViewById(R.id.LnThongtin);
         tieptuc = findViewById(R.id.tieptuc);
-
-
-
         discountCodeEditText = findViewById(R.id.discountCodeEditText);
 
         buttonOpenSpinWheel = findViewById(R.id.buttonOpenSpinWheel);
@@ -177,7 +174,7 @@ Button buttonOpenSpinWheel;
         buttonOpenSpinWheel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText editText = findViewById(R.id.discountCodeEditText);
+                TextView editText = findViewById(R.id.discountCodeEditText);
                 // Hiển thị danh sách mã giảm giá khi người dùng bấm vào ô EditText
                 editText.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -256,7 +253,7 @@ Button buttonOpenSpinWheel;
             }
 
             private void applyDiscountCode(String selectedCode) {
-                EditText editText = findViewById(R.id.discountCodeEditText);
+                Button editText = findViewById(R.id.discountCodeEditText);
                 editText.setText(selectedCode);
                 // Gọi phương thức xử lý mã giảm giá ở đây (nếu cần)
             }

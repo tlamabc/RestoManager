@@ -263,11 +263,12 @@
         android:layout_height="wrap_content"
         android:paddingBottom="20dp"
         android:orientation="horizontal">
-        <EditText
+        <Button
             android:textSize="14dp"
             android:paddingLeft="10dp"
             android:hint="Nhập mã giảm giá (chỉ áp dụng 1 lần)"
             android:textColor="#112d6a"
+            android:inputType="none"
             android:background="@drawable/edtmagiamgia"
             android:layout_weight="1"
             android:id="@+id/discountCodeEditText"

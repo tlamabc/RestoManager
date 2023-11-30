@@ -32,6 +32,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class DatveFragment extends Fragment {
@@ -223,8 +224,15 @@ public class DatveFragment extends Fragment {
                                                 ThongTinKhach gioHangItem = gioHangItemList.get(0);
                                                 gioHangItem.setEmail(currentEmail);
                                                 gioHangItem.setId(orderId);
-                                                thanhToanRef.child(orderId).setValue(gioHangItem);
 
+                                                Calendar calendar = Calendar.getInstance();
+                                                long currentTimeMillis = calendar.getTimeInMillis();
+                                                gioHangItem.setThoiGianThanhToan(currentTimeMillis);
+                                                saveThoiGianThanhToanToFirebase(gioHangItem.id, currentTimeMillis);
+
+                                                saveClickedStateToFirebase(gioHangItem.id);
+
+                                                thanhToanRef.child(orderId).setValue(gioHangItem);
 
                                                 // Nếu có vé khứ hồi (gioHangItemList có đúng 2 vé)
                                                 if (gioHangItemList.size() == 2) {
@@ -232,8 +240,15 @@ public class DatveFragment extends Fragment {
                                                     gioHangItem2.setEmail(currentEmail);
                                                     String orderId2 = thanhToanRef.push().getKey(); // Tạo ID mới cho vé khứ hồi
                                                     gioHangItem2.setId(orderId2);
+
+                                                    gioHangItem2.setThoiGianThanhToan(currentTimeMillis);
+                                                    saveThoiGianThanhToanToFirebase(gioHangItem2.id, currentTimeMillis);
+
+                                                    saveClickedStateToFirebase(gioHangItem2.id);
+
                                                     thanhToanRef.child(orderId2).setValue(gioHangItem2);
                                                 }
+
 
 
                                                 String subject = "Xác nhận thanh toán";
@@ -265,8 +280,8 @@ public class DatveFragment extends Fragment {
                                                             .append("\n Sân Bay Đến : ").append(gioHangItem.getSan2())
                                                             .append("\n Số Tiền : ").append(gioHangItem.getTien())
                                                             .append("\n Thời Gian Bay : ").append(gioHangItem.getTimebay());
-                                                            }
-                                                         messageBuilder.append("\n _______________________________________")
+                                                }
+                                                messageBuilder.append("\n _______________________________________")
                                                         .append("\n Vui lòng đến địa chỉ sau để thanh toán vé:")
                                                         .append("\n 137 Nguyễn Thị Thập, Phường Hòa Minh, Quận Liên Chiểu, Thành Phố Đà Nẵng")
                                                         .append("\n Giờ làm việc: 8:00 - 17:00 ")
@@ -362,6 +377,17 @@ public class DatveFragment extends Fragment {
 
         }
         return totalAmount;
+    }
+    //đẩy dữ liệuthoiGianThanhToan lên Firebase
+    public void saveThoiGianThanhToanToFirebase(String id, long thoiGianThanhToan) {
+
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("thanh_toan").child(id);
+        databaseReference.child("thoiGianThanhToan").setValue(thoiGianThanhToan);
+    }
+    //đẩy dữ liệu isClicked lên Firebase
+    public void saveClickedStateToFirebase(String id) {
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("thanh_toan").child(id);
+        databaseReference.child("isClicked").setValue(false);
     }
 
 }

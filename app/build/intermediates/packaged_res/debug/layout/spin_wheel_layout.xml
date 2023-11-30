@@ -2,50 +2,80 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6f6f6"
+    android:background="@drawable/bgr_spinlucky"
     android:gravity="center_horizontal"
+
     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#112d6a"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="Vòng quay may mắn"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="161dp"
         android:background="@drawable/quaylala" />
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_height="500dp"
         android:orientation="vertical">
 
         <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
                 android:src="@drawable/icons8_muitenquay" />
 
             <ImageView
                 android:id="@+id/imageSpinWheel"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="bottom"
-                android:src="@drawable/quay" />
+                android:src="@drawable/spinluckyyboy" />
         </FrameLayout>
     </LinearLayout>
 
     <Button
         android:id="@+id/buttonSpin"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@id/imageSpinWheel"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:background="@drawable/edtmagiamgia"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#112d6a"
         android:text="Quay ngay"
+        android:textColor="#ffffff"
         android:textAllCaps="false" />
 
 </LinearLayout>

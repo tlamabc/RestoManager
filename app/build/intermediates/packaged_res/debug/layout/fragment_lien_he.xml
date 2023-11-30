@@ -138,6 +138,32 @@
 
                     </LinearLayout>
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/anhlienhe"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn có thắc mắc gì về vấn đề đặt vé?"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/inter_bold"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nếu có thắc mắc gì hỏi liên hệ đến chúng tôi nhé. Chúng tôi sẽ giải đáp mọi thắc mắc mà bạn muốn."
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    />
+
+
             </LinearLayout>
 
 

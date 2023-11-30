@@ -28,6 +28,7 @@ dimen activity_vertical_margin
 dimen fab_margin
 dimen logo_w_h
 drawable add
+drawable anhlienhe
 drawable arrow_icon
 drawable back_icon
 drawable backarrow
@@ -38,6 +39,7 @@ drawable bgr1
 drawable bgr_bottomappbar
 drawable bgr_hanhkhach
 drawable bgr_line
+drawable bgr_spinlucky
 drawable boder_goi
 drawable boder_lienhe
 drawable boder_logochinh
@@ -198,6 +200,7 @@ drawable setting_icon
 drawable slideshow12
 drawable slideshow13
 drawable slideshow14
+drawable spinluckyyboy
 drawable style_button
 drawable style_screenmain
 drawable style_user
@@ -416,6 +419,7 @@ id thoitiet
 id tieptuc
 id titleTextView
 id tonggiatien
+id tonggiatienTextView
 id tongtien
 id toolbar
 id toolbar_title
