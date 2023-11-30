@@ -12,24 +12,17 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import javax.mail.internet.*;
-import javax.mail.*;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-import java.util.Properties;
+
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.Zalo;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.CountData;
 import com.droidfreshsquad.poly2023.datve.ThongTinKhach;
 import com.droidfreshsquad.poly2023.datve.khuhoi;
-import com.google.android.gms.wallet.AutoResolveHelper;
-import com.google.android.gms.wallet.PaymentDataRequest;
 import com.google.android.gms.wallet.PaymentsClient;
-import com.google.android.gms.wallet.Wallet;
-import com.google.android.gms.wallet.WalletConstants;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -55,10 +48,11 @@ public class DatveFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_datve, container, false);
 
         recyclerViewProducts = view.findViewById(R.id.recyclerViewProducts);
-        LinearLayout buttonCheckout = view.findViewById(R.id.buttonCheckout);
         LinearLayout tvHuydon = view.findViewById(R.id.tvHuydon);
         LinearLayout tvthanhtoan = view.findViewById(R.id.tvthanhtoan);
         LinearLayout tvkhuhoi = view.findViewById(R.id.tvkhuhoi);
+        LinearLayout btnPay = view.findViewById(R.id.zalopay);
+        TextView tonggiatienTextView = view.findViewById(R.id.tonggiatienTextView);
 
 
         gioHangItemList = new ArrayList<>();
@@ -70,13 +64,16 @@ public class DatveFragment extends Fragment {
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("gio_hang");
 
-        // Initialize PaymentsClient
-        paymentsClient = Wallet.getPaymentsClient(
-                getActivity(),
-                new Wallet.WalletOptions.Builder()
-                        .setEnvironment(WalletConstants.ENVIRONMENT_TEST)
-                        .build()
-        );
+        btnPay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Zalo.class);
+                int totalAmount = calculateTotalAmount(gioHangItemList);
+                intent.putExtra("totalAmount", totalAmount);
+                startActivity(intent);
+            }
+        });
+
 
 // Lắng nghe sự kiện khi có thay đổi trong dữ liệu
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -97,7 +94,17 @@ public class DatveFragment extends Fragment {
                     }
                     int itemCount = gioHangItemList.size(); // Đếm số lượng mục trong gioHangItemList
                     CountData.getInstance().setCount(itemCount);//cập nhật lưu vào class countData
+                    // Cập nhật tổng giá tiền
+                    updateTongGiaTien();
+
                     gioHangAdapter.notifyDataSetChanged();
+                }
+
+                private void updateTongGiaTien() {
+                    // Tính tổng giá tiền từ danh sách sản phẩm trong giỏ hàng
+                    int totalAmount = calculateTotalAmount(gioHangItemList);
+                    // Đặt giá trị cho TextView để hiển thị tổng giá tiền
+                    tonggiatienTextView.setText("Tổng Giá Tiền: " + totalAmount + " VND");
                 }
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
@@ -105,6 +112,7 @@ public class DatveFragment extends Fragment {
                 }
             });
         }
+
 //------------------------------
         tvHuydon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -201,29 +209,33 @@ public class DatveFragment extends Fragment {
                         AlertDialog alert = emptyCartDialog.create();
                         alert.show();
                     } else {
+                        String orderId = thanhToanRef.push().getKey();// Tạo ID duy nhất cho mỗi đơn hàng
                         AlertDialog.Builder confirmPaymentDialog = new AlertDialog.Builder(getActivity());
                         confirmPaymentDialog.setTitle("Xác nhận thanh toán")
                                 .setMessage("Bạn có chắc chắn muốn thanh toán cho đơn hàng này?")
                                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
+
                                         new AsyncTask<Void, Void, Void>() {
                                             @Override
                                             protected Void doInBackground(Void... voids) {
-                                                for (int i = 0; i < gioHangItemList.size(); i++) {
-                                                    ThongTinKhach gioHangItem = gioHangItemList.get(i);
-                                                    gioHangItem.setEmail(currentEmail);
-                                                    thanhToanRef.child(String.valueOf(++counter)).setValue(gioHangItem);
+                                                // Ghi thông tin vé đi đầu tiên vào Firebase
+                                                ThongTinKhach gioHangItem = gioHangItemList.get(0);
+                                                gioHangItem.setEmail(currentEmail);
+                                                gioHangItem.setId(orderId);
+                                                thanhToanRef.child(orderId).setValue(gioHangItem);
 
 
-                                                    // Check if gioHangItemList has more than 1 item before accessing the second item
-                                                    if (gioHangItemList.size() > 1 && i == 0) {
-                                                        // Thêm thông tin vé khứ hồi
-                                                        ThongTinKhach gioHangItem2 = gioHangItemList.get(1);
-                                                        gioHangItem2.setEmail(currentEmail);
-                                                        thanhToanRef.push().setValue(gioHangItem2);
+                                                // Nếu có vé khứ hồi (gioHangItemList có đúng 2 vé)
+                                                if (gioHangItemList.size() == 2) {
+                                                    ThongTinKhach gioHangItem2 = gioHangItemList.get(1);
+                                                    gioHangItem2.setEmail(currentEmail);
+                                                    String orderId2 = thanhToanRef.push().getKey(); // Tạo ID mới cho vé khứ hồi
+                                                    gioHangItem2.setId(orderId2);
+                                                    thanhToanRef.child(orderId2).setValue(gioHangItem2);
+                                                }
 
-                                                    }
-                                                     }
+
                                                 String subject = "Xác nhận thanh toán";
                                                 String message = buildEmailMessage(gioHangItemList);
 
@@ -296,17 +308,7 @@ public class DatveFragment extends Fragment {
             }
 
 
-//                                .setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
-//                                    public void onClick(DialogInterface dialog, int id) {
-//                                        dialog.dismiss();
-//                                    }
-//                                });
-//
-//                        AlertDialog confirmAlert = confirmPaymentDialog.create();
-//                        confirmAlert.show();
-//                    }
-//                }
-//            }
+
 
             private void clearGioHangData(String currentEmail) {
                 // Xóa dữ liệu từ nút "gio_hang" trong Firebase
@@ -348,66 +350,18 @@ public class DatveFragment extends Fragment {
         });
 //-------------------
 
-        //   Thay đổi phương thức
-        //  buttonCheckout.setOnClickListener();
-        buttonCheckout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start GPay payment flow
-                PaymentDataRequest request = createPaymentDataRequest();
-                if (request != null) {
-                    // Trình xử lý dữ liệu thanh toán
-                    AutoResolveHelper.resolveTask(
-                            paymentsClient.loadPaymentData(request),
-                            getActivity(),
-                            1234
-                    );
-                }
-            }
-        });
 
         return view;
     }
 
-    // Thay đổi phương thức `createPaymentDataRequest()`
-    private PaymentDataRequest createPaymentDataRequest() {
-        PaymentDataRequest request = null;
-        // Tạo PaymentDataRequest object dựa trên yêu cầu thanh toán của bạn
-        // Ví dụ:
-        request = PaymentDataRequest.fromJson(
-                "{\n" +
-                        "  \"apiVersion\": 2,\n" +
-                        "  \"apiVersionMinor\": 0,\n" +
-                        "  \"allowedPaymentMethods\": [\n" +
-                        "    {\n" +
-                        "      \"type\": \"CARD\",\n" +
-                        "      \"tokenizationSpecification\": {\n" +
-                        "        \"type\": \"PAYMENT_GATEWAY\",\n" +
-                        "        \"parameters\": {\n" +
-                        "          \"gateway\": \"Thanh Lam\",\n" +
-                        "          \"gatewayMerchantId\": \"BCR2DN4TY2CLEMA\"\n" +
-                        "        }\n" +
-                        "      },\n" +
-                        "      \"parameters\": {\n" +
-                        "        \"allowedCardNetworks\": [\"VISA\", \"MASTERCARD\"],\n" +
-                        "        \"allowPrepaidCards\": true,\n" +
-                        "        \"allowCreditCards\": true,\n" +
-                        "        \"allowDebitCards\": true\n" +
-                        "      }\n" +
-                        "    }\n" +
-                        "  ],\n" +
-                        "  \"merchantInfo\": {\n" +
-                        "    \"merchantName\": \"Easy Fly\",\n" +
-                        "    \"merchantId\": \"BCR2DN4TY3OLHPYJ\"\n" +
-                        "  },\n" +
-                        "  \"transactionInfo\": {\n" +
-                        "    \"totalPriceStatus\": \"FINAL\",\n" +
-                        "    \"totalPrice\": \"1.00\",\n" +
-                        "    \"currencyCode\": \"USD\"\n" +
-                        "  }\n" +
-                        "}"
-        );
 
-        return request;
+    private int calculateTotalAmount(List<ThongTinKhach> gioHangItemList) {
+        int totalAmount = 0;
+        for (ThongTinKhach gioHangItem : gioHangItemList) {
+            totalAmount += gioHangItem.getTien();
+
+        }
+        return totalAmount;
     }
+
 }

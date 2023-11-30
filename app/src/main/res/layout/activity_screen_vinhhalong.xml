@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#112d6a"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Tham quan du lịch Vịnh Hạ Long"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tham Quan Địa Điểm Du Vịnh Hạ Long Nổi Tiếng"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/hl2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/hl3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/hl5" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Vịnh Hạ Long là một di sản độc đáo bởi địa danh này chứa đựng những dấu tích quan trọng trong quá trình hình thành và phát triển lịch sử trái đất, là cái nôi cư trú của người Việt cổ, đồng thời là tác phẩm nghệ thuật tạo hình vĩ đại của thiên nhiên với sự hiện diện của hàng nghìn đảo đá muôn hình vạn trạng, với nhiều hang động kỳ thú quần tụ thành một thế giới vừa sinh động vừa huyền bí. Bên cạnh đó, vịnh Hạ Long còn là nơi tập trung đa dạng sinh học cao với những hệ sinh thái điển hình cùng với hàng nghìn loài động thực vật vô cùng phong phú, đa dạng. Nơi đây còn gắn liền với những giá trị văn hóa – lịch sử hào hùng của dân tộc. Vịnh Hạ Long luôn là tour du lịch trong nước được yêu thích của người Việt Nam"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Còn bây giờ các địa điểm du lịch Vịnh Hạ Long nổi tiếng nhé!"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="1.  Vịnh Bái Tử Long"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/hl1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bái Tử Long là một vịnh của Việt Nam, nằm trong vịnh Bắc Bộ, ở vùng Đông Bắc của Việt Nam. Vịnh Bái Tử Long bao gồm một vùng biển của thành phố Hạ Long, thành phố Cẩm Phả và huyện đảo Vân Đồn. Phía Tây Nam giáp Vịnh Hạ Long, phía Đông giáp biển, phía Tây giáp đất liền với thành phố Cẩm Phả và phía đông bắc giáp huyện đảo Cô Tô. Vịnh Bái Tử Long bao gồm hàng trăm hòn đảo lớn nhỏ và trong đó có nhiều đảo lớn và có dân sinh sống."/>
+
+
+                    "/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2. Đảo Và Bãi Tắm Ngọc Vừng - Vịnh Hạ Long"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/hl11" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Đảo và Bãi Tắm Ngọc Vừng: Cách cảng tàu du lịch 34km, thuộc huyện Vân Đồn, tỉnh Quảng Ninh. Xung quanh đảo có nhiều bãi biển đẹp, có núi Vạn Xuân cao 182m, có di chỉ khảo cổ thuộc văn hoá Hạ Long rộng 45.000 m2. Là đảo đất, rộng 12 km2, đảo Ngọc Vừng có người ở, có bến cảng cổ Cống Yên thuộc hệ thống thương cảng cổ Vân Đồn từ thế kỷ XI, có di tích thành cổ nhà Mạc và nhà Nguyễn. Hòn đảo xinh đẹp nằm giữa hai đảo đá nhỏ là Hòn Nét và đảo Phượng Hoàng thuộc huyện Vân Đồn. Trên cao nhìn xuống đảo Ngọc đẹp như một tấm khăn choàng nhung, có nhiều đường diềm sáng trắng như đang trôi nổi bồng bềnh trên mặt nước. Phía đông của đảo có bãi cát dài tới hàng cây số, cát trắng tinh khiết trải dài ra tận bến. Từ mỏm Mắt Rồng có thể bao quát hết cả vừng đảo Cô Tô. Trung tâm đảo Ngọc có một cây si um tùm, dưới cây si này năm 1962, Hồ Chủ Tịch đã ra thăm đảo và đứng ở đây nói chuyện cùng nhân dân"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="3. Núi Bài Thơ – Vịnh Hạ Long"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/hl17" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Núi Bài Thơ Hạ Long ở trung tâm Thành phố Hạ Long, tỉnh Quảng Ninh. Đây là một di tích có giá trị văn hoá lich sử quan trọng. Nơi đây còn lưu giữ nhiều bài thơ khắc trên đá của một số vị vua đi kinh lý, cảm hứng trước vẻ đẹp thần tiên cửa Vịnh Hạ Long đã làm thơ. Một ngọn núi đá vôi cao 106m nằm ở trung tâm thành phố Hạ Long, kề ngay bên vịnh Hạ Long, nhìn xa trông như một toà lâu đài khổng lồ với ba ngọn tháp nhấp nhô trên những bức tường thành kiên cố. Đó là núi Bài Thơ. Xưa kia núi còn có tên là núi Truyền Đăng. Trước kia núi có tên gọi là núi Truyền Đăng (Rọi Đèn). Ngọn núi này đã làm xúc cảm bao tâm hồn thi sĩ."/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,12 +2,16 @@ package com.droidfreshsquad.poly2023.datve;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -32,15 +36,14 @@ import java.util.Locale;
 
 public class ThongTinThanhToan extends AppCompatActivity {
     EditText ngaysinh, phone, email, name;
-
-    TextView  ErrorPhone, tieptuc, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach;
+    NumberFormat numberFormat;
+    TextView ngaysinhView,discountCodeEditText,tongGiaTienTextView, TongSoNguoiTextView, ErrorPhone, tieptuc, ErrorNgay, ErrorMail, ErrorName, nameView, emailView, phoneView, viewSokhach;
     BottomSheetDialog dialog;
     LinearLayout LnThongtin;
+Button buttonOpenSpinWheel;
+    int tien;
 
-    DatabaseReference mDatabase;
-    private int tongGiaTien = 0;
-    private int TongSoNguoi = 0;
-    private int totalTicketPrice = 0;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -65,15 +68,23 @@ public class ThongTinThanhToan extends AppCompatActivity {
         title.setText("Tìm chuyến bay");
         toolbar.addView(customView);
 //thanh tiêu đề
-        viewSokhach = (TextView) findViewById(R.id.viewSokhach);
-        phoneView = (TextView) findViewById(R.id.phoneView);
-        nameView = (TextView) findViewById(R.id.nameView);
-        LnThongtin = (LinearLayout) findViewById(R.id.LnThongtin);
+        viewSokhach = findViewById(R.id.viewSokhach);
+        phoneView = findViewById(R.id.phoneView);
+        nameView = findViewById(R.id.nameView);
+        ngaysinhView = findViewById(R.id.ngaysinhView);
+        LnThongtin = findViewById(R.id.LnThongtin);
         tieptuc = findViewById(R.id.tieptuc);
+
+
+
+        discountCodeEditText = findViewById(R.id.discountCodeEditText);
+
+        buttonOpenSpinWheel = findViewById(R.id.buttonOpenSpinWheel);
+
+
 
 //lấy giá trị số lượng item trong giỏ hàng lưu ở saveSoVe
         int retrievedItemCount = CountData.getInstance().getCount();
-
 //lấy Các giá trị Number số lượng khách
         Number numberObject = NumberData.getInstance().getNumberObject();// lấy ở SaveNumber
         int numberLon = 0;
@@ -86,6 +97,9 @@ public class ThongTinThanhToan extends AppCompatActivity {
         }
 
         StringBuilder numbersText = new StringBuilder();
+        if (numberLon == 0) {
+            numbersText.append("  ").append("1").append(" người lớn");
+        }
         if (numberLon > 0) {
             numbersText.append("  ").append(numberLon).append(" người lớn");
         }
@@ -103,7 +117,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
 //lấy dữ liệu item từ danhsachbay
         // Đọc dữ liệu từ Intent
         viewSokhach.setText(numbersText.toString());
-        int tien = getIntent().getIntExtra("PRICE", 0);
+        tien = getIntent().getIntExtra("PRICE", 0);
         String diemDi = getIntent().getStringExtra("DEPARTURE");
         String diemDen = getIntent().getStringExtra("DESTINATION");
         String gio1 = getIntent().getStringExtra("SCHEDULED");
@@ -116,7 +130,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
 
 
         // Hiển thị dữ liệu vào các TextView tương ứng
-        TextView tongGiaTienTextView = findViewById(R.id.tonggiatien);
+        tongGiaTienTextView = findViewById(R.id.tonggiatien);
         TextView di = findViewById(R.id.di);
         TextView den = findViewById(R.id.den);
         TextView giomot = findViewById(R.id.gio1);
@@ -142,28 +156,113 @@ public class ThongTinThanhToan extends AppCompatActivity {
         thoigianbay.setText(String.valueOf(timebay));
 
 
-        int tongGiaTien;
+        final int[] tongGiaTien = new int[1];
         if (TongSoNguoi > 0) {
-            tongGiaTien = tien * TongSoNguoi;  //bấm vào tìm kiếm này có thêm được số người
+            tongGiaTien[0] = tien * TongSoNguoi;  //bấm vào tìm kiếm này có thêm được số người
         } else {
-            tongGiaTien = tien * 1; //bấm vào vé có sẵn thì tổng số người = 0 nên cho nó nhân 1
+            tongGiaTien[0] = tien * 1; //bấm vào vé có sẵn thì tổng số người = 0 nên cho nó nhân 1
         }
 
         // Định dạng số theo 1,200,000  /vnd
-        NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
-        String formattedPrice = numberFormat.format(tongGiaTien);
+        numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
+        String formattedPrice = numberFormat.format(tongGiaTien[0]);
         tongGiaTienTextView.setText(formattedPrice);//in ra textview
         // Định dạng số theo 1,200,000  /ve
         NumberFormat numberForma = NumberFormat.getNumberInstance(Locale.getDefault());
         String formattedPric = numberForma.format(tien);
-        TextView TongSoNguoiTextView = findViewById(R.id.TongSoNguoi);
-        TongSoNguoiTextView.setText(formattedPric + "/vé");
-        //in ra textview
-// Tạo giao diện cho bottom sheet dialog
-        dialog = new BottomSheetDialog(this);
-        View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_thongtinkhach, null);
-        dialog.setContentView(viewDialog);
+        TongSoNguoiTextView = findViewById(R.id.TongSoNguoi);
+        TongSoNguoiTextView.setText(formattedPric + "/vé");//in ra textview
 
+
+        buttonOpenSpinWheel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText editText = findViewById(R.id.discountCodeEditText);
+                // Hiển thị danh sách mã giảm giá khi người dùng bấm vào ô EditText
+                editText.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        showAllDiscountCodesDialog();
+                    }
+                });
+                String inputCode = editText.getText().toString();
+
+                if (inputCode.isEmpty()) {
+                    Toast.makeText(ThongTinThanhToan.this, "Vui lòng nhập mã để kiểm tra.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                SharedPreferences preferences = getSharedPreferences("MyPrefss", MODE_PRIVATE);
+                int listSize = preferences.getInt("code_list_size", 0);
+                boolean found = false;
+
+                for (int i = 0; i < listSize; i++) {
+                    String savedCode = preferences.getString("code_" + i, "");
+                    if (savedCode.equals(inputCode)) {
+                        found = true;
+                        removeCodeFromList(preferences, i, listSize);
+                        Toast.makeText(ThongTinThanhToan.this, "Mã đã được xác nhận", Toast.LENGTH_SHORT).show();
+
+                        double discountAmount = 0.1 * tongGiaTien[0];
+                        int discountedPrice = (int) (tongGiaTien[0] - discountAmount);
+
+                        String formattedNewPrice = numberFormat.format(discountedPrice);
+                        tongGiaTienTextView.setText(formattedNewPrice);
+
+                        tongGiaTien[0] = discountedPrice;
+
+                        break;
+                    }
+                }
+
+                if (!found) {
+                    Toast.makeText(ThongTinThanhToan.this, "Mã không hợp lệ.", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            private void removeCodeFromList(SharedPreferences preferences, int positionToRemove, int listSize) {
+                SharedPreferences.Editor editor = preferences.edit();
+
+                for (int i = positionToRemove + 1; i < listSize; i++) {
+                    String codeToMove = preferences.getString("code_" + i, "");
+                    editor.putString("code_" + (i - 1), codeToMove);
+                }
+
+                editor.putInt("code_list_size", listSize - 1);
+                editor.remove("code_" + (listSize - 1));
+
+                editor.apply();
+            }
+
+            private void showAllDiscountCodesDialog() {
+                SharedPreferences preferences = getSharedPreferences("MyPrefss", MODE_PRIVATE);
+                int listSize = preferences.getInt("code_list_size", 0);
+                String[] discountCodesArray = new String[listSize];
+                for (int i = 0; i < listSize; i++) {
+                    discountCodesArray[i] = preferences.getString("code_" + i, "");
+                }
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(ThongTinThanhToan.this);
+                builder.setTitle("Chọn mã giảm giá");
+                builder.setItems(discountCodesArray, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String selectedCode = discountCodesArray[which];
+                        applyDiscountCode(selectedCode);
+                    }
+                });
+
+                builder.show();
+            }
+
+            private void applyDiscountCode(String selectedCode) {
+                EditText editText = findViewById(R.id.discountCodeEditText);
+                editText.setText(selectedCode);
+                // Gọi phương thức xử lý mã giảm giá ở đây (nếu cần)
+            }
+        });
+
+//nút them vào giỏ hàng
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("gio_hang");
         tieptuc.setOnClickListener(new View.OnClickListener() {
@@ -194,10 +293,6 @@ public class ThongTinThanhToan extends AppCompatActivity {
                     String ngaySinh = ngaysinh.getText().toString();
                     String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail();
 
-                    //String emailValue = email.getText().toString();
-                    // String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail().toString();
-
-
                     String phoneValue = phone.getText().toString();
 
                     ThongTinKhach thongTinKhach = new ThongTinKhach(ten, ngaySinh, emailValue, phoneValue,tongGiaTien,  diemDi, diemDen, gio1, gio2, ngay, san1, san2, ari1,timebay);
@@ -213,7 +308,10 @@ public class ThongTinThanhToan extends AppCompatActivity {
             }
 
         });
-
+// Tạo giao diện cho bottom sheet dialog
+        dialog = new BottomSheetDialog(this);
+        View viewDialog = LayoutInflater.from(this).inflate(R.layout.dialog_thongtinkhach, null);
+        dialog.setContentView(viewDialog);
 
         // Hiển thị bottom sheet dialog
         LnThongtin.setOnClickListener(new View.OnClickListener() {
@@ -270,6 +368,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
                     ErrorNgay.setVisibility(View.VISIBLE);
                 } else {
                     ErrorNgay.setVisibility(View.INVISIBLE);
+                    String nameValue = ngaysinh.getText().toString();
+                    ngaysinhView.setText(nameValue);
                 }
             }
         });

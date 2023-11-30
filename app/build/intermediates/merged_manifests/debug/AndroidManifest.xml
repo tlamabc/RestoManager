@@ -12,6 +12,18 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <queries>
+        <package android:name="vn.com.vng.zalopay" />
+        <package android:name="vn.com.vng.zalopay.sbmc" />
+        <package android:name="vn.com.vng.zalopay.sb1" />
+        <package android:name="com.zing.zalo" /> <!-- Needs to be explicitly declared on Android R+ -->
+        <package android:name="com.google.android.apps.maps" />
+
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+    </queries>
+
     <meta-data
         android:name="com.google.android.gms.wallet.api.enabled"
         android:value="true" />
@@ -40,16 +52,6 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <queries>
-
-        <!-- Needs to be explicitly declared on Android R+ -->
-        <package android:name="com.google.android.apps.maps" />
-
-        <intent>
-            <action android:name="com.huawei.hms.core.aidlservice" />
-        </intent>
-    </queries>
-
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -77,15 +79,18 @@
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenHue"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenPhuQuoc"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ChuyentrangActivity"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.thoi_tiet"
             android:exported="false"
@@ -93,7 +98,8 @@
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.danhgia"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.VdCallActivity"
             android:theme="@style/MyAppTheme" >
@@ -119,56 +125,79 @@
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.BaoCao"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.DieuKhoan"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.HoSo.Danh_Gia"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.Fragment.FragmentMain"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
         <activity
             android:name="com.droidfreshsquad.poly2023.Fragment.EmailSender"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.ThongTinThanhToan"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.DanhSachBay"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenMainActivity"
             android:exported="true"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.Ngay_thang_nam"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.MainActivity"
             android:exported="true"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.datve.khuhoi"
             android:exported="true"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.LoginActivity"
             android:exported="true"
+            android:launchMode="singleTask"
             android:theme="@style/MyAppTheme"
             android:windowSoftInputMode="adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
             </intent-filter>
         </activity>
         <activity
@@ -184,11 +213,23 @@
         <activity
             android:name="com.droidfreshsquad.poly2023.ResetPasswordActivity"
             android:label="Reset Password"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenSaigon"
             android:exported="false"
-            android:theme="@style/MyAppTheme" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenVinhHaLong"
+            android:exported="false"
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenHoiAn"
+            android:exported="false"
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenHanoi"
             android:exported="false"
@@ -197,29 +238,16 @@
             android:name="com.droidfreshsquad.poly2023.ScreenExplore.ScreenDanang"
             android:exported="false"
             android:theme="@style/MyAppTheme" />
-
-        <receiver
-            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-            android:enabled="true"
-            android:exported="false" >
-        </receiver>
-
-        <service
-            android:name="com.google.android.gms.measurement.AppMeasurementService"
-            android:enabled="true"
-            android:exported="false" />
-        <service
-            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-            android:enabled="true"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
-
         <activity
-            android:name="com.zegocloud.uikit.prebuilt.call.invite.internal.CallInviteActivity"
-            android:configChanges="locale|keyboardHidden|fontScale|orientation|screenSize|screenLayout|layoutDirection|density|uiMode"
-            android:excludeFromRecents="true"
+            android:name="com.droidfreshsquad.poly2023.datve.SpinWheelActivity"
             android:exported="false"
-            android:taskAffinity=":zego" />
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.droidfreshsquad.poly2023.HoSo.voucher"
+            android:exported="false"
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -284,6 +312,28 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.zegocloud.uikit.prebuilt.call.invite.internal.CallInviteActivity"
+            android:configChanges="locale|keyboardHidden|fontScale|orientation|screenSize|screenLayout|layoutDirection|density|uiMode"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:taskAffinity=":zego" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"

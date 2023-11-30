@@ -64,7 +64,7 @@
                 android:layout_gravity="bottom"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/stylebutton2"
+                android:background="@drawable/stylebutton"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="10dp">
@@ -72,31 +72,41 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Thanh toán tiền mặt"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000000"
                     android:textSize="18dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
+
+
+
             <LinearLayout
-                android:id="@+id/buttonCheckout"
+                android:id="@+id/zalopay"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="bottom"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/stylebutton2"
-                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:orientation="horizontal"
-                android:padding="10dp">
+                android:gravity="center"
+                android:background="@drawable/stylebutton">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thanh toán bằng GPAY"
-                    android:textColor="#FFFFFF"
+                    android:layout_height="50dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:drawablePadding="0dp"
                     android:textSize="18dp"
-                    android:textStyle="bold" />
+                    android:text="Thanh toán với"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:drawableRight="@drawable/icon_zalopau"></TextView>
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:id="@+id/tvHuydon"
@@ -105,7 +115,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="15dp"
-                android:background="@drawable/stylebutton"
+                android:background="@drawable/style_button"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="10dp">
@@ -113,7 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hủy đơn"
-                    android:textColor="#000000"
+                    android:textColor="#ffffff"
                     android:textSize="18dp"
                     android:textStyle="bold" />
             </LinearLayout>

@@ -1,5 +1,6 @@
 package com.droidfreshsquad.poly2023.Fragment;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,6 +14,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -27,6 +29,9 @@ import com.droidfreshsquad.poly2023.Domain.ExploreDomain;
 import com.droidfreshsquad.poly2023.HoSo.Danh_Gia;
 import com.droidfreshsquad.poly2023.HoSo.danhgia;
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.ScreenExplore.ScreenHoiAn;
+import com.droidfreshsquad.poly2023.ScreenExplore.ScreenHue;
+import com.droidfreshsquad.poly2023.ScreenExplore.ScreenVinhHaLong;
 import com.droidfreshsquad.poly2023.ScreenExplore.thoi_tiet;
 import com.droidfreshsquad.poly2023.ScreenMainActivity;
 import com.droidfreshsquad.poly2023.datve.BookingActivity;
@@ -39,13 +44,18 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import pl.droidsonroids.gif.GifImageView;
 
 public class HomeFragment extends Fragment {
     private RecyclerView recyclerViewExploreList;
     private RecyclerView.Adapter adapter;
     private LinearLayout lnlSearch;
-    private ImageView danhgia,vemaybay,thoitiet;
+    ImageView btnquay;
+    private ImageView danhgia,vemaybay,thoitiet,imgvhl, imghoian, imghue;
+
     DatabaseReference mDatabase;
+    private GifImageView gifImageView;
+
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -66,6 +76,7 @@ public class HomeFragment extends Fragment {
     }
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_screen_main, container, false);
@@ -83,10 +94,18 @@ public class HomeFragment extends Fragment {
         adapter = new ExploreAdapter(explore);
         recyclerViewExploreList.setAdapter(adapter);
 
+        gifImageView = view.findViewById(R.id.gifImageView);
         lnlSearch = view.findViewById(R.id.lnlSearch);
         danhgia = (ImageView) view.findViewById(R.id.danhgia);
         vemaybay = (ImageView) view.findViewById(R.id.vemaybay);
         thoitiet = (ImageView) view.findViewById(R.id.thoitiet);
+//-------------------------------------
+        gifImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), com.droidfreshsquad.poly2023.datve.SpinWheelActivity.class));
+            }
+        });
 //----------------------------------------------
         danhgia.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,7 +166,28 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(getActivity(), thoi_tiet.class));
             }
         });
+        imgvhl = (ImageView) view.findViewById(R.id.imgvhl);
+        imghoian = (ImageView) view.findViewById(R.id.imghoian);
+        imghue = (ImageView) view.findViewById(R.id.imghue);
 
+        imgvhl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ScreenVinhHaLong.class));
+            }
+        });
+        imghoian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ScreenHoiAn.class));
+            }
+        });
+        imghue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ScreenHue.class));
+            }
+        });
         return view;
     }
 

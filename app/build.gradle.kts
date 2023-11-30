@@ -38,6 +38,8 @@ android {
 }
 
 dependencies {
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.22")
+    implementation ("com.squareup.okhttp3:okhttp:4.6.0")
     implementation ("com.sun.mail:android-mail:1.6.2")
     implementation ("com.sun.mail:android-activation:1.6.2")
     implementation ("com.google.android.gms:play-services-wallet:19.2.1")
@@ -50,6 +52,9 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel:2.5.0")
     implementation ("com.github.bumptech.glide:glide:4.12.0")
     implementation("com.google.firebase:firebase-perf:20.5.1")
+    implementation(files("D:\\RestoManager\\zpdk-release-v3.1.aar"))
+
+
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
     implementation("com.squareup.retrofit2:retrofit:2.0.0")
     implementation("com.squareup.retrofit2:converter-gson:2.0.0")

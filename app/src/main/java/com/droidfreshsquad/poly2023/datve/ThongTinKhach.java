@@ -7,8 +7,31 @@ public class ThongTinKhach implements Parcelable {
 
     public String ten;
     public String ngaySinh;
+    public String id;
+    public long thoiGianThanhToan;
+    public boolean isClicked;
+
+    public boolean isClicked() {
+        return isClicked;
+    }
 
 
+
+    public long getThoiGianThanhToan() {
+        return thoiGianThanhToan;
+    }
+
+    public void setThoiGianThanhToan(long thoiGianThanhToan) {
+        this.thoiGianThanhToan = thoiGianThanhToan;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public ThongTinKhach(String ten, String ngaySinh, String emailValue, String phoneValue, int tongGiaTien, String diemDi, String diemDen, String gio1, String gio2, String ngay, String san1, String san2, String ari1) {
     }

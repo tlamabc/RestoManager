@@ -6,7 +6,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <queries>
+        <package android:name="vn.com.vng.zalopay" />
+        <package android:name="vn.com.vng.zalopay.sbmc" />
+    </queries>
     <meta-data
         android:name="com.google.android.gms.wallet.api.enabled"
         android:value="true" />
@@ -26,14 +29,17 @@
         <activity
             android:name=".ScreenExplore.ScreenHue"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.ScreenPhuQuoc"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.ChuyentrangActivity"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.thoi_tiet"
@@ -41,6 +47,7 @@
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".HoSo.danhgia"
+            android:windowSoftInputMode="adjustPan"
             android:exported="false"
             android:theme="@style/MyAppTheme"/>
         <activity android:name=".VdCallActivity"
@@ -66,56 +73,77 @@
         <activity
             android:name=".HoSo.BaoCao"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".HoSo.DieuKhoan"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".HoSo.Danh_Gia"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".Fragment.FragmentMain"
             android:exported="false"
-            android:theme="@style/MyAppTheme"/>
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/MyAppTheme">
+
+        </activity>
         <activity
             android:name=".Fragment.EmailSender"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".datve.ThongTinThanhToan"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".datve.DanhSachBay"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenMainActivity"
             android:exported="true"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".datve.Ngay_thang_nam"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".datve.khuhoi"
             android:exported="true"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true"
+            android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize"
             android:theme="@style/MyAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="demozpdk"
+                    android:host="app" />
             </intent-filter>
         </activity>
         <activity
@@ -131,10 +159,22 @@
         <activity
             android:name=".ResetPasswordActivity"
             android:label="Reset Password"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.ScreenSaigon"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/MyAppTheme"/>
+        <activity
+            android:name=".ScreenExplore.ScreenVinhHaLong"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/MyAppTheme"/>
+        <activity
+            android:name=".ScreenExplore.ScreenHoiAn"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
         <activity
             android:name=".ScreenExplore.ScreenHanoi"
@@ -143,6 +183,16 @@
         <activity
             android:name=".ScreenExplore.ScreenDanang"
             android:exported="false"
+            android:theme="@style/MyAppTheme"/>
+        <activity
+            android:name=".datve.SpinWheelActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name=".HoSo.voucher"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/MyAppTheme"/>
     </application>
 

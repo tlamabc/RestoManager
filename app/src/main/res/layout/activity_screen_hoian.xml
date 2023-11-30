@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#112d6a"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Tham quan du lịch Hội An"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tham Quan Địa Điểm Du Lịch Hội An Nổi Tiếng"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ha4" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ha6" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ha0" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#000000"
+                    android:text="Bên cạnh một Đà Nẵng hiện đại năng động, một Hội An cổ kính mang một sắc màu độc đáo riêng đầy hấp dẫn. Dân du lịch chắc chắn không thể bỏ qua danh sách địa điểm nổi tiếng Hội An dưới đây bởi các địa danh này được coi như là linh hồn của thành phố cổ. Nhưng đến Hội An đi đâu chơi gì đôi khi vẫn còn là một câu hỏi cho những ai lần đầu mới đến. Danh sách địa điểm nổi tiếng Hội An dưới đây sẽ bật mí cho bạn những điểm tham quan được coi như là linh hồn của phố cổ này"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Còn bây giờ các địa điểm du lịch Hội AN nổi tiếng nhé!"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text=".1. Chùa Cầu"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ha1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chùa Cầu là ngôi chùa được coi như là biểu tượng của Hội An - một biểu tượng đã được nhà nước in lên đồng tiền 200.000 VND. Chiếc cầu do các thương nhân Nhật Bản chung sức xây dựng vào đầu thế kỷ 17 nên đôi khi nó còn có tên gọi khác là “cầu Nhật Bản”. Cầu làm bằng gỗ trên những trụ đá dài 18m, có mái che cong cong vắt qua lạch nước chảy ra sông Thu Bồn."/>
+
+
+                    "/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="2. Rừng dừa Bảy Mẫu"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ha2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rừng dừa Bảy Mẫu hay còn có tên gọi khác là rừng dừa Cẩm Thanh, là một trong những địa điểm du lịch ở Hội An không chỉ thu hút khách du lịch trong nước mà còn quốc tế nữa. Sở dĩ nơi đây được gọi như vậy là bởi khu rừng này có tổng diện tích lúc khởi nguyên là 7 mẫu, cây dừa phát triển tự do"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="3. Cù Lao Chàm"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ha3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cù Lao Chàm là một cụm đảo nằm cách bờ biển Cửa Đại khoảng 16km, bao gồm 8 đảo lớn là: Hòn Lao (lớn nhất), Hòn Khô Mẹ, Hòn Khô Con, Hòn Lá, Hòn Dài, Hòn Mồ, Hòn Tai, Hòn Ông. Với hơn 500 loài lâm sản quý hiếm, 135 loài san hô thuộc 35 giống khác nhau cùng với nhiều loài động vật trong sách đỏ thì vào năm 2009, Cù Lao Chàm vinh hạnh được UNESCO công nhận là khu dự trữ sinh quyển thế giới."/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

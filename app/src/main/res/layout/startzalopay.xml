@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#112d6a"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Thanh toán với ZaloPay"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:src="@drawable/zalooo"
+                        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                      />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Easy Fly to ZaloPay"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:text="     Từ những ý tưởng sáng tạo của những chàng sinh viên FPT Polytechnic, ứng dụng mua vé máy bay Easy Fly đã ra đời.\n
+     Easy Fly là một ứng dụng di động được phát triển bởi nhóm DroidFresh Sixz, bao gồm 6 thành viên là sinh viên của trường FPT Polytechnic. Ứng dụng này được thiết kế nhằm mục đích giúp người dùng dễ dàng mua vé máy bay trực tuyến, với nhiều tiện ích và ưu đãi hấp dẫn.\n
+     Một trong những điểm nổi bật của Easy Fly là tính năng thanh toán đa dạng. Người dùng có thể thanh toán bằng tiền mặt, hoặc ví điện tử ZaloPay. Trong đó, tính năng thanh toán bằng ZaloPay Sandbox là một tính năng thử nghiệm của Easy Fly.\n
+
+     ZaloPay Sandbox là một môi trường thử nghiệm của ZaloPay, cho phép các nhà phát triển ứng dụng thử nghiệm các tính năng thanh toán của ZaloPay. Tính năng này giúp các nhà phát triển ứng dụng có thể kiểm tra tính năng thanh toán của ứng dụng một cách chính xác và hiệu quả trước khi hoạt động chính thức.\n
+     Việc tích hợp tính năng thanh toán bằng ZaloPay Sandbox vào Easy Fly đã giúp ứng dụng này trở nên tiện lợi và dễ sử dụng hơn cho người dùng. Người dùng có thể dễ dàng mua vé máy bay mà không cần phải lo lắng về vấn đề thanh toán.\n
+\n
+\n
+\n
+\n
+
+
+
+"
+                    android:textSize="17dp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/style_button"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+                    <Button
+                        android:id="@+id/btnPayy"
+                        android:layout_width="368dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_button"
+                        android:text="ĐỒNG Ý VÀ TIẾP TỤC"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_list.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#f7f7f7"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="8dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal">
+      <LinearLayout
+          android:background="#112d6a"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:orientation="vertical">
+          <TextView
+              android:gravity="center"
+              android:background="#FF0000"
+              android:textColor="@color/btn_login_bg"
+              android:text="Mới"
+              android:layout_width="50dp"
+              android:layout_height="wrap_content"/>
+          <TextView
+              android:textStyle="bold"
+              android:layout_gravity="center"
+              android:textSize="30dp"
+              android:textColor="#FFFFFF"
+              android:text="10%"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+          <TextView
+              android:textColor="@color/btn_login_bg"
+              android:layout_margin="5dp"
+              android:layout_gravity="center"
+              android:text="Giảm trên tổng số vé"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+      </LinearLayout>
+      <LinearLayout
+          android:gravity="center_vertical"
+          android:paddingLeft="15dp"
+          android:layout_weight="0.7"
+          android:background="#FFFFFF"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:orientation="vertical">
+          <TextView
+              android:textStyle="bold"
+              android:textSize="26dp"
+              android:textColor="#112d6a"
+              android:text="EasyFly"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <TextView
+                  android:textStyle="bold"
+                  android:textColor="@color/cardview_dark_background"
+                  android:text="Mã: "
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+              <TextView
+                  android:textStyle="bold"
+                  android:text="hhs89"
+                  android:textColor="@color/btn_logut_bg"
+                  android:id="@+id/textViewItem"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="18sp" />
+
+          </LinearLayout>
+          <TextView
+              android:textColor="@color/cardview_dark_background"
+              android:text="Dùng 1 lần duy nhất"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+      </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

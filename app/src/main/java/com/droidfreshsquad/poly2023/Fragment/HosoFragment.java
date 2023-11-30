@@ -18,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.droidfreshsquad.poly2023.HoSo.BaoCao;
 import com.droidfreshsquad.poly2023.HoSo.Danh_Gia;
 import com.droidfreshsquad.poly2023.HoSo.DieuKhoan;
+import com.droidfreshsquad.poly2023.HoSo.voucher;
 import com.droidfreshsquad.poly2023.LoginActivity;
 import com.droidfreshsquad.poly2023.R;
 
@@ -72,6 +73,7 @@ public class HosoFragment extends Fragment {
         ConstraintLayout danhgia = view.findViewById(R.id.danhgia);
         ConstraintLayout dieukhoan = view.findViewById(R.id.dieukhoan);
         ConstraintLayout baocao = view.findViewById(R.id.baocao);
+        ConstraintLayout voucher = view.findViewById(R.id.voucher);
         txtName = view.findViewById(R.id.textView5);
         imgAvatar = view.findViewById(R.id.avatarView);
 
@@ -90,6 +92,13 @@ public class HosoFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), DieuKhoan.class);
+                startActivity(intent);
+            }
+        });
+        voucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), com.droidfreshsquad.poly2023.HoSo.voucher.class);
                 startActivity(intent);
             }
         });

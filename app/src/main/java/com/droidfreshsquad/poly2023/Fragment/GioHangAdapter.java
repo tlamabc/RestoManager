@@ -1,12 +1,16 @@
 package com.droidfreshsquad.poly2023.Fragment;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.droidfreshsquad.poly2023.Helper.CreateOrder;
 import com.droidfreshsquad.poly2023.R;
+import com.droidfreshsquad.poly2023.Zalo;
 import com.droidfreshsquad.poly2023.datve.SaveNumber.DestinationData;
 import com.droidfreshsquad.poly2023.datve.ThongTinKhach;
 import com.google.gson.Gson;
@@ -44,7 +48,7 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
         DestinationData destinationData = DestinationData.getInstance();
         destinationData.setDiemDi(gioHangItem.getDiemDi());
         destinationData.setDiemDen(gioHangItem.getDiemDen());
-            holder.textViewProductName.setText(gioHangItem.ten);
+        holder.textViewProductName.setText(gioHangItem.ten);
         holder.email.setText(gioHangItem.email);
         holder.diemdi.setText(gioHangItem.diemDi);
         holder.diemden.setText(gioHangItem.diemDen);

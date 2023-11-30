@@ -620,8 +620,10 @@ attr foregroundInsidePadding
 attr fragmentMode
 attr fragmentStyle
 attr framePosition
+attr freezesAnimation
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
+attr gifSource
 attr goIcon
 attr guidelineUseRtl
 attr haloColor
@@ -677,6 +679,7 @@ attr isLightTheme
 attr isMaterial3DynamicColorApplied
 attr isMaterial3Theme
 attr isMaterialTheme
+attr isOpaque
 attr itemActiveIndicatorStyle
 attr itemBackground
 attr itemFillColor
@@ -819,6 +822,7 @@ attr logo
 attr logoAdjustViewBounds
 attr logoDescription
 attr logoScaleType
+attr loopCount
 attr mapId
 attr mapType
 attr marginHorizontal
@@ -3144,6 +3148,7 @@ drawable duong_vien_gach_duoi
 drawable edit_text
 drawable edit_text_bg
 drawable edittext
+drawable edtmagiamgia
 drawable explore1_background
 drawable explore2
 drawable eye
@@ -3152,8 +3157,24 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gpay_logo_generic_dark
 drawable gpay_logo_generic_light
+drawable ha0
+drawable ha1
+drawable ha2
+drawable ha3
+drawable ha4
+drawable ha5
+drawable ha6
+drawable ha7
 drawable hangbay
 drawable heart
+drawable hl1
+drawable hl11
+drawable hl17
+drawable hl2
+drawable hl3
+drawable hl4
+drawable hl5
+drawable hl6
 drawable hoian
 drawable home
 drawable home_icon
@@ -3192,6 +3213,7 @@ drawable icon_msg
 drawable icon_star
 drawable icon_thongbao
 drawable icon_zalo
+drawable icon_zalopau
 drawable icons8_avatar
 drawable icons8_back
 drawable icons8_card
@@ -3201,10 +3223,12 @@ drawable icons8_danhgia_dark
 drawable icons8_error
 drawable icons8_gach
 drawable icons8_giamgia
+drawable icons8_gift
 drawable icons8_hacanh
 drawable icons8_lich
 drawable icons8_like
 drawable icons8_logout
+drawable icons8_muitenquay
 drawable icons8_nguoi
 drawable icons8_password
 drawable icons8_purchase
@@ -3334,6 +3358,8 @@ drawable phuquoc3
 drawable phuquoc4
 drawable phuquoc5
 drawable phuuquoc1
+drawable quay
+drawable quaylala
 drawable radius_1000dp
 drawable remove_icon
 drawable rounded_corner
@@ -3371,6 +3397,7 @@ drawable vinhhajlong
 drawable xao
 drawable xo
 drawable xzxz
+drawable zalooo
 drawable zego_uikit_bg_button
 drawable zego_uikit_bg_stop_share_button
 drawable zego_uikit_chat_round_rect_recv
@@ -3569,6 +3596,7 @@ id browser_actions_menu_view
 id btnMinusEmBe
 id btnMinusLon
 id btnMinusTreEm
+id btnPayy
 id btnPlusEmBe
 id btnPlusLon
 id btnPlusTreEm
@@ -3580,8 +3608,9 @@ id btn_signup
 id btndatve
 id btnko
 id button
-id buttonCheckout
+id buttonOpenSpinWheel
 id buttonPanel
+id buttonSpin
 id buyButton
 id buy_now
 id buy_with
@@ -3605,7 +3634,6 @@ id cardView
 id carryVelocity
 id categoryName
 id categoryPic
-id cc
 id center
 id centerCrop
 id centerInside
@@ -3700,6 +3728,7 @@ id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
+id discountCodeEditText
 id disjoint
 id donate_with
 id donate_with_google
@@ -3766,6 +3795,7 @@ id full_view_parent
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id gifImageView
 id gio1
 id gio11
 id gio2
@@ -3810,6 +3840,8 @@ id image4
 id image44
 id image5
 id image55
+id imageSpinWheel
+id imageView
 id imageView2
 id imageView3
 id imageView3_1
@@ -3824,6 +3856,9 @@ id imageView5
 id imageView6
 id imageView7
 id imgBack
+id imghoian
+id imghue
+id imgvhl
 id immediateStop
 id included
 id indeterminate
@@ -3850,8 +3885,10 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id linearLayout1
 id listMode
+id listViewCodes
 id listViewDanhSachBay
 id list_item
 id lnVetrangchu
@@ -3965,6 +4002,7 @@ id ngay2
 id ngaydii
 id ngaydii2
 id ngaysinh
+id ngaysinhView
 id ngaysinhh
 id noScroll
 id noState
@@ -4050,6 +4088,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id sdtt
 id searchButton
@@ -4160,6 +4199,7 @@ id textTop
 id textView3
 id textView4
 id textView5
+id textViewItem
 id textViewProductName
 id text_input_end_icon
 id text_input_error_icon
@@ -4231,6 +4271,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id voice_call_btn
+id voucher
 id webview
 id west
 id wide
@@ -4243,6 +4284,7 @@ id wrap_content_constrained
 id x_left
 id x_right
 id zalo
+id zalopay
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -4366,10 +4408,12 @@ layout activity_main
 layout activity_reset_password
 layout activity_screen_danang
 layout activity_screen_hanoi
+layout activity_screen_hoian
 layout activity_screen_hue
 layout activity_screen_main
 layout activity_screen_phuquoc
 layout activity_screen_saigon
+layout activity_screen_vinhhalong
 layout activity_thoi_tiet
 layout activity_vd_call
 layout bao_cao
@@ -4413,6 +4457,7 @@ layout hanhly_activity
 layout item_danhsachve
 layout item_gio_hang
 layout item_tt
+layout item_voucher
 layout khuhoi
 layout loginapp
 layout m3_alert_dialog
@@ -4483,6 +4528,8 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout signupapp
+layout spin_wheel_layout
+layout startzalopay
 layout support_simple_spinner_dropdown_item
 layout testfigma
 layout thong_tin_thanh_toan
@@ -4490,6 +4537,7 @@ layout ticket_item
 layout tieu_de
 layout viewhodel_category
 layout viewhodel_explore
+layout voucher
 layout wallet_test_layout
 layout zego_uikit_item_fixed_more
 layout zego_uikit_item_inroom_chat
@@ -5944,6 +5992,8 @@ styleable FontFamilyFont android_font android_fontWeight android_fontStyle andro
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
+styleable GifTextureView gifSource isOpaque
+styleable GifView freezesAnimation loopCount
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc blendSrc brightness contrast crossfade imagePanX imagePanY imageRotate imageZoom overlay round roundPercent saturation warmth

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-3:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-46:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\3f0bee673dd301dd5fa353fb2a75ddd0\\transformed\\material-1.9.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\3f0bee673dd301dd5fa353fb2a75ddd0\\transformed\\material-1.9.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
