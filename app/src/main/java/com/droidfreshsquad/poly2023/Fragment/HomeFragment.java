@@ -1,20 +1,11 @@
 package com.droidfreshsquad.poly2023.Fragment;
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -26,14 +17,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.droidfreshsquad.poly2023.Adapter.ExploreAdapter;
 import com.droidfreshsquad.poly2023.Domain.ExploreDomain;
-import com.droidfreshsquad.poly2023.HoSo.Danh_Gia;
-import com.droidfreshsquad.poly2023.HoSo.danhgia;
+import com.droidfreshsquad.poly2023.HoSo.Danhgia;
 import com.droidfreshsquad.poly2023.R;
 import com.droidfreshsquad.poly2023.ScreenExplore.ScreenHoiAn;
 import com.droidfreshsquad.poly2023.ScreenExplore.ScreenHue;
 import com.droidfreshsquad.poly2023.ScreenExplore.ScreenVinhHaLong;
 import com.droidfreshsquad.poly2023.ScreenExplore.thoi_tiet;
-import com.droidfreshsquad.poly2023.ScreenMainActivity;
 import com.droidfreshsquad.poly2023.datve.BookingActivity;
 import com.droidfreshsquad.poly2023.datve.DanhSachBay;
 import com.droidfreshsquad.poly2023.datve.Ticket;
@@ -110,7 +99,7 @@ public class HomeFragment extends Fragment {
         danhgia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), com.droidfreshsquad.poly2023.HoSo.danhgia.class));
+                startActivity(new Intent(getActivity(), Danhgia.class));
             }
         });
 //------------------------------------------

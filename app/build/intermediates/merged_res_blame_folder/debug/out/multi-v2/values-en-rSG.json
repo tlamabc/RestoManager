@@ -4,7 +4,7 @@
             "outputFile": "com.droidfreshsquad.poly2023.app-mergeDebugResources-46:/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dangt\\.gradle\\caches\\transforms-3\\4e791fdb27d989eca63c067eec6c1050\\transformed\\play-services-wallet-19.2.1\\res\\values-en-rSG\\values.xml",
+                    "source": "C:\\Users\\84329\\.gradle\\caches\\transforms-3\\4e791fdb27d989eca63c067eec6c1050\\transformed\\play-services-wallet-19.2.1\\res\\values-en-rSG\\values.xml",
                     "from": {
                         "startLines": "4,5",
                         "startColumns": "0,0",

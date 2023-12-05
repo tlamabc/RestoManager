@@ -1428,6 +1428,8 @@ color btn_login_bg
 color btn_logut_bg
 color button_material_dark
 color button_material_light
+color call_notification_answer_color
+color call_notification_decline_color
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -3198,6 +3200,12 @@ drawable huu11
 drawable huu12
 drawable huu78
 drawable ic_arrow_back_black_24
+drawable ic_call_answer
+drawable ic_call_answer_low
+drawable ic_call_answer_video
+drawable ic_call_answer_video_low
+drawable ic_call_decline
+drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -3333,6 +3341,7 @@ drawable notification_bg_low_pressed
 drawable notification_bg_normal
 drawable notification_bg_normal_pressed
 drawable notification_icon_background
+drawable notification_oversize_large_icon_bg
 drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
@@ -3750,8 +3759,10 @@ id easeOut
 id east
 id edge
 id editText
+id editTextdanhgia
 id edit_message_input
 id edit_query
+id edit_text_id
 id edtthoigian
 id eesyfly
 id elastic
@@ -3818,6 +3829,7 @@ id grouping
 id groups
 id hangbayy
 id header_title
+id hide_ime_id
 id hideable
 id holo_dark
 id holo_light
@@ -4458,6 +4470,8 @@ layout fragment_home
 layout fragment_hoso
 layout fragment_lien_he
 layout hanhly_activity
+layout ime_base_split_test_activity
+layout ime_secondary_split_test_activity
 layout item_danhsachve
 layout item_gio_hang
 layout item_tt
@@ -4621,6 +4635,13 @@ string call_leave_confirm
 string call_leave_message
 string call_leave_title
 string call_memberlist_title
+string call_notification_answer_action
+string call_notification_answer_video_action
+string call_notification_decline_action
+string call_notification_hang_up_action
+string call_notification_incoming_text
+string call_notification_ongoing_text
+string call_notification_screening_text
 string call_ok
 string call_page_action_accept
 string call_page_action_decline

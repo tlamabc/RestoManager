@@ -16,9 +16,8 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.droidfreshsquad.poly2023.HoSo.BaoCao;
-import com.droidfreshsquad.poly2023.HoSo.Danh_Gia;
+import com.droidfreshsquad.poly2023.HoSo.Danhgia;
 import com.droidfreshsquad.poly2023.HoSo.DieuKhoan;
-import com.droidfreshsquad.poly2023.HoSo.voucher;
 import com.droidfreshsquad.poly2023.LoginActivity;
 import com.droidfreshsquad.poly2023.R;
 
@@ -123,9 +122,8 @@ public class HosoFragment extends Fragment {
         danhgia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Danh_Gia dialog = new Danh_Gia(HosoFragment.this);
-                dialog.handleDialogEvents();
-                dialog.show();
+                Intent intent = new Intent(getActivity(), Danhgia.class);
+                startActivity(intent);
             }
         });
 // Lấy phiên bản từ BuildConfig và hiển thị nó trên TextView

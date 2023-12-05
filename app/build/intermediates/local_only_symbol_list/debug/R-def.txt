@@ -295,6 +295,7 @@ id diemdi
 id dieukhoan
 id discountCodeEditText
 id editText
+id editTextdanhgia
 id edtthoigian
 id eesyfly
 id email

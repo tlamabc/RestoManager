@@ -96,7 +96,7 @@
             android:exported="false"
             android:theme="@style/MyAppTheme" />
         <activity
-            android:name="com.droidfreshsquad.poly2023.HoSo.danhgia"
+            android:name="com.droidfreshsquad.poly2023.HoSo.Danhgia"
             android:exported="false"
             android:theme="@style/MyAppTheme"
             android:windowSoftInputMode="adjustPan" />
