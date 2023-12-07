@@ -59,7 +59,7 @@ public class DanhSachBay extends AppCompatActivity {
             }
         });
         TextView title = customView.findViewById(R.id.toolbar_title);
-        title.setText("Danh sách bay");
+        title.setText("Danh sách vé");
         toolbar.addView(customView);
         //thanh tiêu đề
 

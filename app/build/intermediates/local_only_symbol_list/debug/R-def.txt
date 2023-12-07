@@ -29,6 +29,7 @@ dimen fab_margin
 dimen logo_w_h
 drawable add
 drawable anhlienhe
+drawable arrow_down
 drawable arrow_icon
 drawable back_icon
 drawable backarrow
@@ -40,7 +41,9 @@ drawable bgr_bottomappbar
 drawable bgr_hanhkhach
 drawable bgr_line
 drawable bgr_spinlucky
+drawable boder_dialoghangghe
 drawable boder_goi
+drawable boder_hangghe
 drawable boder_lienhe
 drawable boder_logochinh
 drawable boder_seach
@@ -74,6 +77,7 @@ drawable edtmagiamgia
 drawable explore1_background
 drawable explore2
 drawable eye
+drawable gheic
 drawable giu
 drawable ha0
 drawable ha1
@@ -170,6 +174,7 @@ drawable logoeasyfly
 drawable logomanchinh
 drawable logosua
 drawable modanbgr
+drawable muitenxuong
 drawable pencil
 drawable phone_icon
 drawable phucquoc6
@@ -256,6 +261,7 @@ id baocao4
 id baocao5
 id baocao6
 id baocao7
+id baocaoo
 id btnMinusEmBe
 id btnMinusLon
 id btnMinusTreEm
@@ -271,6 +277,7 @@ id btn_signup
 id btndatve
 id btnko
 id button
+id buttonChooseSeat
 id buttonOpenSpinWheel
 id buttonSpin
 id callok
@@ -290,10 +297,11 @@ id dateTextView
 id dateTextView2
 id den
 id di
+id dialogTitle
 id diemden
 id diemdi
 id dieukhoan
-id discountCodeEditText
+id discountCode
 id editText
 id editTextdanhgia
 id edtthoigian
@@ -305,6 +313,7 @@ id exploreName1
 id explorePic
 id fragment_container
 id framelayout
+id ghe
 id gifImageView
 id gio1
 id gio11
@@ -397,6 +406,8 @@ id scheduledTextView2
 id scrollView2
 id sdtt
 id searchButton
+id seatListView
+id seatNumberTextView
 id send
 id sending_pass_reset_button
 id sign_in_button
@@ -466,6 +477,7 @@ layout activity_vd_call
 layout bao_cao
 layout danh_sach_bay
 layout dialog_danh_gia
+layout dialog_hangghe
 layout dialog_so_nguoi
 layout dialog_thongtinkhach
 layout dieu_khoan_ung_dung

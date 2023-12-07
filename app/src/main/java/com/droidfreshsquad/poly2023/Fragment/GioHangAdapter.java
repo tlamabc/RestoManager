@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,11 +22,12 @@ import java.util.Map;
 public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHolder> {
 
     private List<ThongTinKhach> gioHangItemList;
-
+    private double totalAmount;
 
 
     public GioHangAdapter(List<ThongTinKhach> gioHangItemList) {
         this.gioHangItemList = gioHangItemList;
+       // calculateTotalAmount();
     }
     public GioHangAdapter(String json) {
         Gson gson = new Gson();
@@ -48,6 +50,7 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
         DestinationData destinationData = DestinationData.getInstance();
         destinationData.setDiemDi(gioHangItem.getDiemDi());
         destinationData.setDiemDen(gioHangItem.getDiemDen());
+        holder.ghe.setText(gioHangItem.selectedSeat);
         holder.textViewProductName.setText(gioHangItem.ten);
         holder.email.setText(gioHangItem.email);
         holder.diemdi.setText(gioHangItem.diemDi);
@@ -63,11 +66,28 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
         holder.san1.setText(gioHangItem.san2);
         holder.san2.setText(gioHangItem.san1);
         holder.timebay.setText(gioHangItem.timebay);
+        holder.itemView.setSelected(gioHangItem.isSelected());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gioHangItem.setSelected(!gioHangItem.isSelected());
+                notifyDataSetChanged(); // Update the UI to reflect the changes
+                calculateTotalAmount(); // Recalculate the total amount
+            }
+        });
 
 
 
     }
-
+    private void calculateTotalAmount() {
+        totalAmount = 0.0;
+        for (ThongTinKhach gioHangItem : gioHangItemList) {
+            if (gioHangItem.isSelected()) {
+                totalAmount += gioHangItem.getTien();
+            }
+        }
+    }
 
 
     @Override
@@ -76,13 +96,14 @@ public class GioHangAdapter extends RecyclerView.Adapter<GioHangAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView textViewProductName, email,tongtien,diemdi,diemden,ngaysinhh,ngaydii2, gio11,gio22,san1,san2, ngaydii, sdtt,hangbayy,timebay;
-
+        public TextView textViewProductName,ghe, email,tongtien,diemdi,diemden,ngaysinhh,ngaydii2, gio11,gio22,san1,san2, ngaydii, sdtt,hangbayy,timebay;
+        public CheckBox checkbox;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewProductName = itemView.findViewById(R.id.textViewProductName);
             email = itemView.findViewById(R.id.email);
+            ghe = itemView.findViewById(R.id.ghe);
             tongtien = itemView.findViewById(R.id.tongtien) ;
             diemdi = itemView.findViewById(R.id.diemdi) ;
             diemden = itemView.findViewById(R.id.diemden) ;

@@ -156,7 +156,6 @@ public class Danhgia extends AppCompatActivity {
             public void onClick(View view) {
                 int rating = calculateRating();
                 String danhgia = ((EditText) findViewById(R.id.editTextdanhgia)).getText().toString();
-
                 String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail();
                 String danhgiaId = mDatabase.child("danh_gia").push().getKey();
                 DatabaseReference userRef = mDatabase.child(danhgiaId);
@@ -165,6 +164,7 @@ public class Danhgia extends AppCompatActivity {
                 userRef.child("Sao").setValue(rating);
                 userRef.child("DanhGia").setValue(danhgia)
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
+
                             @Override
                             public void onSuccess(Void aVoid) {
                                 // Data has been written successfully, now read it

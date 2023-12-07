@@ -41,7 +41,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -54,7 +53,9 @@
                     android:text="Nhac Nguyuenx"
                     android:textSize="16dp"
                     android:textStyle="bold" />
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -323,6 +324,38 @@
                 android:text="1h40"
                 android:textSize="18dp"
                 android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gheic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Loại ghế: "
+
+              />
+
+            <TextView
+                android:id="@+id/ghe"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:text="random"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="wrap_content" />
+
+
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

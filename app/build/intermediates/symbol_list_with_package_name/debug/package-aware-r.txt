@@ -1327,6 +1327,7 @@ attr triggerId
 attr triggerReceiver
 attr triggerSlack
 attr ttcIndex
+attr type
 attr uiCompass
 attr uiMapToolbar
 attr uiRotateGestures
@@ -1372,7 +1373,6 @@ attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
 attr zOrderOnTop
-attr zego_uikit_type
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
@@ -1428,8 +1428,6 @@ color btn_login_bg
 color btn_logut_bg
 color button_material_dark
 color button_material_light
-color call_notification_answer_color
-color call_notification_decline_color
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -1496,6 +1494,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color im_background_color
 color input_login
 color input_login_hint
 color input_register
@@ -2145,6 +2144,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color purple_dark
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -2157,6 +2157,8 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color teal
+color teal2
 color tooltip_background_dark
 color tooltip_background_light
 color wallet_bright_foreground_disabled_holo_light
@@ -2174,10 +2176,6 @@ color wallet_primary_text_holo_light
 color wallet_secondary_text_holo_dark
 color white
 color yellow
-color zego_uikit_im_background_color
-color zego_uikit_purple_dark
-color zego_uikit_teal
-color zego_uikit_teal2
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -3044,6 +3042,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
 drawable anhlienhe
+drawable arrow_down
 drawable arrow_icon
 drawable avd_hide_password
 drawable avd_show_password
@@ -3057,7 +3056,9 @@ drawable bgr_bottomappbar
 drawable bgr_hanhkhach
 drawable bgr_line
 drawable bgr_spinlucky
+drawable boder_dialoghangghe
 drawable boder_goi
+drawable boder_hangghe
 drawable boder_lienhe
 drawable boder_logochinh
 drawable boder_seach
@@ -3156,6 +3157,7 @@ drawable edtmagiamgia
 drawable explore1_background
 drawable explore2
 drawable eye
+drawable gheic
 drawable giu
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -3200,12 +3202,6 @@ drawable huu11
 drawable huu12
 drawable huu78
 drawable ic_arrow_back_black_24
-drawable ic_call_answer
-drawable ic_call_answer_low
-drawable ic_call_answer_video
-drawable ic_call_answer_video_low
-drawable ic_call_decline
-drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -3332,6 +3328,7 @@ drawable mtrl_switch_thumb_unchecked_pressed
 drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
+drawable muitenxuong
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -3341,7 +3338,6 @@ drawable notification_bg_low_pressed
 drawable notification_bg_normal
 drawable notification_bg_normal_pressed
 drawable notification_icon_background
-drawable notification_oversize_large_icon_bg
 drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
@@ -3587,6 +3583,7 @@ id baocao4
 id baocao5
 id baocao6
 id baocao7
+id baocaoo
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3620,6 +3617,7 @@ id btn_signup
 id btndatve
 id btnko
 id button
+id buttonChooseSeat
 id buttonOpenSpinWheel
 id buttonPanel
 id buttonSpin
@@ -3723,6 +3721,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id di
+id dialogTitle
 id dialog_button
 id dialog_call_accept
 id dialog_call_custom_icon
@@ -3740,7 +3739,7 @@ id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
-id discountCodeEditText
+id discountCode
 id disjoint
 id donate_with
 id donate_with_google
@@ -3762,7 +3761,6 @@ id editText
 id editTextdanhgia
 id edit_message_input
 id edit_query
-id edit_text_id
 id edtthoigian
 id eesyfly
 id elastic
@@ -3807,6 +3805,7 @@ id framelayout
 id frost
 id full_view_parent
 id fullscreen_header
+id ghe
 id ghost_view
 id ghost_view_holder
 id gifImageView
@@ -3829,7 +3828,6 @@ id grouping
 id groups
 id hangbayy
 id header_title
-id hide_ime_id
 id hideable
 id holo_dark
 id holo_light
@@ -4131,6 +4129,8 @@ id search_view_status_bar_spacer
 id search_view_toolbar
 id search_view_toolbar_container
 id search_voice_btn
+id seatListView
+id seatNumberTextView
 id select_dialog_listview
 id selected
 id selectionDetails
@@ -4462,6 +4462,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_danh_gia
+layout dialog_hangghe
 layout dialog_so_nguoi
 layout dialog_thongtinkhach
 layout dieu_khoan_ung_dung
@@ -4470,8 +4471,6 @@ layout fragment_home
 layout fragment_hoso
 layout fragment_lien_he
 layout hanhly_activity
-layout ime_base_split_test_activity
-layout ime_secondary_split_test_activity
 layout item_danhsachve
 layout item_gio_hang
 layout item_tt
@@ -4635,13 +4634,6 @@ string call_leave_confirm
 string call_leave_message
 string call_leave_title
 string call_memberlist_title
-string call_notification_answer_action
-string call_notification_answer_video_action
-string call_notification_decline_action
-string call_notification_hang_up_action
-string call_notification_incoming_text
-string call_notification_ongoing_text
-string call_notification_screening_text
 string call_ok
 string call_page_action_accept
 string call_page_action_decline
@@ -6119,7 +6111,7 @@ styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable WalletFragmentOptions appTheme environment fragmentMode fragmentStyle
 styleable WalletFragmentStyle buyButtonAppearance buyButtonHeight buyButtonText buyButtonWidth maskedWalletDetailsBackground maskedWalletDetailsButtonBackground maskedWalletDetailsButtonTextAppearance maskedWalletDetailsHeaderTextAppearance maskedWalletDetailsLogoImageType maskedWalletDetailsLogoTextColor maskedWalletDetailsTextAppearance
-styleable ZegoStartInvitationButton zego_uikit_type
+styleable ZegoStartInvitationButton type
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules

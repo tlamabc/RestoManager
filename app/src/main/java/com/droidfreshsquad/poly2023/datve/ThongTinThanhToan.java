@@ -6,15 +6,21 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,6 +47,9 @@ public class ThongTinThanhToan extends AppCompatActivity {
     BottomSheetDialog dialog;
     LinearLayout LnThongtin;
     Button buttonOpenSpinWheel;
+    TextView seatNumberTextView;
+    Button discountCode;
+    ImageView buttonChooseSeat;
     int tien;
 
 
@@ -50,7 +59,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thong_tin_thanh_toan);
-//thanh tiêu đề
+        //thanh tiêu đề
         android.widget.Toolbar toolbar = findViewById(R.id.toolbar);
         setActionBar(toolbar);
         ActionBar actionBar = getActionBar();
@@ -65,8 +74,59 @@ public class ThongTinThanhToan extends AppCompatActivity {
             }
         });
         TextView title = customView.findViewById(R.id.toolbar_title);
-        title.setText("Tìm chuyến bay");
+        title.setText("Nhập thông tin");
         toolbar.addView(customView);
+        //thanh tiêu đề
+        seatNumberTextView = findViewById(R.id.seatNumberTextView);
+        buttonChooseSeat = findViewById(R.id.buttonChooseSeat);
+        buttonChooseSeat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showSeatNumberDialog();
+            }
+
+            private void showSeatNumberDialog() {
+                final String[] seatOptions = {"F1 - Hạng thương gia", "F2 - Hạng thường"};
+                // Inflate the custom layout
+                View dialogView = getLayoutInflater().inflate(R.layout.dialog_hangghe, null);
+
+                // Find views in the custom layout
+                TextView dialogTitle = dialogView.findViewById(R.id.dialogTitle);
+                ListView seatListView = dialogView.findViewById(R.id.seatListView);
+
+                // Set the title
+                dialogTitle.setText("Chọn loại ghế" );
+
+//                 Set up the adapter for the ListView
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(ThongTinThanhToan.this, android.R.layout.simple_list_item_1, seatOptions);
+
+                seatListView.setAdapter(adapter);
+
+                // Set up the AlertDialog with the custom layout
+                AlertDialog.Builder builder = new AlertDialog.Builder(ThongTinThanhToan.this);
+                builder.setView(dialogView);
+
+                // Create and show the AlertDialog
+                final AlertDialog alertDialog = builder.create();
+
+                // Set an item click listener for the ListView
+                seatListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        String selectedSeat = seatOptions[position];
+                        seatNumberTextView.setText("Chọn số ghế: " + selectedSeat);
+                        alertDialog.dismiss(); // Dismiss the dialog after an item is clicked
+                        // You can use 'selectedSeat' as needed (e.g., store it in your ThongTinKhach object)
+                    }
+                });
+                WindowManager.LayoutParams layoutParams = alertDialog.getWindow().getAttributes();
+                layoutParams.dimAmount = 0.6f; // Adjust the level of dimness here (0.0f - 1.0f)
+                alertDialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+                alertDialog.show();
+            }
+        });
+
+
 //thanh tiêu đề
         viewSokhach = findViewById(R.id.viewSokhach);
         phoneView = findViewById(R.id.phoneView);
@@ -74,7 +134,7 @@ public class ThongTinThanhToan extends AppCompatActivity {
         ngaysinhView = findViewById(R.id.ngaysinhView);
         LnThongtin = findViewById(R.id.LnThongtin);
         tieptuc = findViewById(R.id.tieptuc);
-        discountCodeEditText = findViewById(R.id.discountCodeEditText);
+        discountCode = findViewById(R.id.discountCode);
 
         buttonOpenSpinWheel = findViewById(R.id.buttonOpenSpinWheel);
 
@@ -171,23 +231,46 @@ public class ThongTinThanhToan extends AppCompatActivity {
         TongSoNguoiTextView.setText(formattedPric + "/vé");//in ra textview
 
 
+        discountCode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                showAllDiscountCodesDialog();
+            }
+
+            private void showAllDiscountCodesDialog() {
+                SharedPreferences preferences = getSharedPreferences("MyPrefss", MODE_PRIVATE);
+                int listSize = preferences.getInt("code_list_size", 0);
+                String[] discountCodesArray = new String[listSize];
+                for (int i = 0; i < listSize; i++) {
+                    discountCodesArray[i] = preferences.getString("code_" + i, "");
+                }
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(ThongTinThanhToan.this);
+                builder.setTitle("Chọn mã giảm giá");
+                builder.setItems(discountCodesArray, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String selectedCode = discountCodesArray[which];
+                        applyDiscountCode(selectedCode);
+                    }
+
+                    private void applyDiscountCode(String selectedCode) {
+                        Button editText = findViewById(R.id.discountCode);
+                        editText.setText(selectedCode);
+                    }
+                });
+
+                builder.show();
+            }
+        });
         buttonOpenSpinWheel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView editText = findViewById(R.id.discountCodeEditText);
                 // Hiển thị danh sách mã giảm giá khi người dùng bấm vào ô EditText
-                editText.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        showAllDiscountCodesDialog();
-                    }
-                });
-                String inputCode = editText.getText().toString();
 
-                if (inputCode.isEmpty()) {
-                    Toast.makeText(ThongTinThanhToan.this, "Vui lòng nhập mã để kiểm tra.", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+                String inputCode = discountCode.getText().toString();
+
 
                 SharedPreferences preferences = getSharedPreferences("MyPrefss", MODE_PRIVATE);
                 int listSize = preferences.getInt("code_list_size", 0);
@@ -231,33 +314,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
                 editor.apply();
             }
 
-            private void showAllDiscountCodesDialog() {
-                SharedPreferences preferences = getSharedPreferences("MyPrefss", MODE_PRIVATE);
-                int listSize = preferences.getInt("code_list_size", 0);
-                String[] discountCodesArray = new String[listSize];
-                for (int i = 0; i < listSize; i++) {
-                    discountCodesArray[i] = preferences.getString("code_" + i, "");
-                }
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(ThongTinThanhToan.this);
-                builder.setTitle("Chọn mã giảm giá");
-                builder.setItems(discountCodesArray, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        String selectedCode = discountCodesArray[which];
-                        applyDiscountCode(selectedCode);
-                    }
-                });
-
-                builder.show();
-            }
-
-            private void applyDiscountCode(String selectedCode) {
-                Button editText = findViewById(R.id.discountCodeEditText);
-                editText.setText(selectedCode);
-                // Gọi phương thức xử lý mã giảm giá ở đây (nếu cần)
-            }
         });
+
 
 //nút them vào giỏ hàng
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -291,8 +349,8 @@ public class ThongTinThanhToan extends AppCompatActivity {
                     String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail();
 
                     String phoneValue = phone.getText().toString();
-
-                    ThongTinKhach thongTinKhach = new ThongTinKhach(ten, ngaySinh, emailValue, phoneValue,tongGiaTien,  diemDi, diemDen, gio1, gio2, ngay, san1, san2, ari1,timebay);
+                    String selectedSeat = seatNumberTextView.getText().toString().replace("Chọn số ghế: ", "");
+                    ThongTinKhach thongTinKhach = new ThongTinKhach(ten, ngaySinh, emailValue, phoneValue,tongGiaTien,  diemDi, diemDen, gio1, gio2, ngay, san1, san2, ari1,timebay, selectedSeat);
                     // Đẩy dữ liệu lên Realtime Database
                     String key = myRef.push().getKey();
                     myRef.child(key).setValue(thongTinKhach);

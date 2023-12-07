@@ -10,7 +10,24 @@ public class ThongTinKhach implements Parcelable {
     public String id;
     public long thoiGianThanhToan;
     public boolean isClicked;
+    private boolean isSelected;
 
+    public String getSelectedSeat() {
+        return selectedSeat;
+    }
+
+    public ThongTinKhach(boolean isSelected) {
+        // ... (initialize existing fields)
+        this.isSelected = isSelected;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
+    }
     public boolean isClicked() {
         return isClicked;
     }
@@ -33,12 +50,13 @@ public class ThongTinKhach implements Parcelable {
         this.id = id;
     }
 
-    public ThongTinKhach(String ten, String ngaySinh, String emailValue, String phoneValue, int tongGiaTien, String diemDi, String diemDen, String gio1, String gio2, String ngay, String san1, String san2, String ari1) {
+    public ThongTinKhach(String ten, String ngaySinh, String emailValue, String phoneValue, int tongGiaTien, String diemDi, String diemDen, String gio1, String gio2, String ngay, String san1, String san2, String ari1, String selectedSeat) {
     }
 
     public String getTimebay() {
         return timebay;
     }
+
 
     public void setEmail(String email) {
         this.email = email;
@@ -48,7 +66,9 @@ public class ThongTinKhach implements Parcelable {
     public String getTen() {
         return ten;
     }
-
+    public String getSeat() {
+        return selectedSeat;
+    }
 
     public String getNgaySinh() {
         return ngaySinh;
@@ -102,6 +122,7 @@ public class ThongTinKhach implements Parcelable {
     public String soDienThoai;
     public int tien;
     public String diemDi;
+    public String selectedSeat;
     public String diemDen;
     public String gio1;
     public String gio2;
@@ -115,10 +136,11 @@ public class ThongTinKhach implements Parcelable {
     public ThongTinKhach() {
         // No-argument constructor
     }
-    public ThongTinKhach(String ten, String ngaySinh, String emailValue, String phoneValue, int tongGiaTien, String diemDi, String diemDen, String gio1, String gio2, String ngay, String san1, String san2, String ari1, String timebay) {
+    public ThongTinKhach(String ten, String ngaySinh, String emailValue, String phoneValue, int tongGiaTien, String diemDi, String diemDen, String gio1, String gio2, String ngay, String san1, String san2, String ari1, String timebay, String selectedSeat) {
         // Constructor sử dụng để khởi tạo đối tượng
 
         this.ten = ten;
+        this.selectedSeat = selectedSeat;
         this.ngaySinh = ngaySinh;
         this.email = emailValue;
         this.soDienThoai = phoneValue;
@@ -139,6 +161,7 @@ public class ThongTinKhach implements Parcelable {
     // Các phương thức Parcelable
     protected ThongTinKhach(Parcel in) {
         ten = in.readString();
+        selectedSeat = in.readString();
         ngaySinh = in.readString();
         email = in.readString();
         soDienThoai = in.readString();
@@ -157,6 +180,7 @@ public class ThongTinKhach implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(ten);
+        dest.writeString(selectedSeat);
         dest.writeString(ngaySinh);
         dest.writeString(email);
         dest.writeString(soDienThoai);
@@ -189,6 +213,5 @@ public class ThongTinKhach implements Parcelable {
         }
     };
 
-    public void setPaymentMethod(String tiềnMặt) {
-    }
+
 }

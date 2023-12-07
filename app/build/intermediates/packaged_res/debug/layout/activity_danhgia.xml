@@ -173,7 +173,7 @@
         <EditText
             android:layout_margin="10dp"
             android:gravity="start"
-            android:id="@+id/editText"
+            android:id="@+id/editTextdanhgia"
             android:hint="nhập đánh giá của bạn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

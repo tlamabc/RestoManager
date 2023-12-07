@@ -68,7 +68,7 @@
                         android:id="@+id/phoneView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="Phone: 0123456789 "
+                        android:hint="0123456789 "
                         android:textColor="#112d6a"
                         android:textColorHint="#CCC8C8" />
 
@@ -89,10 +89,32 @@
                         android:id="@+id/ngaysinhView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="Birthday: dd/mm/yyyy"
+                        android:hint="dd/mm/yyyy"
                         android:textColorHint="#CCC8C8"
                         />
                 </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/seatNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn loại ghế: "
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/buttonChooseSeat"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/muitenxuong"
+                    />
             </LinearLayout>
 
             <TextView
@@ -116,7 +138,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="#F6F6F6"
                 android:orientation="vertical">
 
@@ -271,7 +293,7 @@
             android:inputType="none"
             android:background="@drawable/edtmagiamgia"
             android:layout_weight="1"
-            android:id="@+id/discountCodeEditText"
+            android:id="@+id/discountCode"
             android:layout_width="wrap_content"
             android:layout_height="45dp"/>
         <Button

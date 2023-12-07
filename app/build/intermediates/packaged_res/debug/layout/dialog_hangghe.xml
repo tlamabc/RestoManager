@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#112d6a"
+        android:text="Chọn loại ghế"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/seatListView"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

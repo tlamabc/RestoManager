@@ -14,8 +14,12 @@ import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout; // Import thêm dòng này
 import com.droidfreshsquad.poly2023.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class BaoCao extends AppCompatActivity {
+    private DatabaseReference databaseReference;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,56 +52,77 @@ public class BaoCao extends AppCompatActivity {
         ConstraintLayout baocao6 = findViewById(R.id.baocao6);
         ConstraintLayout baocao7 = findViewById(R.id.baocao7);
 
+        databaseReference = FirebaseDatabase.getInstance().getReference("bao_cao");
         baocao1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showReportConfirmation("Ứng dụng giật lag");
+                String issueType = "Ứng dụng giật lag";
+                showReportConfirmation(issueType);
+                uploadToFirebase(issueType);
             }
         });
 
         baocao2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showReportConfirmation("Bản cập nhật mới bị lỗi");
+                String issueType = "Bản cập nhật mới bị lỗi";
+                showReportConfirmation(issueType);
+                uploadToFirebase(issueType);
             }
         });
 
         baocao3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showReportConfirmation("Lỗi cụ thể: Ứng dụng tắt đột ngột");
+                String issueType = "Ứng dụng tắt đột ngột";
+                showReportConfirmation(issueType);
+                uploadToFirebase(issueType);
             }
         });
 
         baocao4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showReportConfirmation("Đề nghị tính năng mới");
+                String issueType = "Đề nghị tính năng mới";
+                showReportConfirmation(issueType);
+                uploadToFirebase(issueType);
             }
         });
 
         baocao5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showReportConfirmation("Nút không hoạt động");
+                String issueType = "Nút không hoạt động";
+                showReportConfirmation(issueType);
+                uploadToFirebase(issueType);
             }
         });
 
         baocao6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showReportConfirmation("Giao diện không phản ánh đúng");
+                String issueType = "Giao diện không phản ánh đúng";
+                showReportConfirmation(issueType);
+                uploadToFirebase(issueType);
             }
         });
 
         baocao7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showReportConfirmation("Màu sắc không đúng");
+                String Baocao = "Màu sắc không đúng";
+                showReportConfirmation(Baocao);
+                uploadToFirebase(Baocao);
             }
         });
     }
-
+    private void uploadToFirebase(String Baocao) {
+        String emailValue = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+        String key = databaseReference.push().getKey();
+        // Create a Report object with relevant data
+        Report report = new Report(Baocao, emailValue);
+        databaseReference.child(key).setValue(report);
+    }
     private void showReportConfirmation(String issueType) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Cảm ơn bạn đã báo cáo");

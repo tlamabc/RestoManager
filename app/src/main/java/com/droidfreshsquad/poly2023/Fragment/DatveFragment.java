@@ -1,5 +1,6 @@
 package com.droidfreshsquad.poly2023.Fragment;
 
+
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -105,7 +106,7 @@ public class DatveFragment extends Fragment {
                     // Tính tổng giá tiền từ danh sách sản phẩm trong giỏ hàng
                     int totalAmount = calculateTotalAmount(gioHangItemList);
                     // Đặt giá trị cho TextView để hiển thị tổng giá tiền
-                    tonggiatienTextView.setText("Tổng Giá Tiền: " + totalAmount + " VND");
+                    tonggiatienTextView.setText("" + totalAmount + "");
                 }
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
@@ -279,7 +280,9 @@ public class DatveFragment extends Fragment {
                                                             .append("\n Sân Bay Đi : ").append(gioHangItem.getSan1())
                                                             .append("\n Sân Bay Đến : ").append(gioHangItem.getSan2())
                                                             .append("\n Số Tiền : ").append(gioHangItem.getTien())
-                                                            .append("\n Thời Gian Bay : ").append(gioHangItem.getTimebay());
+                                                            .append("\n Thời Gian Bay : ").append(gioHangItem.getTimebay())
+                                                            .append("\n Hạng Bay : ").append(gioHangItem.getSelectedSeat());
+
                                                 }
                                                 messageBuilder.append("\n _______________________________________")
                                                         .append("\n Vui lòng đến địa chỉ sau để thanh toán vé:")

@@ -58,7 +58,6 @@ public class VdCallActivity extends AppCompatActivity {
         String userName = userID;   // yourUserName
 
         ZegoUIKitPrebuiltCallInvitationConfig callInvitationConfig = new ZegoUIKitPrebuiltCallInvitationConfig();
-        callInvitationConfig.notifyWhenAppRunningInBackgroundOrQuit = true;
         ZegoNotificationConfig notificationConfig = new ZegoNotificationConfig();
         notificationConfig.sound = "zero_uikit_sound_call";
         notificationConfig.channelID = "CallInvitation";
